@@ -18,6 +18,15 @@ type tguiServer struct {
 	wg sync.WaitGroup
 }
 
+// go build -ldflags="-s -w -H=windowsgui" -o dup_recalibration.exe
+// go build -ldflags -H=windowsgui -o dup_recalibration_cn.exe app_gui.go
+//
+//		-ldflags="-s -w"  -ldflags="-H=windowsgui" -o dup_recalibration.exe
+//	 -ldflags="-s -w"  -ldflags="-H=windowsgui" -o dup_recalibration.exe
+
+// https://github.com/golang/go/issues/66998
+
+// GODEBUG=tlsrsakex=1
 func NewGuiServer() (*tguiServer, error) {
 	// -ldflags -H=windowsgui
 	guiSrv := &tguiServer{}
