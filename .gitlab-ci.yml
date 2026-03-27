@@ -1,0 +1,77 @@
+variables:
+  DOCKER_REGISTRY: 20.1.0.201:25000
+  NAMESPACE: das
+  IMAGE_TAG: $CI_COMMIT_REF_SLUG
+  RULES_CHANGES_PATH: "**/*"
+
+.base-rules:
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+      when: always
+    - if: '$CI_PIPELINE_SOURCE == "push"'
+      changes:
+        - $RULES_CHANGES_PATH
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+      changes:
+        - $RULES_CHANGES_PATH
+    - if: $CI_COMMIT_TAG
+      when: always
+      allow_failure: true
+    - when: always
+      changes:
+        - $RULES_CHANGES_PATH
+      allow_failure: true
+    - when: never
+
+.gomt:
+  extends: .base-rules
+  variables:
+    IMAGE_NAME: gomt
+    RULES_CHANGES_PATH: "build/*,app-v3/*,cgi/*,gomt/*"
+
+stages:
+  - build
+  - check
+  - test
+  - deploy
+  - release
+
+build-gomt:
+  stage: build
+  tags:
+    - docker
+  extends: .gomt
+  needs: []
+  allow_failure: false
+  script:
+    - './build/update_version.sh ${IMAGE_TAG}'
+    - 'docker build -t "${NAMESPACE}/${IMAGE_NAME}:${IMAGE_TAG}" --build-arg release_version=${IMAGE_TAG} -f ./build/Dockerfile ./'
+    - 'docker tag ${NAMESPACE}/${IMAGE_NAME}:${IMAGE_TAG} ${DOCKER_REGISTRY}/${NAMESPACE}/${IMAGE_NAME}:${IMAGE_TAG}'
+    - 'docker push ${DOCKER_REGISTRY}/${NAMESPACE}/${IMAGE_NAME}:${IMAGE_TAG}'
+    - 'docker rmi ${DOCKER_REGISTRY}/${NAMESPACE}/${IMAGE_NAME}:${IMAGE_TAG}'
+
+check-gomt:
+  stage: check
+  tags:
+    - docker
+  extends: .gomt
+  needs: []
+  allow_failure: true
+  script:
+    - 'cppcheck --version'
+      #    - 'cppcheck --language=c --enable=all --error-exitcode=1 ./cgi/code'
+
+release-gomt:
+  stage: release
+  tags:
+    - docker
+  extends: .gomt
+  needs: [build-gomt, check-gomt]
+  allow_failure: false
+  script:
+    - 'docker run -i --rm -v /home/dasomt:/dasomt ${NAMESPACE}/${IMAGE_NAME}:${IMAGE_TAG} sh -c "rm -rf /dasomt/public/release/${IMAGE_TAG}"'
+    - 'docker run -i --rm -v /home/dasomt:/dasomt ${NAMESPACE}/${IMAGE_NAME}:${IMAGE_TAG} sh -c "mkdir -p /dasomt/public/release/${IMAGE_TAG}/sunwave; cp -R /release/pkgs/sunwave/*.zip /dasomt/public/release/${IMAGE_TAG}/sunwave"'
+    - 'docker run -i --rm -v /home/dasomt:/dasomt ${NAMESPACE}/${IMAGE_NAME}:${IMAGE_TAG} sh -c "mkdir -p /dasomt/public/release/${IMAGE_TAG}/corning; cp -R /release/pkgs/corning/*.zip /dasomt/public/release/${IMAGE_TAG}/corning"'
+    - 'docker run -i --rm -v /home/dasomt:/dasomt ${NAMESPACE}/${IMAGE_NAME}:${IMAGE_TAG} sh -c "mkdir -p /dasomt/public/release/${IMAGE_TAG}/corning-powersharing; cp -R /release/pkgs/corning-powersharing/*.zip /dasomt/public/release/${IMAGE_TAG}/corning-powersharing"'
+    - 'docker run -i --rm -v /home/dasomt:/dasomt ${NAMESPACE}/${IMAGE_NAME}:${IMAGE_TAG} sh -c "chmod -R a+r /dasomt/public/release/${IMAGE_TAG}; chown -R 1000:1000 /dasomt/public"'
+

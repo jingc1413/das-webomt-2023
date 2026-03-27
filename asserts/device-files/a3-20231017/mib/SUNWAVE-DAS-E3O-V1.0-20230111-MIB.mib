@@ -1,0 +1,1222 @@
+-- MIB created by Sunwave
+-- version 1.0, created on Jun 27, 2022.
+-- released on July 28, 2022
+-- updated on Aug 25, 2022, feature: Adjust the order of trap binding structures
+
+
+   SUNWAVE-DAS-E3O-MIB DEFINITIONS ::= BEGIN
+	IMPORTS
+	OBJECT-TYPE, NOTIFICATION-TYPE, MODULE-IDENTITY,
+	IpAddress,Integer32,Unsigned32,enterprises,TimeTicks
+	FROM SNMPv2-SMI
+	TEXTUAL-CONVENTION,MacAddress,DisplayString
+	FROM SNMPv2-TC;
+		
+sunwave                OBJECT IDENTIFIER ::= { enterprises 31731}  
+g3CrossFire        OBJECT IDENTIFIER ::= { sunwave 30}  
+
+e3O     	    	     OBJECT IDENTIFIER ::= { g3CrossFire 3}
+
+
+-- AlarmTable
+alarms               OBJECT IDENTIFIER ::= { e3O 2}
+alarmTable OBJECT-TYPE
+    SYNTAX        SEQUENCE OF AlarmEntry
+    MAX-ACCESS    not-accessible
+    STATUS        current
+    DESCRIPTION
+        "Configure each possible alarm on the device (trap, relay out,
+         severity...)."
+    ::= { alarms 1 }
+
+alarmEntry OBJECT-TYPE
+    SYNTAX        AlarmEntry
+    MAX-ACCESS    not-accessible
+    STATUS        current
+    DESCRIPTION
+        "An entry containing one alarm informations."
+    INDEX
+        { alarmId }
+    ::= { alarmTable 1 }
+    
+AlarmEntry ::= SEQUENCE
+{   
+    alarmId             INTEGER,
+    alarmSeverity       INTEGER,
+    alarmStat           INTEGER,
+    alarmName   		DisplayString
+}
+
+alarmId OBJECT-TYPE
+    SYNTAX        INTEGER(1..200) 
+    MAX-ACCESS    not-accessible
+    STATUS        current
+    DESCRIPTION
+    "   1:Power Interruption Alarm, 
+        4:Over-temperature Alarm,  
+        6:Optical Link Alarm,
+        20:OP1 Transceiver Failure Alarm,
+        21:OP2 Transceiver Failure Alarm,
+        22:OP3 Transceiver Failure Alarm,
+        23:OP4 Transceiver Failure Alarm,
+        24:OP5 Transceiver Failure Alarm,
+        25:OP6 Transceiver Failure Alarm,
+        26:OP7 Transceiver Failure Alarm,
+        27:OP8 Transceiver Failure Alarm,
+        38:External1 Alarm,
+        39:External2 Alarm,
+        87:Optical Port Switch Alarm,
+        147:OP9 Transceiver Failure Alarm,
+        148:OP10 Transceiver Failure Alarm,
+        149:OP11 Transceiver Failure Alarm,
+        150:OP12 Transceiver Failure Alarm,
+        151:OP13 Transceiver Failure Alarm,
+        152:OP14 Transceiver Failure Alarm,
+        153:OP15 Transceiver Failure Alarm,
+        154:OP16 Transceiver Failure Alarm
+	"
+    ::= { alarmEntry 1 }
+  
+alarmSeverity OBJECT-TYPE
+    SYNTAX        INTEGER
+    {
+   		disable(0),
+      warning(2),
+      minor(3),
+      major(4),
+      critical(5)
+     }
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION
+       "Alarm's level,if set it 0,device will not report this alarm"
+    ::= { alarmEntry 2 }
+
+alarmStat OBJECT-TYPE
+   SYNTAX        INTEGER 
+   {
+      normal(0),
+      alarm(1)
+  } 
+   MAX-ACCESS    read-only
+   STATUS        current
+   DESCRIPTION
+      "Alarm's status"
+   ::= { alarmEntry 3 }
+
+alarmName OBJECT-TYPE
+    SYNTAX        DisplayString
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION
+        "Alarm's name;
+         refer to the description of alarmId
+        "
+    ::= { alarmEntry 4 }
+    
+alarmTHD				 OBJECT IDENTIFIER ::= { alarms 2}
+overTemperatureThreshold                OBJECT-TYPE
+    SYNTAX        INTEGER (-55..125)
+    UNITS	 			"Celsius"
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "the threshold of Over-temperature Alarm.
+    Alarm when device temperature over this threshold "
+    ::= { alarmTHD 1 }
+
+externalAlarm				 OBJECT IDENTIFIER ::= { alarms 3}
+externalInputAlarm1ModeSelection     OBJECT-TYPE
+		SYNTAX       INTEGER    
+		{   
+        normallyClosed(0),
+        normallyOpen(1)
+		}
+    	MAX-ACCESS    read-write
+    	STATUS        current
+    	DESCRIPTION   " 
+    	External 1 Alarm Mode Selection
+    	0-normallyClosed
+		1-normallyOpen
+    	"
+    ::= { externalAlarm 1 }
+
+externalInputAlarm2ModeSelection     OBJECT-TYPE
+		SYNTAX       INTEGER    
+		{   
+        normallyClosed(0),
+        normallyOpen(1)
+		}
+    	MAX-ACCESS    read-write
+    	STATUS        current
+    	DESCRIPTION   " 
+    	External 2 Alarm Mode Selection
+    	0-normallyClosed
+		1-normallyOpen
+    	"
+    ::= { externalAlarm 2 }	
+	
+	
+externalInputAlarm1Label          OBJECT-TYPE
+    SYNTAX       DisplayString(SIZE(0..20))
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "
+    	External 1 Alarm Label    "
+    ::= { externalAlarm 5 }
+	
+externalInputAlarm2Label          OBJECT-TYPE
+    SYNTAX       DisplayString(SIZE(0..20))
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "
+    	External 2 Alarm Label    "
+    ::= { externalAlarm 6 }
+
+externalAlarmOut1ModeSelection     OBJECT-TYPE
+		SYNTAX       INTEGER
+		{
+        normallyClosed(0),
+        normallyOpen(1)
+		}
+    	MAX-ACCESS    read-write
+    	STATUS        current
+    	DESCRIPTION   "
+    	External Alarm OUT 1 Mode Selection
+    	0-normally_closed
+    	1-normally_open
+    	"
+    ::= { externalAlarm 9 }
+
+externalAlarmOut2ModeSelection     OBJECT-TYPE
+		SYNTAX       INTEGER
+		{
+        normallyClosed(0),
+        normallyOpen(1)
+		}
+    	MAX-ACCESS    read-write
+    	STATUS        current
+    	DESCRIPTION   "
+    	External Alarm OUT 2 Mode Selection
+    	0-normally_closed
+    	1-normally_open
+    	"
+    ::= { externalAlarm 10 }
+
+externalAlarmOut1Indication     OBJECT-TYPE
+    SYNTAX       INTEGER
+	{
+        normal(0),
+        alarm(1)
+	}
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION
+    "External Alarm OUT 1 State"
+    ::= { externalAlarm 15 }
+
+externalAlarmOut2Indication     OBJECT-TYPE
+    SYNTAX       INTEGER
+	{
+        normal(0),
+        alarm(1)
+	}
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION
+    "External Alarm OUT 2 State"
+    ::= { externalAlarm 16 }
+	
+externalOutputAlarm1Level     OBJECT-TYPE
+		SYNTAX       INTEGER    
+		{   
+        disable(0),
+		warning(2),
+		minor(3),
+		major(4),
+		critical(5)
+		}
+    	MAX-ACCESS    read-write
+    	STATUS        current
+    	DESCRIPTION   " 
+    	External Output Alarm 1 Level
+    	"
+    ::= { externalAlarm 25 }
+
+externalOutputAlarm2Level     OBJECT-TYPE
+		SYNTAX       INTEGER    
+		{   
+        disable(0),
+		warning(2),
+		minor(3),
+		major(4),
+		critical(5)
+		}
+    	MAX-ACCESS    read-write
+    	STATUS        current
+    	DESCRIPTION   " 
+    	External Output Alarm 2 Level
+    	"
+    ::= { externalAlarm 26 }
+
+-- trap 
+ traps                OBJECT IDENTIFIER ::= { e3O 3}  
+trapEvents             OBJECT IDENTIFIER ::={ traps 0 }
+alarmTrap NOTIFICATION-TYPE
+    OBJECTS
+        { trapAlarmId,trapAlarmName, trapAlarmState, trapAlarmSeverity, trapAlarmDeviceType, trapAlarmModuleID, trapAlarmCreateTime,trapAlarmClearTime,
+        trapAlarmLocation,trapAlarmSiteName,trapAlarmDeviceName,trapAlarmDeviceAddress,
+        trapAlarmProbableCause, trapAlarmProposedAction,trapAlarmSequenceNo,trapAlarmDeviceIP, trapAlarmElementSerialNumber }
+    STATUS        current
+    DESCRIPTION
+        "Trap send in an alarm rising edge."
+    ::= { trapEvents 1 }
+
+trapAlarmObjects OBJECT IDENTIFIER ::= { traps 1 }	
+
+trapAlarmId OBJECT-TYPE
+    SYNTAX        INTEGER(1..200) 
+    MAX-ACCESS    accessible-for-notify
+    STATUS        current
+    DESCRIPTION
+        "<<<<The ID of the alarm (see trapAlarmName)>>>>"
+    ::= { trapAlarmObjects 1 }
+    
+trapAlarmName OBJECT-TYPE
+    SYNTAX        DisplayString
+    MAX-ACCESS    accessible-for-notify
+    STATUS        current
+    DESCRIPTION
+    "   1:Power Interruption Alarm, 
+        4:Over-temperature Alarm,  
+        6:Optical Link Alarm,
+        20:OP1 Transceiver Failure Alarm,
+        21:OP2 Transceiver Failure Alarm,
+        22:OP3 Transceiver Failure Alarm,
+        23:OP4 Transceiver Failure Alarm,
+        24:OP5 Transceiver Failure Alarm,
+        25:OP6 Transceiver Failure Alarm,
+        26:OP7 Transceiver Failure Alarm,
+        27:OP8 Transceiver Failure Alarm,
+        38:External1 Alarm,
+        39:External2 Alarm,
+        87:Optical Port Switch Alarm,
+        147:OP9 Transceiver Failure Alarm,
+        148:OP10 Transceiver Failure Alarm,
+        149:OP11 Transceiver Failure Alarm,
+        150:OP12 Transceiver Failure Alarm,
+        151:OP13 Transceiver Failure Alarm,
+        152:OP14 Transceiver Failure Alarm,
+        153:OP15 Transceiver Failure Alarm,
+        154:OP16 Transceiver Failure Alarm
+	"
+    ::= { trapAlarmObjects 2 }
+    
+trapAlarmState OBJECT-TYPE
+    SYNTAX        INTEGER 
+    {
+      normal(0),
+      alarm(1)
+    } 
+    MAX-ACCESS    accessible-for-notify
+    STATUS        current
+    DESCRIPTION
+        "Alarm Status.
+        If trapAlarmState  is 0 (normal) means that the alarm is clear while 1(alarm) means the alarm is set. 
+        "
+    ::= { trapAlarmObjects 3 }
+    
+trapAlarmSeverity OBJECT-TYPE
+    SYNTAX        INTEGER
+    {
+    	  disable(0),
+   		normal(1),
+   		  warning(2),
+        minor(3),
+        major(4),
+        critical(5)
+    }
+    MAX-ACCESS    accessible-for-notify
+    STATUS        current
+    DESCRIPTION
+        "Alarm severity.
+        If alarm (trapAlarmState=1) is set, this value will be 2(warning) or 3(minor) or 4(major) or 5(critical). 
+        And if alarm (trapAlarmState=0) is clear, this value will be 1(normal).
+        "
+    ::= { trapAlarmObjects 4 }
+
+trapAlarmDeviceType				OBJECT-TYPE
+    SYNTAX DisplayString
+    MAX-ACCESS    accessible-for-notify
+    STATUS        current
+    DESCRIPTION
+        "There are some kinds of type, Primary A3,secondary A3, E3O, N3RU etc."
+    ::= { trapAlarmObjects 5 } 
+
+ trapAlarmModuleID 				OBJECT-TYPE
+    SYNTAX       DisplayString
+    MAX-ACCESS    accessible-for-notify
+    STATUS        current
+    DESCRIPTION
+        " Unique module identifier 
+        (based on this field the operator should be able to identify 
+        which module of which system is sending this alarm)
+        #deviceID#devicesubID"
+    ::= { trapAlarmObjects 6 } 
+	
+trapAlarmCreateTime OBJECT-TYPE
+    SYNTAX       DisplayString
+    MAX-ACCESS    accessible-for-notify
+    STATUS        current
+    DESCRIPTION
+        " The time when the alarm is detected. 
+        format: yyyy-mm-mm-dd hh:mm:ss, such as , 2013-07-20 16:07:50
+        "
+    ::= { trapAlarmObjects 7 }   
+    
+trapAlarmClearTime OBJECT-TYPE
+    SYNTAX       DisplayString
+    MAX-ACCESS    accessible-for-notify
+    STATUS        current
+    DESCRIPTION
+        "The time when the alarm is cleared. 
+        format: yyyy-mm-mm-dd hh:mm:ss, such as , 2013-07-20 16:07:50
+        "
+    ::= { trapAlarmObjects 8 }  
+	
+trapAlarmLocation 				OBJECT-TYPE
+    SYNTAX       DisplayString
+    MAX-ACCESS    accessible-for-notify
+    STATUS        current
+    DESCRIPTION
+        "The Location assigned to the originating equipment(installed location lable)"
+    ::= { trapAlarmObjects 9 } 
+
+trapAlarmSiteName 				OBJECT-TYPE
+    SYNTAX       DisplayString
+    MAX-ACCESS    accessible-for-notify
+    STATUS        current
+    DESCRIPTION
+        "The Name assigned to the originating Master Access Unit (SiteName)"
+    ::= { trapAlarmObjects 10 } 
+
+trapAlarmDeviceName 				OBJECT-TYPE
+    SYNTAX       DisplayString
+    MAX-ACCESS    accessible-for-notify
+    STATUS        current
+    DESCRIPTION
+        "The Name assigned to the originating equipment (DeviceName)"
+    ::= { trapAlarmObjects 11 } 
+
+trapAlarmDeviceAddress 				OBJECT-TYPE
+    SYNTAX       DisplayString
+    MAX-ACCESS    accessible-for-notify
+    STATUS        current
+    DESCRIPTION
+        "The hierarchical path from A3 to originating equipment"
+    ::= { trapAlarmObjects 12 } 
+
+trapAlarmProbableCause 				OBJECT-TYPE
+    SYNTAX       DisplayString
+    MAX-ACCESS    accessible-for-notify
+    STATUS        current
+    DESCRIPTION
+        "Plain text description of probable cause"
+    ::= { trapAlarmObjects 13 } 
+
+trapAlarmProposedAction 				OBJECT-TYPE
+    SYNTAX       DisplayString
+    MAX-ACCESS    accessible-for-notify
+    STATUS        current
+    DESCRIPTION
+        "Plain text description of proposed actions for resolution"
+    ::= { trapAlarmObjects 14 } 
+
+trapAlarmSequenceNo 				OBJECT-TYPE
+    SYNTAX       Unsigned32
+    MAX-ACCESS    accessible-for-notify
+    STATUS        current
+    DESCRIPTION
+        "Sequence identifier is unique number for each trap. It is only incremented when a new alarm trap is sent. 
+        It is unchanged when the Clear trap is send. It ranges from 0 to 4294967296.
+        "
+    ::= { trapAlarmObjects 15 } 
+
+trapAlarmDeviceIP 				OBJECT-TYPE
+    SYNTAX       DisplayString
+    MAX-ACCESS    accessible-for-notify
+    STATUS        current
+    DESCRIPTION
+        "IP of Primary A3  which alarmed device connect to"
+    ::= { trapAlarmObjects 16 } 
+
+trapAlarmElementSerialNumber 				OBJECT-TYPE
+    SYNTAX       DisplayString
+    MAX-ACCESS    accessible-for-notify
+    STATUS        current
+    DESCRIPTION
+        "Element Serial Number"
+    ::= { trapAlarmObjects 17 } 
+    
+lanConnectivity		 			    OBJECT IDENTIFIER ::= { e3O 4} 
+elementIdentification               OBJECT IDENTIFIER ::= { lanConnectivity 1}
+opticalModuleInfo                   OBJECT IDENTIFIER ::= { lanConnectivity 6}
+
+vendor 	OBJECT-TYPE
+    SYNTAX        DisplayString(SIZE(0..20))
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    " Code  to distinguish from different manufacturers"
+    ::= { elementIdentification 1 }
+
+elementModelNumber          OBJECT-TYPE
+    SYNTAX       DisplayString(SIZE(0..40))
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "product model of the device"
+    ::= { elementIdentification 2 }
+    
+elementSerialNumber 	OBJECT-TYPE
+    SYNTAX        DisplayString(SIZE(0..40))
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   "serial number of the device"
+    ::= { elementIdentification 3}
+    
+softwareVersion 	OBJECT-TYPE
+    SYNTAX       DisplayString(SIZE(0..20))
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    " Current version of remote monitoring software. "
+    ::= { elementIdentification 4 }    
+
+    
+deviceID          OBJECT-TYPE
+    SYNTAX        DisplayString(SIZE(8))
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   "The unique identification number of site in the system" 
+    ::= { elementIdentification 6 }
+ 
+deviceSubID          OBJECT-TYPE
+    SYNTAX        INTEGER(0)
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   "Number assigned by the system to distinguish the subsets in the same site "
+    ::= { elementIdentification 7 }
+    
+installedLocationLabel          OBJECT-TYPE
+    SYNTAX       DisplayString(SIZE(0..40))
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "
+    	Device Location    "
+    ::= { elementIdentification 8 }
+    
+deviceName          OBJECT-TYPE
+    SYNTAX       DisplayString(SIZE(0..40))
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "
+    Device Name
+    "
+    ::= { elementIdentification 9 }  
+
+systemDateAndTime          OBJECT-TYPE
+    SYNTAX       DisplayString
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "
+    	device's current date and time.
+    	format: yyyy-mm-mm-d hh:mm:ss, such as , 2013-07-20 16:07:50
+    "
+    ::= { elementIdentification 10 }  
+
+siteName          OBJECT-TYPE
+    SYNTAX       DisplayString(SIZE(0..100))
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "
+    Site Name
+    "
+    ::= { elementIdentification 15 } 
+
+macAddress          OBJECT-TYPE
+    SYNTAX       DisplayString(SIZE(0..18))
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "
+    Mac Address
+    "
+    ::= { elementIdentification 30 }
+	
+lifeTime 	OBJECT-TYPE
+    SYNTAX        Integer32
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    " Life time,
+	unit:hours,
+	rate:10.
+	"
+    ::= { elementIdentification 31 }
+	
+upTime          OBJECT-TYPE
+    SYNTAX       DisplayString(SIZE(0..12))
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "
+    Up time,
+	unit:days:hours:minutes
+    "
+    ::= { elementIdentification 32 }
+	
+systemReset			OBJECT-TYPE
+		SYNTAX       INTEGER
+		{
+		update(1)      			 
+		}
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   "System Reset "
+    ::= { elementIdentification 33 }
+
+filesystemVersion 	OBJECT-TYPE
+    SYNTAX       DisplayString(SIZE(0..10))
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    " Current version of filesystem. "
+    ::= { elementIdentification 34 }   	
+	
+oP1TransceiverSerialNumber          OBJECT-TYPE
+    SYNTAX       DisplayString(SIZE(0..16))
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "
+    	OP1 Transceiver Serial Number    "
+    ::= { opticalModuleInfo 1 }
+	
+oP2TransceiverSerialNumber          OBJECT-TYPE
+    SYNTAX       DisplayString(SIZE(0..16))
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "
+    	OP2 Transceiver Serial Number    "
+    ::= { opticalModuleInfo 2 }	
+
+oP3TransceiverSerialNumber          OBJECT-TYPE
+    SYNTAX       DisplayString(SIZE(0..16))
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "
+    	OP3 Transceiver Serial Number    "
+    ::= { opticalModuleInfo 3 }
+	
+oP4TransceiverSerialNumber          OBJECT-TYPE
+    SYNTAX       DisplayString(SIZE(0..16))
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "
+    	OP4 Transceiver Serial Number    "
+    ::= { opticalModuleInfo 4 }	
+	
+oP5TransceiverSerialNumber          OBJECT-TYPE
+    SYNTAX       DisplayString(SIZE(0..16))
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "
+    	OP5 Transceiver Serial Number    "
+    ::= { opticalModuleInfo 5 }
+	
+oP6TransceiverSerialNumber          OBJECT-TYPE
+    SYNTAX       DisplayString(SIZE(0..16))
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "
+    	OP6 Transceiver Serial Number    "
+    ::= { opticalModuleInfo 6 }
+
+oP7TransceiverSerialNumber          OBJECT-TYPE
+    SYNTAX       DisplayString(SIZE(0..16))
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION
+    "
+    	OP7 Transceiver Serial Number    "
+    ::= { opticalModuleInfo 7 }
+
+oP8TransceiverSerialNumber          OBJECT-TYPE
+    SYNTAX       DisplayString(SIZE(0..16))
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION
+    "
+    	OP8 Transceiver Serial Number    "
+    ::= { opticalModuleInfo 8 }
+
+oP9TransceiverSerialNumber          OBJECT-TYPE
+    SYNTAX       DisplayString(SIZE(0..16))
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION
+    "
+    	OP9 Transceiver Serial Number    "
+    ::= { opticalModuleInfo 9 }
+
+oP10TransceiverSerialNumber          OBJECT-TYPE
+    SYNTAX       DisplayString(SIZE(0..16))
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION
+    "
+    	OP10 Transceiver Serial Number    "
+    ::= { opticalModuleInfo 10 }
+
+oP11TransceiverSerialNumber          OBJECT-TYPE
+    SYNTAX       DisplayString(SIZE(0..16))
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION
+    "
+    	OP11 Transceiver Serial Number    "
+    ::= { opticalModuleInfo 11 }
+
+oP12TransceiverSerialNumber          OBJECT-TYPE
+    SYNTAX       DisplayString(SIZE(0..16))
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION
+    "
+    	OP12 Transceiver Serial Number    "
+    ::= { opticalModuleInfo 12 }
+
+oP13TransceiverSerialNumber          OBJECT-TYPE
+    SYNTAX       DisplayString(SIZE(0..16))
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION
+    "
+    	OP13 Transceiver Serial Number    "
+    ::= { opticalModuleInfo 13 }
+
+oP14TransceiverSerialNumber          OBJECT-TYPE
+    SYNTAX       DisplayString(SIZE(0..16))
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION
+    "
+    	OP14 Transceiver Serial Number    "
+    ::= { opticalModuleInfo 14 }
+
+oP15TransceiverSerialNumber          OBJECT-TYPE
+    SYNTAX       DisplayString(SIZE(0..16))
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "
+    	OP 15 Transceiver Serial Number    "
+    ::= { opticalModuleInfo 15 }
+	
+oP16TransceiverSerialNumber          OBJECT-TYPE
+    SYNTAX       DisplayString(SIZE(0..16))
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "
+    	OP 16 Transceiver Serial Number    "
+    ::= { opticalModuleInfo 16 }		
+
+oP1TransceiverVenderName         OBJECT-TYPE
+    SYNTAX       DisplayString(SIZE(0..16))
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION
+    "
+    	OP1 Transceiver Vender Name    "
+    ::= { opticalModuleInfo 17 }
+
+oP2TransceiverVenderName         OBJECT-TYPE
+    SYNTAX       DisplayString(SIZE(0..16))
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION
+    "
+    	OP2 Transceiver Vender Name    "
+    ::= { opticalModuleInfo 18 }
+
+oP3TransceiverVenderName         OBJECT-TYPE
+    SYNTAX       DisplayString(SIZE(0..16))
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION
+    "
+    	OP3 Transceiver Vender Name    "
+    ::= { opticalModuleInfo 19 }
+
+oP4TransceiverVenderName         OBJECT-TYPE
+    SYNTAX       DisplayString(SIZE(0..16))
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION
+    "
+    	OP4 Transceiver Vender Name    "
+    ::= { opticalModuleInfo 20 }
+
+oP5TransceiverVenderName         OBJECT-TYPE
+    SYNTAX       DisplayString(SIZE(0..16))
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION
+    "
+    	OP5 Transceiver Vender Name    "
+    ::= { opticalModuleInfo 21 }
+
+oP6TransceiverVenderName         OBJECT-TYPE
+    SYNTAX       DisplayString(SIZE(0..16))
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION
+    "
+    	OP6 Transceiver Vender Name    "
+    ::= { opticalModuleInfo 22 }
+
+oP7TransceiverVenderName         OBJECT-TYPE
+    SYNTAX       DisplayString(SIZE(0..16))
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION
+    "
+    	OP7 Transceiver Vender Name    "
+    ::= { opticalModuleInfo 23 }
+
+oP8TransceiverVenderName         OBJECT-TYPE
+    SYNTAX       DisplayString(SIZE(0..16))
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION
+    "
+    	OP8 Transceiver Vender Name    "
+    ::= { opticalModuleInfo 24 }
+
+oP9TransceiverVenderName         OBJECT-TYPE
+    SYNTAX       DisplayString(SIZE(0..16))
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION
+    "
+    	OP9 Transceiver Vender Name    "
+    ::= { opticalModuleInfo 25 }
+
+oP10TransceiverVenderName         OBJECT-TYPE
+    SYNTAX       DisplayString(SIZE(0..16))
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION
+    "
+    	OP10 Transceiver Vender Name    "
+    ::= { opticalModuleInfo 26 }
+
+oP11TransceiverVenderName         OBJECT-TYPE
+    SYNTAX       DisplayString(SIZE(0..16))
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION
+    "
+    	OP11 Transceiver Vender Name    "
+    ::= { opticalModuleInfo 27 }
+
+oP12TransceiverVenderName         OBJECT-TYPE
+    SYNTAX       DisplayString(SIZE(0..16))
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION
+    "
+    	OP12 Transceiver Vender Name    "
+    ::= { opticalModuleInfo 28 }
+
+oP13TransceiverVenderName         OBJECT-TYPE
+    SYNTAX       DisplayString(SIZE(0..16))
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION
+    "
+    	OP13 Transceiver Vender Name    "
+    ::= { opticalModuleInfo 29 }
+
+oP14TransceiverVenderName         OBJECT-TYPE
+    SYNTAX       DisplayString(SIZE(0..16))
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION
+    "
+    	OP14 Transceiver Vender Name    "
+    ::= { opticalModuleInfo 30 }
+
+oP15TransceiverVenderName          OBJECT-TYPE
+    SYNTAX       DisplayString(SIZE(0..16))
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION
+    "
+    	OP 15 Transceiver Vender Name    "
+    ::= { opticalModuleInfo 31 }
+
+oP16TransceiverVenderName         OBJECT-TYPE
+    SYNTAX       DisplayString(SIZE(0..16))
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION
+    "
+    	OP 16 Transceiver Vender Name    "
+    ::= { opticalModuleInfo 32 }
+
+oP1TransceiverTXpower         OBJECT-TYPE
+    SYNTAX       Integer32
+    UNITS		"0.01dBm" 
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "	rate:100
+    	OP1 TX optical power    "
+    ::= { opticalModuleInfo 33 }
+
+oP2TransceiverTXpower         OBJECT-TYPE
+    SYNTAX       Integer32
+    UNITS		"0.01dBm" 
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "	rate:100
+    	OP2 TX optical power    "
+    ::= { opticalModuleInfo 34 }
+
+oP3TransceiverTXpower         OBJECT-TYPE
+    SYNTAX       Integer32
+    UNITS		"0.01dBm" 
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "	rate:100
+    	OP3 TX optical power    "
+    ::= { opticalModuleInfo 35 }
+
+oP4TransceiverTXpower         OBJECT-TYPE
+    SYNTAX       Integer32
+    UNITS		"0.01dBm" 
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "	rate:100
+    	OP4 TX optical power    "
+    ::= { opticalModuleInfo 36 }
+
+oP5TransceiverTXpower         OBJECT-TYPE
+    SYNTAX       Integer32
+    UNITS		"0.01dBm" 
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "	rate:100
+    	OP5 TX optical power    "
+    ::= { opticalModuleInfo 37 }
+
+oP6TransceiverTXpower         OBJECT-TYPE
+    SYNTAX       Integer32
+    UNITS		"0.01dBm" 
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "	rate:100
+    	OP6 TX optical power    "
+    ::= { opticalModuleInfo 38 }
+
+oP7TransceiverTXpower         OBJECT-TYPE
+    SYNTAX       Integer32
+    UNITS		"0.01dBm" 
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "	rate:100
+    	OP7 TX optical power    "
+    ::= { opticalModuleInfo 39 }
+
+oP8TransceiverTXpower         OBJECT-TYPE
+    SYNTAX       Integer32
+    UNITS		"0.01dBm" 
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "	rate:100
+    	OP8 TX optical power    "
+    ::= { opticalModuleInfo 40 }
+
+oP9TransceiverTXpower         OBJECT-TYPE
+    SYNTAX       Integer32
+    UNITS		"0.01dBm" 
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "	rate:100
+    	OP9 TX optical power    "
+    ::= { opticalModuleInfo 41 }
+
+oP10TransceiverTXpower         OBJECT-TYPE
+    SYNTAX       Integer32
+    UNITS		"0.01dBm" 
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "	rate:100
+    	OP10 TX optical power    "
+    ::= { opticalModuleInfo 42 }
+
+oP11TransceiverTXpower         OBJECT-TYPE
+    SYNTAX       Integer32
+    UNITS		"0.01dBm" 
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "	rate:100
+    	OP11 TX optical power    "
+    ::= { opticalModuleInfo 43 }
+
+oP12TransceiverTXpower         OBJECT-TYPE
+    SYNTAX       Integer32
+    UNITS		"0.01dBm" 
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "	rate:100
+    	OP12 TX optical power    "
+    ::= { opticalModuleInfo 44 }
+
+oP13TransceiverTXpower         OBJECT-TYPE
+    SYNTAX       Integer32
+    UNITS		"0.01dBm" 
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "	rate:100
+    	OP13 TX optical power    "
+    ::= { opticalModuleInfo 45 }
+
+oP14TransceiverTXpower         OBJECT-TYPE
+    SYNTAX       Integer32
+    UNITS		"0.01dBm" 
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "	rate:100
+    	OP14 TX optical power    "
+    ::= { opticalModuleInfo 46 }
+
+oP15TransceiverTXpower         OBJECT-TYPE
+    SYNTAX       Integer32
+    UNITS		"0.01dBm" 
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "	rate:100
+    	OP 15 Transceiver TX optical power    "
+    ::= { opticalModuleInfo 47 }
+
+oP16TransceiverTXpower         OBJECT-TYPE
+    SYNTAX       Integer32
+    UNITS		"0.01dBm" 
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "	rate:100
+    	OP 16 Transceiver TX optical power    "
+    ::= { opticalModuleInfo 48 }
+
+oP1TransceiverRXpower         OBJECT-TYPE
+    SYNTAX       Integer32
+    UNITS		"0.01dBm" 
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "	rate:100
+    	OP1 RX optical power    "
+    ::= { opticalModuleInfo 49 }
+
+oP2TransceiverRXpower         OBJECT-TYPE
+    SYNTAX       Integer32
+    UNITS		"0.01dBm" 
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "	rate:100
+    	OP2 RX optical power    "
+    ::= { opticalModuleInfo 50 }
+
+oP3TransceiverRXpower         OBJECT-TYPE
+    SYNTAX       Integer32
+    UNITS		"0.01dBm" 
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "	rate:100
+    	OP3 RX optical power    "
+    ::= { opticalModuleInfo 51 }
+
+oP4TransceiverRXpower         OBJECT-TYPE
+    SYNTAX       Integer32
+    UNITS		"0.01dBm" 
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "	rate:100
+    	OP4 RX optical power    "
+    ::= { opticalModuleInfo 52 }
+
+oP5TransceiverRXpower         OBJECT-TYPE
+    SYNTAX       Integer32
+    UNITS		"0.01dBm" 
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "	rate:100
+    	OP5 RX optical power    "
+    ::= { opticalModuleInfo 53 }
+
+oP6TransceiverRXpower         OBJECT-TYPE
+    SYNTAX       Integer32
+    UNITS		"0.01dBm" 
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "	rate:100
+    	OP6 RX optical power    "
+    ::= { opticalModuleInfo 54 }
+
+oP7TransceiverRXpower         OBJECT-TYPE
+    SYNTAX       Integer32
+    UNITS		"0.01dBm" 
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "	rate:100
+    	OP7 RX optical power    "
+    ::= { opticalModuleInfo 55 }
+
+oP8TransceiverRXpower         OBJECT-TYPE
+    SYNTAX       Integer32
+    UNITS		"0.01dBm" 
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "	rate:100
+    	OP8 RX optical power    "
+    ::= { opticalModuleInfo 56 }
+
+oP9TransceiverRXpower         OBJECT-TYPE
+    SYNTAX       Integer32
+    UNITS		"0.01dBm" 
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "	rate:100
+    	OP9 RX optical power    "
+    ::= { opticalModuleInfo 57 }
+
+oP10TransceiverRXpower         OBJECT-TYPE
+    SYNTAX       Integer32
+    UNITS		"0.01dBm" 
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "	rate:100
+    	OP10 RX optical power    "
+    ::= { opticalModuleInfo 58 }
+
+oP11TransceiverRXpower         OBJECT-TYPE
+    SYNTAX       Integer32
+    UNITS		"0.01dBm" 
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "	rate:100
+    	OP11 RX optical power    "
+    ::= { opticalModuleInfo 59 }
+
+oP12TransceiverRXpower         OBJECT-TYPE
+    SYNTAX       Integer32
+    UNITS		"0.01dBm" 
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "	rate:100
+    	OP12 RX optical power    "
+    ::= { opticalModuleInfo 60 }
+
+oP13TransceiverRXpower         OBJECT-TYPE
+    SYNTAX       Integer32
+    UNITS		"0.01dBm" 
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "	rate:100
+    	OP13 RX optical power    "
+    ::= { opticalModuleInfo 61 }
+
+oP14TransceiverRXpower         OBJECT-TYPE
+    SYNTAX       Integer32
+    UNITS		"0.01dBm" 
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "	rate:100
+    	OP14 RX optical power    "
+    ::= { opticalModuleInfo 62 }
+
+oP15TransceiverRXpower         OBJECT-TYPE
+    SYNTAX       Integer32
+    UNITS		"0.01dBm" 
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "	rate:100
+    	OP 15 Transceiver RX optical power    "
+    ::= { opticalModuleInfo 63 }
+ 
+oP16TransceiverRXpower         OBJECT-TYPE
+    SYNTAX       Integer32
+    UNITS		"0.01dBm" 
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "	rate:100
+    	OP 16 Transceiver RX optical power    "
+    ::= { opticalModuleInfo 64 }
+    
+--systemInfo    
+systemInfo 	     	 OBJECT IDENTIFIER ::= { e3O 5}
+sysGeneral         	   OBJECT IDENTIFIER ::= { systemInfo 5}
+elementOperatingTemperature	OBJECT-TYPE
+    SYNTAX        Integer32
+    UNITS	 			  "Celsius"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   "device temperature"
+    ::= { sysGeneral 1 }
+    
+END

@@ -1,0 +1,5 @@
+[2026-03-26 19:07:38] GET: DeviceTypeName=Primary A3, ModuleTypeId=A6
+[2026-03-26 19:07:38] SET: DeviceTypeName=Primary A3, SubID=0, Combiner=1
+[2026-03-26 19:07:38] SET: ModuleTypeId=A6, P1Slope=95, P1Intercept=-74952,P2Slope=95, P2Intercept=-74952,P3Slope=95, P3Intercept=-74952,P4Slope=95, P4Intercept=-74952
+[2026-03-26 19:07:40] SET: query parameter finish, P1Slope=95, P1Intercept=-74952,P2Slope=95, P2Intercept=-74952,P3Slope=95, P3Intercept=-74952,P4Slope=95, P4Intercept=-74952
+[2026-03-26 19:07:40] SET: query/set match success, DeviceTypeName=Primary A3, SubID=0, Combiner=1

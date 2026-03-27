@@ -1,0 +1,22 @@
+schema: "corning"
+revision: 20240326
+devices:
+  - deviceTypeName: "Primary A3"
+    softwareVersion: 0.12
+    softwareRevision: 24.1.0.0
+  - deviceTypeName: "Secondary A3"
+    softwareVersion: 0.12
+    softwareRevision: 24.1.0.0
+  - deviceTypeName: E3-O
+    softwareVersion: 0.10
+    softwareRevision: 23.4.0.0
+  - deviceTypeName: N3-RU
+    softwareVersion: 0.11
+    softwareRevision: 24.1.0.0
+  - deviceTypeName: M3-RU-L
+    softwareVersion: 0.7
+    softwareRevision: 23.4.0.0
+  - deviceTypeName: M3-RU-H
+    softwareVersion: 0.5
+    softwareRevision: 24.1.0.0
+

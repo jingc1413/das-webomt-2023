@@ -1,0 +1,18 @@
+schema: "default"
+revision: 20231017
+devices:
+  - deviceTypeName: "Primary A3"
+    softwareVersion: 1.2.4
+    softwareRevision: 20231121
+  - deviceTypeName: "Secondary A3"
+    softwareVersion: 1.2.4
+    softwareRevision: 20231121
+  - deviceTypeName: E3-O
+    softwareVersion: 1.2.1
+    softwareRevision: 20231121
+  - deviceTypeName: N3-RU
+    softwareVersion: 1.2.1
+    softwareRevision: 20231121
+  - deviceTypeName: X3-RU
+    softwareVersion: 0
+    softwareRevision: 0

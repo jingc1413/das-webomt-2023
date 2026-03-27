@@ -1,0 +1,236 @@
+Groups,Paths,OID,Name,Unit,Tips,AccessMode,DataType,ByteSize,Ratio,Range,Options
+"Settings,LAN Connectivity,Element Identification",,T02.P0002,Vendor,,,ro,string,20,,,
+"Settings,LAN Connectivity,Element Identification",,T02.P0004,Element Model Number,,,rw,string,20,,,
+"Settings,LAN Connectivity,Element Identification",,T02.P0005,Element Serial Number,,,ro,string,20,,,
+"Settings,LAN Connectivity,Element Identification",,T02.P000A,Software Version,,,ro,string,20,,,
+"Settings,LAN Connectivity,Element Identification",,T02.P0101,Device ID,,Hexadecimal,rw,binary,4,,,
+"Settings,LAN Connectivity,Element Identification",,T02.P0102,Device Sub ID,,Decimalism,rw,uint8,1,,,
+"Settings,LAN Connectivity,Element Identification",,T02.P0023,Installed Location Label,,,rw,string,20,,,
+"Settings,LAN Connectivity,Element Identification",,T02.P0024,Site Name,,,ro,string,100,,,
+"Settings,LAN Connectivity,Element Identification",,T02.P0030,Device Name,,,rw,string,40,,,
+"Settings,LAN Connectivity,Element Identification",,T02.P0501,Element Operating Temperature,℃,,ro,int8,1,,,
+"Settings,LAN Connectivity,Optical Module Serial Number And Vendor Name",,T02.P0A96,OP1 Transceiver Serial Number,,,ro,string,16,,,
+"Settings,LAN Connectivity,Optical Module Serial Number And Vendor Name",,T02.P0AA6,OP1 Transceiver Vendor Name,,,ro,string,16,,,
+"Settings,LAN Connectivity,Optical Module Serial Number And Vendor Name",,T02.P0A97,OP2 Transceiver Serial Number,,,ro,string,16,,,
+"Settings,LAN Connectivity,Optical Module Serial Number And Vendor Name",,T02.P0AA7,OP2 Transceiver Vendor Name,,,ro,string,16,,,
+"Settings,LAN Connectivity,Optical Module Serial Number And Vendor Name",,T02.P0A98,OP3 Transceiver Serial Number,,,ro,string,16,,,
+"Settings,LAN Connectivity,Optical Module Serial Number And Vendor Name",,T02.P0AA8,OP3 Transceiver Vendor Name,,,ro,string,16,,,
+"Settings,LAN Connectivity,Optical Module Serial Number And Vendor Name",,T02.P0A99,OP4 Transceiver Serial Number,,,ro,string,16,,,
+"Settings,LAN Connectivity,Optical Module Serial Number And Vendor Name",,T02.P0AA9,OP4 Transceiver Vendor Name,,,ro,string,16,,,
+"Settings,LAN Connectivity,Optical Module Serial Number And Vendor Name",,T02.P0A9A,OP5 Transceiver Serial Number,,,ro,string,16,,,
+"Settings,LAN Connectivity,Optical Module Serial Number And Vendor Name",,T02.P0AAA,OP5 Transceiver Vendor Name,,,ro,string,16,,,
+"Settings,LAN Connectivity,Optical Module Serial Number And Vendor Name",,T02.P0A9B,OP6 Transceiver Serial Number,,,ro,string,16,,,
+"Settings,LAN Connectivity,Optical Module Serial Number And Vendor Name",,T02.P0AAB,OP6 Transceiver Vendor Name,,,ro,string,16,,,
+"Settings,LAN Connectivity,Optical Module Serial Number And Vendor Name",,T02.P0A9C,OP7 Transceiver Serial Number,,,ro,string,16,,,
+"Settings,LAN Connectivity,Optical Module Serial Number And Vendor Name",,T02.P0AAC,OP7 Transceiver Vendor Name,,,ro,string,16,,,
+"Settings,LAN Connectivity,Optical Module Serial Number And Vendor Name",,T02.P0A9D,OP8 Transceiver Serial Number,,,ro,string,16,,,
+"Settings,LAN Connectivity,Optical Module Serial Number And Vendor Name",,T02.P0AAD,OP8 Transceiver Vendor Name,,,ro,string,16,,,
+"Settings,LAN Connectivity,Optical Module Serial Number And Vendor Name",,T02.P0A8F,OP9 Transceiver Serial Number,,,ro,string,16,,,
+"Settings,LAN Connectivity,Optical Module Serial Number And Vendor Name",,T02.P0AAE,OP9 Transceiver Vendor Name,,,ro,string,16,,,
+"Settings,LAN Connectivity,Optical Module Serial Number And Vendor Name",,T02.P0A90,OP10 Transceiver Serial Number,,,ro,string,16,,,
+"Settings,LAN Connectivity,Optical Module Serial Number And Vendor Name",,T02.P0AAF,OP10 Transceiver Vendor Name,,,ro,string,16,,,
+"Settings,LAN Connectivity,Optical Module Serial Number And Vendor Name",,T02.P0AA0,OP11 Transceiver Serial Number,,,ro,string,16,,,
+"Settings,LAN Connectivity,Optical Module Serial Number And Vendor Name",,T02.P0AB0,OP11 Transceiver Vendor Name,,,ro,string,16,,,
+"Settings,LAN Connectivity,Optical Module Serial Number And Vendor Name",,T02.P0AA1,OP12 Transceiver Serial Number,,,ro,string,16,,,
+"Settings,LAN Connectivity,Optical Module Serial Number And Vendor Name",,T02.P0AB1,OP12 Transceiver Vendor Name,,,ro,string,16,,,
+"Settings,LAN Connectivity,Optical Module Serial Number And Vendor Name",,T02.P0AA2,OP13 Transceiver Serial Number,,,ro,string,16,,,
+"Settings,LAN Connectivity,Optical Module Serial Number And Vendor Name",,T02.P0AB2,OP13 Transceiver Vendor Name,,,ro,string,16,,,
+"Settings,LAN Connectivity,Optical Module Serial Number And Vendor Name",,T02.P0AA3,OP14 Transceiver Serial Number,,,ro,string,16,,,
+"Settings,LAN Connectivity,Optical Module Serial Number And Vendor Name",,T02.P0AB3,OP14 Transceiver Vendor Name,,,ro,string,16,,,
+"Settings,LAN Connectivity,Optical Module Serial Number And Vendor Name",,T02.P0A9E,OP Slave Transceiver Serial Number,,,ro,string,16,,,
+"Settings,LAN Connectivity,Optical Module Serial Number And Vendor Name",,T02.P0A01,OP Slave Transceiver Vendor Name,,,ro,string,16,,,
+"Settings,LAN Connectivity,Optical Module Serial Number And Vendor Name",,T02.P0A9F,OP Master Transceiver Serial Number,,,ro,string,16,,,
+"Settings,LAN Connectivity,Optical Module Serial Number And Vendor Name",,T02.P0A04,OP Master Transceiver Vendor Name,,,ro,string,16,,,
+"Settings,LAN Connectivity,Optical Module Tx Power And Rx Power",,T02.P0A40,OP1 Transceiver Tx Power,dBm,,ro,int16,2,100,,
+"Settings,LAN Connectivity,Optical Module Tx Power And Rx Power",,T02.P0A50,OP1 Transceiver Rx Power,dBm,,ro,int16,2,100,,
+"Settings,LAN Connectivity,Optical Module Tx Power And Rx Power",,T02.P0A41,OP2 Transceiver Tx Power,dBm,,ro,int16,2,100,,
+"Settings,LAN Connectivity,Optical Module Tx Power And Rx Power",,T02.P0A51,OP2 Transceiver Rx Power,dBm,,ro,int16,2,100,,
+"Settings,LAN Connectivity,Optical Module Tx Power And Rx Power",,T02.P0A42,OP3 Transceiver Tx Power,dBm,,ro,int16,2,100,,
+"Settings,LAN Connectivity,Optical Module Tx Power And Rx Power",,T02.P0A52,OP3 Transceiver Rx Power,dBm,,ro,int16,2,100,,
+"Settings,LAN Connectivity,Optical Module Tx Power And Rx Power",,T02.P0A43,OP4 Transceiver Tx Power,dBm,,ro,int16,2,100,,
+"Settings,LAN Connectivity,Optical Module Tx Power And Rx Power",,T02.P0A53,OP4 Transceiver Rx Power,dBm,,ro,int16,2,100,,
+"Settings,LAN Connectivity,Optical Module Tx Power And Rx Power",,T02.P0A44,OP5 Transceiver Tx Power,dBm,,ro,int16,2,100,,
+"Settings,LAN Connectivity,Optical Module Tx Power And Rx Power",,T02.P0A54,OP5 Transceiver Rx Power,dBm,,ro,int16,2,100,,
+"Settings,LAN Connectivity,Optical Module Tx Power And Rx Power",,T02.P0A45,OP6 Transceiver Tx Power,dBm,,ro,int16,2,100,,
+"Settings,LAN Connectivity,Optical Module Tx Power And Rx Power",,T02.P0A55,OP6 Transceiver Rx Power,dBm,,ro,int16,2,100,,
+"Settings,LAN Connectivity,Optical Module Tx Power And Rx Power",,T02.P0A46,OP7 Transceiver Tx Power,dBm,,ro,int16,2,100,,
+"Settings,LAN Connectivity,Optical Module Tx Power And Rx Power",,T02.P0A56,OP7 Transceiver Rx Power,dBm,,ro,int16,2,100,,
+"Settings,LAN Connectivity,Optical Module Tx Power And Rx Power",,T02.P0A47,OP8 Transceiver Tx Power,dBm,,ro,int16,2,100,,
+"Settings,LAN Connectivity,Optical Module Tx Power And Rx Power",,T02.P0A57,OP8 Transceiver Rx Power,dBm,,ro,int16,2,100,,
+"Settings,LAN Connectivity,Optical Module Tx Power And Rx Power",,T02.P0A48,OP9 Transceiver Tx Power,dBm,,ro,int16,2,100,,
+"Settings,LAN Connectivity,Optical Module Tx Power And Rx Power",,T02.P0A58,OP9 Transceiver Rx Power,dBm,,ro,int16,2,100,,
+"Settings,LAN Connectivity,Optical Module Tx Power And Rx Power",,T02.P0A49,OP10 Transceiver Tx Power,dBm,,ro,int16,2,100,,
+"Settings,LAN Connectivity,Optical Module Tx Power And Rx Power",,T02.P0A59,OP10 Transceiver Rx Power,dBm,,ro,int16,2,100,,
+"Settings,LAN Connectivity,Optical Module Tx Power And Rx Power",,T02.P0A4A,OP11 Transceiver Tx Power,dBm,,ro,int16,2,100,,
+"Settings,LAN Connectivity,Optical Module Tx Power And Rx Power",,T02.P0A5A,OP11 Transceiver Rx Power,dBm,,ro,int16,2,100,,
+"Settings,LAN Connectivity,Optical Module Tx Power And Rx Power",,T02.P0A4B,OP12 Transceiver Tx Power,dBm,,ro,int16,2,100,,
+"Settings,LAN Connectivity,Optical Module Tx Power And Rx Power",,T02.P0A5B,OP12 Transceiver Rx Power,dBm,,ro,int16,2,100,,
+"Settings,LAN Connectivity,Optical Module Tx Power And Rx Power",,T02.P0A4C,OP13 Transceiver Tx Power,dBm,,ro,int16,2,100,,
+"Settings,LAN Connectivity,Optical Module Tx Power And Rx Power",,T02.P0A5C,OP13 Transceiver Rx Power,dBm,,ro,int16,2,100,,
+"Settings,LAN Connectivity,Optical Module Tx Power And Rx Power",,T02.P0A4D,OP14 Transceiver Tx Power,dBm,,ro,int16,2,100,,
+"Settings,LAN Connectivity,Optical Module Tx Power And Rx Power",,T02.P0A5D,OP14 Transceiver Rx Power,dBm,,ro,int16,2,100,,
+"Settings,LAN Connectivity,Optical Module Tx Power And Rx Power",,T02.P0A02,OP Slave Transceiver Tx Power,dBm,,ro,int16,2,100,,
+"Settings,LAN Connectivity,Optical Module Tx Power And Rx Power",,T02.P0A03,OP Slave Transceiver Rx Power,dBm,,ro,int16,2,100,,
+"Settings,LAN Connectivity,Optical Module Tx Power And Rx Power",,T02.P0A05,OP Master Transceiver Tx Power,dBm,,ro,int16,2,100,,
+"Settings,LAN Connectivity,Optical Module Tx Power And Rx Power",,T02.P0A06,OP Master Transceiver Rx Power,dBm,,ro,int16,2,100,,
+"Settings,LAN Connectivity,Date And Time",,T02.P0150,System Date And Time,,,rw,datetime,7,,,
+"Alarms,Element Alarms,Alarm",,T02.P0301,Power Interruption Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Alarms,Element Alarms,Alarm",,T02.P0201,Power Interruption Alarm,,,rw,binary,1,,,00=Disable;02=Warning;03=Minor;04=Major;05=Critical
+"Alarms,Element Alarms,Alarm",,T02.P0306,Over Temperature Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Alarms,Element Alarms,Alarm",,T02.P0206,Over Temperature Alarm,,,rw,binary,1,,,00=Disable;02=Warning;03=Minor;04=Major;05=Critical
+"Alarms,Element Alarms,Alarm",,T02.P037E,Optical Port Switch Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Alarms,Element Alarms,Alarm",,T02.P027E,Optical Port Switch Alarm,,,rw,binary,1,,,00=Disable;02=Warning;03=Minor;04=Major;05=Critical
+"Alarms,Element Alarms,Alarm",,T02.P03A0,OP1 Transceiver Failure Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Alarms,Element Alarms,Alarm",,T02.P02A0,OP1 Transceiver Failure Alarm,,,rw,binary,1,,,00=Disable;02=Warning;03=Minor;04=Major;05=Critical
+"Alarms,Element Alarms,Alarm",,T02.P03A1,OP2 Transceiver Failure Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Alarms,Element Alarms,Alarm",,T02.P02A1,OP2 Transceiver Failure Alarm,,,rw,binary,1,,,00=Disable;02=Warning;03=Minor;04=Major;05=Critical
+"Alarms,Element Alarms,Alarm",,T02.P03A2,OP3 Transceiver Failure Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Alarms,Element Alarms,Alarm",,T02.P02A2,OP3 Transceiver Failure Alarm,,,rw,binary,1,,,00=Disable;02=Warning;03=Minor;04=Major;05=Critical
+"Alarms,Element Alarms,Alarm",,T02.P03A3,OP4 Transceiver Failure Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Alarms,Element Alarms,Alarm",,T02.P02A3,OP4 Transceiver Failure Alarm,,,rw,binary,1,,,00=Disable;02=Warning;03=Minor;04=Major;05=Critical
+"Alarms,Element Alarms,Alarm",,T02.P03A6,OP5 Transceiver Failure Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Alarms,Element Alarms,Alarm",,T02.P02A6,OP5 Transceiver Failure Alarm,,,rw,binary,1,,,00=Disable;02=Warning;03=Minor;04=Major;05=Critical
+"Alarms,Element Alarms,Alarm",,T02.P03A7,OP6 Transceiver Failure Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Alarms,Element Alarms,Alarm",,T02.P02A7,OP6 Transceiver Failure Alarm,,,rw,binary,1,,,00=Disable;02=Warning;03=Minor;04=Major;05=Critical
+"Alarms,Element Alarms,Alarm",,T02.P03A4,OP7 Transceiver Failure Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Alarms,Element Alarms,Alarm",,T02.P02A4,OP7 Transceiver Failure Alarm,,,rw,binary,1,,,00=Disable;02=Warning;03=Minor;04=Major;05=Critical
+"Alarms,Element Alarms,Alarm",,T02.P03A5,OP8 Transceiver Failure Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Alarms,Element Alarms,Alarm",,T02.P02A5,OP8 Transceiver Failure Alarm,,,rw,binary,1,,,00=Disable;02=Warning;03=Minor;04=Major;05=Critical
+"Alarms,Element Alarms,Alarm",,T02.P03DF,OP9 Transceiver Failure Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Alarms,Element Alarms,Alarm",,T02.P02DF,OP9 Transceiver Failure Alarm,,,rw,binary,1,,,00=Disable;02=Warning;03=Minor;04=Major;05=Critical
+"Alarms,Element Alarms,Alarm",,T02.P03E0,OP10 Transceiver Failure Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Alarms,Element Alarms,Alarm",,T02.P02E0,OP10 Transceiver Failure Alarm,,,rw,binary,1,,,00=Disable;02=Warning;03=Minor;04=Major;05=Critical
+"Alarms,Element Alarms,Alarm",,T02.P03E1,OP11 Transceiver Failure Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Alarms,Element Alarms,Alarm",,T02.P02E1,OP11 Transceiver Failure Alarm,,,rw,binary,1,,,00=Disable;02=Warning;03=Minor;04=Major;05=Critical
+"Alarms,Element Alarms,Alarm",,T02.P03E2,OP12 Transceiver Failure Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Alarms,Element Alarms,Alarm",,T02.P02E2,OP12 Transceiver Failure Alarm,,,rw,binary,1,,,00=Disable;02=Warning;03=Minor;04=Major;05=Critical
+"Alarms,Element Alarms,Alarm",,T02.P03E3,OP13 Transceiver Failure Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Alarms,Element Alarms,Alarm",,T02.P02E3,OP13 Transceiver Failure Alarm,,,rw,binary,1,,,00=Disable;02=Warning;03=Minor;04=Major;05=Critical
+"Alarms,Element Alarms,Alarm",,T02.P03E4,OP14 Transceiver Failure Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Alarms,Element Alarms,Alarm",,T02.P02E4,OP14 Transceiver Failure Alarm,,,rw,binary,1,,,00=Disable;02=Warning;03=Minor;04=Major;05=Critical
+"Alarms,Element Alarms,Alarm",,T02.P03A8,OP Slave Transceiver Failure Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Alarms,Element Alarms,Alarm",,T02.P02A8,OP Slave Transceiver Failure Alarm,,,rw,binary,1,,,00=Disable;02=Warning;03=Minor;04=Major;05=Critical
+"Alarms,Element Alarms,Alarm",,T02.P03A9,OP Master Transceiver Failure Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Alarms,Element Alarms,Alarm",,T02.P02A9,OP Master Transceiver Failure Alarm,,,rw,binary,1,,,00=Disable;02=Warning;03=Minor;04=Major;05=Critical
+"Alarms,Element Alarms,Alarm",,T02.P0320,External Input 1 Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Alarms,Element Alarms,Alarm",,T02.P0220,External Input 1 Alarm,,,rw,binary,1,,,00=Disable;02=Warning;03=Minor;04=Major;05=Critical
+"Alarms,Element Alarms,Alarm",,T02.P0321,External Input 2 Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Alarms,Element Alarms,Alarm",,T02.P0221,External Input 2 Alarm,,,rw,binary,1,,,00=Disable;02=Warning;03=Minor;04=Major;05=Critical
+"Alarms,Element Alarms,Alarm",,T02.P0322,External Input 3 Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Alarms,Element Alarms,Alarm",,T02.P0222,External Input 3 Alarm,,,rw,binary,1,,,00=Disable;02=Warning;03=Minor;04=Major;05=Critical
+"Alarms,Element Alarms,Alarm",,T02.P0323,External Input 4 Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Alarms,Element Alarms,Alarm",,T02.P0223,External Input 4 Alarm,,,rw,binary,1,,,00=Disable;02=Warning;03=Minor;04=Major;05=Critical
+"Alarms,Element Alarms,Alarm",,T02.P030F,Optical Link Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Alarms,Element Alarms,Alarm",,T02.P020F,Optical Link Alarm,,,rw,binary,1,,,00=Disable;02=Warning;03=Minor;04=Major;05=Critical
+"Alarms,Alarm Thresholds,Alarm Thresholds",,T02.P0451,Over Temperature Threshold,℃,,rw,int8,1,,,
+"Alarms,Alarm Thresholds,External Alarms",,T02.P0480,External Input 1 Alarm Mode Select,,,rw,binary,1,,,00=Normally closed;01=Normally open
+"Alarms,Alarm Thresholds,External Alarms",,T02.P0481,External Input 2 Alarm Mode Select,,,rw,binary,1,,,00=Normally closed;01=Normally open
+"Alarms,Alarm Thresholds,External Alarms",,T02.P0482,External Input 3 Alarm Mode Select,,,rw,binary,1,,,00=Normally closed;01=Normally open
+"Alarms,Alarm Thresholds,External Alarms",,T02.P0483,External Input 4 Alarm Mode Select,,,rw,binary,1,,,00=Normally closed;01=Normally open
+"Alarms,Alarm Thresholds,External Alarms",,T02.P0484,External Input 1 Alarm Label,,,rw,string,20,,,
+"Alarms,Alarm Thresholds,External Alarms",,T02.P0485,External Input 2 Alarm Label,,,rw,string,20,,,
+"Alarms,Alarm Thresholds,External Alarms",,T02.P0486,External Input 3 Alarm Label,,,rw,string,20,,,
+"Alarms,Alarm Thresholds,External Alarms",,T02.P0487,External Input 4 Alarm Label,,,rw,string,20,,,
+"Alarms,Alarm Thresholds,External Alarms",,T02.P0A91,External Output Alarm(Warning) Mode Select,,,rw,binary,1,,,00=Normally closed;01=Normally open
+"Alarms,Alarm Thresholds,External Alarms",,T02.P0A92,External Output Alarm(Minor) Mode Select,,,rw,binary,1,,,00=Normally closed;01=Normally open
+"Alarms,Alarm Thresholds,External Alarms",,T02.P0A93,External Output Alarm(Major) Mode Select,,,rw,binary,1,,,00=Normally closed;01=Normally open
+"Alarms,Alarm Thresholds,External Alarms",,T02.P0A94,External Output Alarm(Critical) Mode Select,,,rw,binary,1,,,00=Normally closed;01=Normally open
+"Alarms,Alarm Thresholds,External Alarms",,T02.P0A2C,External Output Alarm(Warning),,,ro,binary,1,,,00=Normal;01=Alarm
+"Alarms,Alarm Thresholds,External Alarms",,T02.P0A2D,External Output Alarm(Minor),,,ro,binary,1,,,00=Normal;01=Alarm
+"Alarms,Alarm Thresholds,External Alarms",,T02.P0A2E,External Output Alarm(Major),,,ro,binary,1,,,00=Normal;01=Alarm
+"Alarms,Alarm Thresholds,External Alarms",,T02.P0A2F,External Output Alarm(Critical),,,ro,binary,1,,,00=Normal;01=Alarm
+"Maintenance,Optical Info,Optical Module Info",,TB4.P0A8A,OP1 Transceiver Optical Module,,,ro,object,13,,,
+"Maintenance,Optical Info,Optical Module Info",,TB4.P0A8B,OP2 Transceiver Optical Module,,,ro,object,13,,,
+"Maintenance,Optical Info,Optical Module Info",,TB4.P0A8C,OP3 Transceiver Optical Module,,,ro,object,13,,,
+"Maintenance,Optical Info,Optical Module Info",,TB4.P0A8D,OP4 Transceiver Optical Module,,,ro,object,13,,,
+"Maintenance,Optical Info,Optical Module Info",,TB4.P0A8E,OP5 Transceiver Optical Module,,,ro,object,13,,,
+"Maintenance,Optical Info,Optical Module Info",,TB4.P0A8F,OP6 Transceiver Optical Module,,,ro,object,13,,,
+"Maintenance,Optical Info,Optical Module Info",,TB4.P0A90,OP7 Transceiver Optical Module,,,ro,object,13,,,
+"Maintenance,Optical Info,Optical Module Info",,TB4.P0A91,OP8 Transceiver Optical Module,,,ro,object,13,,,
+"Maintenance,Optical Info,Optical Module Info",,TB4.P0A92,OP9 Transceiver Optical Module,,,ro,object,13,,,
+"Maintenance,Optical Info,Optical Module Info",,TB4.P0A93,OP10 Transceiver Optical Module,,,ro,object,13,,,
+"Maintenance,Optical Info,Optical Module Info",,TB4.P0A94,OP11 Transceiver Optical Module,,,ro,object,13,,,
+"Maintenance,Optical Info,Optical Module Info",,TB4.P0A95,OP12 Transceiver Optical Module,,,ro,object,13,,,
+"Maintenance,Optical Info,Optical Module Info",,TB4.P0A96,OP13 Transceiver Optical Module,,,ro,object,13,,,
+"Maintenance,Optical Info,Optical Module Info",,TB4.P0A97,OP14 Transceiver Optical Module,,,ro,object,13,,,
+"Maintenance,Optical Info,Optical Module Info",,TB4.P0A98,Port Slave Optical Module,,,ro,object,13,,,
+"Maintenance,Optical Info,Optical Module Info",,TB4.P0A99,Port Master Optical Module,,,ro,object,13,,,
+"Maintenance,Engineering,Engineering Info",,TB4.P0B02,Data Update Time,,,ro,datetime,7,,,
+"Maintenance,Engineering,Engineering Info",,TB4.P0B05,ARM CRC,,,ro,binary,2,,,
+"Maintenance,Engineering,Engineering Info",,TB4.P0B8C,FPGA CRC,,,ro,binary,2,,,
+"Maintenance,Engineering,Engineering Info",,TB4.P0B27,E2 CRC,,,ro,binary,2,,,
+"Maintenance,Engineering,Engineering Info",,TB4.P0B7F,Configuration CRC,,,ro,binary,2,,,
+"Maintenance,Engineering,OP Info",,TB4.P0B50,Sync Loss Counter Reset,,,wo,binary,1,,,00=Reset
+"Maintenance,Engineering,OP Info",,TB4.P0B40,OP1 Transceiver CPRI Loss Sync Counter,,,ro,uint8,1,,,
+"Maintenance,Engineering,OP Info",,TB4.P0B41,OP2 Transceiver CPRI Loss Sync Counter,,,ro,uint8,1,,,
+"Maintenance,Engineering,OP Info",,TB4.P0B42,OP3 Transceiver CPRI Loss Sync Counter,,,ro,uint8,1,,,
+"Maintenance,Engineering,OP Info",,TB4.P0B43,OP4 Transceiver CPRI Loss Sync Counter,,,ro,uint8,1,,,
+"Maintenance,Engineering,OP Info",,TB4.P0B44,OP5 Transceiver CPRI Loss Sync Counter,,,ro,uint8,1,,,
+"Maintenance,Engineering,OP Info",,TB4.P0B45,OP6 Transceiver CPRI Loss Sync Counter,,,ro,uint8,1,,,
+"Maintenance,Engineering,OP Info",,TB4.P0B46,OP7 Transceiver CPRI Loss Sync Counter,,,ro,uint8,1,,,
+"Maintenance,Engineering,OP Info",,TB4.P0B47,OP8 Transceiver CPRI Loss Sync Counter,,,ro,uint8,1,,,
+"Maintenance,Engineering,OP Info",,TB4.P0B48,OP9 Transceiver CPRI Loss Sync Counter,,,ro,uint8,1,,,
+"Maintenance,Engineering,OP Info",,TB4.P0B49,OP10 Transceiver CPRI Loss Sync Counter,,,ro,uint8,1,,,
+"Maintenance,Engineering,OP Info",,TB4.P0B4A,OP11 Transceiver CPRI Loss Sync Counter,,,ro,uint8,1,,,
+"Maintenance,Engineering,OP Info",,TB4.P0B4B,OP12 Transceiver CPRI Loss Sync Counter,,,ro,uint8,1,,,
+"Maintenance,Engineering,OP Info",,TB4.P0B4C,OP13 Transceiver CPRI Loss Sync Counter,,,ro,uint8,1,,,
+"Maintenance,Engineering,OP Info",,TB4.P0B4D,OP14 Transceiver CPRI Loss Sync Counter,,,ro,uint8,1,,,
+"Maintenance,Engineering,OP Info",,TB4.P0B4E,OP Slave Transceiver CPRI Loss Sync Counter,,,ro,uint8,1,,,
+"Maintenance,Engineering,OP Info",,TB4.P0B4F,OP Master Transceiver CPRI Loss Sync Counter,,,ro,uint8,1,,,
+"Maintenance,Engineering,OP Info",,TB4.P0B69,OP1 Transceiver CPRI Sync Alarm,,,ro,binary,1,,,00=Sync;01=Unsync
+"Maintenance,Engineering,OP Info",,TB4.P0B6A,OP2 Transceiver CPRI Sync Alarm,,,ro,binary,1,,,00=Sync;01=Unsync
+"Maintenance,Engineering,OP Info",,TB4.P0B6B,OP3 Transceiver CPRI Sync Alarm,,,ro,binary,1,,,00=Sync;01=Unsync
+"Maintenance,Engineering,OP Info",,TB4.P0B6C,OP4 Transceiver CPRI Sync Alarm,,,ro,binary,1,,,00=Sync;01=Unsync
+"Maintenance,Engineering,OP Info",,TB4.P0B6D,OP5 Transceiver CPRI Sync Alarm,,,ro,binary,1,,,00=Sync;01=Unsync
+"Maintenance,Engineering,OP Info",,TB4.P0B6E,OP6 Transceiver CPRI Sync Alarm,,,ro,binary,1,,,00=Sync;01=Unsync
+"Maintenance,Engineering,OP Info",,TB4.P0B6F,OP7 Transceiver CPRI Sync Alarm,,,ro,binary,1,,,00=Sync;01=Unsync
+"Maintenance,Engineering,OP Info",,TB4.P0B70,OP8 Transceiver CPRI Sync Alarm,,,ro,binary,1,,,00=Sync;01=Unsync
+"Maintenance,Engineering,OP Info",,TB4.P0BA2,OP9 Transceiver CPRI Sync Alarm,,,ro,binary,1,,,00=Sync;01=Unsync
+"Maintenance,Engineering,OP Info",,TB4.P0BA3,OP10 Transceiver CPRI Sync Alarm,,,ro,binary,1,,,00=Sync;01=Unsync
+"Maintenance,Engineering,OP Info",,TB4.P0BA4,OP11 Transceiver CPRI Sync Alarm,,,ro,binary,1,,,00=Sync;01=Unsync
+"Maintenance,Engineering,OP Info",,TB4.P0BA5,OP12 Transceiver CPRI Sync Alarm,,,ro,binary,1,,,00=Sync;01=Unsync
+"Maintenance,Engineering,OP Info",,TB4.P0BA6,OP13 Transceiver CPRI Sync Alarm,,,ro,binary,1,,,00=Sync;01=Unsync
+"Maintenance,Engineering,OP Info",,TB4.P0BA7,OP14 Transceiver CPRI Sync Alarm,,,ro,binary,1,,,00=Sync;01=Unsync
+"Maintenance,Engineering,OP Info",,TB4.P0BA8,OP Slave Transceiver CPRI Sync Alarm,,,ro,binary,1,,,00=Sync;01=Unsync
+"Maintenance,Engineering,OP Info",,TB4.P0BA9,OP Master Transceiver CPRI Sync Alarm,,,ro,binary,1,,,00=Sync;01=Unsync
+"Maintenance,Engineering,OP Info",,TB4.P0B71,OP1 Transceiver LOS Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Maintenance,Engineering,OP Info",,TB4.P0B72,OP2 Transceiver LOS Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Maintenance,Engineering,OP Info",,TB4.P0B73,OP3 Transceiver LOS Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Maintenance,Engineering,OP Info",,TB4.P0B74,OP4 Transceiver LOS Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Maintenance,Engineering,OP Info",,TB4.P0B76,OP5 Transceiver LOS Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Maintenance,Engineering,OP Info",,TB4.P0B77,OP6 Transceiver LOS Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Maintenance,Engineering,OP Info",,TB4.P0BAA,OP7 Transceiver LOS Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Maintenance,Engineering,OP Info",,TB4.P0BAB,OP8 Transceiver LOS Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Maintenance,Engineering,OP Info",,TB4.P0BAC,OP9 Transceiver LOS Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Maintenance,Engineering,OP Info",,TB4.P0BAD,OP10 Transceiver LOS Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Maintenance,Engineering,OP Info",,TB4.P0BAE,OP11 Transceiver LOS Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Maintenance,Engineering,OP Info",,TB4.P0BAF,OP12 Transceiver LOS Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Maintenance,Engineering,OP Info",,TB4.P0BB0,OP13 Transceiver LOS Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Maintenance,Engineering,OP Info",,TB4.P0BB1,OP14 Transceiver LOS Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Maintenance,Engineering,OP Info",,TB4.P0BB2,OP Slave Transceiver LOS Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Maintenance,Engineering,OP Info",,TB4.P0BB3,OP Master Transceiver LOS Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Maintenance,Engineering,Advanced Command",,TB4.P0BA1,Hardware Reset,,,wo,binary,1,,,00=Reset
+"Maintenance,Engineering,Advanced Command",,TB4.P0B01,Firmware Reset,,,wo,binary,1,,,00=Reset
+"Maintenance,Engineering,Advanced Command",,TB4.P0B09,Alarm Initialization,,,wo,binary,1,,,04=Report Fault Correcting;FF=Initialization
+"Maintenance,Engineering,Advanced Command",,TB4.P0B92,Alarm Mode Select,,,rw,binary,1,,,00=Normal Mode 3min;01=Test Mode 1min
+"Maintenance,Factory Command,Factory Parameters",,TB0.P0AFF,Factory Mode,,,rw,binary,9,,,5A=Factory Pattern;A5=Quit
+"Maintenance,Factory Command,Factory Parameters",,TB0.P0AEF,Factory Mode Password,,,wo,string,20,,,
+"Digital Module,Address Interface,",,TB2.P0CCC,Address Interface,,,rw,object,8,,,
+"Digital Module,Registers,LMK04808",,TB2.P0801,Register 0-3,,,rw,binary,16,,,
+"Digital Module,Registers,LMK04808",,TB2.P0802,Register 4-7,,,rw,binary,16,,,
+"Digital Module,Registers,LMK04808",,TB2.P0803,Register 8-12,,,rw,binary,20,,,
+"Digital Module,Registers,LMK04808",,TB2.P0804,Register 13-16,,,rw,binary,16,,,
+"Digital Module,Registers,LMK04808",,TB2.P0805,Register 24-27,,,rw,binary,16,,,
+"Digital Module,Registers,LMK04808",,TB2.P0806,Register 28-31,,,rw,binary,16,,,
+"Digital Module,Debug Parameters,Basic Parameters",,TB2-DEBUG.P0800,Clock Reference Source,,,rw,binary,1,,,00=Reference source 30.72M;01=Reference source 10M;02=Reference source 307.2M;03=Reference source 61.44M
+"Digital Module,Debug Parameters,Basic Parameters",,TB2-DEBUG.P0200,RST,,,rw,binary,1,,,
+"Digital Module,Debug Parameters,Basic Parameters",,TB2-DEBUG.P0303,Clock Lock,,,ro,binary,1,,,00=Unlock;01=Lock
+"Digital Module,Debug Parameters,Basic Parameters",,TB2-DEBUG.P0220,Master MAC Address,,,ro,binary,6,,,
+"Digital Module,Debug Parameters,Basic Parameters",,TB2-DEBUG.P0221,IP Address,,,ro,binary,4,,,
+"Digital Module,Debug Parameters,Basic Parameters",,TB2-DEBUG.P0812,Digital Plate Temperature,,,ro,int8,1,,,
+"Digital Module,Debug Parameters,Basic Parameters",,TB2-DEBUG.P0A1C,Digital Board SN,,,rw,string,40,,,
+"Digital Module,MCU Parameter,Device Information",,TB2-MCU.P0AF0,Vendor,,,rw,string,20,,,
+"Digital Module,MCU Parameter,Device Information",,TB2-MCU.P0AF2,Element Product Model,,,rw,string,20,,,
+"Digital Module,MCU Parameter,Device Information",,TB2-MCU.P0AF3,Element Serial Number,,,rw,string,20,,,
+"Digital Module,MCU Parameter,Device Information",,TB2-MCU.P0BBD,The FPGA Debugging Mode Switch,,,rw,binary,1,,,00=Off;01=On
+"Digital Module,MCU Parameter,Device Information",,TB2-MCU.P0AD0,Filesystem Edition,,,ro,string,10,,,

@@ -1,0 +1,32 @@
+[
+  {
+      "SiteName": "0232",
+      "DeviceTypeName": "PrimaryA3",
+      "DeviceName": "13333",
+      "DeviceSubID": "0",
+      "DeviceID": "00000003",
+      "SerialNumber": "test@ESN",
+      "Route": "0.0.0.0",
+      "SoftwareVersion": "0.12",
+      "Location": "0",
+      "AlarmName": "Alarms-External Input Alarm 1",
+      "EventTime": 946697213,
+      "AlarmStatus": "Generation",
+      "AlarmSeverity": "Warning"
+  },
+  {
+      "SiteName": "0232",
+      "DeviceTypeName": "PrimaryA3",
+      "DeviceName": "13333",
+      "DeviceSubID": "0",
+      "DeviceID": "00000003",
+      "SerialNumber": "test@ESN",
+      "Route": "0.0.0.0",
+      "SoftwareVersion": "0.12",
+      "Location": "0",
+      "AlarmName": "Alarms-External Input Alarm 1",
+      "EventTime": 946697224,
+      "AlarmStatus": "AlarmEn-Closed-Restoration",
+      "AlarmSeverity": "AlarmEn-Closed"
+  }
+]

@@ -1,0 +1,7158 @@
+[
+  {
+    "PrivOid": "T02.P04A0",
+    "Name": "Radio Module 1 RF Signal Active",
+    "Groups": [
+      "Settings,Band Configuration,Radio Module 1"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "switch",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Off",
+      "01": "On"
+    }
+  },
+  {
+    "PrivOid": "T02.P0D29",
+    "Name": "Radio Module 1 UL Frequency Start",
+    "Groups": [
+      "Settings,Band Configuration,Radio Module 1"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "MHz",
+    "Access": "ro",
+    "DataType": "uint32",
+    "InputType": "default",
+    "ByteSize": 4,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "T02.P0D28",
+    "Name": "Radio Module 1 UL Frequency End",
+    "Groups": [
+      "Settings,Band Configuration,Radio Module 1"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "MHz",
+    "Access": "ro",
+    "DataType": "uint32",
+    "InputType": "default",
+    "ByteSize": 4,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "T02.P0D27",
+    "Name": "Radio Module 1 DL Frequency Start",
+    "Groups": [
+      "Settings,Band Configuration,Radio Module 1"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "MHz",
+    "Access": "ro",
+    "DataType": "uint32",
+    "InputType": "default",
+    "ByteSize": 4,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "T02.P0D26",
+    "Name": "Radio Module 1 DL Frequency End",
+    "Groups": [
+      "Settings,Band Configuration,Radio Module 1"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "MHz",
+    "Access": "ro",
+    "DataType": "uint32",
+    "InputType": "default",
+    "ByteSize": 4,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "T02.P04D2",
+    "Name": "Radio Module 1 UL Attenuation",
+    "Groups": [
+      "Settings,Band Configuration,Radio Module 1"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dB",
+    "Access": "rw",
+    "DataType": "uint8",
+    "InputType": "number",
+    "ByteSize": 1,
+    "Ratio": 2,
+    "Max": 40,
+    "Min": 0
+  },
+  {
+    "PrivOid": "T02.P04D3",
+    "Name": "Radio Module 1 DL Attenuation",
+    "Groups": [
+      "Settings,Band Configuration,Radio Module 1"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dB",
+    "Access": "rw",
+    "DataType": "uint8",
+    "InputType": "number",
+    "ByteSize": 1,
+    "Ratio": 2,
+    "Max": 40,
+    "Min": 0
+  },
+  {
+    "PrivOid": "T02.P04A1",
+    "Name": "Radio Module 2 RF Signal Active",
+    "Groups": [
+      "Settings,Band Configuration,Radio Module 2"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "switch",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Off",
+      "01": "On"
+    }
+  },
+  {
+    "PrivOid": "T02.P0D49",
+    "Name": "Radio Module 2 UL Frequency Start",
+    "Groups": [
+      "Settings,Band Configuration,Radio Module 2"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "MHz",
+    "Access": "ro",
+    "DataType": "uint32",
+    "InputType": "default",
+    "ByteSize": 4,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "T02.P0D48",
+    "Name": "Radio Module 2 UL Frequency End",
+    "Groups": [
+      "Settings,Band Configuration,Radio Module 2"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "MHz",
+    "Access": "ro",
+    "DataType": "uint32",
+    "InputType": "default",
+    "ByteSize": 4,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "T02.P0D47",
+    "Name": "Radio Module 2 DL Frequency Start",
+    "Groups": [
+      "Settings,Band Configuration,Radio Module 2"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "MHz",
+    "Access": "ro",
+    "DataType": "uint32",
+    "InputType": "default",
+    "ByteSize": 4,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "T02.P0D46",
+    "Name": "Radio Module 2 DL Frequency End",
+    "Groups": [
+      "Settings,Band Configuration,Radio Module 2"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "MHz",
+    "Access": "ro",
+    "DataType": "uint32",
+    "InputType": "default",
+    "ByteSize": 4,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "T02.P04D4",
+    "Name": "Radio Module 2 UL Attenuation",
+    "Groups": [
+      "Settings,Band Configuration,Radio Module 2"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dB",
+    "Access": "rw",
+    "DataType": "uint8",
+    "InputType": "number",
+    "ByteSize": 1,
+    "Ratio": 2,
+    "Max": 40,
+    "Min": 0
+  },
+  {
+    "PrivOid": "T02.P04D5",
+    "Name": "Radio Module 2 DL Attenuation",
+    "Groups": [
+      "Settings,Band Configuration,Radio Module 2"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dB",
+    "Access": "rw",
+    "DataType": "uint8",
+    "InputType": "number",
+    "ByteSize": 1,
+    "Ratio": 2,
+    "Max": 40,
+    "Min": 0
+  },
+  {
+    "PrivOid": "T02.P0BB0",
+    "Name": "Module1 Mapping",
+    "Groups": [
+      "Settings,Band Configuration,Module Mapping (HP-RU AU)"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "default",
+    "ByteSize": 2
+  },
+  {
+    "PrivOid": "T02.P0BB1",
+    "Name": "Module2 Mapping",
+    "Groups": [
+      "Settings,Band Configuration,Module Mapping (HP-RU AU)"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "default",
+    "ByteSize": 2
+  },
+  {
+    "PrivOid": "T02.P0BEA",
+    "Name": "Delay Compensation Switch",
+    "Groups": [
+      "Settings,Band Configuration,Delay Compensation"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "switch",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Off",
+      "01": "On"
+    }
+  },
+  {
+    "PrivOid": "T02.P05D1",
+    "Name": "Radio Module 1 UL Centre Frequency",
+    "Groups": [
+      "Settings,Radio Signal Information,Radio Module 1"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "MHz",
+    "Access": "ro",
+    "DataType": "uint32",
+    "InputType": "default",
+    "ByteSize": 4,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "T02.P05D2",
+    "Name": "Radio Module 1 DL Centre Frequency",
+    "Groups": [
+      "Settings,Radio Signal Information,Radio Module 1"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "MHz",
+    "Access": "ro",
+    "DataType": "uint32",
+    "InputType": "default",
+    "ByteSize": 4,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "T02.P05D0",
+    "Name": "Radio Module 1 Digital Filter Bandwidth",
+    "Groups": [
+      "Settings,Radio Signal Information,Radio Module 1"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "MHz",
+    "Access": "ro",
+    "DataType": "uint32",
+    "InputType": "default",
+    "ByteSize": 4,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "T02.P0A31",
+    "Name": "Radio Module 1 UL Input Power",
+    "Groups": [
+      "Settings,Radio Signal Information,Radio Module 1"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 10,
+    "Max": -300,
+    "Min": -750
+  },
+  {
+    "PrivOid": "T02.P0578",
+    "Name": "Radio Module 1 DL Output Power",
+    "Groups": [
+      "Settings,Radio Signal Information,Radio Module 1"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 10,
+    "Max": 460,
+    "Min": 200
+  },
+  {
+    "PrivOid": "T02.P0514",
+    "Name": "Radio Module 1 VSWR",
+    "Groups": [
+      "Settings,Radio Signal Information,Radio Module 1"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 10,
+    "Max": 100,
+    "Min": 10
+  },
+  {
+    "PrivOid": "T02.P006F",
+    "Name": "Radio Module 1 Serial Number",
+    "Groups": [
+      "Settings,Radio Signal Information,Radio Module 1"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 20
+  },
+  {
+    "PrivOid": "T02.P05D4",
+    "Name": "Radio Module 2 UL Centre Frequency",
+    "Groups": [
+      "Settings,Radio Signal Information,Radio Module 2"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "MHz",
+    "Access": "ro",
+    "DataType": "uint32",
+    "InputType": "default",
+    "ByteSize": 4,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "T02.P05D5",
+    "Name": "Radio Module 2 DL Centre Frequency",
+    "Groups": [
+      "Settings,Radio Signal Information,Radio Module 2"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "MHz",
+    "Access": "ro",
+    "DataType": "uint32",
+    "InputType": "default",
+    "ByteSize": 4,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "T02.P05D3",
+    "Name": "Radio Module 2 Digital Filter Bandwidth",
+    "Groups": [
+      "Settings,Radio Signal Information,Radio Module 2"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "MHz",
+    "Access": "ro",
+    "DataType": "uint32",
+    "InputType": "default",
+    "ByteSize": 4,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "T02.P0A33",
+    "Name": "Radio Module 2 UL Input Power",
+    "Groups": [
+      "Settings,Radio Signal Information,Radio Module 2"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 10,
+    "Max": -300,
+    "Min": -750
+  },
+  {
+    "PrivOid": "T02.P0579",
+    "Name": "Radio Module 2 DL Output Power",
+    "Groups": [
+      "Settings,Radio Signal Information,Radio Module 2"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 10,
+    "Max": 430,
+    "Min": 200
+  },
+  {
+    "PrivOid": "T02.P051A",
+    "Name": "Radio Module 2 VSWR",
+    "Groups": [
+      "Settings,Radio Signal Information,Radio Module 2"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 10,
+    "Max": 100,
+    "Min": 10
+  },
+  {
+    "PrivOid": "T02.P0616",
+    "Name": "Radio Module 2 Serial Number",
+    "Groups": [
+      "Settings,Radio Signal Information,Radio Module 2"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 20
+  },
+  {
+    "PrivOid": "T02.P0501",
+    "Name": "Element Operating Temperature",
+    "Groups": [
+      "Settings,Radio Signal Information,General"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "℃",
+    "Access": "ro",
+    "DataType": "int8",
+    "InputType": "default",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "T02.P0881",
+    "Name": "Open Load Detect Switch",
+    "Groups": [
+      "Settings,Radio Signal Information,General"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "switch",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Off",
+      "01": "On"
+    }
+  },
+  {
+    "PrivOid": "T02.P0A30",
+    "Name": "Module1 UL Baseband Input Power",
+    "Groups": [
+      "Settings,Radio Signal Information,Uplink Baseband Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 10
+  },
+  {
+    "PrivOid": "T02.P0A32",
+    "Name": "Module2 UL Baseband Input Power",
+    "Groups": [
+      "Settings,Radio Signal Information,Uplink Baseband Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 10
+  },
+  {
+    "PrivOid": "T02.P0A38",
+    "Name": "Module1 DL Baseband Output Power",
+    "Groups": [
+      "Settings,Radio Signal Information,Downlink Baseband Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 10
+  },
+  {
+    "PrivOid": "T02.P0A39",
+    "Name": "Module2 DL Baseband Output Power",
+    "Groups": [
+      "Settings,Radio Signal Information,Downlink Baseband Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 10
+  },
+  {
+    "PrivOid": "T02.P0ED0",
+    "Name": "Port 1 UL Gain",
+    "Groups": [
+      "Settings,Theoretical Gain,Radio Module 1 Theoretical Gain "
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dB",
+    "Access": "ro",
+    "DataType": "int8",
+    "InputType": "default",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "T02.P0ED1",
+    "Name": "Port 2 UL Gain",
+    "Groups": [
+      "Settings,Theoretical Gain,Radio Module 1 Theoretical Gain "
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dB",
+    "Access": "ro",
+    "DataType": "int8",
+    "InputType": "default",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "T02.P0ED2",
+    "Name": "Port 3 UL Gain",
+    "Groups": [
+      "Settings,Theoretical Gain,Radio Module 1 Theoretical Gain "
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dB",
+    "Access": "ro",
+    "DataType": "int8",
+    "InputType": "default",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "T02.P0ED3",
+    "Name": "Port 4 UL Gain",
+    "Groups": [
+      "Settings,Theoretical Gain,Radio Module 1 Theoretical Gain "
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dB",
+    "Access": "ro",
+    "DataType": "int8",
+    "InputType": "default",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "T02.P0F00",
+    "Name": "Port 1 DL Gain",
+    "Groups": [
+      "Settings,Theoretical Gain,Radio Module 1 Theoretical Gain "
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dB",
+    "Access": "ro",
+    "DataType": "int8",
+    "InputType": "default",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "T02.P0F01",
+    "Name": "Port 2 DL Gain",
+    "Groups": [
+      "Settings,Theoretical Gain,Radio Module 1 Theoretical Gain "
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dB",
+    "Access": "ro",
+    "DataType": "int8",
+    "InputType": "default",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "T02.P0F02",
+    "Name": "Port 3 DL Gain",
+    "Groups": [
+      "Settings,Theoretical Gain,Radio Module 1 Theoretical Gain "
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dB",
+    "Access": "ro",
+    "DataType": "int8",
+    "InputType": "default",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "T02.P0F03",
+    "Name": "Port 4 DL Gain",
+    "Groups": [
+      "Settings,Theoretical Gain,Radio Module 1 Theoretical Gain "
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dB",
+    "Access": "ro",
+    "DataType": "int8",
+    "InputType": "default",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "T02.P0ED4",
+    "Name": "Port 1 UL Gain",
+    "Groups": [
+      "Settings,Theoretical Gain,Radio Module 2 Theoretical Gain"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dB",
+    "Access": "ro",
+    "DataType": "int8",
+    "InputType": "default",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "T02.P0ED5",
+    "Name": "Port 2 UL Gain",
+    "Groups": [
+      "Settings,Theoretical Gain,Radio Module 2 Theoretical Gain"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dB",
+    "Access": "ro",
+    "DataType": "int8",
+    "InputType": "default",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "T02.P0ED6",
+    "Name": "Port 3 UL Gain",
+    "Groups": [
+      "Settings,Theoretical Gain,Radio Module 2 Theoretical Gain"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dB",
+    "Access": "ro",
+    "DataType": "int8",
+    "InputType": "default",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "T02.P0ED7",
+    "Name": "Port 4 UL Gain",
+    "Groups": [
+      "Settings,Theoretical Gain,Radio Module 2 Theoretical Gain"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dB",
+    "Access": "ro",
+    "DataType": "int8",
+    "InputType": "default",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "T02.P0F04",
+    "Name": "Port 1 DL Gain",
+    "Groups": [
+      "Settings,Theoretical Gain,Radio Module 2 Theoretical Gain"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dB",
+    "Access": "ro",
+    "DataType": "int8",
+    "InputType": "default",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "T02.P0F05",
+    "Name": "Port 2 DL Gain",
+    "Groups": [
+      "Settings,Theoretical Gain,Radio Module 2 Theoretical Gain"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dB",
+    "Access": "ro",
+    "DataType": "int8",
+    "InputType": "default",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "T02.P0F06",
+    "Name": "Port 3 DL Gain",
+    "Groups": [
+      "Settings,Theoretical Gain,Radio Module 2 Theoretical Gain"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dB",
+    "Access": "ro",
+    "DataType": "int8",
+    "InputType": "default",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "T02.P0F07",
+    "Name": "Port 4 DL Gain",
+    "Groups": [
+      "Settings,Theoretical Gain,Radio Module 2 Theoretical Gain"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dB",
+    "Access": "ro",
+    "DataType": "int8",
+    "InputType": "default",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "T02.P0002",
+    "Name": "Vendor",
+    "Groups": [
+      "Settings,LAN Connectivity,Element Identification"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 20
+  },
+  {
+    "PrivOid": "T02.P0004",
+    "Name": "Element Model Number",
+    "Groups": [
+      "Settings,LAN Connectivity,Element Identification"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 20
+  },
+  {
+    "PrivOid": "T02.P0005",
+    "Name": "Element Serial Number",
+    "Groups": [
+      "Settings,LAN Connectivity,Element Identification"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 20
+  },
+  {
+    "PrivOid": "T02.P000A",
+    "Name": "Software Version",
+    "Groups": [
+      "Settings,LAN Connectivity,Element Identification"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 20
+  },
+  {
+    "PrivOid": "T02.P0101",
+    "Name": "Device ID",
+    "Groups": [
+      "Settings,LAN Connectivity,Element Identification"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Tips": "Hexadecimal",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "binary",
+    "ByteSize": 4
+  },
+  {
+    "PrivOid": "T02.P0102",
+    "Name": "Device Sub ID",
+    "Groups": [
+      "Settings,LAN Connectivity,Element Identification"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Tips": "Decimalism",
+    "Access": "rw",
+    "DataType": "uint8",
+    "InputType": "number",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "T02.P0023",
+    "Name": "Installed Location Label",
+    "Groups": [
+      "Settings,LAN Connectivity,Element Identification"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 20
+  },
+  {
+    "PrivOid": "T02.P0024",
+    "Name": "Site Name",
+    "Groups": [
+      "Settings,LAN Connectivity,Element Identification"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 100
+  },
+  {
+    "PrivOid": "T02.P0030",
+    "Name": "Device Name",
+    "Groups": [
+      "Settings,LAN Connectivity,Element Identification"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 40
+  },
+  {
+    "PrivOid": "T02.P0A9E",
+    "Name": "OP Slave Transceiver",
+    "Groups": [
+      "Settings,LAN Connectivity,OP Transceiver Serial Number And Vendor Name"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "T02.P0A01",
+    "Name": "OP Slave Transceiver",
+    "Groups": [
+      "Settings,LAN Connectivity,OP Transceiver Serial Number And Vendor Name"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "T02.P0A9F",
+    "Name": "OP Master Transceiver",
+    "Groups": [
+      "Settings,LAN Connectivity,OP Transceiver Serial Number And Vendor Name"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "T02.P0A04",
+    "Name": "OP Master Transceiver",
+    "Groups": [
+      "Settings,LAN Connectivity,OP Transceiver Serial Number And Vendor Name"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "T02.P0A02",
+    "Name": "OP Slave Transceiver Tx Power",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Tx Power And Rx Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 100
+  },
+  {
+    "PrivOid": "T02.P0A03",
+    "Name": "OP Slave Transceiver Rx Power",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Tx Power And Rx Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 100
+  },
+  {
+    "PrivOid": "T02.P0A05",
+    "Name": "OP Master Transceiver Tx Power",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Tx Power And Rx Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 100
+  },
+  {
+    "PrivOid": "T02.P0A06",
+    "Name": "OP Master Transceiver Rx Power",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Tx Power And Rx Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 100
+  },
+  {
+    "PrivOid": "T02.P0150",
+    "Name": "System Date And Time",
+    "Groups": [
+      "Settings,LAN Connectivity,Date And Time"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "datetime",
+    "InputType": "datetime",
+    "ByteSize": 7
+  },
+  {
+    "PrivOid": "T02.P0B09",
+    "Name": "Site Report",
+    "Groups": [
+      "Settings,LAN Connectivity,Site Report"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "wo",
+    "DataType": "binary",
+    "InputType": "button",
+    "ByteSize": 1,
+    "Options": {
+      "02": "Report Site Launch"
+    }
+  },
+  {
+    "PrivOid": "T02.P0301",
+    "Name": "Power Interruption Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P0201",
+    "Name": "Power Interruption Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "02": "Warning",
+      "03": "Minor",
+      "04": "Major",
+      "05": "Critical"
+    }
+  },
+  {
+    "PrivOid": "T02.P0305",
+    "Name": "Movement Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P0205",
+    "Name": "Movement Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "02": "Warning",
+      "03": "Minor",
+      "04": "Major",
+      "05": "Critical"
+    }
+  },
+  {
+    "PrivOid": "T02.P0328",
+    "Name": "Open Case Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P0228",
+    "Name": "Open Case Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "02": "Warning",
+      "03": "Minor",
+      "04": "Major",
+      "05": "Critical"
+    }
+  },
+  {
+    "PrivOid": "T02.P0306",
+    "Name": "Over Temperature Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P0206",
+    "Name": "Over Temperature Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "02": "Warning",
+      "03": "Minor",
+      "04": "Major",
+      "05": "Critical"
+    }
+  },
+  {
+    "PrivOid": "T02.P030C",
+    "Name": "Radio Module 1 Over Temperature protected Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P020C",
+    "Name": "Radio Module 1 Over Temperature protected Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "02": "Warning",
+      "03": "Minor",
+      "04": "Major",
+      "05": "Critical"
+    }
+  },
+  {
+    "PrivOid": "T02.P030D",
+    "Name": "Radio Module 2 Over Temperature protected Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P020D",
+    "Name": "Radio Module 2 Over Temperature protected Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "02": "Warning",
+      "03": "Minor",
+      "04": "Major",
+      "05": "Critical"
+    }
+  },
+  {
+    "PrivOid": "T02.P037E",
+    "Name": "Optical Port Switch Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P027E",
+    "Name": "Optical Port Switch Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "02": "Warning",
+      "03": "Minor",
+      "04": "Major",
+      "05": "Critical"
+    }
+  },
+  {
+    "PrivOid": "T02.P0360",
+    "Name": "LO1 Unlocked Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P0260",
+    "Name": "LO1 Unlocked Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "02": "Warning",
+      "03": "Minor",
+      "04": "Major",
+      "05": "Critical"
+    }
+  },
+  {
+    "PrivOid": "T02.P0361",
+    "Name": "LO2 Unlocked Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P0261",
+    "Name": "LO2 Unlocked Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "02": "Warning",
+      "03": "Minor",
+      "04": "Major",
+      "05": "Critical"
+    }
+  },
+  {
+    "PrivOid": "T02.P0364",
+    "Name": "Radio Module 1 UL ALC Over Range Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P0264",
+    "Name": "Radio Module 1 UL ALC Over Range Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "02": "Warning",
+      "03": "Minor",
+      "04": "Major",
+      "05": "Critical"
+    }
+  },
+  {
+    "PrivOid": "T02.P0365",
+    "Name": "Radio Module 2 UL ALC Over Range Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P0265",
+    "Name": "Radio Module 2 UL ALC Over Range Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "02": "Warning",
+      "03": "Minor",
+      "04": "Major",
+      "05": "Critical"
+    }
+  },
+  {
+    "PrivOid": "T02.P031E",
+    "Name": "Radio Module 1 VSWR Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P021E",
+    "Name": "Radio Module 1 VSWR Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "02": "Warning",
+      "03": "Minor",
+      "04": "Major",
+      "05": "Critical"
+    }
+  },
+  {
+    "PrivOid": "T02.P031F",
+    "Name": "Radio Module 2 VSWR Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P021F",
+    "Name": "Radio Module 2 VSWR Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "02": "Warning",
+      "03": "Minor",
+      "04": "Major",
+      "05": "Critical"
+    }
+  },
+  {
+    "PrivOid": "T02.P03A8",
+    "Name": "OP Slave Transceiver Failure Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P02A8",
+    "Name": "OP Slave Transceiver Failure Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "02": "Warning",
+      "03": "Minor",
+      "04": "Major",
+      "05": "Critical"
+    }
+  },
+  {
+    "PrivOid": "T02.P03A9",
+    "Name": "OP Master Transceiver Failure Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P02A9",
+    "Name": "OP Master Transceiver Failure Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "02": "Warning",
+      "03": "Minor",
+      "04": "Major",
+      "05": "Critical"
+    }
+  },
+  {
+    "PrivOid": "T02.P038E",
+    "Name": "Radio Module 1 DL Output Under Power Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P028E",
+    "Name": "Radio Module 1 DL Output Under Power Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "02": "Warning",
+      "03": "Minor",
+      "04": "Major",
+      "05": "Critical"
+    }
+  },
+  {
+    "PrivOid": "T02.P039F",
+    "Name": "Radio Module 2 DL Output Under Power Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P029F",
+    "Name": "Radio Module 2 DL Output Under Power Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "02": "Warning",
+      "03": "Minor",
+      "04": "Major",
+      "05": "Critical"
+    }
+  },
+  {
+    "PrivOid": "T02.P037F",
+    "Name": "Radio Module 1 DL Output Over Power Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P027F",
+    "Name": "Radio Module 1 DL Output Over Power Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "02": "Warning",
+      "03": "Minor",
+      "04": "Major",
+      "05": "Critical"
+    }
+  },
+  {
+    "PrivOid": "T02.P038F",
+    "Name": "Radio Module 2 DL Output Over Power Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P028F",
+    "Name": "Radio Module 2 DL Output Over Power Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "02": "Warning",
+      "03": "Minor",
+      "04": "Major",
+      "05": "Critical"
+    }
+  },
+  {
+    "PrivOid": "T02.P037C",
+    "Name": "Radio Module 1 Open Load Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P027C",
+    "Name": "Radio Module 1 Open Load Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "02": "Warning",
+      "03": "Minor",
+      "04": "Major",
+      "05": "Critical"
+    }
+  },
+  {
+    "PrivOid": "T02.P037D",
+    "Name": "Radio Module 2 Open Load Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P027D",
+    "Name": "Radio Module 2 Open Load Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "02": "Warning",
+      "03": "Minor",
+      "04": "Major",
+      "05": "Critical"
+    }
+  },
+  {
+    "PrivOid": "T02.P0320",
+    "Name": "External Input 1 Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P0220",
+    "Name": "External Input 1 Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "02": "Warning",
+      "03": "Minor",
+      "04": "Major",
+      "05": "Critical"
+    }
+  },
+  {
+    "PrivOid": "T02.P0321",
+    "Name": "External Input 2 Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P0221",
+    "Name": "External Input 2 Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "02": "Warning",
+      "03": "Minor",
+      "04": "Major",
+      "05": "Critical"
+    }
+  },
+  {
+    "PrivOid": "T02.P0322",
+    "Name": "External Input 3 Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P0222",
+    "Name": "External Input 3 Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "02": "Warning",
+      "03": "Minor",
+      "04": "Major",
+      "05": "Critical"
+    }
+  },
+  {
+    "PrivOid": "T02.P0323",
+    "Name": "External Input 4 Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P0223",
+    "Name": "External Input 4 Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "02": "Warning",
+      "03": "Minor",
+      "04": "Major",
+      "05": "Critical"
+    }
+  },
+  {
+    "PrivOid": "T02.P030F",
+    "Name": "Optical Link Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P020F",
+    "Name": "Optical Link Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "02": "Warning",
+      "03": "Minor",
+      "04": "Major",
+      "05": "Critical"
+    }
+  },
+  {
+    "PrivOid": "T02.P0498",
+    "Name": "Module 1 DL Output Under Power Threshold",
+    "Groups": [
+      "Alarms,Alarm Thresholds,Alarm Thresholds"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "rw",
+    "DataType": "int16",
+    "InputType": "number",
+    "ByteSize": 2,
+    "Ratio": 10,
+    "Max": 500,
+    "Min": 100
+  },
+  {
+    "PrivOid": "T02.P0499",
+    "Name": "Module 2 DL Output Under Power Threshold",
+    "Groups": [
+      "Alarms,Alarm Thresholds,Alarm Thresholds"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "rw",
+    "DataType": "int16",
+    "InputType": "number",
+    "ByteSize": 2,
+    "Ratio": 10,
+    "Max": 470,
+    "Min": 100
+  },
+  {
+    "PrivOid": "T02.P049A",
+    "Name": "Module 1 DL Output Over Power Threshold",
+    "Groups": [
+      "Alarms,Alarm Thresholds,Alarm Thresholds"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "rw",
+    "DataType": "int16",
+    "InputType": "number",
+    "ByteSize": 2,
+    "Ratio": 10,
+    "Max": 500,
+    "Min": 100
+  },
+  {
+    "PrivOid": "T02.P049B",
+    "Name": "Module 2 DL Output Over Power Threshold",
+    "Groups": [
+      "Alarms,Alarm Thresholds,Alarm Thresholds"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "rw",
+    "DataType": "int16",
+    "InputType": "number",
+    "ByteSize": 2,
+    "Ratio": 10,
+    "Max": 470,
+    "Min": 100
+  },
+  {
+    "PrivOid": "T02.P0452",
+    "Name": "VSWR Threshold",
+    "Groups": [
+      "Alarms,Alarm Thresholds,Alarm Thresholds"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "int8",
+    "InputType": "number",
+    "ByteSize": 1,
+    "Ratio": 10
+  },
+  {
+    "PrivOid": "T02.P0451",
+    "Name": "Over Temperature Threshold",
+    "Groups": [
+      "Alarms,Alarm Thresholds,Alarm Thresholds"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "℃",
+    "Access": "rw",
+    "DataType": "int8",
+    "InputType": "number",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "T02.P0480",
+    "Name": "External Input 1 Alarm Mode Select",
+    "Groups": [
+      "Alarms,Alarm Thresholds,External Alarms"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normally closed",
+      "01": "Normally open"
+    }
+  },
+  {
+    "PrivOid": "T02.P0481",
+    "Name": "External Input 2 Alarm Mode Select",
+    "Groups": [
+      "Alarms,Alarm Thresholds,External Alarms"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normally closed",
+      "01": "Normally open"
+    }
+  },
+  {
+    "PrivOid": "T02.P0482",
+    "Name": "External Input 3 Alarm Mode Select",
+    "Groups": [
+      "Alarms,Alarm Thresholds,External Alarms"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normally closed",
+      "01": "Normally open"
+    }
+  },
+  {
+    "PrivOid": "T02.P0483",
+    "Name": "External Input 4 Alarm Mode Select",
+    "Groups": [
+      "Alarms,Alarm Thresholds,External Alarms"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normally closed",
+      "01": "Normally open"
+    }
+  },
+  {
+    "PrivOid": "T02.P0484",
+    "Name": "External Input 1 Alarm Label",
+    "Groups": [
+      "Alarms,Alarm Thresholds,External Alarms"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 20
+  },
+  {
+    "PrivOid": "T02.P0485",
+    "Name": "External Input 2 Alarm Label",
+    "Groups": [
+      "Alarms,Alarm Thresholds,External Alarms"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 20
+  },
+  {
+    "PrivOid": "T02.P0486",
+    "Name": "External Input 3 Alarm Label",
+    "Groups": [
+      "Alarms,Alarm Thresholds,External Alarms"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 20
+  },
+  {
+    "PrivOid": "T02.P0487",
+    "Name": "External Input 4 Alarm Label",
+    "Groups": [
+      "Alarms,Alarm Thresholds,External Alarms"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 20
+  },
+  {
+    "PrivOid": "TB4.P0A8A",
+    "Name": "Port Slave Optical Module",
+    "Groups": [
+      "Maintenance,Optical Info,Optical Module Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "object",
+    "InputType": "default",
+    "ByteSize": 13,
+    "Split": "^",
+    "Child": [
+      {
+        "PrivOid": "TB4.P0A8A[0]",
+        "Name": "DDM Function Availability",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "Access": "ro",
+        "DataType": "binary",
+        "InputType": "default",
+        "ByteSize": 1,
+        "Options": {
+          "00": "no",
+          "01": "yes"
+        }
+      },
+      {
+        "PrivOid": "TB4.P0A8A[1]",
+        "Name": "Tx Power",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "dBm",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A8A[2]",
+        "Name": "Rx Power",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "dBm",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A8A[3]",
+        "Name": "Voltage",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "V",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 10
+      },
+      {
+        "PrivOid": "TB4.P0A8A[4]",
+        "Name": "Bias Current",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "mA",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A8A[5]",
+        "Name": "Temperature",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "℃",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 10
+      },
+      {
+        "PrivOid": "TB4.P0A8A[6]",
+        "Name": "Tx Optical Wavelength",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "nm",
+        "Access": "ro",
+        "DataType": "uint16",
+        "InputType": "default",
+        "ByteSize": 2
+      }
+    ]
+  },
+  {
+    "PrivOid": "TB4.P0A8B",
+    "Name": "Port Master Optical Module",
+    "Groups": [
+      "Maintenance,Optical Info,Optical Module Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "object",
+    "InputType": "default",
+    "ByteSize": 13,
+    "Split": "^",
+    "Child": [
+      {
+        "PrivOid": "TB4.P0A8B[0]",
+        "Name": "DDM Function Availability",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "Access": "ro",
+        "DataType": "binary",
+        "InputType": "default",
+        "ByteSize": 1,
+        "Options": {
+          "00": "no",
+          "01": "yes"
+        }
+      },
+      {
+        "PrivOid": "TB4.P0A8B[1]",
+        "Name": "Tx Power",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "dBm",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A8B[2]",
+        "Name": "Rx Power",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "dBm",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A8B[3]",
+        "Name": "Voltage",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "V",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 10
+      },
+      {
+        "PrivOid": "TB4.P0A8B[4]",
+        "Name": "Bias Current",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "mA",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A8B[5]",
+        "Name": "Temperature",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "℃",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 10
+      },
+      {
+        "PrivOid": "TB4.P0A8B[6]",
+        "Name": "Tx Optical Wavelength",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "nm",
+        "Access": "ro",
+        "DataType": "uint16",
+        "InputType": "default",
+        "ByteSize": 2
+      }
+    ]
+  },
+  {
+    "PrivOid": "TB4.P0B02",
+    "Name": "Data Update Time",
+    "Groups": [
+      "Maintenance,Engineering,Engineering Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "datetime",
+    "InputType": "default",
+    "ByteSize": 7
+  },
+  {
+    "PrivOid": "TB4.P0B05",
+    "Name": "ARM CRC Check",
+    "Groups": [
+      "Maintenance,Engineering,Engineering Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "default",
+    "ByteSize": 2
+  },
+  {
+    "PrivOid": "TB4.P0B8C",
+    "Name": "FPGA CRC Check",
+    "Groups": [
+      "Maintenance,Engineering,Engineering Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "default",
+    "ByteSize": 2
+  },
+  {
+    "PrivOid": "TB4.P0B27",
+    "Name": "HP-RU CRC Check",
+    "Groups": [
+      "Maintenance,Engineering,Engineering Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "default",
+    "ByteSize": 2
+  },
+  {
+    "PrivOid": "TB4.P0B7F",
+    "Name": "Configuration CRC Check",
+    "Groups": [
+      "Maintenance,Engineering,Engineering Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "default",
+    "ByteSize": 2
+  },
+  {
+    "PrivOid": "TB4.P0B8D",
+    "Name": "Module1 DPD Switch",
+    "Groups": [
+      "Maintenance,Engineering,DPD Switch"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "switch",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "01": "Enable"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0B8A",
+    "Name": "Maximum Delay to Master Device",
+    "Groups": [
+      "Maintenance,Engineering,Digital Panel Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "us",
+    "Access": "ro",
+    "DataType": "uint16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 100
+  },
+  {
+    "PrivOid": "TB4.P0B48",
+    "Name": "Sync Loss Counter Reset",
+    "Groups": [
+      "Maintenance,Engineering,OP Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "wo",
+    "DataType": "binary",
+    "InputType": "button",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Reset"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0B40",
+    "Name": "OP Slave Transceiver CPRI Loss Sync Counter",
+    "Groups": [
+      "Maintenance,Engineering,OP Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "uint8",
+    "InputType": "default",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "TB4.P0B41",
+    "Name": "OP Master Transceiver CPRI Loss Sync Counter",
+    "Groups": [
+      "Maintenance,Engineering,OP Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "uint8",
+    "InputType": "default",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "TB4.P0B69",
+    "Name": "OP Slave Transceiver CPRI Sync Alarm",
+    "Groups": [
+      "Maintenance,Engineering,OP Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Sync",
+      "01": "Unsync"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0B6A",
+    "Name": "OP Master Transceiver CPRI Sync Alarm",
+    "Groups": [
+      "Maintenance,Engineering,OP Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Sync",
+      "01": "Unsync"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0B71",
+    "Name": "OP Slave Transceiver LOS Alarm",
+    "Groups": [
+      "Maintenance,Engineering,OP Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0B72",
+    "Name": "OP Master Transceiver LOS Alarm",
+    "Groups": [
+      "Maintenance,Engineering,OP Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "TB4.P03AA",
+    "Name": "Module1 UL ALC Working Alarm",
+    "Groups": [
+      "Maintenance,Engineering,ALC Indication"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "TB4.P03AB",
+    "Name": "Module2 UL ALC Working Alarm",
+    "Groups": [
+      "Maintenance,Engineering,ALC Indication"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0B3C",
+    "Name": "Module1",
+    "Groups": [
+      "Maintenance,Engineering,Module Identification"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0B3D",
+    "Name": "Module2",
+    "Groups": [
+      "Maintenance,Engineering,Module Identification"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0BA1",
+    "Name": "Hardware Reset",
+    "Groups": [
+      "Maintenance,Engineering,Advanced Command"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "wo",
+    "DataType": "binary",
+    "InputType": "button",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Reset"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0B01",
+    "Name": "Software Reset",
+    "Groups": [
+      "Maintenance,Engineering,Advanced Command"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "wo",
+    "DataType": "binary",
+    "InputType": "button",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Reset"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0B09",
+    "Name": "Alarm Initialization",
+    "Groups": [
+      "Maintenance,Engineering,Advanced Command"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "wo",
+    "DataType": "binary",
+    "InputType": "buttonGroup",
+    "ByteSize": 1,
+    "Options": {
+      "04": "Report Fault Correcting",
+      "FF": "Initialization"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0B92",
+    "Name": "Alarm Mode Select",
+    "Groups": [
+      "Maintenance,Engineering,Advanced Command"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal Mode 3min",
+      "01": "Test Mode 1min"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0610",
+    "Name": "Up-Downlink Switch",
+    "Groups": [
+      "Maintenance,Engineering,Test Mode"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Auto",
+      "01": "Downlink Open",
+      "02": "Uplink Open",
+      "03": "Close"
+    }
+  },
+  {
+    "PrivOid": "TB0.P0AFF",
+    "Name": "Factory Mode",
+    "Groups": [
+      "Maintenance,Factory Command,Factory Parameters"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "button",
+    "ByteSize": 9,
+    "Options": {
+      "5A": "Factory Pattern",
+      "A5": "Quit"
+    }
+  },
+  {
+    "PrivOid": "TB0.P0AEF",
+    "Name": "Factory Mode Password",
+    "Groups": [
+      "Maintenance,Factory Command,Factory Parameters"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "wo",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 20
+  },
+  {
+    "PrivOid": "T02.P0C00",
+    "Name": "Capacity Allocation Switch",
+    "Groups": [
+      "Capacity Management,Service Configuration,Capacity Allocation Switch"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "switch",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Off",
+      "01": "On"
+    }
+  },
+  {
+    "PrivOid": "T02.P0C83",
+    "Name": "Primary A2, Radio Module 1 UL",
+    "Groups": [
+      "Capacity Management,Service Configuration,A2 Operator/Service Configuration"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "MHz",
+    "Access": "ro",
+    "DataType": "uint32:array",
+    "InputType": "default",
+    "ByteSize": 8,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "T02.P0D01",
+    "Name": "Primary A2, Radio Module 1 DL",
+    "Groups": [
+      "Capacity Management,Service Configuration,A2 Operator/Service Configuration"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "MHz",
+    "Access": "ro",
+    "DataType": "uint32:array",
+    "InputType": "default",
+    "ByteSize": 8,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "T02.P0C84",
+    "Name": "Primary A2, Radio Module 2 UL",
+    "Groups": [
+      "Capacity Management,Service Configuration,A2 Operator/Service Configuration"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "MHz",
+    "Access": "ro",
+    "DataType": "uint32:array",
+    "InputType": "default",
+    "ByteSize": 8,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "T02.P0D02",
+    "Name": "Primary A2, Radio Module 2 DL",
+    "Groups": [
+      "Capacity Management,Service Configuration,A2 Operator/Service Configuration"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "MHz",
+    "Access": "ro",
+    "DataType": "uint32:array",
+    "InputType": "default",
+    "ByteSize": 8,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "T02.P0C85",
+    "Name": "Primary A2, Radio Module 3 UL",
+    "Groups": [
+      "Capacity Management,Service Configuration,A2 Operator/Service Configuration"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "MHz",
+    "Access": "ro",
+    "DataType": "uint32:array",
+    "InputType": "default",
+    "ByteSize": 8,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "T02.P0D03",
+    "Name": "Primary A2, Radio Module 3 DL",
+    "Groups": [
+      "Capacity Management,Service Configuration,A2 Operator/Service Configuration"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "MHz",
+    "Access": "ro",
+    "DataType": "uint32:array",
+    "InputType": "default",
+    "ByteSize": 8,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "T02.P0C86",
+    "Name": "Primary A2, Radio Module 4 UL",
+    "Groups": [
+      "Capacity Management,Service Configuration,A2 Operator/Service Configuration"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "MHz",
+    "Access": "ro",
+    "DataType": "uint32:array",
+    "InputType": "default",
+    "ByteSize": 8,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "T02.P0D04",
+    "Name": "Primary A2, Radio Module 4 DL",
+    "Groups": [
+      "Capacity Management,Service Configuration,A2 Operator/Service Configuration"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "MHz",
+    "Access": "ro",
+    "DataType": "uint32:array",
+    "InputType": "default",
+    "ByteSize": 8,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "T02.P0C93",
+    "Name": "1st Secondary A2, Radio Module 1 UL",
+    "Groups": [
+      "Capacity Management,Service Configuration,A2 Operator/Service Configuration"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "MHz",
+    "Access": "ro",
+    "DataType": "uint32:array",
+    "InputType": "default",
+    "ByteSize": 8,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "T02.P0C9B",
+    "Name": "1st Secondary A2, Radio Module 1 DL",
+    "Groups": [
+      "Capacity Management,Service Configuration,A2 Operator/Service Configuration"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "MHz",
+    "Access": "ro",
+    "DataType": "uint32:array",
+    "InputType": "default",
+    "ByteSize": 8,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "T02.P0C94",
+    "Name": "1st Secondary A2, Radio Module 2 UL",
+    "Groups": [
+      "Capacity Management,Service Configuration,A2 Operator/Service Configuration"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "MHz",
+    "Access": "ro",
+    "DataType": "uint32:array",
+    "InputType": "default",
+    "ByteSize": 8,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "T02.P0C9C",
+    "Name": "1st Secondary A2, Radio Module 2 DL",
+    "Groups": [
+      "Capacity Management,Service Configuration,A2 Operator/Service Configuration"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "MHz",
+    "Access": "ro",
+    "DataType": "uint32:array",
+    "InputType": "default",
+    "ByteSize": 8,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "T02.P0C95",
+    "Name": "1st Secondary A2, Radio Module 3 UL",
+    "Groups": [
+      "Capacity Management,Service Configuration,A2 Operator/Service Configuration"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "MHz",
+    "Access": "ro",
+    "DataType": "uint32:array",
+    "InputType": "default",
+    "ByteSize": 8,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "T02.P0C9D",
+    "Name": "1st Secondary A2, Radio Module 3 DL",
+    "Groups": [
+      "Capacity Management,Service Configuration,A2 Operator/Service Configuration"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "MHz",
+    "Access": "ro",
+    "DataType": "uint32:array",
+    "InputType": "default",
+    "ByteSize": 8,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "T02.P0C96",
+    "Name": "1st Secondary A2, Radio Module 4 UL",
+    "Groups": [
+      "Capacity Management,Service Configuration,A2 Operator/Service Configuration"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "MHz",
+    "Access": "ro",
+    "DataType": "uint32:array",
+    "InputType": "default",
+    "ByteSize": 8,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "T02.P0C9E",
+    "Name": "1st Secondary A2, Radio Module 4 DL",
+    "Groups": [
+      "Capacity Management,Service Configuration,A2 Operator/Service Configuration"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "MHz",
+    "Access": "ro",
+    "DataType": "uint32:array",
+    "InputType": "default",
+    "ByteSize": 8,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "T02.P0C97",
+    "Name": "2nd Secondary A2, Radio Module 1 UL",
+    "Groups": [
+      "Capacity Management,Service Configuration,A2 Operator/Service Configuration"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "MHz",
+    "Access": "ro",
+    "DataType": "uint32:array",
+    "InputType": "default",
+    "ByteSize": 8,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "T02.P0C9F",
+    "Name": "2nd Secondary A2, Radio Module 1 DL",
+    "Groups": [
+      "Capacity Management,Service Configuration,A2 Operator/Service Configuration"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "MHz",
+    "Access": "ro",
+    "DataType": "uint32:array",
+    "InputType": "default",
+    "ByteSize": 8,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "T02.P0C98",
+    "Name": "2nd Secondary A2, Radio Module 2 UL",
+    "Groups": [
+      "Capacity Management,Service Configuration,A2 Operator/Service Configuration"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "MHz",
+    "Access": "ro",
+    "DataType": "uint32:array",
+    "InputType": "default",
+    "ByteSize": 8,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "T02.P0D10",
+    "Name": "2nd Secondary A2, Radio Module 2 DL",
+    "Groups": [
+      "Capacity Management,Service Configuration,A2 Operator/Service Configuration"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "MHz",
+    "Access": "ro",
+    "DataType": "uint32:array",
+    "InputType": "default",
+    "ByteSize": 8,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "T02.P0C99",
+    "Name": "2nd Secondary A2, Radio Module 3 UL",
+    "Groups": [
+      "Capacity Management,Service Configuration,A2 Operator/Service Configuration"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "MHz",
+    "Access": "ro",
+    "DataType": "uint32:array",
+    "InputType": "default",
+    "ByteSize": 8,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "T02.P0D11",
+    "Name": "2nd Secondary A2, Radio Module 3 DL",
+    "Groups": [
+      "Capacity Management,Service Configuration,A2 Operator/Service Configuration"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "MHz",
+    "Access": "ro",
+    "DataType": "uint32:array",
+    "InputType": "default",
+    "ByteSize": 8,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "T02.P0C9A",
+    "Name": "2nd Secondary A2, Radio Module 4 UL",
+    "Groups": [
+      "Capacity Management,Service Configuration,A2 Operator/Service Configuration"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "MHz",
+    "Access": "ro",
+    "DataType": "uint32:array",
+    "InputType": "default",
+    "ByteSize": 8,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "T02.P0D12",
+    "Name": "2nd Secondary A2, Radio Module 4 DL",
+    "Groups": [
+      "Capacity Management,Service Configuration,A2 Operator/Service Configuration"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "MHz",
+    "Access": "ro",
+    "DataType": "uint32:array",
+    "InputType": "default",
+    "ByteSize": 8,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "T02.P0981",
+    "Name": "Module1 Info (UL/DL)",
+    "Groups": [
+      "Capacity Management,Service Configuration,HP-RU Band Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "MHz",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 27
+  },
+  {
+    "PrivOid": "T02.P0982",
+    "Name": "Module2 Info (UL/DL)",
+    "Groups": [
+      "Capacity Management,Service Configuration,HP-RU Band Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "MHz",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 27
+  },
+  {
+    "PrivOid": "T02.P0C11",
+    "Name": "Group1",
+    "Groups": [
+      "Capacity Management,Service Configuration,RF Module Mapping"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "default",
+    "ByteSize": 2
+  },
+  {
+    "PrivOid": "T02.P0C12",
+    "Name": "Group2",
+    "Groups": [
+      "Capacity Management,Service Configuration,RF Module Mapping"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "default",
+    "ByteSize": 2
+  },
+  {
+    "PrivOid": "T02.P0C13",
+    "Name": "Group3",
+    "Groups": [
+      "Capacity Management,Service Configuration,RF Module Mapping"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "default",
+    "ByteSize": 2
+  },
+  {
+    "PrivOid": "T02.P0C87",
+    "Name": "Capacity Group",
+    "Groups": [
+      "Capacity Management,Service Configuration,RF Module Mapping Configuration"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Group1",
+      "01": "Group2",
+      "02": "Group3"
+    }
+  },
+  {
+    "PrivOid": "T02.P0C1C",
+    "Name": "Update",
+    "Groups": [
+      "Capacity Management,Service Configuration,RF Module Mapping Configuration"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "wo",
+    "DataType": "binary",
+    "InputType": "button",
+    "ByteSize": 1,
+    "Options": {
+      "01": "Update"
+    }
+  },
+  {
+    "PrivOid": "T02.P0C1E",
+    "Name": "Working Hours Start (24h)",
+    "Groups": [
+      "Capacity Management,Service Switch,Sunday"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "uint8",
+    "InputType": "number",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "T02.P0C1F",
+    "Name": "Working Hours End (24h)",
+    "Groups": [
+      "Capacity Management,Service Switch,Sunday"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "uint8",
+    "InputType": "number",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "T02.P0C20",
+    "Name": "Service Group(Working Hours)",
+    "Groups": [
+      "Capacity Management,Service Switch,Sunday"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Group1",
+      "01": "Group2",
+      "02": "Group3"
+    }
+  },
+  {
+    "PrivOid": "T02.P0C21",
+    "Name": "Service Group(Non-Working Hours)",
+    "Groups": [
+      "Capacity Management,Service Switch,Sunday"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Group1",
+      "01": "Group2",
+      "02": "Group3"
+    }
+  },
+  {
+    "PrivOid": "T02.P0C22",
+    "Name": "Working Hours Start (24h)",
+    "Groups": [
+      "Capacity Management,Service Switch,Monday"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "uint8",
+    "InputType": "number",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "T02.P0C23",
+    "Name": "Working Hours End (24h)",
+    "Groups": [
+      "Capacity Management,Service Switch,Monday"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "uint8",
+    "InputType": "number",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "T02.P0C24",
+    "Name": "Service Group(Working Hours)",
+    "Groups": [
+      "Capacity Management,Service Switch,Monday"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Group1",
+      "01": "Group2",
+      "02": "Group3"
+    }
+  },
+  {
+    "PrivOid": "T02.P0C25",
+    "Name": "Service Group(Non-Working Hours)",
+    "Groups": [
+      "Capacity Management,Service Switch,Monday"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Group1",
+      "01": "Group2",
+      "02": "Group3"
+    }
+  },
+  {
+    "PrivOid": "T02.P0C26",
+    "Name": "Working Hours Start (24h)",
+    "Groups": [
+      "Capacity Management,Service Switch,Tuesday"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "uint8",
+    "InputType": "number",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "T02.P0C27",
+    "Name": "Working Hours End (24h)",
+    "Groups": [
+      "Capacity Management,Service Switch,Tuesday"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "uint8",
+    "InputType": "number",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "T02.P0C28",
+    "Name": "Service Group(Working Hours)",
+    "Groups": [
+      "Capacity Management,Service Switch,Tuesday"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Group1",
+      "01": "Group2",
+      "02": "Group3"
+    }
+  },
+  {
+    "PrivOid": "T02.P0C29",
+    "Name": "Service Group(Non-Working Hours)",
+    "Groups": [
+      "Capacity Management,Service Switch,Tuesday"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Group1",
+      "01": "Group2",
+      "02": "Group3"
+    }
+  },
+  {
+    "PrivOid": "T02.P0C2A",
+    "Name": "Working Hours Start (24h)",
+    "Groups": [
+      "Capacity Management,Service Switch,Wednesday"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "uint8",
+    "InputType": "number",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "T02.P0C2B",
+    "Name": "Working Hours End (24h)",
+    "Groups": [
+      "Capacity Management,Service Switch,Wednesday"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "uint8",
+    "InputType": "number",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "T02.P0C2C",
+    "Name": "Service Group(Working Hours)",
+    "Groups": [
+      "Capacity Management,Service Switch,Wednesday"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Group1",
+      "01": "Group2",
+      "02": "Group3"
+    }
+  },
+  {
+    "PrivOid": "T02.P0C2D",
+    "Name": "Service Group(Non-Working Hours)",
+    "Groups": [
+      "Capacity Management,Service Switch,Wednesday"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Group1",
+      "01": "Group2",
+      "02": "Group3"
+    }
+  },
+  {
+    "PrivOid": "T02.P0C2E",
+    "Name": "Working Hours Start (24h)",
+    "Groups": [
+      "Capacity Management,Service Switch,Thursday"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "uint8",
+    "InputType": "number",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "T02.P0C2F",
+    "Name": "Working Hours End (24h)",
+    "Groups": [
+      "Capacity Management,Service Switch,Thursday"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "uint8",
+    "InputType": "number",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "T02.P0C30",
+    "Name": "Service Group(Working Hours)",
+    "Groups": [
+      "Capacity Management,Service Switch,Thursday"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Group1",
+      "01": "Group2",
+      "02": "Group3"
+    }
+  },
+  {
+    "PrivOid": "T02.P0C31",
+    "Name": "Service Group(Non-Working Hours)",
+    "Groups": [
+      "Capacity Management,Service Switch,Thursday"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Group1",
+      "01": "Group2",
+      "02": "Group3"
+    }
+  },
+  {
+    "PrivOid": "T02.P0C32",
+    "Name": "Working Hours Start (24h)",
+    "Groups": [
+      "Capacity Management,Service Switch,Friday"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "uint8",
+    "InputType": "number",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "T02.P0C33",
+    "Name": "Working Hours End (24h)",
+    "Groups": [
+      "Capacity Management,Service Switch,Friday"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "uint8",
+    "InputType": "number",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "T02.P0C34",
+    "Name": "Service Group(Working Hours)",
+    "Groups": [
+      "Capacity Management,Service Switch,Friday"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Group1",
+      "01": "Group2",
+      "02": "Group3"
+    }
+  },
+  {
+    "PrivOid": "T02.P0C35",
+    "Name": "Service Group(Non-Working Hours)",
+    "Groups": [
+      "Capacity Management,Service Switch,Friday"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Group1",
+      "01": "Group2",
+      "02": "Group3"
+    }
+  },
+  {
+    "PrivOid": "T02.P0C36",
+    "Name": "Working Hours Start (24h)",
+    "Groups": [
+      "Capacity Management,Service Switch,Saturday"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "uint8",
+    "InputType": "number",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "T02.P0C37",
+    "Name": "Working Hours End (24h)",
+    "Groups": [
+      "Capacity Management,Service Switch,Saturday"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "uint8",
+    "InputType": "number",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "T02.P0C38",
+    "Name": "Service Group(Working Hours)",
+    "Groups": [
+      "Capacity Management,Service Switch,Saturday"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Group1",
+      "01": "Group2",
+      "02": "Group3"
+    }
+  },
+  {
+    "PrivOid": "T02.P0C39",
+    "Name": "Service Group(Non-Working Hours)",
+    "Groups": [
+      "Capacity Management,Service Switch,Saturday"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Group1",
+      "01": "Group2",
+      "02": "Group3"
+    }
+  },
+  {
+    "PrivOid": "TB2.P0CCC",
+    "Name": "地址访问参量",
+    "Groups": [
+      "Digital Module,Address Interface,"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "object",
+    "InputType": "default",
+    "ByteSize": 8,
+    "Child": [
+      {
+        "PrivOid": "TB2.P0CCC[0]",
+        "Name": "Module ID",
+        "Groups": [
+          "Digital Module,Address Interface,"
+        ],
+        "Paths": null,
+        "Access": "rw",
+        "DataType": "binary",
+        "InputType": "select",
+        "ByteSize": 1
+      },
+      {
+        "PrivOid": "TB2.P0CCC[1]",
+        "Name": "Register Address",
+        "Groups": [
+          "Digital Module,Address Interface,"
+        ],
+        "Paths": null,
+        "Access": "rw",
+        "DataType": "uint16",
+        "InputType": "number",
+        "ByteSize": 2,
+        "Max": 65535,
+        "Min": 0
+      },
+      {
+        "PrivOid": "TB2.P0CCC[2]",
+        "Name": "Byte Size",
+        "Groups": [
+          "Digital Module,Address Interface,"
+        ],
+        "Paths": null,
+        "Access": "rw",
+        "DataType": "binary",
+        "InputType": "radio",
+        "ByteSize": 1
+      },
+      {
+        "PrivOid": "TB2.P0CCC[3]",
+        "Name": "Byte Buffer",
+        "Groups": [
+          "Digital Module,Address Interface,"
+        ],
+        "Paths": null,
+        "Access": "rw",
+        "DataType": "binary",
+        "InputType": "binary",
+        "ByteSize": 4
+      }
+    ]
+  },
+  {
+    "PrivOid": "TB2.P0801",
+    "Name": "Register 0-3",
+    "Groups": [
+      "Digital Module,Registers,LMK04808"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "TB2.P0802",
+    "Name": "Register 4-7",
+    "Groups": [
+      "Digital Module,Registers,LMK04808"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "TB2.P0803",
+    "Name": "Register 8-12",
+    "Groups": [
+      "Digital Module,Registers,LMK04808"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "default",
+    "ByteSize": 20
+  },
+  {
+    "PrivOid": "TB2.P0804",
+    "Name": "Register 13-16",
+    "Groups": [
+      "Digital Module,Registers,LMK04808"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "TB2.P0805",
+    "Name": "Register 24-27",
+    "Groups": [
+      "Digital Module,Registers,LMK04808"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "TB2.P0806",
+    "Name": "Register 28-31",
+    "Groups": [
+      "Digital Module,Registers,LMK04808"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "TB2-DEBUG.P0800",
+    "Name": "Clock Reference Source",
+    "Groups": [
+      "Digital Module,Debug Parameters,Basic Parameters"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Reference source 30.72M",
+      "01": "Reference source 10M",
+      "02": "Reference source 307.2M",
+      "03": "Reference source 61.44M"
+    }
+  },
+  {
+    "PrivOid": "TB2-DEBUG.P0200",
+    "Name": "RST",
+    "Groups": [
+      "Digital Module,Debug Parameters,Basic Parameters"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "binary",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "TB2-DEBUG.P0303",
+    "Name": "Clock Lock",
+    "Groups": [
+      "Digital Module,Debug Parameters,Basic Parameters"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "default",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Unlock",
+      "01": "Lock"
+    }
+  },
+  {
+    "PrivOid": "TB2-DEBUG.P0220",
+    "Name": "Master MAC Address",
+    "Groups": [
+      "Digital Module,Debug Parameters,Basic Parameters"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "default",
+    "ByteSize": 6
+  },
+  {
+    "PrivOid": "TB2-DEBUG.P0221",
+    "Name": "IP Address",
+    "Groups": [
+      "Digital Module,Debug Parameters,Basic Parameters"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "default",
+    "ByteSize": 4
+  },
+  {
+    "PrivOid": "TB2-DEBUG.P0812",
+    "Name": "Digital Plate Temperature",
+    "Groups": [
+      "Digital Module,Debug Parameters,Basic Parameters"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "int8",
+    "InputType": "default",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "TB2-DEBUG.P0A1A",
+    "Name": "Total Optical Fiber Delay",
+    "Groups": [
+      "Digital Module,Debug Parameters,Basic Parameters"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "uint16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 100
+  },
+  {
+    "PrivOid": "TB2-DEBUG.P0A1C",
+    "Name": "Digital Board SN",
+    "Groups": [
+      "Digital Module,Debug Parameters,Basic Parameters"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 40
+  },
+  {
+    "PrivOid": "TB2-DEBUG.P0610",
+    "Name": "Up-Downlink Switch",
+    "Groups": [
+      "Digital Module,Debug Parameters,Basic Parameters"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Auto",
+      "01": "Downlink Open",
+      "02": "Uplink Open",
+      "03": "Close"
+    }
+  },
+  {
+    "PrivOid": "TB2-DEBUG.P0ADC",
+    "Name": "MDL ID Confirm",
+    "Groups": [
+      "Digital Module,Debug Parameters,Basic Parameters"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "button",
+    "ByteSize": 1,
+    "Options": {
+      "01": "Confirm"
+    }
+  },
+  {
+    "PrivOid": "TB2-DEBUG.P0400",
+    "Name": "Module1 ALC High Threshold",
+    "Groups": [
+      "Digital Module,Debug Parameters,ALC Amplitude limiting"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "int32",
+    "InputType": "number",
+    "ByteSize": 4,
+    "Ratio": 10
+  },
+  {
+    "PrivOid": "TB2-DEBUG.P0401",
+    "Name": "Module1 ALC Low Threshold",
+    "Groups": [
+      "Digital Module,Debug Parameters,ALC Amplitude limiting"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "int32",
+    "InputType": "number",
+    "ByteSize": 4,
+    "Ratio": 10
+  },
+  {
+    "PrivOid": "TB2-DEBUG.P0402",
+    "Name": "Module1 ALC Enable",
+    "Groups": [
+      "Digital Module,Debug Parameters,ALC Amplitude limiting"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "switch",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Off",
+      "01": "On"
+    }
+  },
+  {
+    "PrivOid": "TB2-DEBUG.P0403",
+    "Name": "Module1 ALC Limiting Value",
+    "Groups": [
+      "Digital Module,Debug Parameters,ALC Amplitude limiting"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "uint8",
+    "InputType": "default",
+    "ByteSize": 1,
+    "Ratio": 2
+  },
+  {
+    "PrivOid": "TB2-DEBUG.P0404",
+    "Name": "Module2 ALC High Threshold",
+    "Groups": [
+      "Digital Module,Debug Parameters,ALC Amplitude limiting"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "int32",
+    "InputType": "number",
+    "ByteSize": 4,
+    "Ratio": 10
+  },
+  {
+    "PrivOid": "TB2-DEBUG.P0405",
+    "Name": "Module2 ALC Low Threshold",
+    "Groups": [
+      "Digital Module,Debug Parameters,ALC Amplitude limiting"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "int32",
+    "InputType": "number",
+    "ByteSize": 4,
+    "Ratio": 10
+  },
+  {
+    "PrivOid": "TB2-DEBUG.P0406",
+    "Name": "Module2 ALC Enable",
+    "Groups": [
+      "Digital Module,Debug Parameters,ALC Amplitude limiting"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "switch",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Off",
+      "01": "On"
+    }
+  },
+  {
+    "PrivOid": "TB2-DEBUG.P0407",
+    "Name": "Module2 ALC Limiting Value",
+    "Groups": [
+      "Digital Module,Debug Parameters,ALC Amplitude limiting"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "uint8",
+    "InputType": "default",
+    "ByteSize": 1,
+    "Ratio": 2
+  },
+  {
+    "PrivOid": "TB2-DEBUG.P0BD0",
+    "Name": "Module1 UL Instantaneous Input Power",
+    "Groups": [
+      "Digital Module,Debug Parameters,Instantaneous Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 10
+  },
+  {
+    "PrivOid": "TB2-DEBUG.P0BD1",
+    "Name": "Module2 UL Instantaneous Input Power",
+    "Groups": [
+      "Digital Module,Debug Parameters,Instantaneous Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 10
+  },
+  {
+    "PrivOid": "TB2-DEBUG.P0BD8",
+    "Name": "Module1 DL Instantaneous Output Power",
+    "Groups": [
+      "Digital Module,Debug Parameters,Instantaneous Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 10
+  },
+  {
+    "PrivOid": "TB2-DEBUG.P0BD9",
+    "Name": "Module2 DL Instantaneous Output Power",
+    "Groups": [
+      "Digital Module,Debug Parameters,Instantaneous Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 10
+  },
+  {
+    "PrivOid": "TB2-DEBUG.P0813",
+    "Name": "Protection Threshold",
+    "Groups": [
+      "Digital Module,Debug Parameters,Over Temp Protection Threshold"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "int8",
+    "InputType": "number",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "TB2-DEBUG.P0814",
+    "Name": "Recover Threshold",
+    "Groups": [
+      "Digital Module,Debug Parameters,Over Temp Protection Threshold"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "int8",
+    "InputType": "number",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "TB2-DEBUG.P0014",
+    "Name": "Module 1 And Module 2 Signal Test Switch",
+    "Groups": [
+      "Digital Module,Debug Parameters,Signal Send Test"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "switch",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "01": "Enable"
+    }
+  },
+  {
+    "PrivOid": "TB2.P0410",
+    "Name": "Bandwidth Select",
+    "Groups": [
+      "Digital Module,Digital IF,Module 1"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "20MHz",
+      "01": "30MHz",
+      "02": "40MHz",
+      "03": "50MHz",
+      "04": "60MHz",
+      "05": "80MHz",
+      "06": "100MHz"
+    }
+  },
+  {
+    "PrivOid": "TB2.P0411",
+    "Name": "DDC Enable",
+    "Groups": [
+      "Digital Module,Digital IF,Module 1"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "switch",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Off",
+      "01": "On"
+    }
+  },
+  {
+    "PrivOid": "TB2.P0412",
+    "Name": "DDC Gain",
+    "Groups": [
+      "Digital Module,Digital IF,Module 1"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "binary",
+    "ByteSize": 2
+  },
+  {
+    "PrivOid": "TB2.P0413",
+    "Name": "DDC Power Statistics",
+    "Groups": [
+      "Digital Module,Digital IF,Module 1"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "default",
+    "ByteSize": 6
+  },
+  {
+    "PrivOid": "TB2.P0414",
+    "Name": "DUC Enable",
+    "Groups": [
+      "Digital Module,Digital IF,Module 1"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "switch",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Off",
+      "01": "On"
+    }
+  },
+  {
+    "PrivOid": "TB2.P0415",
+    "Name": "DUC Gain",
+    "Groups": [
+      "Digital Module,Digital IF,Module 1"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "binary",
+    "ByteSize": 2
+  },
+  {
+    "PrivOid": "TB2.P0416",
+    "Name": "DUC Power Statistics",
+    "Groups": [
+      "Digital Module,Digital IF,Module 1"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "default",
+    "ByteSize": 6
+  },
+  {
+    "PrivOid": "TB2.P0417",
+    "Name": "Bandwidth Select",
+    "Groups": [
+      "Digital Module,Digital IF,Module 2"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "20MHz",
+      "01": "30MHz",
+      "02": "40MHz",
+      "03": "50MHz",
+      "04": "60MHz",
+      "05": "80MHz",
+      "06": "100MHz"
+    }
+  },
+  {
+    "PrivOid": "TB2.P0418",
+    "Name": "DDC Enable",
+    "Groups": [
+      "Digital Module,Digital IF,Module 2"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "switch",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Off",
+      "01": "On"
+    }
+  },
+  {
+    "PrivOid": "TB2.P0419",
+    "Name": "DDC Gain",
+    "Groups": [
+      "Digital Module,Digital IF,Module 2"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "binary",
+    "ByteSize": 2
+  },
+  {
+    "PrivOid": "TB2.P041A",
+    "Name": "DDC Power Statistics",
+    "Groups": [
+      "Digital Module,Digital IF,Module 2"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "default",
+    "ByteSize": 6
+  },
+  {
+    "PrivOid": "TB2.P041B",
+    "Name": "DUC Enable",
+    "Groups": [
+      "Digital Module,Digital IF,Module 2"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "switch",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Off",
+      "01": "On"
+    }
+  },
+  {
+    "PrivOid": "TB2.P041C",
+    "Name": "DUC Gain",
+    "Groups": [
+      "Digital Module,Digital IF,Module 2"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "binary",
+    "ByteSize": 2
+  },
+  {
+    "PrivOid": "TB2.P041D",
+    "Name": "DUC Power Statistics",
+    "Groups": [
+      "Digital Module,Digital IF,Module 2"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "default",
+    "ByteSize": 6
+  },
+  {
+    "PrivOid": "TB2.P0500",
+    "Name": "Module Select",
+    "Groups": [
+      "Digital Module,Flatness Test,Common"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Module1",
+      "01": "Module2"
+    }
+  },
+  {
+    "PrivOid": "TB2.P0501",
+    "Name": "Frequency",
+    "Groups": [
+      "Digital Module,Flatness Test,RX Link"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "MHz",
+    "Access": "rw",
+    "DataType": "uint32",
+    "InputType": "number",
+    "ByteSize": 4,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "TB2.P052B",
+    "Name": "Frequency Low",
+    "Groups": [
+      "Digital Module,Flatness Test,RX Link"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "MHz",
+    "Access": "rw",
+    "DataType": "uint32",
+    "InputType": "number",
+    "ByteSize": 4,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "TB2.P052C",
+    "Name": "Frequency High",
+    "Groups": [
+      "Digital Module,Flatness Test,RX Link"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "MHz",
+    "Access": "rw",
+    "DataType": "uint32",
+    "InputType": "number",
+    "ByteSize": 4,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "TB2.P051A",
+    "Name": "Power1",
+    "Groups": [
+      "Digital Module,Flatness Test,RX Link"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 10
+  },
+  {
+    "PrivOid": "TB2.P051B",
+    "Name": "Power2",
+    "Groups": [
+      "Digital Module,Flatness Test,RX Link"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 10
+  },
+  {
+    "PrivOid": "TB2.P051C",
+    "Name": "Power3",
+    "Groups": [
+      "Digital Module,Flatness Test,RX Link"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 10
+  },
+  {
+    "PrivOid": "TB2.P051D",
+    "Name": "Power4",
+    "Groups": [
+      "Digital Module,Flatness Test,RX Link"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 10
+  },
+  {
+    "PrivOid": "TB2.P051E",
+    "Name": "Power5",
+    "Groups": [
+      "Digital Module,Flatness Test,RX Link"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 10
+  },
+  {
+    "PrivOid": "TB2.P051F",
+    "Name": "Power6",
+    "Groups": [
+      "Digital Module,Flatness Test,RX Link"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 10
+  },
+  {
+    "PrivOid": "TB2.P0520",
+    "Name": "Power7",
+    "Groups": [
+      "Digital Module,Flatness Test,RX Link"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 10
+  },
+  {
+    "PrivOid": "TB2.P0521",
+    "Name": "Power8",
+    "Groups": [
+      "Digital Module,Flatness Test,RX Link"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 10
+  },
+  {
+    "PrivOid": "TB2.P0522",
+    "Name": "Power9",
+    "Groups": [
+      "Digital Module,Flatness Test,RX Link"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 10
+  },
+  {
+    "PrivOid": "TB2.P0523",
+    "Name": "Power10",
+    "Groups": [
+      "Digital Module,Flatness Test,RX Link"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 10
+  },
+  {
+    "PrivOid": "TB2.P0524",
+    "Name": "Power11",
+    "Groups": [
+      "Digital Module,Flatness Test,RX Link"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 10
+  },
+  {
+    "PrivOid": "TB2.P0525",
+    "Name": "Power12",
+    "Groups": [
+      "Digital Module,Flatness Test,RX Link"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 10
+  },
+  {
+    "PrivOid": "TB2.P0526",
+    "Name": "Power13",
+    "Groups": [
+      "Digital Module,Flatness Test,RX Link"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 10
+  },
+  {
+    "PrivOid": "TB2.P0527",
+    "Name": "Power14",
+    "Groups": [
+      "Digital Module,Flatness Test,RX Link"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 10
+  },
+  {
+    "PrivOid": "TB2.P0528",
+    "Name": "Power15",
+    "Groups": [
+      "Digital Module,Flatness Test,RX Link"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 10
+  },
+  {
+    "PrivOid": "TB2.P0529",
+    "Name": "Power LF",
+    "Groups": [
+      "Digital Module,Flatness Test,RX Link"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 10
+  },
+  {
+    "PrivOid": "TB2.P052A",
+    "Name": "Power HF",
+    "Groups": [
+      "Digital Module,Flatness Test,RX Link"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 10
+  },
+  {
+    "PrivOid": "TB2.P0502",
+    "Name": "RX Single Test Done",
+    "Groups": [
+      "Digital Module,Flatness Test,RX Link"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "uint8",
+    "InputType": "button",
+    "ByteSize": 1,
+    "Options": {
+      "01": "Confirm"
+    }
+  },
+  {
+    "PrivOid": "TB2.P0503",
+    "Name": "TX Test Enable",
+    "Groups": [
+      "Digital Module,Flatness Test,TX Link"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "switch",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Off",
+      "01": "On"
+    }
+  },
+  {
+    "PrivOid": "TB2.P0530",
+    "Name": "Frequency",
+    "Groups": [
+      "Digital Module,Flatness Test,TX Link"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "MHz",
+    "Access": "rw",
+    "DataType": "uint32",
+    "InputType": "number",
+    "ByteSize": 4,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "TB2.P052D",
+    "Name": "Frequency Low",
+    "Groups": [
+      "Digital Module,Flatness Test,TX Link"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "MHz",
+    "Access": "rw",
+    "DataType": "uint32",
+    "InputType": "number",
+    "ByteSize": 4,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "TB2.P052E",
+    "Name": "Frequency High",
+    "Groups": [
+      "Digital Module,Flatness Test,TX Link"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "MHz",
+    "Access": "rw",
+    "DataType": "uint32",
+    "InputType": "number",
+    "ByteSize": 4,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "TB2.P0504",
+    "Name": "Power1",
+    "Groups": [
+      "Digital Module,Flatness Test,TX Link"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "rw",
+    "DataType": "int16",
+    "InputType": "number",
+    "ByteSize": 2,
+    "Ratio": 10
+  },
+  {
+    "PrivOid": "TB2.P0505",
+    "Name": "Power2",
+    "Groups": [
+      "Digital Module,Flatness Test,TX Link"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "rw",
+    "DataType": "int16",
+    "InputType": "number",
+    "ByteSize": 2,
+    "Ratio": 10
+  },
+  {
+    "PrivOid": "TB2.P0506",
+    "Name": "Power3",
+    "Groups": [
+      "Digital Module,Flatness Test,TX Link"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "rw",
+    "DataType": "int16",
+    "InputType": "number",
+    "ByteSize": 2,
+    "Ratio": 10
+  },
+  {
+    "PrivOid": "TB2.P0507",
+    "Name": "Power4",
+    "Groups": [
+      "Digital Module,Flatness Test,TX Link"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "rw",
+    "DataType": "int16",
+    "InputType": "number",
+    "ByteSize": 2,
+    "Ratio": 10
+  },
+  {
+    "PrivOid": "TB2.P0508",
+    "Name": "Power5",
+    "Groups": [
+      "Digital Module,Flatness Test,TX Link"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "rw",
+    "DataType": "int16",
+    "InputType": "number",
+    "ByteSize": 2,
+    "Ratio": 10
+  },
+  {
+    "PrivOid": "TB2.P0509",
+    "Name": "Power6",
+    "Groups": [
+      "Digital Module,Flatness Test,TX Link"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "rw",
+    "DataType": "int16",
+    "InputType": "number",
+    "ByteSize": 2,
+    "Ratio": 10
+  },
+  {
+    "PrivOid": "TB2.P050A",
+    "Name": "Power7",
+    "Groups": [
+      "Digital Module,Flatness Test,TX Link"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "rw",
+    "DataType": "int16",
+    "InputType": "number",
+    "ByteSize": 2,
+    "Ratio": 10
+  },
+  {
+    "PrivOid": "TB2.P050B",
+    "Name": "Power8",
+    "Groups": [
+      "Digital Module,Flatness Test,TX Link"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "rw",
+    "DataType": "int16",
+    "InputType": "number",
+    "ByteSize": 2,
+    "Ratio": 10
+  },
+  {
+    "PrivOid": "TB2.P050C",
+    "Name": "Power9",
+    "Groups": [
+      "Digital Module,Flatness Test,TX Link"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "rw",
+    "DataType": "int16",
+    "InputType": "number",
+    "ByteSize": 2,
+    "Ratio": 10
+  },
+  {
+    "PrivOid": "TB2.P050D",
+    "Name": "Power10",
+    "Groups": [
+      "Digital Module,Flatness Test,TX Link"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "rw",
+    "DataType": "int16",
+    "InputType": "number",
+    "ByteSize": 2,
+    "Ratio": 10
+  },
+  {
+    "PrivOid": "TB2.P050E",
+    "Name": "Power11",
+    "Groups": [
+      "Digital Module,Flatness Test,TX Link"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "rw",
+    "DataType": "int16",
+    "InputType": "number",
+    "ByteSize": 2,
+    "Ratio": 10
+  },
+  {
+    "PrivOid": "TB2.P050F",
+    "Name": "Power12",
+    "Groups": [
+      "Digital Module,Flatness Test,TX Link"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "rw",
+    "DataType": "int16",
+    "InputType": "number",
+    "ByteSize": 2,
+    "Ratio": 10
+  },
+  {
+    "PrivOid": "TB2.P0510",
+    "Name": "Power13",
+    "Groups": [
+      "Digital Module,Flatness Test,TX Link"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "rw",
+    "DataType": "int16",
+    "InputType": "number",
+    "ByteSize": 2,
+    "Ratio": 10
+  },
+  {
+    "PrivOid": "TB2.P0511",
+    "Name": "Power14",
+    "Groups": [
+      "Digital Module,Flatness Test,TX Link"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "rw",
+    "DataType": "int16",
+    "InputType": "number",
+    "ByteSize": 2,
+    "Ratio": 10
+  },
+  {
+    "PrivOid": "TB2.P0512",
+    "Name": "Power15",
+    "Groups": [
+      "Digital Module,Flatness Test,TX Link"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "rw",
+    "DataType": "int16",
+    "InputType": "number",
+    "ByteSize": 2,
+    "Ratio": 10
+  },
+  {
+    "PrivOid": "TB2.P0518",
+    "Name": "Power LF",
+    "Groups": [
+      "Digital Module,Flatness Test,TX Link"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "rw",
+    "DataType": "int16",
+    "InputType": "number",
+    "ByteSize": 2,
+    "Ratio": 10
+  },
+  {
+    "PrivOid": "TB2.P0519",
+    "Name": "Power HF",
+    "Groups": [
+      "Digital Module,Flatness Test,TX Link"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "rw",
+    "DataType": "int16",
+    "InputType": "number",
+    "ByteSize": 2,
+    "Ratio": 10
+  },
+  {
+    "PrivOid": "TB2.P0513",
+    "Name": "TX Single Test Done",
+    "Groups": [
+      "Digital Module,Flatness Test,TX Link"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "uint8",
+    "InputType": "button",
+    "ByteSize": 1,
+    "Options": {
+      "01": "Confirm"
+    }
+  },
+  {
+    "PrivOid": "TB2.P0514",
+    "Name": "Module1",
+    "Groups": [
+      "Digital Module,Flatness Test,Flatness Switch"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Off",
+      "01": "RX On",
+      "02": "TX On",
+      "03": "Both On"
+    }
+  },
+  {
+    "PrivOid": "TB2.P0515",
+    "Name": "Module2",
+    "Groups": [
+      "Digital Module,Flatness Test,Flatness Switch"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Off",
+      "01": "RX On",
+      "02": "TX On",
+      "03": "Both On"
+    }
+  },
+  {
+    "PrivOid": "TB2.P0531",
+    "Name": "UL Module Data Check",
+    "Groups": [
+      "Digital Module,Flatness Test,Module 1"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "default",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Invalid",
+      "01": "Valid"
+    }
+  },
+  {
+    "PrivOid": "TB2.P0535",
+    "Name": "DL Module Data Check",
+    "Groups": [
+      "Digital Module,Flatness Test,Module 1"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "default",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Invalid",
+      "01": "Valid"
+    }
+  },
+  {
+    "PrivOid": "TB2.P0539",
+    "Name": "UL Real-Imag Data Check",
+    "Groups": [
+      "Digital Module,Flatness Test,Module 1"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "default",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Invalid",
+      "01": "Valid"
+    }
+  },
+  {
+    "PrivOid": "TB2.P053D",
+    "Name": "DL Real-Imag Data Check",
+    "Groups": [
+      "Digital Module,Flatness Test,Module 1"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "default",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Invalid",
+      "01": "Valid"
+    }
+  },
+  {
+    "PrivOid": "TB2.P0532",
+    "Name": "UL Module Data Check",
+    "Groups": [
+      "Digital Module,Flatness Test,Module 2"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "default",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Invalid",
+      "01": "Valid"
+    }
+  },
+  {
+    "PrivOid": "TB2.P0536",
+    "Name": "DL Module Data Check",
+    "Groups": [
+      "Digital Module,Flatness Test,Module 2"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "default",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Invalid",
+      "01": "Valid"
+    }
+  },
+  {
+    "PrivOid": "TB2.P053A",
+    "Name": "UL Real-Imag Data Check",
+    "Groups": [
+      "Digital Module,Flatness Test,Module 2"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "default",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Invalid",
+      "01": "Valid"
+    }
+  },
+  {
+    "PrivOid": "TB2.P053E",
+    "Name": "DL Real-Imag Data Check",
+    "Groups": [
+      "Digital Module,Flatness Test,Module 2"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "default",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Invalid",
+      "01": "Valid"
+    }
+  },
+  {
+    "PrivOid": "TB2-MCU.P0AF0",
+    "Name": "Vendor",
+    "Groups": [
+      "Digital Module,MCU Parameter,Device Information"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 20
+  },
+  {
+    "PrivOid": "TB2-MCU.P0AF2",
+    "Name": "Element Product Model",
+    "Groups": [
+      "Digital Module,MCU Parameter,Device Information"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 20
+  },
+  {
+    "PrivOid": "TB2-MCU.P0AF3",
+    "Name": "Element Serial Number",
+    "Groups": [
+      "Digital Module,MCU Parameter,Device Information"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 20
+  },
+  {
+    "PrivOid": "TB2-MCU.P0BBD",
+    "Name": "The FPGA Debugging Mode Switch",
+    "Groups": [
+      "Digital Module,MCU Parameter,Device Information"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "switch",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Off",
+      "01": "On"
+    }
+  },
+  {
+    "PrivOid": "TB2-MCU.P0ADD",
+    "Name": "FlatCompensate Solution",
+    "Groups": [
+      "Digital Module,MCU Parameter,Device Information"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "A",
+      "01": "B"
+    }
+  },
+  {
+    "PrivOid": "TB2-MCU.P0AD0",
+    "Name": "Filesystem Edition",
+    "Groups": [
+      "Digital Module,MCU Parameter,Device Information"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 10
+  },
+  {
+    "PrivOid": "TB2.P0010",
+    "Name": "Uplink Maximum Gain",
+    "Groups": [
+      "Small-Signal,Gain,Module  1"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "uint8",
+    "InputType": "number",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "TB2.P0011",
+    "Name": "Uplink Gain Attenuation Value",
+    "Groups": [
+      "Small-Signal,Gain,Module  1"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "uint8",
+    "InputType": "number",
+    "ByteSize": 1,
+    "Ratio": 2
+  },
+  {
+    "PrivOid": "TB2.P0012",
+    "Name": "Uplink Gain Value",
+    "Groups": [
+      "Small-Signal,Gain,Module  1"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "uint8",
+    "InputType": "number",
+    "ByteSize": 1,
+    "Ratio": 2
+  },
+  {
+    "PrivOid": "TB2.P0013",
+    "Name": "Uplink Attenuator Value",
+    "Groups": [
+      "Small-Signal,Gain,Module  1"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "uint8",
+    "InputType": "default",
+    "ByteSize": 1,
+    "Ratio": 2
+  },
+  {
+    "PrivOid": "TB2.P0016",
+    "Name": "Downlink Maximum Gain",
+    "Groups": [
+      "Small-Signal,Gain,Module  1"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "uint8",
+    "InputType": "number",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "TB2.P0017",
+    "Name": "Downlink Gain Attenuation Value",
+    "Groups": [
+      "Small-Signal,Gain,Module  1"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "uint8",
+    "InputType": "number",
+    "ByteSize": 1,
+    "Ratio": 2
+  },
+  {
+    "PrivOid": "TB2.P0018",
+    "Name": "Downlink Gain Value",
+    "Groups": [
+      "Small-Signal,Gain,Module  1"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "uint8",
+    "InputType": "number",
+    "ByteSize": 1,
+    "Ratio": 2
+  },
+  {
+    "PrivOid": "TB2.P0019",
+    "Name": "Downlink Attenuator Value",
+    "Groups": [
+      "Small-Signal,Gain,Module  1"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "uint8",
+    "InputType": "default",
+    "ByteSize": 1,
+    "Ratio": 2
+  },
+  {
+    "PrivOid": "TB2.P0030",
+    "Name": "Uplink Maximum Gain",
+    "Groups": [
+      "Small-Signal,Gain,Module 2"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "uint8",
+    "InputType": "number",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "TB2.P0031",
+    "Name": "Uplink Gain Attenuation Value",
+    "Groups": [
+      "Small-Signal,Gain,Module 2"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "uint8",
+    "InputType": "number",
+    "ByteSize": 1,
+    "Ratio": 2
+  },
+  {
+    "PrivOid": "TB2.P0032",
+    "Name": "Uplink Gain Value",
+    "Groups": [
+      "Small-Signal,Gain,Module 2"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "uint8",
+    "InputType": "number",
+    "ByteSize": 1,
+    "Ratio": 2
+  },
+  {
+    "PrivOid": "TB2.P0033",
+    "Name": "Uplink Attenuator Value",
+    "Groups": [
+      "Small-Signal,Gain,Module 2"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "uint8",
+    "InputType": "default",
+    "ByteSize": 1,
+    "Ratio": 2
+  },
+  {
+    "PrivOid": "TB2.P0036",
+    "Name": "Downlink Maximum Gain",
+    "Groups": [
+      "Small-Signal,Gain,Module 2"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "uint8",
+    "InputType": "number",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "TB2.P0037",
+    "Name": "Downlink Gain Attenuation Value",
+    "Groups": [
+      "Small-Signal,Gain,Module 2"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "uint8",
+    "InputType": "number",
+    "ByteSize": 1,
+    "Ratio": 2
+  },
+  {
+    "PrivOid": "TB2.P0038",
+    "Name": "Downlink Gain Value",
+    "Groups": [
+      "Small-Signal,Gain,Module 2"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "uint8",
+    "InputType": "number",
+    "ByteSize": 1,
+    "Ratio": 2
+  },
+  {
+    "PrivOid": "TB2.P0039",
+    "Name": "Downlink Attenuator Value",
+    "Groups": [
+      "Small-Signal,Gain,Module 2"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "uint8",
+    "InputType": "default",
+    "ByteSize": 1,
+    "Ratio": 2
+  },
+  {
+    "PrivOid": "TB2.P001C",
+    "Name": "Uplink Centre Frequency",
+    "Groups": [
+      "Small-Signal,Frequency,Module 1"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "uint32",
+    "InputType": "number",
+    "ByteSize": 4,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "TB2.P0021",
+    "Name": "Downlink Centre Frequency",
+    "Groups": [
+      "Small-Signal,Frequency,Module 1"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "uint32",
+    "InputType": "number",
+    "ByteSize": 4,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "TB2.P003C",
+    "Name": "Uplink Centre Frequency",
+    "Groups": [
+      "Small-Signal,Frequency,Module 2"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "uint32",
+    "InputType": "number",
+    "ByteSize": 4,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "TB2.P0041",
+    "Name": "Downlink Centre Frequency",
+    "Groups": [
+      "Small-Signal,Frequency,Module 2"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "uint32",
+    "InputType": "number",
+    "ByteSize": 4,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "TB2.P01C1",
+    "Name": "Frequency Gain Compensation Switch",
+    "Groups": [
+      "Small-Signal,Other Parameters,Switch Control"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "switch",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Off",
+      "01": "On"
+    }
+  },
+  {
+    "PrivOid": "TB2.P01C5",
+    "Name": "FeedBack Switch",
+    "Groups": [
+      "Small-Signal,Other Parameters,Switch Control"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "switch",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Off",
+      "01": "On"
+    }
+  },
+  {
+    "PrivOid": "TB2.P01C6",
+    "Name": "FeedBack/Reverse Switch",
+    "Groups": [
+      "Small-Signal,Other Parameters,Switch Control"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "switch",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Off",
+      "01": "On"
+    }
+  },
+  {
+    "PrivOid": "TB2.P00CA",
+    "Name": "Temperature Compensation Enable",
+    "Groups": [
+      "Small-Signal,Other Parameters,Temperature Compensation"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "switch",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Off",
+      "01": "On"
+    }
+  },
+  {
+    "PrivOid": "TB2.P0027",
+    "Name": "Module1 Reverse Power",
+    "Groups": [
+      "Small-Signal,Other Parameters,Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 10
+  },
+  {
+    "PrivOid": "TB2.P0028",
+    "Name": "Module1 Reverse Power Bias Value",
+    "Groups": [
+      "Small-Signal,Other Parameters,Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "int16",
+    "InputType": "number",
+    "ByteSize": 2,
+    "Ratio": 10
+  },
+  {
+    "PrivOid": "TB2.P0047",
+    "Name": "Module2 Reverse Power",
+    "Groups": [
+      "Small-Signal,Other Parameters,Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 10
+  },
+  {
+    "PrivOid": "TB2.P0048",
+    "Name": "Module2 Reverse Power Bias Value",
+    "Groups": [
+      "Small-Signal,Other Parameters,Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "int16",
+    "InputType": "number",
+    "ByteSize": 2,
+    "Ratio": 10
+  },
+  {
+    "PrivOid": "TB2.P0026",
+    "Name": "Module1 Feedback Cali Value",
+    "Groups": [
+      "Small-Signal,Other Parameters,Feedback"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "uint8",
+    "InputType": "number",
+    "ByteSize": 1,
+    "Ratio": 2
+  },
+  {
+    "PrivOid": "TB2.P002A",
+    "Name": "Module1 Feedback Attenuation Value",
+    "Groups": [
+      "Small-Signal,Other Parameters,Feedback"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "uint8",
+    "InputType": "default",
+    "ByteSize": 1,
+    "Ratio": 2
+  },
+  {
+    "PrivOid": "TB2.P0068",
+    "Name": "Module1 FeedBack Power",
+    "Groups": [
+      "Small-Signal,Other Parameters,Feedback"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 10
+  },
+  {
+    "PrivOid": "TB2.P0046",
+    "Name": "Module2 Feedback Cali Value",
+    "Groups": [
+      "Small-Signal,Other Parameters,Feedback"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "uint8",
+    "InputType": "number",
+    "ByteSize": 1,
+    "Ratio": 2
+  },
+  {
+    "PrivOid": "TB2.P004A",
+    "Name": "Module2 Feedback Attenuation Value",
+    "Groups": [
+      "Small-Signal,Other Parameters,Feedback"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "uint8",
+    "InputType": "default",
+    "ByteSize": 1,
+    "Ratio": 2
+  },
+  {
+    "PrivOid": "TB2.P0069",
+    "Name": "Module2 FeedBack Power",
+    "Groups": [
+      "Small-Signal,Other Parameters,Feedback"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 10
+  },
+  {
+    "PrivOid": "TB2-PA.P01A0",
+    "Name": "Output Power Value",
+    "Groups": [
+      "PA,PA 1 Info,Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "TB2-PA.P01A2",
+    "Name": "Output Power AD Value",
+    "Groups": [
+      "PA,PA 1 Info,Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "uint16",
+    "InputType": "default",
+    "ByteSize": 2
+  },
+  {
+    "PrivOid": "TB2-PA.P01A4",
+    "Name": "Output Power Slope",
+    "Groups": [
+      "PA,PA 1 Info,Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "int16",
+    "InputType": "number",
+    "ByteSize": 2,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "TB2-PA.P01A6",
+    "Name": "Output Power Nodal Increment",
+    "Groups": [
+      "PA,PA 1 Info,Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "int16",
+    "InputType": "number",
+    "ByteSize": 2,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "TB2-PA.P0088",
+    "Name": "Power Amplifier Bias Value 1",
+    "Groups": [
+      "PA,PA 1 Info,Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "int16",
+    "InputType": "number",
+    "ByteSize": 2
+  },
+  {
+    "PrivOid": "TB2-PA.P008E",
+    "Name": "Power Amplifier Bias Value 2",
+    "Groups": [
+      "PA,PA 1 Info,Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "int16",
+    "InputType": "number",
+    "ByteSize": 2
+  },
+  {
+    "PrivOid": "TB2-PA.P0094",
+    "Name": "Power Amplifier Bias Value 3",
+    "Groups": [
+      "PA,PA 1 Info,Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "int16",
+    "InputType": "number",
+    "ByteSize": 2
+  },
+  {
+    "PrivOid": "TB2-PA.P02B4",
+    "Name": "Tx Temperature Compensation Coefficient",
+    "Groups": [
+      "PA,PA 1 Info,Temperature"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "int16",
+    "InputType": "number",
+    "ByteSize": 2,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "TB2-PA.P02B6",
+    "Name": "Rx Temperature Compensation Coefficient",
+    "Groups": [
+      "PA,PA 1 Info,Temperature"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "int16",
+    "InputType": "number",
+    "ByteSize": 2,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "TB2-PA.P00CA",
+    "Name": "Actual Temperature",
+    "Groups": [
+      "PA,PA 1 Info,Temperature"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 2
+  },
+  {
+    "PrivOid": "TB2-PA.P02BC",
+    "Name": "Uplink Frequency Starter Limit",
+    "Groups": [
+      "PA,PA 1 Info,Frequency Lower/Upper limit"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "uint32",
+    "InputType": "number",
+    "ByteSize": 4,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "TB2-PA.P02B8",
+    "Name": "Uplink Frequency Upper Limit",
+    "Groups": [
+      "PA,PA 1 Info,Frequency Lower/Upper limit"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "uint32",
+    "InputType": "number",
+    "ByteSize": 4,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "TB2-PA.P02C4",
+    "Name": "Downlink Frequency Starter Limit",
+    "Groups": [
+      "PA,PA 1 Info,Frequency Lower/Upper limit"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "uint32",
+    "InputType": "number",
+    "ByteSize": 4,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "TB2-PA.P02C0",
+    "Name": "Downlink Frequency Upper Limit",
+    "Groups": [
+      "PA,PA 1 Info,Frequency Lower/Upper limit"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "uint32",
+    "InputType": "number",
+    "ByteSize": 4,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "TB2-PA.P00C0",
+    "Name": "RF Module Address",
+    "Groups": [
+      "PA,PA 1 Info,Module"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "default",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "TB2-PA.P00E0",
+    "Name": "Software Version",
+    "Groups": [
+      "PA,PA 1 Info,Module"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "default",
+    "ByteSize": 2
+  },
+  {
+    "PrivOid": "TB2-PA.P00E2",
+    "Name": "Program File CRC",
+    "Groups": [
+      "PA,PA 1 Info,Module"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "default",
+    "ByteSize": 2
+  },
+  {
+    "PrivOid": "TB2-PA.P00E4",
+    "Name": "Serial Number",
+    "Groups": [
+      "PA,PA 1 Info,Module"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 20
+  },
+  {
+    "PrivOid": "TB2-PA.P00E5",
+    "Name": "Module Identification Number",
+    "Groups": [
+      "PA,PA 1 Info,Module"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "default",
+    "ByteSize": 5
+  },
+  {
+    "PrivOid": "TB2-PA.P0B00",
+    "Name": "EPA Switch",
+    "Groups": [
+      "PA,PA 2 Info,Switch"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "switch",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Off",
+      "01": "On"
+    }
+  },
+  {
+    "PrivOid": "TB2-PA.P0B3F",
+    "Name": "MPA Switch",
+    "Groups": [
+      "PA,PA 2 Info,Switch"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "switch",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Off",
+      "01": "On"
+    }
+  },
+  {
+    "PrivOid": "TB2-PA.P0B01",
+    "Name": "LNA Switch",
+    "Groups": [
+      "PA,PA 2 Info,Switch"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "switch",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Off",
+      "01": "On"
+    }
+  },
+  {
+    "PrivOid": "TB2-PA.P0BEF",
+    "Name": "DL Output-Power Limited Power Value(3.3V)",
+    "Groups": [
+      "PA,PA 2 Info,Limited"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "int32",
+    "InputType": "number",
+    "ByteSize": 4,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "TB2-PA.P0BED",
+    "Name": "DL Output-Power Limited AD Value(3.3V)",
+    "Groups": [
+      "PA,PA 2 Info,Limited"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "uint16",
+    "InputType": "default",
+    "ByteSize": 2
+  },
+  {
+    "PrivOid": "TB2-PA.P0B02",
+    "Name": "DL-Output Limited Indication",
+    "Groups": [
+      "PA,PA 2 Info,Limited"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "TB2-PA.P0D03",
+    "Name": "UL Output-Power Limited Power Value(3.3V)",
+    "Groups": [
+      "PA,PA 2 Info,Limited"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "int32",
+    "InputType": "number",
+    "ByteSize": 4,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "TB2-PA.P0D07",
+    "Name": "UL Output-Power Limited AD Value(3.3V)",
+    "Groups": [
+      "PA,PA 2 Info,Limited"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "uint16",
+    "InputType": "default",
+    "ByteSize": 2
+  },
+  {
+    "PrivOid": "TB2-PA.P0BD4",
+    "Name": "UL-Output Limited Indication",
+    "Groups": [
+      "PA,PA 2 Info,Limited"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "TB2-PA.P0B09",
+    "Name": "Reflect Power Value",
+    "Groups": [
+      "PA,PA 2 Info,Reflect Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "int32",
+    "InputType": "default",
+    "ByteSize": 4,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "TB2-PA.P0B0D",
+    "Name": "Reflect Power AD Value(3.3V)",
+    "Groups": [
+      "PA,PA 2 Info,Reflect Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "uint32",
+    "InputType": "default",
+    "ByteSize": 4
+  },
+  {
+    "PrivOid": "TB2-PA.P0B11",
+    "Name": "Reflect Power Slope",
+    "Groups": [
+      "PA,PA 2 Info,Reflect Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "int32",
+    "InputType": "number",
+    "ByteSize": 4,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "TB2-PA.P0B15",
+    "Name": "Reflect Power Nodal Increment",
+    "Groups": [
+      "PA,PA 2 Info,Reflect Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "int32",
+    "InputType": "number",
+    "ByteSize": 4,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "TB2-PA.P0B19",
+    "Name": "Output Power Value",
+    "Groups": [
+      "PA,PA 2 Info,DL-Output Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "int32",
+    "InputType": "default",
+    "ByteSize": 4,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "TB2-PA.P0B1D",
+    "Name": "Output Power AD Value(3.3V)",
+    "Groups": [
+      "PA,PA 2 Info,DL-Output Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "uint32",
+    "InputType": "default",
+    "ByteSize": 4
+  },
+  {
+    "PrivOid": "TB2-PA.P0B21",
+    "Name": "Output Power Slope",
+    "Groups": [
+      "PA,PA 2 Info,DL-Output Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "int32",
+    "InputType": "number",
+    "ByteSize": 4,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "TB2-PA.P0B25",
+    "Name": "Output Power Nodal Increment",
+    "Groups": [
+      "PA,PA 2 Info,DL-Output Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "int32",
+    "InputType": "number",
+    "ByteSize": 4,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "TB2-PA.P0BD5",
+    "Name": "Output Power Value",
+    "Groups": [
+      "PA,PA 2 Info,UL-Output Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "int32",
+    "InputType": "default",
+    "ByteSize": 4,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "TB2-PA.P0BD9",
+    "Name": "Output Power AD Value",
+    "Groups": [
+      "PA,PA 2 Info,UL-Output Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "uint32",
+    "InputType": "default",
+    "ByteSize": 4
+  },
+  {
+    "PrivOid": "TB2-PA.P0BDD",
+    "Name": "Output Power Slope",
+    "Groups": [
+      "PA,PA 2 Info,UL-Output Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "int32",
+    "InputType": "number",
+    "ByteSize": 4,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "TB2-PA.P0BE1",
+    "Name": "Output Power Nodal Increment",
+    "Groups": [
+      "PA,PA 2 Info,UL-Output Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "int32",
+    "InputType": "number",
+    "ByteSize": 4,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "TB2-PA.P0B03",
+    "Name": "PA Current Value",
+    "Groups": [
+      "PA,PA 2 Info,Current"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "uint32",
+    "InputType": "default",
+    "ByteSize": 4,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "TB2-PA.P0B07",
+    "Name": "PA Current AD Value",
+    "Groups": [
+      "PA,PA 2 Info,Current"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "uint16",
+    "InputType": "default",
+    "ByteSize": 2
+  },
+  {
+    "PrivOid": "TB2-PA.P0ABC",
+    "Name": "Uplink Frequency Starter Limit",
+    "Groups": [
+      "PA,PA 2 Info,Frequency Lower/Upper limit"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "uint32",
+    "InputType": "number",
+    "ByteSize": 4,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "TB2-PA.P0AB8",
+    "Name": "Uplink Frequency Upper Limit",
+    "Groups": [
+      "PA,PA 2 Info,Frequency Lower/Upper limit"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "uint32",
+    "InputType": "number",
+    "ByteSize": 4,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "TB2-PA.P0AC4",
+    "Name": "Downlink Frequency Starter Limit",
+    "Groups": [
+      "PA,PA 2 Info,Frequency Lower/Upper limit"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "uint32",
+    "InputType": "number",
+    "ByteSize": 4,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "TB2-PA.P0AC0",
+    "Name": "Downlink Frequency Lpper Limit",
+    "Groups": [
+      "PA,PA 2 Info,Frequency Lower/Upper limit"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "uint32",
+    "InputType": "number",
+    "ByteSize": 4,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "TB2-PA.P08C0",
+    "Name": "RF Module Address",
+    "Groups": [
+      "PA,PA 2 Info,Module"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "default",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "TB2-PA.P08E0",
+    "Name": "Software Version",
+    "Groups": [
+      "PA,PA 2 Info,Module"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "default",
+    "ByteSize": 2
+  },
+  {
+    "PrivOid": "TB2-PA.P08E2",
+    "Name": "Program File CRC",
+    "Groups": [
+      "PA,PA 2 Info,Module"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "default",
+    "ByteSize": 2
+  },
+  {
+    "PrivOid": "TB2-PA.P08E4",
+    "Name": "Serial Number",
+    "Groups": [
+      "PA,PA 2 Info,Module"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 20
+  },
+  {
+    "PrivOid": "TB2-PA.P08E5",
+    "Name": "Module Identification Number",
+    "Groups": [
+      "PA,PA 2 Info,Module"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "default",
+    "ByteSize": 5
+  },
+  {
+    "PrivOid": "TB2.P0AB4",
+    "Name": "Tx Temperature Compensation Coefficient",
+    "Groups": [
+      "PA,Loop Info,Temperature"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "int16",
+    "InputType": "number",
+    "ByteSize": 2,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "TB2.P0AB6",
+    "Name": "Rx Temperature Compensation Coefficient",
+    "Groups": [
+      "PA,Loop Info,Temperature"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "int16",
+    "InputType": "number",
+    "ByteSize": 2,
+    "Ratio": 1000
+  },
+  {
+    "PrivOid": "TB2.P08CA",
+    "Name": "Temperature1",
+    "Groups": [
+      "PA,Loop Info,Temperature"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 2
+  },
+  {
+    "PrivOid": "TB2.P0D09",
+    "Name": "Temperature2",
+    "Groups": [
+      "PA,Loop Info,Temperature"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 2
+  },
+  {
+    "PrivOid": "TB2.P0B53",
+    "Name": "Temperature Base Value",
+    "Groups": [
+      "PA,Loop Info,Temperature"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "int16",
+    "InputType": "number",
+    "ByteSize": 2,
+    "Ratio": 2
+  },
+  {
+    "PrivOid": "TB2.P0BD1",
+    "Name": "Gate-voltage Step1",
+    "Groups": [
+      "PA,Loop Info,EPA Gate voltage"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "int16",
+    "InputType": "number",
+    "ByteSize": 2,
+    "Ratio": 100
+  },
+  {
+    "PrivOid": "TB2.P0B2D",
+    "Name": "EPA Gate-voltage1 Set Value",
+    "Groups": [
+      "PA,Loop Info,EPA Gate voltage"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "int16",
+    "InputType": "number",
+    "ByteSize": 2
+  },
+  {
+    "PrivOid": "TB2.P0B2F",
+    "Name": "EPA Gate-voltage2 Set Value",
+    "Groups": [
+      "PA,Loop Info,EPA Gate voltage"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "int16",
+    "InputType": "number",
+    "ByteSize": 2
+  },
+  {
+    "PrivOid": "TB2.P0BCD",
+    "Name": "EPA Gate-voltage1 Current Value",
+    "Groups": [
+      "PA,Loop Info,EPA Gate voltage"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2
+  },
+  {
+    "PrivOid": "TB2.P0BCF",
+    "Name": "EPA Gate-voltage2 Current Value",
+    "Groups": [
+      "PA,Loop Info,EPA Gate voltage"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2
+  },
+  {
+    "PrivOid": "TB2.P0BEB",
+    "Name": "Gate-voltage Step1",
+    "Groups": [
+      "PA,Loop Info,MPA Gate voltage"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "int16",
+    "InputType": "number",
+    "ByteSize": 2,
+    "Ratio": 100
+  },
+  {
+    "PrivOid": "TB2.P0B40",
+    "Name": "MPA Gate-voltage1 Set Value",
+    "Groups": [
+      "PA,Loop Info,MPA Gate voltage"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "int16",
+    "InputType": "number",
+    "ByteSize": 2
+  },
+  {
+    "PrivOid": "TB2.P0BE5",
+    "Name": "MPA Gate-voltage1 Current Value",
+    "Groups": [
+      "PA,Loop Info,MPA Gate voltage"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2
+  },
+  {
+    "PrivOid": "TB2.P0D0B",
+    "Name": "Gate-voltage Step2",
+    "Groups": [
+      "PA,Loop Info,MPA Gate voltage"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "int16",
+    "InputType": "number",
+    "ByteSize": 2,
+    "Ratio": 100
+  },
+  {
+    "PrivOid": "TB2.P0B42",
+    "Name": "MPA Gate-voltage2 Set Value",
+    "Groups": [
+      "PA,Loop Info,MPA Gate voltage"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "int16",
+    "InputType": "number",
+    "ByteSize": 2
+  },
+  {
+    "PrivOid": "TB2.P0B48",
+    "Name": "MPA Gate-voltage3 Set Value",
+    "Groups": [
+      "PA,Loop Info,MPA Gate voltage"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "int16",
+    "InputType": "number",
+    "ByteSize": 2
+  },
+  {
+    "PrivOid": "TB2.P0BE7",
+    "Name": "MPA Gate-voltage2 Current Value",
+    "Groups": [
+      "PA,Loop Info,MPA Gate voltage"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2
+  },
+  {
+    "PrivOid": "TB2.P0BE9",
+    "Name": "MPA Gate-voltage3 Current Value",
+    "Groups": [
+      "PA,Loop Info,MPA Gate voltage"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2
+  },
+  {
+    "PrivOid": "TB2.P0B31",
+    "Name": "Loop1 VA1 Set Value",
+    "Groups": [
+      "PA,Loop Info,Loop1"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "int16",
+    "InputType": "number",
+    "ByteSize": 2
+  },
+  {
+    "PrivOid": "TB2.P0B33",
+    "Name": "Loop1 VP1 Set Value",
+    "Groups": [
+      "PA,Loop Info,Loop1"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "int16",
+    "InputType": "number",
+    "ByteSize": 2
+  },
+  {
+    "PrivOid": "TB2.P0B44",
+    "Name": "Loop1 VP1_2 Set Value",
+    "Groups": [
+      "PA,Loop Info,Loop1"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "int16",
+    "InputType": "number",
+    "ByteSize": 2
+  },
+  {
+    "PrivOid": "TB2.P0B39",
+    "Name": "Loop1 Atuo Switch",
+    "Groups": [
+      "PA,Loop Info,Loop1"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "switch",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Off",
+      "01": "On"
+    }
+  },
+  {
+    "PrivOid": "TB2.P0B4B",
+    "Name": "Loop1 VA1 Current Value",
+    "Groups": [
+      "PA,Loop Info,Loop1"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2
+  },
+  {
+    "PrivOid": "TB2.P0B4D",
+    "Name": "Loop1 VP1 Current Value",
+    "Groups": [
+      "PA,Loop Info,Loop1"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2
+  },
+  {
+    "PrivOid": "TB2.P0B29",
+    "Name": "Loop1 Error-Power AD Value",
+    "Groups": [
+      "PA,Loop Info,Loop1"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "int32",
+    "InputType": "default",
+    "ByteSize": 4
+  },
+  {
+    "PrivOid": "TB2.P0B3A",
+    "Name": "Loop2 VA2 Set Value",
+    "Groups": [
+      "PA,Loop Info,Loop2"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "int16",
+    "InputType": "number",
+    "ByteSize": 2
+  },
+  {
+    "PrivOid": "TB2.P0B3C",
+    "Name": "Loop2 VP2 Set Value",
+    "Groups": [
+      "PA,Loop Info,Loop2"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "int16",
+    "InputType": "number",
+    "ByteSize": 2
+  },
+  {
+    "PrivOid": "TB2.P0B46",
+    "Name": "Loop2 VP2_2 Set Value",
+    "Groups": [
+      "PA,Loop Info,Loop2"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "int16",
+    "InputType": "number",
+    "ByteSize": 2
+  },
+  {
+    "PrivOid": "TB2.P0D0D",
+    "Name": "Loop2 Break Point Temperature",
+    "Groups": [
+      "PA,Loop Info,Loop2"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "int16",
+    "InputType": "number",
+    "ByteSize": 2,
+    "Ratio": 2
+  },
+  {
+    "PrivOid": "TB2.P0B55",
+    "Name": "Loop2 VA2 Step_R",
+    "Groups": [
+      "PA,Loop Info,Loop2"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "int16",
+    "InputType": "number",
+    "ByteSize": 2,
+    "Ratio": 10
+  },
+  {
+    "PrivOid": "TB2.P0B57",
+    "Name": "Loop2 VP2 Step_R",
+    "Groups": [
+      "PA,Loop Info,Loop2"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "int16",
+    "InputType": "number",
+    "ByteSize": 2,
+    "Ratio": 10
+  },
+  {
+    "PrivOid": "TB2.P0D0F",
+    "Name": "Loop2 VA2 Step_L",
+    "Groups": [
+      "PA,Loop Info,Loop2"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "int16",
+    "InputType": "number",
+    "ByteSize": 2,
+    "Ratio": 10
+  },
+  {
+    "PrivOid": "TB2.P0D11",
+    "Name": "Loop2 VP2 Step_L",
+    "Groups": [
+      "PA,Loop Info,Loop2"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "int16",
+    "InputType": "number",
+    "ByteSize": 2,
+    "Ratio": 10
+  },
+  {
+    "PrivOid": "TB2.P0B4A",
+    "Name": "Loop2 Atuo Switch",
+    "Groups": [
+      "PA,Loop Info,Loop2"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "switch",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Off",
+      "01": "On"
+    }
+  },
+  {
+    "PrivOid": "TB2.P0B4F",
+    "Name": "Loop2 VA2 Current Value",
+    "Groups": [
+      "PA,Loop Info,Loop2"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2
+  },
+  {
+    "PrivOid": "TB2.P0B51",
+    "Name": "Loop2 VP2 Current Value",
+    "Groups": [
+      "PA,Loop Info,Loop2"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2
+  },
+  {
+    "PrivOid": "TB2.P0AD0",
+    "Name": "PD-B Set",
+    "Groups": [
+      "PA,Loop Info,PD"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "uint16",
+    "InputType": "number",
+    "ByteSize": 2
+  },
+  {
+    "PrivOid": "TB2.P0AD4",
+    "Name": "PD-P Set",
+    "Groups": [
+      "PA,Loop Info,PD"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "uint16",
+    "InputType": "number",
+    "ByteSize": 2
+  },
+  {
+    "PrivOid": "TB2.P0AD2",
+    "Name": "PD-B Cur",
+    "Groups": [
+      "PA,Loop Info,PD"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "uint16",
+    "InputType": "default",
+    "ByteSize": 2
+  },
+  {
+    "PrivOid": "TB2.P0AD6",
+    "Name": "PD-P Cur",
+    "Groups": [
+      "PA,Loop Info,PD"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "uint16",
+    "InputType": "default",
+    "ByteSize": 2
+  }
+]

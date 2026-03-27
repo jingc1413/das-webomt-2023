@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<matchineroot nodetype="machine" deviceid="00" stationid="00000001" havetopo="0" needlogin="2" ismaster="0"  havesms="0" haveauto="1"  repeatername="DAS E2-O" repeatertype="E2-O" telephone="" protocol="移动3G" AutoNum="09044E0C040000000000" support_en="1">
+  <m_project nodetype="module" name_en="Settings" name="工程" address="ff" cfglevel="0">
+    <p_status nodetype="page" name_en="DAS Topo" name="DAS拓扑" ChmCmd="02" savetime="1332167209">
+      <g_alarm nodetype="pannel" name="告警">
+        <p0000 nodetype="gui2_param" AUOP7="0xF1" AUOP8="0xF1" sumEUOPs="6" sumOPs="8"  hasErrorMachn="false"/>
+      </g_alarm>
+    </p_status>
+    <p_user nodetype="page" name_en="LAN Connectivity" name="网络管理" ChmCmd="02" UnCmd="54" SwCmd="35" savetime="1333537342">
+      <g_netinfo nodetype="group" name_en="Element Identification" name="通用" groupid="snmpgroup" >
+        <p0002 nodetype="param" datatype="02" edittype="00" rate="1" len="20" limit="ro" caption_en="Vendor" caption="设备厂商名称" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0003 nodetype="param1" datatype="03" section_en="overseatype_en" section="overseatype" edittype="01" rate="1" len="1" limit="ro" caption_en="Device Category" caption="设备类别" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0004 nodetype="param" datatype="02" edittype="02" rate="1" len="20" limit="nrw" caption_en="Element Model Number" caption="设备型号" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0005 nodetype="param" datatype="02" edittype="00" rate="1" len="20" limit="ro" caption_en="Element Serial Number" caption="设备生产序列号" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p000a nodetype="param" datatype="02" edittype="00" rate="1" len="20" limit="ro" caption_en="Software Version" caption="监控版本信息" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0021 nodetype="param1" datatype="02" edittype="00" rate="1" len="20" limit="ro" caption_en="FPGA Edition" caption="FPGA版本" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0101 nodetype="param" datatype="03" edittype="02" rate="1" len="4"  limit="nrw" caption_en="Device ID" caption="站点编号" unit_en="" unit="" range="hexadecimal" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0102 nodetype="param" datatype="00" edittype="02" rate="1" len="1"  limit="nrw" caption_en="Device Sub ID" caption="设备编号" unit_en="" unit="" range="decimalism" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0023 nodetype="param" datatype="02" edittype="02" rate="1" len="20" limit="nrw" caption_en="Installed Location Label" caption="设备位置信息" unit="" range="20 characters" facevalue="" checked="0" fontcolor="1"/>
+        <p0024 nodetype="param" datatype="02" edittype="00" rate="1" len="100" limit="ro" caption_en="Site Name" caption="站点信息"  unit="" range="100 characters" facevalue="" checked="0" fontcolor="1"/>
+        <p0030 nodetype="param" datatype="02" edittype="02" rate="1" len="40" limit="nrw" caption_en="Device Name" caption="设备信息" unit="" range="40 characters" facevalue="" checked="0" fontcolor="1"/>
+        <p0501 nodetype="param" datatype="01" edittype="00" rate="1" len="1"  limit="ro"  caption_en="Element Operating Temperature" caption="设备温度" unit="℃" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0873 nodetype="param1" datatype="09" edittype="00" rate="1" len="4"  limit="ro"  caption_en="Element Routing Address" caption="设备路由地址" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+      </g_netinfo>
+      <g_netinfo nodetype="group" name_en="Optical Module Serial Numbers And Vendor Name" name="光模块序列号和厂家名称" groupid="snmpgroup" >
+        <p0a96 nodetype="param" specialtype="01" datatype="02" edittype="00" rate="1" len="16" limit="ro" caption_en="OP1 Transceiver" caption="光口1光模块" unit="" range="" facevalue="" checked="0" fontcolor="1">
+          <p0aa6 nodetype="param" datatype="02" edittype="00" rate="1" len="16" limit="ro" caption_en="OP1 Transceiver" caption="光口1光模块" unit="16 characters" range="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a96>
+        <p0a97 nodetype="param" specialtype="01" datatype="02" edittype="00" rate="1" len="16" limit="ro" caption_en="OP2 Transceiver" caption="光口2光模块" unit="" range="" facevalue="" checked="0" fontcolor="1">
+          <p0aa7 nodetype="param" datatype="02" edittype="00" rate="1" len="16" limit="ro" caption_en="OP2 Transceiver" caption="光口2光模块" unit="16 characters" range="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a97>
+        <p0a98 nodetype="param" specialtype="01" datatype="02" edittype="00" rate="1" len="16" limit="ro" caption_en="OP3 Transceiver" caption="光口3光模块" unit="" range="" facevalue="" checked="0" fontcolor="1">
+          <p0aa8 nodetype="param" datatype="02" edittype="00" rate="1" len="16" limit="ro" caption_en="OP3 Transceiver" caption="光口3光模块" unit="16 characters" range="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a98>
+        <p0a99 nodetype="param" specialtype="01" datatype="02" edittype="00" rate="1" len="16" limit="ro" caption_en="OP4 Transceiver" caption="光口4光模块" unit="" range="" facevalue="" checked="0" fontcolor="1">
+          <p0aa9 nodetype="param" datatype="02" edittype="00" rate="1" len="16" limit="ro" caption_en="OP4 Transceiver" caption="光口4光模块" unit="16 characters" range="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a99>
+        <p0a9a nodetype="param" specialtype="01" datatype="02" edittype="00" rate="1" len="16" limit="ro" caption_en="OP5 Transceiver" caption="光口5光模块" unit="" range="" facevalue="" checked="0" fontcolor="1">
+          <p0aaa nodetype="param" datatype="02" edittype="00" rate="1" len="16" limit="ro" caption_en="OP5 Transceiver" caption="光口5光模块" unit="16 characters" range="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a9a>
+        <p0a9b nodetype="param" specialtype="01" datatype="02" edittype="00" rate="1" len="16" limit="ro" caption_en="OP6 Transceiver" caption="光口6光模块" unit="" range="" facevalue="" checked="0" fontcolor="1">
+          <p0aab nodetype="param" datatype="02" edittype="00" rate="1" len="16" limit="ro" caption_en="OP6 Transceiver" caption="光口6光模块" unit="16 characters" range="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a9b>
+        <p0a9c nodetype="param" specialtype="01" datatype="02" edittype="00" rate="1" len="16" limit="ro" caption_en="OP7 Transceiver" caption="光口7光模块" unit="" range="" facevalue="" checked="0" fontcolor="1">
+          <p0aac nodetype="param" datatype="02" edittype="00" rate="1" len="16" limit="ro" caption_en="OP7 Transceiver" caption="光口7光模块" unit="16 characters" range="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a9c>
+        <p0a9d nodetype="param" specialtype="01" datatype="02" edittype="00" rate="1" len="16" limit="ro" caption_en="OP8 Transceiver" caption="光口8光模块" unit="" range="" facevalue="" checked="0" fontcolor="1">
+          <p0aad nodetype="param" datatype="02" edittype="00" rate="1" len="16" limit="ro" caption_en="OP8 Transceiver" caption="光口8光模块" unit="16 characters" range="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a9d>
+        <p0a8f nodetype="param" specialtype="01" datatype="02" edittype="00" rate="1" len="16" limit="ro" caption_en="OP9 Transceiver" caption="光口9光模块" unit="" range="" facevalue="" checked="0" fontcolor="1">
+          <p0aae nodetype="param" datatype="02" edittype="00" rate="1" len="16" limit="ro" caption_en="OP9 Transceiver" caption="光口9光模块" unit="16 characters" range="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a8f>
+        <p0a90 nodetype="param" specialtype="01" datatype="02" edittype="00" rate="1" len="16" limit="ro" caption_en="OP10 Transceiver" caption="光口10光模块" unit="" range="" facevalue="" checked="0" fontcolor="1">
+          <p0aaf nodetype="param" datatype="02" edittype="00" rate="1" len="16" limit="ro" caption_en="OP10 Transceiver" caption="光口10光模块" unit="16 characters" range="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a90>
+        <p0aa0 nodetype="param" specialtype="01" datatype="02" edittype="00" rate="1" len="16" limit="ro" caption_en="OP11 Transceiver" caption="光口11光模块" unit="" range="" facevalue="" checked="0" fontcolor="1">
+          <p0ab0 nodetype="param" datatype="02" edittype="00" rate="1" len="16" limit="ro" caption_en="OP11 Transceiver" caption="光口11光模块" unit="16 characters" range="" facevalue="" checked="0" fontcolor="1"/>
+        </p0aa0>
+        <p0aa1 nodetype="param" specialtype="01" datatype="02" edittype="00" rate="1" len="16" limit="ro" caption_en="OP12 Transceiver" caption="光口12光模块" unit="" range="" facevalue="" checked="0" fontcolor="1">
+          <p0ab1 nodetype="param" datatype="02" edittype="00" rate="1" len="16" limit="ro" caption_en="OP12 Transceiver" caption="光口12光模块" unit="16 characters" range="" facevalue="" checked="0" fontcolor="1"/>
+        </p0aa1>
+        <p0aa2 nodetype="param" specialtype="01" datatype="02" edittype="00" rate="1" len="16" limit="ro" caption_en="OP13 Transceiver" caption="光口13光模块" unit="" range="" facevalue="" checked="0" fontcolor="1">
+          <p0ab2 nodetype="param" datatype="02" edittype="00" rate="1" len="16" limit="ro" caption_en="OP13 Transceiver" caption="光口13光模块" unit="16 characters" range="" facevalue="" checked="0" fontcolor="1"/>
+        </p0aa2>
+        <p0aa3 nodetype="param" specialtype="01" datatype="02" edittype="00" rate="1" len="16" limit="ro" caption_en="OP14 Transceiver" caption="光口14光模块" unit="" range="" facevalue="" checked="0" fontcolor="1">
+          <p0ab3 nodetype="param" datatype="02" edittype="00" rate="1" len="16" limit="ro" caption_en="OP14 Transceiver" caption="光口14光模块" unit="16 characters" range="" facevalue="" checked="0" fontcolor="1"/>
+        </p0aa3>
+        <p0a9e nodetype="param" specialtype="01" datatype="02" edittype="00" rate="1" len="16" limit="ro" caption_en="OP-slave Transceiver" caption="输入光口光模块" unit="" range="" facevalue="" checked="0" fontcolor="1">
+          <p0a01 nodetype="param" datatype="02" edittype="00" rate="1" len="16" limit="ro" caption_en="OP-slave Transceiver" caption="输入光口光模块" unit="16 characters" range="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a9e>
+        <p0a9f nodetype="param" specialtype="01" datatype="02" edittype="00" rate="1" len="16" limit="ro" caption_en="OP-master Transceiver" caption="输出光口光模块" unit="" range="" facevalue="" checked="0" fontcolor="1">
+          <p0a04 nodetype="param" datatype="02" edittype="00" rate="1" len="16" limit="ro" caption_en="OP-master Transceiver" caption="输出光口光模块" unit="16 characters" range="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a9f>
+      </g_netinfo>
+      <g_netinfo nodetype="group" name_en="Optical Module Tx Power And Rx Power" name="光模块发送和接收功率" groupid="snmpgroup" >
+        <p0a40 nodetype="param" specialtype="01" datatype="01" edittype="00" rate="100" len="2" limit="ro" caption="光口1光模块" caption_en="OP1 Transceiver" unit="dBm" range="" facevalue="" checked="0" fontcolor="1">
+          <p0a50 nodetype="param" datatype="01" edittype="00" rate="100" len="2" limit="ro" caption="光口1光模块发送/接收功率" caption_en="OP1 Transceiver Tx/Rx Power" unit="dBm" range="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a40>
+        <p0a41 nodetype="param" specialtype="01" datatype="01" edittype="00" rate="100" len="2" limit="ro" caption="光口2光模块" caption_en="OP2 Transceiver" unit="dBm" range="" facevalue="" checked="0" fontcolor="1">
+          <p0a51 nodetype="param" datatype="01" edittype="00" rate="100" len="2" limit="ro" caption="光口2光模块发送/接收功率" caption_en="OP2 Transceiver Tx/Rx Power" unit="dBm" range="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a41>
+        <p0a42 nodetype="param" specialtype="01" datatype="01" edittype="00" rate="100" len="2" limit="ro" caption="光口3光模块" caption_en="OP3 Transceiver" unit="dBm" range="" facevalue="" checked="0" fontcolor="1">
+          <p0a52 nodetype="param" datatype="01" edittype="00" rate="100" len="2" limit="ro" caption="光口3光模块发送/接收功率" caption_en="OP3 Transceiver Tx/Rx Power" unit="dBm" range="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a42>
+        <p0a43 nodetype="param" specialtype="01" datatype="01" edittype="00" rate="100" len="2" limit="ro" caption="光口4光模块" caption_en="OP4 Transceiver" unit="dBm" range="" facevalue="" checked="0" fontcolor="1">
+          <p0a53 nodetype="param" datatype="01" edittype="00" rate="100" len="2" limit="ro" caption="光口4光模块发送/接收功率" caption_en="OP4 Transceiver Tx/Rx Power" unit="dBm" range="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a43>
+        <p0a44 nodetype="param" specialtype="01" datatype="01" edittype="00" rate="100" len="2" limit="ro" caption="光口5光模块" caption_en="OP5 Transceiver" unit="dBm" range="" facevalue="" checked="0" fontcolor="1">
+          <p0a54 nodetype="param" datatype="01" edittype="00" rate="100" len="2" limit="ro" caption="光口5光模块发送/接收功率" caption_en="OP5 Transceiver Tx/Rx Power" unit="dBm" range="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a44>
+        <p0a45 nodetype="param" specialtype="01" datatype="01" edittype="00" rate="100" len="2" limit="ro" caption="光口6光模块" caption_en="OP6 Transceiver" unit="dBm" range="" facevalue="" checked="0" fontcolor="1">
+          <p0a55 nodetype="param" datatype="01" edittype="00" rate="100" len="2" limit="ro" caption="光口6光模块发送/接收功率" caption_en="OP6 Transceiver Tx/Rx Power" unit="dBm" range="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a45>
+        <p0a46 nodetype="param" specialtype="01" datatype="01" edittype="00" rate="100" len="2" limit="ro" caption="光口7光模块" caption_en="OP7 Transceiver" unit="dBm" range="" facevalue="" checked="0" fontcolor="1">
+          <p0a56 nodetype="param" datatype="01" edittype="00" rate="100" len="2" limit="ro" caption="光口7光模块发送/接收功率" caption_en="OP7 Transceiver Tx/Rx Power" unit="dBm" range="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a46>
+        <p0a47 nodetype="param" specialtype="01" datatype="01" edittype="00" rate="100" len="2" limit="ro" caption="光口8光模块" caption_en="OP8 Transceiver" unit="dBm" range="" facevalue="" checked="0" fontcolor="1">
+          <p0a57 nodetype="param" datatype="01" edittype="00" rate="100" len="2" limit="ro" caption="光口8光模块发送/接收功率" caption_en="OP8 Transceiver Tx/Rx Power" unit="dBm" range="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a47>
+        <p0a48 nodetype="param" specialtype="01" datatype="01" edittype="00" rate="100" len="2" limit="ro" caption="光口9光模块" caption_en="OP9 Transceiver" unit="dBm" range="" facevalue="" checked="0" fontcolor="1">
+          <p0a58 nodetype="param" datatype="01" edittype="00" rate="100" len="2" limit="ro" caption="光口9光模块发送/接收功率" caption_en="OP9 Transceiver Tx/Rx Power" unit="dBm" range="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a48>
+        <p0a49 nodetype="param" specialtype="01" datatype="01" edittype="00" rate="100" len="2" limit="ro" caption="光口10光模块" caption_en="OP10 Transceiver" unit="dBm" range="" facevalue="" checked="0" fontcolor="1">
+          <p0a59 nodetype="param" datatype="01" edittype="00" rate="100" len="2" limit="ro" caption="光口10光模块发送/接收功率" caption_en="OP10 Transceiver Tx/Rx Power" unit="dBm" range="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a49>
+        <p0a4a nodetype="param" specialtype="01" datatype="01" edittype="00" rate="100" len="2" limit="ro" caption="光口11光模块" caption_en="OP11 Transceiver" unit="dBm" range="" facevalue="" checked="0" fontcolor="1">
+          <p0a5a nodetype="param" datatype="01" edittype="00" rate="100" len="2" limit="ro" caption="光口11光模块发送/接收功率" caption_en="OP11 Transceiver Tx/Rx Power" unit="dBm" range="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a4a>
+        <p0a4b nodetype="param" specialtype="01" datatype="01" edittype="00" rate="100" len="2" limit="ro" caption="光口12光模块" caption_en="OP12 Transceiver" unit="dBm" range="" facevalue="" checked="0" fontcolor="1">
+          <p0a5b nodetype="param" datatype="01" edittype="00" rate="100" len="2" limit="ro" caption="光口12光模块发送/接收功率" caption_en="OP12 Transceiver Tx/Rx Power" unit="dBm" range="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a4b>
+        <p0a4c nodetype="param" specialtype="01" datatype="01" edittype="00" rate="100" len="2" limit="ro" caption="光口13光模块" caption_en="OP13 Transceiver" unit="dBm" range="" facevalue="" checked="0" fontcolor="1">
+          <p0a5c nodetype="param" datatype="01" edittype="00" rate="100" len="2" limit="ro" caption="光口13光模块发送/接收功率" caption_en="OP13 Transceiver Tx/Rx Power" unit="dBm" range="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a4c>
+        <p0a4d nodetype="param" specialtype="01" datatype="01" edittype="00" rate="100" len="2" limit="ro" caption="光口14光模块" caption_en="OP14 Transceiver" unit="dBm" range="" facevalue="" checked="0" fontcolor="1">
+          <p0a5d nodetype="param" datatype="01" edittype="00" rate="100" len="2" limit="ro" caption="光口14光模块发送/接收功率" caption_en="OP14 Transceiver Tx/Rx Power" unit="dBm" range="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a4d>
+        <p0a02 nodetype="param" specialtype="01" datatype="01" edittype="00" rate="100" len="2" limit="ro" caption="输入光口光模块" caption_en="OP-slave Transceiver" unit="dBm" range="" facevalue="" checked="0" fontcolor="1">
+          <p0a03 nodetype="param" datatype="01" edittype="00" rate="100" len="2" limit="ro" caption="输入光口光模块" caption_en="OP-slave Transceiver" unit="dBm" range="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a02>
+        <p0a05 nodetype="param" specialtype="01" datatype="01" edittype="00" rate="100" len="2" limit="ro" caption="输出光口光模块" caption_en="OP-master Transceiver" unit="dBm" range="" facevalue="" checked="0" fontcolor="1">
+          <p0a06 nodetype="param" datatype="01" edittype="00" rate="100" len="2" limit="ro" caption="输出光口光模块" caption_en="OP-master Transceiver" unit="dBm" range="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a05>
+      </g_netinfo>
+      <g_netinfo nodetype="group" name_en="Date And Time" name="日期时间" groupid="snmpgroup" >
+        <p0150 nodetype="param" datatype="05" edittype="06" rate="1" len="7" limit="nrw" caption_en="System Date And Time" caption="日期时间" onfocus="Dateshow(this)" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+      </g_netinfo>
+      <g_site nodetype="group1" name_en="Run Site Report" name="开站上报" groupid="snmpgroup" >
+        <p0b09 nodetype="param" datatype="03" section_en="site_report_en" section="site_report" edittype="01" rate="1" len="1" limit="wo" caption_en="Site Report" caption="开站上报" range="" facevalue_en="Report" facevalue="上报" checked="0" fontcolor="1"/>
+      </g_site>
+    </p_user>
+    <p_cmd_f nodetype="page1" name_en="" name="工厂命令" ChmCmd="b0" UnCmd="54" SwCmd="35" savetime="1332167209">
+      <g_factory nodetype="group" name_en="" name="工厂命令1">
+        <p0bbb nodetype="param" datatype="2" edittype="0" section_en="" section="fctmode" rate="1" len="30" limit="nrw" caption_en="Upgrade" caption="升级" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0bbc nodetype="param" datatype="2" edittype="0" section_en="" section="fctmode" rate="1" len="30" limit="nrw" caption_en="Save configuration parameters" caption="保存出厂参数" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+      </g_factory>
+    </p_cmd_f>
+    <p_cmd_e nodetype="page1" name="工程命令" ChmCmd="b4" UnCmd="54" SwCmd="35" savetime="1332167209">
+      <g_engineer nodetype="group" name="工程命令1">
+        <p0b75 nodetype="param" datatype="02" edittype="00" rate="1" len="20" limit="nrw" caption="短信模式查询" range="" facevalue="" checked="0" fontcolor="1"/>
+        <p0b90 nodetype="param" datatype="03" edittype="01" section="smsstat" rate="1" len="1" limit="nrw" caption="短信状态查询" range="" facevalue="" checked="0" fontcolor="1"/>
+        <p0b19 nodetype="param" datatype="3" edittype="0" rate="1" len="1" limit="nrw" caption="升级DAS软件类型" facevalue="" range="" checked="0" fontcolor="1"/>
+        <p0b20 nodetype="param" datatype="0" edittype="0" rate="1" len="2" limit="nrw" caption="升级CRC校验" facevalue="" range="" checked="0" fontcolor="1"/>
+        <p0b17 nodetype="param" datatype="18" edittype="0" rate="1" len="1" limit="nrw" caption="删除从设备" facevalue="" range="" checked="0" fontcolor="1"/>
+        <p0b31 nodetype="param" datatype="0" edittype="0" rate="1" len="1" limit="rw" caption="登录标识" facevalue="" range="" checked="0" fontcolor="1"/>
+        <p0b32 nodetype="param" datatype="0" edittype="0" rate="1" len="1" limit="ro" caption="查询标识" facevalue="" range="" checked="0" fontcolor="1"/>
+        <p0b33 nodetype="param" datatype="2" edittype="0" rate="1" len="12" limit="rw" caption="用户名" facevalue="" range="" checked="0" fontcolor="1"/>
+        <p0b34 nodetype="param" datatype="0" edittype="0" rate="1" len="1" limit="rw" caption="登录状态" facevalue="" range="" checked="0" fontcolor="1"/>
+        <p0b35 nodetype="param" datatype="0" edittype="0" rate="1" len="1" limit="ro" caption="登录权限" facevalue="" range="" checked="0" fontcolor="1"/>
+        <p0b36 nodetype="param" datatype="0" edittype="0" rate="1" len="1" limit="ro" caption_en="Device Category" caption="设备类别" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0b11 nodetype="param" datatype="02" edittype="00" rate="1" len="40" limit="ro" caption_en="Device Name" caption="设备信息" unit="" range="40 characters" facevalue="" checked="0" fontcolor="1"/>
+      </g_engineer>
+    </p_cmd_e>
+    <p_cmd_e nodetype="page1" name="工程命令2" ChmCmd="02" UnCmd="54" SwCmd="35" savetime="1332167209">
+      <g_engineer nodetype="group" name="工程命令3">
+        <p0aec nodetype="param" datatype="22" edittype="8" rate="1" len="14" limit="nrw" caption="从设备信息" facevalue="0D01020304060708090B0C0D0E0F" range="" checked="0" fontcolor="1"/>
+        <p0be0 nodetype="param" datatype="4" edittype="0" rate="1" len="4" limit="nrw" caption_en="OP IP address" caption="光口IP地址" facevalue="" range="" checked="0" fontcolor="1"/>
+      </g_engineer>
+    </p_cmd_e>
+  </m_project>
+  <m_alarm nodetype="module" name_en="Alarms" name="告警" address="fe" cfglevel="0" special="告警设置">
+    <p_alerm nodetype="page" name_en="Element Alarms" name="设备告警" ChmCmd="02" UnCmd="54" SwCmd="35" savetime="1333537341" type="alarm">
+      <g_alermpara nodetype="group" name_en="Alarm" name="告警项目">
+        <p0301 nodetype="param" specialtype="01" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="Power Interruption Alarm" caption="电源掉电告警" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p0201 nodetype="param" datatype="03" edittype="04" section_en="severity_en" section="severity" rate="1" len="1" limit="nrw" caption_en="Power Failure Alarm" caption="电源掉电告警" range="" facevalue_en="Warning" facevalue="警告" checked="0" fontcolor="1"/>
+        </p0301>
+        <p0305 nodetype="param1" specialtype="01" datatype="03" edittype="03" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="Movement Alarm" caption="位置告警" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p0205 nodetype="param1" datatype="03" edittype="01" section_en="severity_en" section="severity" rate="1" len="1" limit="nrw" caption_en="Movement" caption="位置告警" range="" facevalue_en="Warning" facevalue="警告" checked="0" fontcolor="1"/>
+        </p0305>
+        <p0328 nodetype="param1" specialtype="01" datatype="03" edittype="03" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="Open Case Alarm" caption="门禁告警" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p0228 nodetype="param1" datatype="03" edittype="01" section_en="severity_en" section="severity" rate="1" len="1" limit="nrw" caption_en="Open Case" caption="门禁告警" range="" facevalue_en="Warning" facevalue="警告" checked="0" fontcolor="1"/>
+        </p0328>
+        <p0306 nodetype="param" specialtype="01" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="Over Temperature Alarm" caption="设备过温告警" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p0206 nodetype="param" datatype="03" edittype="04" section_en="severity_en" section="severity" rate="1" len="1" limit="nrw" caption_en="Over Temperature" caption="设备过温告警" range="" facevalue_en="Warning" facevalue="警告" checked="0" fontcolor="1"/>
+        </p0306>
+        <p03b0 nodetype="param1" specialtype="01" datatype="03" edittype="03" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="Operating Mode Changing Alarm" caption="工作模式变更告警" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p02b0 nodetype="param1" datatype="03" edittype="01" section_en="severity_en" section="severity" rate="1" len="1" limit="nrw" caption_en="Operating Mode Changing" caption="工作模式变更告警" range="" facevalue_en="Warning" facevalue="警告" checked="0" fontcolor="1"/>
+        </p03b0>
+        <p037e nodetype="param" specialtype="01" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="Optical Port Switch Alarm" caption="光口切换告警" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p027e nodetype="param" datatype="03" edittype="04" section_en="severity_en" section="severity" rate="1" len="1" limit="nrw" caption_en="Optical Port Switch" caption="光口切换告警" range="" facevalue_en="Warning" facevalue="警告" checked="0" fontcolor="1"/>
+        </p037e>
+        <p03d0 nodetype="param1" specialtype="01" datatype="03" edittype="03" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="DPLL Unlocked Alarm" caption="数字锁相环失锁告警" range="" facevalue_en="" facevalue="正常" checked="0" fontcolor="1">
+          <p02d0 nodetype="param1" datatype="03" edittype="01" section_en="severity_en" section="severity" rate="1" len="1" limit="nrw" caption_en="DPLL Unlocked Alarm" caption="数字锁相环失锁告警" range="" facevalue_en="Warning" facevalue="警告" checked="0" fontcolor="1"/>
+        </p03d0>
+        <p03a0 nodetype="param" specialtype="01" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP1 Transceiver Failure Alarm" caption="光口1收发模块故障告警" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p02a0 nodetype="param" datatype="03" edittype="04" section_en="severity_en" section="severity" rate="1" len="1" limit="nrw" caption_en="OP1 Transceiver Failure Alarm" caption="光口1收发模块故障告警" range="" facevalue_en="Warning" facevalue="警告" checked="0" fontcolor="1"/>
+        </p03a0>
+        <p03a1 nodetype="param" specialtype="01" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP2 Transceiver Failure Alarm" caption="光口2收发模块故障告警" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p02a1 nodetype="param" datatype="03" edittype="04" section_en="severity_en" section="severity" rate="1" len="1" limit="nrw" caption_en="OP2 Transceiver Failure Alarm" caption="光口2收发模块故障告警" range="" facevalue_en="Warning" facevalue="警告" checked="0" fontcolor="1"/>
+        </p03a1>
+        <p03a2 nodetype="param" specialtype="01" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP3 Transceiver Failure Alarm" caption="光口3收发模块故障告警" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p02a2 nodetype="param" datatype="03" edittype="04" section_en="severity_en" section="severity" rate="1" len="1" limit="nrw" caption_en="OP3 Transceiver Failure Alarm" caption="光口3收发模块故障告警" range="" facevalue_en="Warning" facevalue="警告" checked="0" fontcolor="1"/>
+        </p03a2>
+        <p03a3 nodetype="param" specialtype="01" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP4 Transceiver Failure Alarm" caption="光口4收发模块故障告警" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p02a3 nodetype="param" datatype="03" edittype="04" section_en="severity_en" section="severity" rate="1" len="1" limit="nrw" caption_en="OP4 Transceiver Failure Alarm" caption="光口4收发模块故障告警" range="" facevalue_en="Warning" facevalue="警告" checked="0" fontcolor="1"/>
+        </p03a3>
+        <p03a6 nodetype="param" specialtype="01" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP5 Transceiver Failure Alarm" caption="光口5收发模块故障告警" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p02a6 nodetype="param" datatype="03" edittype="04" section_en="severity_en" section="severity" rate="1" len="1" limit="nrw" caption_en="OP5 Transceiver Failure Alarm" caption="光口5收发模块故障告警" range="" facevalue_en="Warning" facevalue="警告" checked="0" fontcolor="1"/>
+        </p03a6>
+        <p03a7 nodetype="param" specialtype="01" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP6 Transceiver Failure Alarm" caption="光口6收发模块故障告警" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p02a7 nodetype="param" datatype="03" edittype="04" section_en="severity_en" section="severity" rate="1" len="1" limit="nrw" caption_en="OP6 Transceiver Failure Alarm" caption="光口6收发模块故障告警" range="" facevalue_en="Warning" facevalue="警告" checked="0" fontcolor="1"/>
+        </p03a7>
+        <p03a4 nodetype="param" specialtype="01" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP7 Transceiver Failure Alarm" caption="光口7收发模块故障告警" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p02a4 nodetype="param" datatype="03" edittype="04" section_en="severity_en" section="severity" rate="1" len="1" limit="nrw" caption_en="OP7 Transceiver Failure Alarm" caption="光口7收发模块故障告警" range="" facevalue_en="Warning" facevalue="警告" checked="0" fontcolor="1"/>
+        </p03a4>
+        <p03a5 nodetype="param" specialtype="01" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP8 Transceiver Failure Alarm" caption="光口8收发模块故障告警" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p02a5 nodetype="param" datatype="03" edittype="04" section_en="severity_en" section="severity" rate="1" len="1" limit="nrw" caption_en="OP8 Transceiver Failure Alarm" caption="光口8收发模块故障告警" range="" facevalue_en="Warning" facevalue="警告" checked="0" fontcolor="1"/>
+        </p03a5>
+        <p03df nodetype="param" specialtype="01" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP9 Transceiver Failure Alarm" caption="光口9收发模块故障告警" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p02df nodetype="param" datatype="03" edittype="04" section_en="severity_en" section="severity" rate="1" len="1" limit="nrw" caption_en="OP9 Transceiver Failure Alarm" caption="光口9收发模块故障告警" range="" facevalue_en="Warning" facevalue="警告" checked="0" fontcolor="1"/>
+        </p03df>
+        <p03e0 nodetype="param" specialtype="01" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP10 Transceiver Failure Alarm" caption="光口10收发模块故障告警" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p02e0 nodetype="param" datatype="03" edittype="04" section_en="severity_en" section="severity" rate="1" len="1" limit="nrw" caption_en="OP10 Transceiver Failure Alarm" caption="光口10收发模块故障告警" range="" facevalue_en="Warning" facevalue="警告" checked="0" fontcolor="1"/>
+        </p03e0>
+        <p03e1 nodetype="param" specialtype="01" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP11 Transceiver Failure Alarm" caption="光口11收发模块故障告警" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p02e1 nodetype="param" datatype="03" edittype="04" section_en="severity_en" section="severity" rate="1" len="1" limit="nrw" caption_en="OP11 Transceiver Failure Alarm" caption="光口11收发模块故障告警" range="" facevalue_en="Warning" facevalue="警告" checked="0" fontcolor="1"/>
+        </p03e1>
+        <p03e2 nodetype="param" specialtype="01" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP12 Transceiver Failure Alarm" caption="光口12收发模块故障告警" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p02e2 nodetype="param" datatype="03" edittype="04" section_en="severity_en" section="severity" rate="1" len="1" limit="nrw" caption_en="OP12 Transceiver Failure Alarm" caption="光口12收发模块故障告警" range="" facevalue_en="Warning" facevalue="警告" checked="0" fontcolor="1"/>
+        </p03e2>
+        <p03e3 nodetype="param" specialtype="01" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP13 Transceiver Failure Alarm" caption="光口13收发模块故障告警" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p02e3 nodetype="param" datatype="03" edittype="04" section_en="severity_en" section="severity" rate="1" len="1" limit="nrw" caption_en="OP13 Transceiver Failure Alarm" caption="光口13收发模块故障告警" range="" facevalue_en="Warning" facevalue="警告" checked="0" fontcolor="1"/>
+        </p03e3>
+        <p03e4 nodetype="param" specialtype="01" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP14 Transceiver Failure Alarm" caption="光口14收发模块故障告警" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p02e4 nodetype="param" datatype="03" edittype="04" section_en="severity_en" section="severity" rate="1" len="1" limit="nrw" caption_en="OP14 Transceiver Failure Alarm" caption="光口14收发模块故障告警" range="" facevalue_en="Warning" facevalue="警告" checked="0" fontcolor="1"/>
+        </p03e4>
+<!--        <p03e5 nodetype="param1" specialtype="01" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP-slave Transceiver Failure Alarm" caption="输入光口收发模块故障告警" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">-->
+<!--          <p02e5 nodetype="param" datatype="03" edittype="04" section_en="severity_en" section="severity" rate="1" len="1" limit="nrw" caption_en="OP-slave Transceiver Failure Alarm" caption="输入光口收发模块故障告警" range="" facevalue_en="Warning" facevalue="警告" checked="0" fontcolor="1"/>-->
+<!--        </p03e5>-->
+<!--        <p03e6 nodetype="param1" specialtype="01" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP-master Transceiver Failure Alarm" caption="输出光口收发模块故障告警" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">-->
+<!--          <p02e6 nodetype="param" datatype="03" edittype="04" section_en="severity_en" section="severity" rate="1" len="1" limit="nrw" caption_en="OP-master Transceiver Failure Alarm" caption="输出光口收发模块故障告警" range="" facevalue_en="Warning" facevalue="警告" checked="0" fontcolor="1"/>-->
+<!--        </p03e6>-->
+        <p03a8 nodetype="param" specialtype="01" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP-slave Transceiver Failure Alarm" caption="输入光口收发模块故障告警" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p02a8 nodetype="param" datatype="03" edittype="04" section_en="severity_en" section="severity" rate="1" len="1" limit="nrw" caption_en="OP-slave Transceiver Failure" caption="输入光口收发模块故障告警" range="" facevalue_en="Warning" facevalue="警告" checked="0" fontcolor="1"/>
+        </p03a8>
+        <p03a9 nodetype="param" specialtype="01" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP-master Transceiver Failure Alarm" caption="输出光口收发模块故障告警" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p02a9 nodetype="param" datatype="03" edittype="04" section_en="severity_en" section="severity" rate="1" len="1" limit="nrw" caption_en="OP-master Transceiver Failure" caption="输出光口收发模块故障告警" range="" facevalue_en="Warning" facevalue="警告" checked="0" fontcolor="1"/>
+        </p03a9>
+        <p0320 nodetype="param" specialtype="01" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="External Alarm 1" caption="外部告警1" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p0220 nodetype="param" datatype="03" edittype="04" section_en="severity_en" section="severity" rate="1" len="1" limit="nrw" caption_en="External Alarm 1" caption="外部告警1" range="" facevalue_en="Warning" facevalue="警告" checked="0" fontcolor="1"/>
+        </p0320>
+        <p0321 nodetype="param" specialtype="01" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="External Alarm 2" caption="外部告警2" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p0221 nodetype="param" datatype="03" edittype="04" section_en="severity_en" section="severity" rate="1" len="1" limit="nrw" caption_en="External Alarm 2" caption="外部告警2" range="" facevalue_en="Warning" facevalue="警告" checked="0" fontcolor="1"/>
+        </p0321>
+        <p0322 nodetype="param" specialtype="01" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="External Alarm 3" caption="外部告警3" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p0222 nodetype="param" datatype="03" edittype="04" section_en="severity_en" section="severity" rate="1" len="1" limit="nrw" caption_en="External Alarm 3" caption="外部告警3" range="" facevalue_en="Warning" facevalue="警告" checked="0" fontcolor="1"/>
+        </p0322>
+        <p0323 nodetype="param" specialtype="01" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="External Alarm 4" caption="外部告警4" range="" facevalue_en="" facevalue="告警" checked="0" fontcolor="1">
+          <p0223 nodetype="param" datatype="03" edittype="04" section_en="severity_en" section="severity" rate="1" len="1" limit="nrw" caption_en="External Alarm 4" caption="外部告警4" range="" facevalue_en="Warning" facevalue="警告" checked="0" fontcolor="1"/>
+        </p0323>
+        <p030f nodetype="param" specialtype="01" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="Optical Link Alarm" caption="链路告警" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p020f nodetype="param" datatype="03" edittype="04" section_en="severity_en" section="severity" rate="1" len="1" limit="nrw" caption_en="Optical Link" caption="链路告警" range="" facevalue_en="Warning" facevalue="警告" checked="0" fontcolor="1"/>
+        </p030f>
+      </g_alermpara>
+    </p_alerm>
+    <p_alarmThr nodetype="page" name_en="Alarm Thresholds" name="告警门限" ChmCmd="02" UnCmd="54" SwCmd="35" savetime="1333537341">
+      <g_almThr nodetype="group" name_en="Alarm Threshold" name="告警门限">
+        <p0451 nodetype="param" datatype="01" edittype="02" rate="1" len="1" limit="nrw" caption_en="Over Temperature Threshold" caption="过温告警门限" unit="℃" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+      </g_almThr>
+      <g_almThr nodetype="group" name_en="External Alarm" name="外部告警">
+        <p0480 nodetype="param" fontcolor="1" checked="0" facevalue="常开" facevalue_en="Normal Open" range="" caption="外部输入告警1模式选择" caption_en="External Input Alarm 1 Mode Select" limit="nrw" len="1" rate="1" edittype="04" datatype="03" section="external_alarmstyle" section_en="external_alarmstyle_en"/>
+        <p0481 nodetype="param" fontcolor="1" checked="0" facevalue="常开" facevalue_en="Normal Open" range="" caption="外部输入告警2模式选择" caption_en="External Input Alarm 2 Mode Select" limit="nrw" len="1" rate="1" edittype="04" datatype="03" section="external_alarmstyle" section_en="external_alarmstyle_en"/>
+        <p0482 nodetype="param" fontcolor="1" checked="0" facevalue="常开" facevalue_en="Normal Open" range="" caption="外部输入告警3模式选择" caption_en="External Input Alarm 3 Mode Select" limit="nrw" len="1" rate="1" edittype="04" datatype="03" section="external_alarmstyle" section_en="external_alarmstyle_en"/>
+        <p0483 nodetype="param" fontcolor="1" checked="0" facevalue="常开" facevalue_en="Normal Open" range="" caption="外部输入告警4模式选择" caption_en="External Input Alarm 4 Mode Select" limit="nrw" len="1" rate="1" edittype="04" datatype="03" section="external_alarmstyle" section_en="external_alarmstyle_en"/>
+        <p0484 nodetype="param" fontcolor="1" checked="0" facevalue="" range="20 characters" caption="外部输入告警1用户自定义" caption_en="External Input Alarm 1 Label" limit="nrw" len="20" rate="1" edittype="02" datatype="02" unit=""/>
+        <p0485 nodetype="param" fontcolor="1" checked="0" facevalue="" range="20 characters" caption="外部输入告警2用户自定义" caption_en="External Input Alarm 2 Label" limit="nrw" len="20" rate="1" edittype="02" datatype="02" unit=""/>
+        <p0486 nodetype="param" fontcolor="1" checked="0" facevalue="" range="20 characters" caption="外部输入告警3用户自定义" caption_en="External Input Alarm 3 Label" limit="nrw" len="20" rate="1" edittype="02" datatype="02" unit=""/>
+        <p0487 nodetype="param" fontcolor="1" checked="0" facevalue="" range="20 characters" caption="外部输入告警4用户自定义" caption_en="External Input Alarm 4 Label" limit="nrw" len="20" rate="1" edittype="02" datatype="02" unit=""/>
+        <p0a91 nodetype="param" fontcolor="1" checked="0" facevalue="常开" facevalue_en="Normal Open" range="" caption="外部输出告警(警告)模式选择" caption_en="External Output Alarm(warning) Mode Select" limit="nrw" len="1" rate="1" edittype="04" datatype="03" section="external_alarmstyle" section_en="external_alarmstyle_en"/>
+        <p0a92 nodetype="param" fontcolor="1" checked="0" facevalue="常开" facevalue_en="Normal Open" range="" caption="外部输出告警(次要)模式选择" caption_en="External Output Alarm(minor) Mode Select" limit="nrw" len="1" rate="1" edittype="04" datatype="03" section="external_alarmstyle" section_en="external_alarmstyle_en"/>
+        <p0a93 nodetype="param" fontcolor="1" checked="0" facevalue="常开" facevalue_en="Normal Open" range="" caption="外部输出告警(主要)模式选择" caption_en="External Output Alarm(major) Mode Select" limit="nrw" len="1" rate="1" edittype="04" datatype="03" section="external_alarmstyle" section_en="external_alarmstyle_en"/>
+        <p0a94 nodetype="param" fontcolor="1" checked="0" facevalue="常开" facevalue_en="Normal Open" range="" caption="外部输出告警(严重)模式选择" caption_en="External Output Alarm(critical) Mode Select" limit="nrw" len="1" rate="1" edittype="04" datatype="03" section="external_alarmstyle" section_en="external_alarmstyle_en"/>
+        <p0a2c nodetype="param" fontcolor="1" checked="0" facevalue="正常" facevalue_en="" range="" caption="外部输出告警(警告)指示" caption_en="External Output Alarm(warning)" limit="ro" len="1" rate="1" edittype="05" datatype="03" alarm="alarmgray"/>
+        <p0a2d nodetype="param" fontcolor="1" checked="0" facevalue="正常" facevalue_en="" range="" caption="外部输出告警(次要)指示" caption_en="External Output Alarm(minor)" limit="ro" len="1" rate="1" edittype="05" datatype="03" alarm="alarmgray"/>
+        <p0a2e nodetype="param" fontcolor="1" checked="0" facevalue="正常" facevalue_en="" range="" caption="外部输出告警(主要)指示" caption_en="External Output Alarm(major)" limit="ro" len="1" rate="1" edittype="05" datatype="03" alarm="alarmgray"/>
+        <p0a2f nodetype="param" fontcolor="1" checked="0" facevalue="正常" facevalue_en="" range="" caption="外部输出告警(严重)指示" caption_en="External Output Alarm(critical)" limit="ro" len="1" rate="1" edittype="05" datatype="03" alarm="alarmgray"/>
+      </g_almThr>
+    </p_alarmThr>
+  </m_alarm>
+  <m_mainten nodetype="module" name_en="Maintenance" name="工程维护" address="fd" cfglevel="0" special="工程维护">
+    <p_releaseinfo nodetype="page" name_en="Optical Info" name="光模块信息" ChmCmd="b4" UnCmd="54" SwCmd="35" savetime="1333537317">
+      <g_litmodule nodetype="group" name_en="Optical Module Info" name="光模块信息">
+        <p0a8a nodetype="param" specialtype="3" treetype="3" datatype="23" edittype="00" rate="1" len="13" limit="ro" caption_en="OP 1 Optical Module" caption="光口1光模块信息" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p0a8a nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="DDM Function Availability" caption="是否带DDM功能" unit_en="" unit=""/>
+          <p0a8a nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Tx Power" caption="发送功率" unit_en="" unit="dBm"/>
+          <p0a8a nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Rx Power" caption="接收功率" unit_en="" unit="dBm"/>
+          <p0a8a nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Voltage" caption="电压" unit_en="" unit="V"/>
+          <p0a8a nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Bias Current" caption="Bias电流" unit_en="" unit="mA"/>
+          <p0a8a nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Temperature" caption="温度" unit_en="" unit="°C"/>
+          <p0a8a nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Tx Optical Wavelength" caption="发射光波长" unit="nm"/></p0a8a>
+        <p0a8b nodetype="param" specialtype="3" treetype="3" datatype="23" edittype="00" rate="1" len="13" limit="ro" caption_en="OP 2 Optical Module" caption="光口2光模块信息" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p0a8b nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="DDM Function Availability" caption="是否带DDM功能" unit_en="" unit=""/>
+          <p0a8b nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Tx Power" caption="发送功率" unit_en="" unit="dBm"/>
+          <p0a8b nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Rx Power" caption="接收功率" unit_en="" unit="dBm"/>
+          <p0a8b nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Voltage" caption="电压" unit_en="" unit="V"/>
+          <p0a8b nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Bias Current" caption="Bias电流" unit_en="" unit="mA"/>
+          <p0a8b nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Temperature" caption="温度" unit_en="" unit="°C"/>
+          <p0a8b nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Tx Optical Wavelength" caption="发射光波长" unit="nm"/></p0a8b>
+        <p0a8c nodetype="param" specialtype="3" treetype="3" datatype="23" edittype="00" rate="1" len="13" limit="ro" caption_en="OP 3 Optical Module" caption="光口3光模块信息" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p0a8c nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="DDM Function Availability" caption="是否带DDM功能" unit_en="" unit=""/>
+          <p0a8c nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Tx Power" caption="发送功率" unit_en="" unit="dBm"/>
+          <p0a8c nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Rx Power" caption="接收功率" unit_en="" unit="dBm"/>
+          <p0a8c nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Voltage" caption="电压" unit_en="" unit="V"/>
+          <p0a8c nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Bias Current" caption="Bias电流" unit_en="" unit="mA"/>
+          <p0a8c nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Temperature" caption="温度" unit_en="" unit="°C"/>
+          <p0a8c nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Tx Optical Wavelength" caption="发射光波长" unit="nm"/></p0a8c>
+        <p0a8d nodetype="param" specialtype="3" treetype="3" datatype="23" edittype="00" rate="1" len="13" limit="ro" caption_en="OP 4 Optical Module" caption="光口4光模块信息" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p0a8d nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="DDM Function Availability" caption="是否带DDM功能" unit_en="" unit=""/>
+          <p0a8d nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Tx Power" caption="发送功率" unit_en="" unit="dBm"/>
+          <p0a8d nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Rx Power" caption="接收功率" unit_en="" unit="dBm"/>
+          <p0a8d nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Voltage" caption="电压" unit_en="" unit="V"/>
+          <p0a8d nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Bias Current" caption="Bias电流" unit_en="" unit="mA"/>
+          <p0a8d nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Temperature" caption="温度" unit_en="" unit="°C"/>
+          <p0a8d nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Tx Optical Wavelength" caption="发射光波长" unit="nm"/></p0a8d>
+        <p0a8e nodetype="param" specialtype="3" treetype="3" datatype="23" edittype="00" rate="1" len="13" limit="ro" caption_en="OP 5 Optical Module" caption="光口5光模块信息" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p0a8e nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="DDM Function Availability" caption="是否带DDM功能" unit_en="" unit=""/>
+          <p0a8e nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Tx Power" caption="发送功率" unit_en="" unit="dBm"/>
+          <p0a8e nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Rx Power" caption="接收功率" unit_en="" unit="dBm"/>
+          <p0a8e nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Voltage" caption="电压" unit_en="" unit="V"/>
+          <p0a8e nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Bias Current" caption="Bias电流" unit_en="" unit="mA"/>
+          <p0a8e nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Temperature" caption="温度" unit_en="" unit="°C"/>
+          <p0a8e nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Tx Optical Wavelength" caption="发射光波长" unit="nm"/></p0a8e>
+        <p0a8f nodetype="param" specialtype="3" treetype="3" datatype="23" edittype="00" rate="1" len="13" limit="ro" caption_en="OP 6 Optical Module" caption="光口6光模块信息" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p0a8f nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="DDM Function Availability" caption="是否带DDM功能" unit_en="" unit=""/>
+          <p0a8f nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Tx Power" caption="发送功率" unit_en="" unit="dBm"/>
+          <p0a8f nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Rx Power" caption="接收功率" unit_en="" unit="dBm"/>
+          <p0a8f nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Voltage" caption="电压" unit_en="" unit="V"/>
+          <p0a8f nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Bias Current" caption="Bias电流" unit_en="" unit="mA"/>
+          <p0a8f nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Temperature" caption="温度" unit_en="" unit="°C"/>
+          <p0a8f nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Tx Optical Wavelength" caption="发射光波长" unit="nm"/></p0a8f>
+        <p0a90 nodetype="param" specialtype="3" treetype="3" datatype="23" edittype="00" rate="1" len="13" limit="ro" caption_en="OP 7 Optical Module" caption="光口7光模块信息" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p0a90 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="DDM Function Availability" caption="是否带DDM功能" unit_en="" unit=""/>
+          <p0a90 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Tx Power" caption="发送功率" unit_en="" unit="dBm"/>
+          <p0a90 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Rx Power" caption="接收功率" unit_en="" unit="dBm"/>
+          <p0a90 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Voltage" caption="电压" unit_en="" unit="V"/>
+          <p0a90 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Bias Current" caption="Bias电流" unit_en="" unit="mA"/>
+          <p0a90 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Temperature" caption="温度" unit_en="" unit="°C"/>
+          <p0a90 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Tx Optical Wavelength" caption="发射光波长" unit="nm"/></p0a90>
+        <p0a91 nodetype="param" specialtype="3" treetype="3" datatype="23" edittype="00" rate="1" len="13" limit="ro" caption_en="OP 8 Optical Module" caption="光口8光模块信息" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p0a91 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="DDM Function Availability" caption="是否带DDM功能" unit_en="" unit=""/>
+          <p0a91 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Tx Power" caption="发送功率" unit_en="" unit="dBm"/>
+          <p0a91 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Rx Power" caption="接收功率" unit_en="" unit="dBm"/>
+          <p0a91 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Voltage" caption="电压" unit_en="" unit="V"/>
+          <p0a91 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Bias Current" caption="Bias电流" unit_en="" unit="mA"/>
+          <p0a91 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Temperature" caption="温度" unit_en="" unit="°C"/>
+          <p0a91 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Tx Optical Wavelength" caption="发射光波长" unit="nm"/></p0a91>
+        <p0a92 nodetype="param" specialtype="3" treetype="3" datatype="23" edittype="00" rate="1" len="13" limit="ro" caption_en="OP 9 Optical Module" caption="光口9光模块信息" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p0a92 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="DDM Function Availability" caption="是否带DDM功能" unit_en="" unit=""/>
+          <p0a92 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Tx Power" caption="发送功率" unit_en="" unit="dBm"/>
+          <p0a92 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Rx Power" caption="接收功率" unit_en="" unit="dBm"/>
+          <p0a92 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Voltage" caption="电压" unit_en="" unit="V"/>
+          <p0a92 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Bias Current" caption="Bias电流" unit_en="" unit="mA"/>
+          <p0a92 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Temperature" caption="温度" unit_en="" unit="°C"/>
+          <p0a92 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Tx Optical Wavelength" caption="发射光波长" unit="nm"/></p0a92>
+        <p0a93 nodetype="param" specialtype="3" treetype="3" datatype="23" edittype="00" rate="1" len="13" limit="ro" caption_en="OP 10 Optical Module" caption="光口10光模块信息" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p0a93 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="DDM Function Availability" caption="是否带DDM功能" unit_en="" unit=""/>
+          <p0a93 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Tx Power" caption="发送功率" unit_en="" unit="dBm"/>
+          <p0a93 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Rx Power" caption="接收功率" unit_en="" unit="dBm"/>
+          <p0a93 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Voltage" caption="电压" unit_en="" unit="V"/>
+          <p0a93 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Bias Current" caption="Bias电流" unit_en="" unit="mA"/>
+          <p0a93 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Temperature" caption="温度" unit_en="" unit="°C"/>
+          <p0a93 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Tx Optical Wavelength" caption="发射光波长" unit="nm"/></p0a93>
+        <p0a94 nodetype="param" specialtype="3" treetype="3" datatype="23" edittype="00" rate="1" len="13" limit="ro" caption_en="OP 11 Optical Module" caption="光口11光模块信息" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p0a94 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="DDM Function Availability" caption="是否带DDM功能" unit_en="" unit=""/>
+          <p0a94 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Tx Power" caption="发送功率" unit_en="" unit="dBm"/>
+          <p0a94 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Rx Power" caption="接收功率" unit_en="" unit="dBm"/>
+          <p0a94 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Voltage" caption="电压" unit_en="" unit="V"/>
+          <p0a94 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Bias Current" caption="Bias电流" unit_en="" unit="mA"/>
+          <p0a94 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Temperature" caption="温度" unit_en="" unit="°C"/>
+          <p0a94 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Tx Optical Wavelength" caption="发射光波长" unit="nm"/></p0a94>
+        <p0a95 nodetype="param" specialtype="3" treetype="3" datatype="23" edittype="00" rate="1" len="13" limit="ro" caption_en="OP 12 Optical Module" caption="光口12光模块信息" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p0a95 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="DDM Function Availability" caption="是否带DDM功能" unit_en="" unit=""/>
+          <p0a95 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Tx Power" caption="发送功率" unit_en="" unit="dBm"/>
+          <p0a95 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Rx Power" caption="接收功率" unit_en="" unit="dBm"/>
+          <p0a95 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Voltage" caption="电压" unit_en="" unit="V"/>
+          <p0a95 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Bias Current" caption="Bias电流" unit_en="" unit="mA"/>
+          <p0a95 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Temperature" caption="温度" unit_en="" unit="°C"/>
+          <p0a95 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Tx Optical Wavelength" caption="发射光波长" unit="nm"/></p0a95>
+        <p0a96 nodetype="param" specialtype="3" treetype="3" datatype="23" edittype="00" rate="1" len="13" limit="ro" caption_en="OP 13 Optical Module" caption="光口13光模块信息" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p0a96 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="DDM Function Availability" caption="是否带DDM功能" unit_en="" unit=""/>
+          <p0a96 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Tx Power" caption="发送功率" unit_en="" unit="dBm"/>
+          <p0a96 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Rx Power" caption="接收功率" unit_en="" unit="dBm"/>
+          <p0a96 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Voltage" caption="电压" unit_en="" unit="V"/>
+          <p0a96 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Bias Current" caption="Bias电流" unit_en="" unit="mA"/>
+          <p0a96 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Temperature" caption="温度" unit_en="" unit="°C"/>
+          <p0a96 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Tx Optical Wavelength" caption="发射光波长" unit="nm"/></p0a96>
+        <p0a97 nodetype="param" specialtype="3" treetype="3" datatype="23" edittype="00" rate="1" len="13" limit="ro" caption_en="OP 14 Optical Module" caption="光口14光模块信息" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p0a97 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="DDM Function Availability" caption="是否带DDM功能" unit_en="" unit=""/>
+          <p0a97 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Tx Power" caption="发送功率" unit_en="" unit="dBm"/>
+          <p0a97 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Rx Power" caption="接收功率" unit_en="" unit="dBm"/>
+          <p0a97 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Voltage" caption="电压" unit_en="" unit="V"/>
+          <p0a97 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Bias Current" caption="Bias电流" unit_en="" unit="mA"/>
+          <p0a97 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Temperature" caption="温度" unit_en="" unit="°C"/>
+          <p0a97 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Tx Optical Wavelength" caption="发射光波长" unit="nm"/></p0a97>
+        <p0a98 nodetype="param" specialtype="3" treetype="3" datatype="23" edittype="00" rate="1" len="13" limit="ro" caption_en="Port Slave Optical Module" caption="输入光口光模块信息" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p0a98 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="DDM Function Availability" caption="是否带DDM功能" unit_en="" unit=""/>
+          <p0a98 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Tx Power" caption="发送功率" unit_en="" unit="dBm"/>
+          <p0a98 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Rx Power" caption="接收功率" unit_en="" unit="dBm"/>
+          <p0a98 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Voltage" caption="电压" unit_en="" unit="V"/>
+          <p0a98 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Bias Current" caption="Bias电流" unit_en="" unit="mA"/>
+          <p0a98 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Temperature" caption="温度" unit_en="" unit="°C"/>
+          <p0a98 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Tx Optical Wavelength" caption="发射光波长" unit="nm"/></p0a98>
+        <p0a99 nodetype="param" specialtype="3" treetype="3" datatype="23" edittype="00" rate="1" len="13" limit="ro" caption_en="Port Master Optical Module" caption="输出光口光模块信息" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p0a99 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="DDM Function Availability" caption="是否带DDM功能" unit_en="" unit=""/>
+          <p0a99 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Tx Power" caption="发送功率" unit_en="" unit="dBm"/>
+          <p0a99 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Rx Power" caption="接收功率" unit_en="" unit="dBm"/>
+          <p0a99 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Voltage" caption="电压" unit_en="" unit="V"/>
+          <p0a99 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Bias Current" caption="Bias电流" unit_en="" unit="mA"/>
+          <p0a99 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Temperature" caption="温度" unit_en="" unit="°C"/>
+          <p0a99 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Tx Optical Wavelength" caption="发射光波长" unit="nm"/></p0a99>
+      </g_litmodule>
+    </p_releaseinfo>
+    <p_engineer nodetype="page" name_en="Engineering" name="工程参数" ChmCmd="b4" UnCmd="54" SwCmd="35" savetime="1333537341">
+      <g_engineer nodetype="group" name_en="Engineering Info" name="工程信息">
+        <p0b02 nodetype="param" datatype="05" edittype="00" rate="1" len="7" limit="ro" caption_en="Data Update Time" caption="数据最后更新日期" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0b05 nodetype="param" datatype="03" edittype="00" rate="1" len="2" limit="ro" caption_en="ARM CRC" caption="ARM程序CRC校验" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0b8c nodetype="param" datatype="03" edittype="00" rate="1" len="2" limit="ro" caption_en="FPGA CRC" caption="FPGA程序CRC校验" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0b27 nodetype="param" datatype="03" edittype="00" rate="1" len="2" limit="ro" caption_en="E2 CRC" caption="当前机器(EU)大包CRC校验" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0b7c nodetype="param1" datatype="03" edittype="00" rate="1" len="2" limit="nrw" caption="一键配置CRC校验" facevalue="" range="" checked="0" fontcolor="1"/>
+        <p0b7f nodetype="param" datatype="03" edittype="00" rate="1" len="2" limit="ro" caption_en="Configuration CRC" caption="一键配置大包CRC校验" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+      </g_engineer>
+      <g_gxx nodetype="group" name_en="OP Info" name="光路信息">
+        <p0b50 nodetype="param" datatype="03" section_en="resetarm_en" section="resetarm" edittype="01" rate="1" len="1" limit="wo" caption_en="Sync Loss Counter Reset" caption="失步计数复位" range="" facevalue_en="Reset" facevalue="复位" checked="0" fontcolor="1"/>
+        <p0b40 nodetype="param" datatype="00" edittype="00" rate="1" len="1" limit="ro" caption_en="OP1 CPRI Loss Sync Counter" caption="光口1 CPRI 失步计数" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0b41 nodetype="param" datatype="00" edittype="00" rate="1" len="1" limit="ro" caption_en="OP2 CPRI Loss Sync Counter" caption="光口2 CPRI 失步计数" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0b42 nodetype="param" datatype="00" edittype="00" rate="1" len="1" limit="ro" caption_en="OP3 CPRI Loss Sync Counter" caption="光口3 CPRI 失步计数" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0b43 nodetype="param" datatype="00" edittype="00" rate="1" len="1" limit="ro" caption_en="OP4 CPRI Loss Sync Counter" caption="光口4 CPRI 失步计数" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0b44 nodetype="param" datatype="00" edittype="00" rate="1" len="1" limit="ro" caption_en="OP5 CPRI Loss Sync Counter" caption="光口5 CPRI 失步计数" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0b45 nodetype="param" datatype="00" edittype="00" rate="1" len="1" limit="ro" caption_en="OP6 CPRI Loss Sync Counter" caption="光口6 CPRI 失步计数" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0b46 nodetype="param" datatype="00" edittype="00" rate="1" len="1" limit="ro" caption_en="OP7 CPRI Loss Sync Counter" caption="光口7 CPRI 失步计数" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0b47 nodetype="param" datatype="00" edittype="00" rate="1" len="1" limit="ro" caption_en="OP8 CPRI Loss Sync Counter" caption="光口8 CPRI 失步计数" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0b48 nodetype="param" datatype="00" edittype="00" rate="1" len="1" limit="ro" caption_en="OP9 CPRI Loss Sync Counter" caption="光口9 CPRI 失步计数" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0b49 nodetype="param" datatype="00" edittype="00" rate="1" len="1" limit="ro" caption_en="OP10 CPRI Loss Sync Counter" caption="光口10 CPRI 失步计数" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0b4a nodetype="param" datatype="00" edittype="00" rate="1" len="1" limit="ro" caption_en="OP11 CPRI Loss Sync Counter" caption="光口11 CPRI 失步计数" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0b4b nodetype="param" datatype="00" edittype="00" rate="1" len="1" limit="ro" caption_en="OP12 CPRI Loss Sync Counter" caption="光口12 CPRI 失步计数" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0b4c nodetype="param" datatype="00" edittype="00" rate="1" len="1" limit="ro" caption_en="OP13 CPRI Loss Sync Counter" caption="光口13 CPRI 失步计数" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0b4d nodetype="param" datatype="00" edittype="00" rate="1" len="1" limit="ro" caption_en="OP14 CPRI Loss Sync Counter" caption="光口14 CPRI 失步计数" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0b4e nodetype="param" datatype="00" edittype="00" rate="1" len="1" limit="ro" caption_en="OP-slave CPRI Loss Sync Counter" caption="输入光口 CPRI 失步计数" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0b4f nodetype="param" datatype="00" edittype="00" rate="1" len="1" limit="ro" caption_en="OP-master CPRI Loss Sync Counter" caption="输出光口 CPRI 失步计数" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0b69 nodetype="param" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP1 CPRI Sync Alarm" caption="光口1光纤同步指示告警" range="" facevalue_en="" facevalue="告警" checked="0" fontcolor="1"/>
+        <p0b6a nodetype="param" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP2 CPRI Sync Alarm" caption="光口2光纤同步指示告警" range="" facevalue_en="" facevalue="告警" checked="0" fontcolor="1"/>
+        <p0b6b nodetype="param" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP3 CPRI Sync Alarm" caption="光口3光纤同步指示告警" range="" facevalue_en="" facevalue="告警" checked="0" fontcolor="1"/>
+        <p0b6c nodetype="param" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP4 CPRI Sync Alarm" caption="光口4光纤同步指示告警" range="" facevalue_en="" facevalue="告警" checked="0" fontcolor="1"/>
+        <p0b6d nodetype="param" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP5 CPRI Sync Alarm" caption="光口5光纤同步指示告警" range="" facevalue_en="" facevalue="告警" checked="0" fontcolor="1"/>
+        <p0b6e nodetype="param" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP6 CPRI Sync Alarm" caption="光口6光纤同步指示告警" range="" facevalue_en="" facevalue="告警" checked="0" fontcolor="1"/>
+        <p0b6f nodetype="param" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP7 CPRI Sync Alarm" caption="光口7光纤同步指示告警" range="" facevalue_en="" facevalue="告警" checked="0" fontcolor="1"/>
+        <p0b70 nodetype="param" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP8 CPRI Sync Alarm" caption="光口8光纤同步指示告警" range="" facevalue_en="" facevalue="告警" checked="0" fontcolor="1"/>
+        <p0ba2 nodetype="param" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP9 CPRI Sync Alarm" caption="光口9光纤同步指示告警" range="" facevalue_en="" facevalue="告警" checked="0" fontcolor="1"/>
+        <p0ba3 nodetype="param" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP10 CPRI Sync Alarm" caption="光口10光纤同步指示告警" range="" facevalue_en="" facevalue="告警" checked="0" fontcolor="1"/>
+        <p0ba4 nodetype="param" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP11 CPRI Sync Alarm" caption="光口11光纤同步指示告警" range="" facevalue_en="" facevalue="告警" checked="0" fontcolor="1"/>
+        <p0ba5 nodetype="param" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP12 CPRI Sync Alarm" caption="光口12光纤同步指示告警" range="" facevalue_en="" facevalue="告警" checked="0" fontcolor="1"/>
+        <p0ba6 nodetype="param" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP13 CPRI Sync Alarm" caption="光口13光纤同步指示告警" range="" facevalue_en="" facevalue="告警" checked="0" fontcolor="1"/>
+        <p0ba7 nodetype="param" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP14 CPRI Sync Alarm" caption="光口14光纤同步指示告警" range="" facevalue_en="" facevalue="告警" checked="0" fontcolor="1"/>
+        <p0ba8 nodetype="param" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP-slave CPRI Sync Alarm" caption="输入光口光纤同步指示告警" range="" facevalue_en="" facevalue="告警" checked="0" fontcolor="1"/>
+        <p0ba9 nodetype="param" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP-master CPRI Sync Alarm" caption="输出光口光纤同步指示告警" range="" facevalue_en="" facevalue="告警" checked="0" fontcolor="1"/>
+        <p0b71 nodetype="param" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP1 LOS Alarm" caption="光口1 LOS告警" range="" facevalue_en="" facevalue="告警" checked="0" fontcolor="1"/>
+        <p0b72 nodetype="param" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP2 LOS Alarm" caption="光口2 LOS告警" range="" facevalue_en="" facevalue="告警" checked="0" fontcolor="1"/>
+        <p0b73 nodetype="param" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP3 LOS Alarm" caption="光口3 LOS告警" range="" facevalue_en="" facevalue="告警" checked="0" fontcolor="1"/>
+        <p0b74 nodetype="param" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP4 LOS Alarm" caption="光口4 LOS告警" range="" facevalue_en="" facevalue="告警" checked="0" fontcolor="1"/>
+        <p0b76 nodetype="param" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP5 LOS Alarm" caption="光口5 LOS告警" range="" facevalue_en="" facevalue="告警" checked="0" fontcolor="1"/>
+        <p0b77 nodetype="param" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP6 LOS Alarm" caption="光口6 LOS告警" range="" facevalue_en="" facevalue="告警" checked="0" fontcolor="1"/>
+        <p0baa nodetype="param" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP7 LOS Alarm" caption="光口7 LOS告警" range="" facevalue_en="" facevalue="告警" checked="0" fontcolor="1"/>
+        <p0bab nodetype="param" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP8 LOS Alarm" caption="光口8 LOS告警" range="" facevalue_en="" facevalue="告警" checked="0" fontcolor="1"/>
+        <p0bac nodetype="param" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP9 LOS Alarm" caption="光口9 LOS告警" range="" facevalue_en="" facevalue="告警" checked="0" fontcolor="1"/>
+        <p0bad nodetype="param" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP10 LOS Alarm" caption="光口10 LOS告警" range="" facevalue_en="" facevalue="告警" checked="0" fontcolor="1"/>
+        <p0bae nodetype="param" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP11 LOS Alarm" caption="光口11 LOS告警" range="" facevalue_en="" facevalue="告警" checked="0" fontcolor="1"/>
+        <p0baf nodetype="param" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP12 LOS Alarm" caption="光口12 LOS告警" range="" facevalue_en="" facevalue="告警" checked="0" fontcolor="1"/>
+        <p0bb0 nodetype="param" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP13 LOS Alarm" caption="光口13 LOS告警" range="" facevalue_en="" facevalue="告警" checked="0" fontcolor="1"/>
+        <p0bb1 nodetype="param" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP14 LOS Alarm" caption="光口14 LOS告警" range="" facevalue_en="" facevalue="告警" checked="0" fontcolor="1"/>
+        <p0bb2 nodetype="param" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP-slave LOS Alarm" caption="输入光口 LOS告警" range="" facevalue_en="" facevalue="告警" checked="0" fontcolor="1"/>
+        <p0bb3 nodetype="param" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP-master LOS Alarm" caption="输出光口 LOS告警" range="" facevalue_en="" facevalue="告警" checked="0" fontcolor="1"/>
+      </g_gxx>
+      <g_gjzl nodetype="group" name_en="Advanced Command" name="高级指令">
+        <p0ba1 nodetype="param" datatype="03" section_en="resetarm_en" section="resetarm" edittype="01" rate="1" len="1" limit="wo" caption_en="Hardware Reset" caption="系统复位" range="" facevalue_en="Reset" facevalue="复位" checked="0" fontcolor="1"/>
+        <p0b01 nodetype="param" datatype="03" section_en="resetarm_en" section="resetarm" edittype="01" rate="1" len="1" limit="wo" caption_en="Firmware Reset" caption="主控板复位" range="" facevalue_en="Reset" facevalue="复位" checked="0" fontcolor="1"/>
+        <p0b09 nodetype="param" datatype="03" section_en="initdevice_en_uq" section="initdevice_uq" edittype="04" rate="1" len="1" limit="wo" caption_en="Alarm Initialization" caption="告警初始化" range="" facevalue_en="Initialization" facevalue="初始化" checked="0" fontcolor="1"/>
+        <p0b92 nodetype="param" datatype="03" section_en="alarmstyle_en" section="alarmstyle" edittype="04" rate="1" len="1" limit="wo" caption_en="Alarm Mode Select" caption="告警模式选择" range="" facevalue_en="Normal Mode 3min" facevalue="正常模式3分钟" checked="0" fontcolor="1"/>
+      </g_gjzl>
+    </p_engineer>
+    <p_fact nodetype="page" name_en="Factory Command" name="工厂命令" power="0" ChmCmd="b0" UnCmd="54" SwCmd="35" savetime="1333537341"  >
+      <g_factpara nodetype="group" name_en="Factory Parameters" name="工厂参数">
+        <p0aff nodetype="param" datatype="8" edittype="03" section_en="fctmode_en" section="fctmode" rate="1" len="9" limit="wo" caption_en="Factory Mode" caption="工厂模式" range="" facevalue_en="" facevalue="进入" checked="0" fontcolor="1"/>
+        <p0aef nodetype="param" datatype="2" edittype="02" rate="1" len="20" limit="wo" caption_en="Factory Mode Password" caption="工厂参数密码" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+      </g_factpara>
+    </p_fact>
+  </m_mainten>
+  <m_digital nodetype="module" name_en="Digital Module" name="数字模块" power="1" address="ef" cfglevel="1">
+    <p_dzfwjk nodetype="page" name_en="Address Interface" name="地址访问接口" ChmCmd="b2" savetime="1332167209">
+      <g_devic nodetype="group" name_en="" name="地址访问">
+        <p0ccc nodetype="param" datatype="18" edittype="00" rate="1" len="5" limit="nrw" caption_en="Address Interface" caption="地址访问参量" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+      </g_devic>
+    </p_dzfwjk>
+    <p_chip nodetype="page" name_en="Registers" name="芯片信息" ChmCmd="b2" UnCmd="54" SwCmd="35" savetime="1333537319">
+      <g_lmk04808 nodetype="group" name_en="LMK04808" name="LMK04808">
+        <p0801 nodetype="param" datatype="03" edittype="00" rate="1" len="16" limit="nrw" caption_en="Register 0-3" caption="寄存器0-3" range="Byte:16" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0802 nodetype="param" datatype="03" edittype="00" rate="1" len="16" limit="nrw" caption_en="Register 4-7" caption="寄存器4-7" range="Byte:16" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0803 nodetype="param" datatype="03" edittype="00" rate="1" len="20" limit="nrw" caption_en="Register 8-12" caption="寄存器8-12" range="Byte:20" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0804 nodetype="param" datatype="03" edittype="00" rate="1" len="16" limit="nrw" caption_en="Register 13-16" caption="寄存器13-16" range="Byte:16" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0805 nodetype="param" datatype="03" edittype="00" rate="1" len="16" limit="nrw" caption_en="Register 24-27" caption="寄存器24-27" range="Byte:16" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0806 nodetype="param" datatype="03" edittype="00" rate="1" len="16" limit="nrw" caption_en="Register 28-31" caption="寄存器28-31" range="Byte:16" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+      </g_lmk04808>
+    </p_chip>
+    <p_interface nodetype="page" name_en="Debug Parameters" name="调试参数" ChmCmd="b2" UnCmd="54" SwCmd="35" savetime="1333537307">
+      <g_gin nodetype="group" name_en="Basic Parameters" name="基本调试参数">
+        <p0800 nodetype="param" datatype="03" edittype="04" section_en="ClockSourceSel_en" section="ClockSourceSel" rate="1" len="1" limit="nrw" caption_en="Clock Reference Source" caption="时钟参考源选择" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0200 nodetype="param" datatype="03" edittype="02" rate="1" len="1" limit="nrw" caption_en="RST" caption="复位标志" range="Byte:1" note="8h00" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0303 nodetype="param" datatype="03" edittype="00" section_en="Clocklock_en" section="Clocklock" rate="1" len="1" limit="ro" caption_en="Clock Lock" caption="时钟锁定" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0304 nodetype="param1" datatype="03" edittype="00" rate="1" len="1" limit="ro" caption_en="RLOC" caption="路由地址" range="Byte:1" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0220 nodetype="param" datatype="06" edittype="00" rate="1" len="6" limit="ro" caption_en="Master MAC Address" caption="近端MAC地址" range="Byte:6" note="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0221 nodetype="param" datatype="06" edittype="00" rate="1" len="4" limit="ro" caption_en="IP Address" caption="IP地址" range="Byte:4" note="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0812 nodetype="param" datatype="01" edittype="00" rate="1" len="1" limit="ro" caption_en="Digital Plate Temperature" caption="数字板温度" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0813 nodetype="param1" datatype="3" edittype="02" section_en="" section="ennable" rate="1" len="1" limit="nrw" caption_en="Software Auto Update Switch" caption="自动更新软件使能" range="" facevalue_en="Enable" facevalue="使能开" checked="0" fontcolor="1"/>
+        <p0a1c nodetype="param" datatype="02" edittype="00" rate="1" len="40" limit="nrw" caption_en="Digital Board SN" caption="数字板序列号" range="40 chars" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+      </g_gin>
+    </p_interface>
+    <p_factory nodetype="page" name_en="MCU Parameter" name="主控板参数" ChmCmd="b2" savetime="1332167209">
+      <g_devic nodetype="group" name_en="Device Information" name="设备信息">
+        <p0af0 nodetype="param" datatype="02" edittype="02" rate="1" len="20" limit="nrw" caption_en="Vendor" caption="设备厂商名称" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0af1 nodetype="param1" datatype="00" edittype="00" rate="1" len="1" limit="nrw" caption_en="Device Category" caption="设备类别" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0af2 nodetype="param" datatype="02" edittype="02" rate="1" len="20" limit="nrw" caption_en="Element Product Model" caption="设备型号" range="20 chars" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0af3 nodetype="param" datatype="02" edittype="02" rate="1" len="20" limit="nrw" caption_en="Element Serial Number" caption="设备生产序列号" range="20 chars" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0af5 nodetype="param1" datatype="00" edittype="00" rate="1" len="1" limit="nrw" caption_en="Battery Test Cycle" caption="电池测试周期" range="1 ~ 4" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0af6 nodetype="param1" datatype="00" edittype="00" rate="1" len="1" limit="nrw" caption_en="Battery Test Time" caption="电池测试时间" range="" facevalue_en="" facevalue="" unit_en="Minute" unit="分钟" checked="0" fontcolor="1"/>
+        <p0bbd nodetype="param" datatype="03" edittype="03" section_en="on/off_en" section="on/off" rate="1" len="1" limit="nrw" caption_en="The FPGA Debugging Mode Switch" caption="FPGA调试模式开关" range="" facevalue_en="Open" facevalue="打开" checked="0" fontcolor="1"/>
+        <p0ad0 nodetype="param" datatype="02" edittype="00" rate="1" len="10" limit="ro" caption_en="Filesystem Edition" caption="文件系统版本" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+      </g_devic>
+    </p_factory>
+  </m_digital>
+</matchineroot>

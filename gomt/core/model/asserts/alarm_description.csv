@@ -1,0 +1,629 @@
+Alarm ID,Alarm Name,Description,Probable Causes,Proposed Action
+1,Power Interruption Alarm,"Device has lost external power, and is runinng on internal battery","a). External supply has failed
+b). Internal power supply has failed
+c). Power cable has become dislodged","a). Check if the electric supply is powered off
+b). Check the power cable
+c). Check if the equipment will power up, and replace if necessary"
+2,Battery Failure Alarm,,Battery voltage is below acceptable level,"a). Check if the standby battery is installed in the device
+b). Disable the alarm if there is no battery
+c). Replace the battery"
+3,Movement Alarm,,The device has been rotated to it's side,a). Check installation of the equipment
+4,Over-temperature Alarm,Internal temperature of the Device exceeds safe working threshold.,"a). Installation of equipment does not allow for adequate air circulation
+b). Fan unit for this equipment has failed.
+c). Ambient air temperature within the equipment room has elevated beyond working range.","a). Check the device temperature and alarm threshold in OMT. The default threshold is 85oC
+b). Check if the separation of between adjacent AUs is too close without fan
+c). Check if there is no ventilation or air condition for cooling temperature"
+6,Optical Link Alarm,A device that was previously detected is no longer responding ,"a). Equipment has been removed from the system
+b). The optical fibre is disconnected, or an optical transceiver has failed
+c). The power to this device is off","a). If equipment has been removed from service, delete the equipment from the topology
+b). Check the fibre path and restore optical connection
+c). Check power to the device
+d). Replace the equipment"
+7,LO1 Unlocked Alarm,,Equipment fault or unknown disruption,"a). Perform a hardware reboot of the equipment
+b). Replace equipment and return for repair"
+8,LO2 Unlocked Alarm,,Equipment fault or unknown disruption,"a). Perform a hardware reboot of the equipment
+b). Replace equipment and return for repair"
+9,LO3 Unlocked Alarm,,Equipment fault or unknown disruption,"a). Perform a hardware reboot of the equipment
+b). Replace equipment and return for repair"
+10,LO4 Unlocked Alarm,,Equipment fault or unknown disruption,"a). Perform a hardware reboot of the equipment
+b). Replace equipment and return for repair"
+15,Radio Module 1 Over-temperature protected Alarm,,PA Module 1 temperature is too high ,"a). Adjust module 1 downlink attenuation
+b). Decrease module 1 output power"
+16,Radio Module 2 Over-temperature protected Alarm,,PA Module 2 temperature is too high ,"a). Adjust module 2 downlink attenuation
+b). Decrease module 2 output power"
+17,Radio Module 3 Over-temperature protected Alarm,,PA Module 3 temperature is too high ,"a). Adjust module 3 downlink attenuation
+b). Decrease module 3 output power"
+18,Radio Module 4 Over-temperature protected Alarm,,PA Module 4 temperature is too high ,"a). Adjust module 4 downlink attenuation
+b). Decrease module 4 output power"
+20,OP1 Transceiver Failure Alarm ,Optical link has failed to initiate/maintain connection with the end device,"a). SFP not installed, or removed
+b). SFP has failed
+c). Fibre cable is disconnected
+d). Optical modules of two sides do not pair","a). Disable this alarm for all unused optical ports
+b). Verify if SFP is plugged in and connected. Replace if failed.
+c). Check if the fiber cable is damaged or connector is dirty
+d). Check if the SFP modules at both ends are a mated pair"
+21,OP2 Transceiver Failure Alarm,Optical link has failed to initiate/maintain connection with the end device,"a). SFP not installed, or removed
+b). SFP has failed
+c). Fibre cable is disconnected
+d). Optical modules of two sides do not pair","a). Disable this alarm for all unused optical ports
+b). Verify if SFP is plugged in and connected. Replace if failed.
+c). Check if the fiber cable is damaged or connector is dirty
+d). Check if the SFP modules at both ends are a mated pair"
+22,OP3 Transceiver Failure Alarm,Optical link has failed to initiate/maintain connection with the end device,"a). SFP not installed, or removed
+b). SFP has failed
+c). Fibre cable is disconnected
+d). Optical modules of two sides do not pair","a). Disable this alarm for all unused optical ports
+b). Verify if SFP is plugged in and connected. Replace if failed.
+c). Check if the fiber cable is damaged or connector is dirty
+d). Check if the SFP modules at both ends are a mated pair"
+23,OP4 Transceiver Failure Alarm,Optical link has failed to initiate/maintain connection with the end device,"a). SFP not installed, or removed
+b). SFP has failed
+c). Fibre cable is disconnected
+d). Optical modules of two sides do not pair","a). Disable this alarm for all unused optical ports
+b). Verify if SFP is plugged in and connected. Replace if failed.
+c). Check if the fiber cable is damaged or connector is dirty
+d). Check if the SFP modules at both ends are a mated pair"
+24,OP5 Transceiver Failure Alarm,Optical link has failed to initiate/maintain connection with the end device,"a). SFP not installed, or removed
+b). SFP has failed
+c). Fibre cable is disconnected
+d). Optical modules of two sides do not pair","a). Disable this alarm for all unused optical ports
+b). Verify if SFP is plugged in and connected. Replace if failed.
+c). Check if the fiber cable is damaged or connector is dirty
+d). Check if the SFP modules at both ends are a mated pair"
+25,OP6 Transceiver Failure Alarm,Optical link has failed to initiate/maintain connection with the end device,"a). SFP not installed, or removed
+b). SFP has failed
+c). Fibre cable is disconnected
+d). Optical modules of two sides do not pair","a). Disable this alarm for all unused optical ports
+b). Verify if SFP is plugged in and connected. Replace if failed.
+c). Check if the fiber cable is damaged or connector is dirty
+d). Check if the SFP modules at both ends are a mated pair"
+26,OP7 Transceiver Failure Alarm,Optical link has failed to initiate/maintain connection with the end device,"a). SFP not installed, or removed
+b). SFP has failed
+c). Fibre cable is disconnected
+d). Optical modules of two sides do not pair","a). Disable this alarm for all unused optical ports
+b). Verify if SFP is plugged in and connected. Replace if failed.
+c). Check if the fiber cable is damaged or connector is dirty
+d). Check if the SFP modules at both ends are a mated pair"
+27,OP8 Transceiver Failure Alarm,Optical link has failed to initiate/maintain connection with the end device,"a). SFP not installed, or removed
+b). SFP has failed
+c). Fibre cable is disconnected
+d). Optical modules of two sides do not pair","a). Disable this alarm for all unused optical ports
+b). Verify if SFP is plugged in and connected. Replace if failed.
+c). Check if the fiber cable is damaged or connector is dirty
+d). Check if the SFP modules at both ends are a mated pair"
+28,OP-slave Transceiver Failure Alarm,,"a). SFP not installed or removed
+b). SFP has failed
+c). Fibre cable is disconnected
+d). Optical modules of two sides do not pair","a). Disable this alarm for all unused optical ports
+b). Verify if SFP is plugged in and connected. Replace if failed
+c). Check if the fiber cable is damaged or connector is dirty
+d). Check if the SFP modules at both ends are a mated pair"
+29,OP-master Transceiver Failure Alarm,,"a). SFP not installed or removed
+b). SFP has failed
+c). Fibre cable is disconnected
+d). Optical modules of two sides do not pair","a). Disable this alarm for all unused optical ports
+b). Verify if SFP is plugged in and connected. Replace if failed
+c). Check if the fiber cable is damaged or connector is dirty
+d). Check if the SFP modules at both ends are a mated pair"
+30,Radio Module1 DL Output Over-power Alarm,Remote Unit DL output power exceeds the user-assigned threshold,"a). The DL input signal exceeds system design parameters
+b). The system gain settings have been changed","a). Compare expected DL output power to the alarm threshold.
+b). Verify the input power from all BTS has not changed
+c). Verify attenuation setting in AU and RU have not changed
+d). Adjust attenuator settings as necessary"
+31,Radio Module2 DL Output Over-power Alarm,Remote Unit DL output power exceeds the user-assigned threshold,"a). The DL input signal exceeds system design parameters
+b). The system gain settings have been changed","a). Compare expected DL output power to the alarm threshold.
+b). Verify the input power from all BTS has not changed
+c). Verify attenuation setting in AU and RU have not changed
+d). Adjust attenuator settings as necessary"
+32,Radio Module3 DL Output Over-power Alarm,Remote Unit DL output power exceeds the user-assigned threshold,"a). The DL input signal exceeds system design parameters
+b). The system gain settings have been changed","a). Compare expected DL output power to the alarm threshold.
+b). Verify the input power from all BTS has not changed
+c). Verify attenuation setting in AU and RU have not changed
+d). Adjust attenuator settings as necessary"
+33,Radio Module4 DL Output Over-power Alarm,Remote Unit DL output power exceeds the user-assigned threshold,"a). The DL input signal exceeds system design parameters
+b). The system gain settings have been changed","a). Compare expected DL output power to the alarm threshold.
+b). Verify the input power from all BTS has not changed
+c). Verify attenuation setting in AU and RU have not changed
+d). Adjust attenuator settings as necessary"
+34,Radio Module1 DL Output Under-power Alarm,Remote Unit DL output power is lower than the user-assigned threshold,"a). The DL input signal to AU is lower than expected, perhaps because a BTS has been turned off or removed
+b). The DL PA has failed
+c). The RF Switch in AU-AC module is turned off
+d). The AU-AC module mapping in AU is incorrect","a). Compare expected DL output power to the alarm threshold.
+b). Verify the input power from all BTS has not changed
+c). Verify attenuation setting in AU and RU have not changed
+d). Adjust attenuator settings as necessary"
+35,Radio Module2 DL Output Under-power Alarm,Remote Unit DL output power is lower than the user-assigned threshold,"a). The DL input signal to AU is lower than expected, perhaps because a BTS has been turned off or removed
+b). The DL PA has failed
+c). The RF Switch in AU-AC module is turned off
+d). The AU-AC module mapping in AU is incorrect","a). Compare expected DL output power to the alarm threshold.
+b). Verify the input power from all BTS has not changed
+c). Verify attenuation setting in AU and RU have not changed
+d). Adjust attenuator settings as necessary"
+36,Radio Module3 DL Output Under-power Alarm,Remote Unit DL output power is lower than the user-assigned threshold,"a). The DL input signal to AU is lower than expected, perhaps because a BTS has been turned off or removed
+b). The DL PA has failed
+c). The RF Switch in AU-AC module is turned off
+d). The AU-AC module mapping in AU is incorrect","a). Compare expected DL output power to the alarm threshold.
+b). Verify the input power from all BTS has not changed
+c). Verify attenuation setting in AU and RU have not changed
+d). Adjust attenuator settings as necessary"
+37,Radio Module4 DL Output Under-power Alarm,Remote Unit DL output power is lower than the user-assigned threshold,"a). The DL input signal to AU is lower than expected, perhaps because a BTS has been turned off or removed
+b). The DL PA has failed
+c). The RF Switch in AU-AC module is turned off
+d). The AU-AC module mapping in AU is incorrect","a). Compare expected DL output power to the alarm threshold.
+b). Verify the input power from all BTS has not changed
+c). Verify attenuation setting in AU and RU have not changed
+d). Adjust attenuator settings as necessary"
+38,External1 Alarm,External alarm input is indicating alarm state,"External device, system or environment alarm has triggered","a). Verify that the External alarm input should be activated
+b). Check the status of the external device"
+39,External2 Alarm,External alarm input is indicating alarm state,"External device, system or environment alarm has triggered","a). Verify that the External alarm input should be activated
+b). Check the status of the external device"
+40,External3 Alarm,External alarm input is indicating alarm state,"External device, system or environment alarm has triggered","a). Verify that the External alarm input should be activated
+b). Check the status of the external device"
+41,External4 Alarm,External alarm input is indicating alarm state,"External device, system or environment alarm has triggered","a). Verify that the External alarm input should be activated
+b). Check the status of the external device"
+44,Open Case Alarm,,The cover has been removed or the internal sensor is broken,"a). Check if the device case is open or warranty seal is broken
+b). Disable the alarm or replace equipment"
+49,Radio Module1 VSWR Alarm,,"a). Feed cable issue (wet/dirt inside/bent/damaged)
+b). RF connector is loose
+c). Antenna issue
+d). Wrong connection to filter port","a). Check the VSWR value and alarm threshold. The default threshold is 2.5
+b). Check if the RU output port is open-load or connector is loose (use correct torque wrench)
+c). Check RU port connection to combiner is incorrect band
+d). Check the feed cable and antenna"
+50,Radio Module2 VSWR Alarm,,"a). Feed cable issue (wet/dirt inside/bent/damaged)
+b). RF connector is loose
+c). Antenna issue
+d). Wrong connection to filter port","a). Check the VSWR value and alarm threshold. The default threshold is 2.5
+b). Check if the RU output port is open-load or connector is loose (use correct torque wrench)
+c). Check RU port connection to combiner is incorrect band
+d). Check the feed cable and antenna"
+51,Radio Module1 ALC Over Range Alarm,Downlink ALC range (AU-AC) or Uplink ALC range (RU) has been exceeded. For DL ALC the AU-AC RF Switch is set to OFF. Manual reset is required.,"DL input power at AU, or Uplink input power at RU, is too high and there is no more attenuation left for ALC.","a). Check if the composite DL power in AU-AC (after attenuation) exceeds 0 dBm
+b). Check uplink signal for over-power condition or local interference"
+52,Radio Module2 ALC Over Range Alarm,Downlink ALC range (AU-AC) or Uplink ALC range (RU) has been exceeded. For DL ALC the AU-AC RF Switch is set to OFF. Manual reset is required.,"DL input power at AU, or Uplink input power at RU, is too high and there is no more attenuation left for ALC.","a). Check if the composite DL power in AU-AC (after attenuation) exceeds 0 dBm
+b). Check uplink signal for over-power condition or local interference"
+53,Radio Module3 ALC Over Range Alarm,Downlink ALC range (AU-AC) or Uplink ALC range (RU) has been exceeded. For DL ALC the AU-AC RF Switch is set to OFF. Manual reset is required.,"DL input power at AU, or Uplink input power at RU, is too high and there is no more attenuation left for ALC.","a). Check if the composite DL power in AU-AC (after attenuation) exceeds 0 dBm
+b). Check uplink signal for over-power condition or local interference"
+54,Radio Module4 ALC Over Range Alarm,Downlink ALC range (AU-AC) or Uplink ALC range (RU) has been exceeded. For DL ALC the AU-AC RF Switch is set to OFF. Manual reset is required.,"DL input power at AU, or Uplink input power at RU, is too high and there is no more attenuation left for ALC.","a). Check if the composite DL power in AU-AC (after attenuation) exceeds 0 dBm
+b). Check uplink signal for over-power condition or local interference"
+55,Radio Module1 Port1 DL Input Under-power Alarm,AU-AC Module 1 Port1-4 input power under the rated threshold,"a). AU-AC input power is under the user-defined threshold
+b). There is no input power
+c). External attenuator value is too high","a). Check DL input power and the alarm threshold.
+b). Check the input power from BTS if possible
+c). Use proper attenuator before AU input port
+d). Configure proper attenuation in AU"
+56,Radio Module1 Port2 DL Input Under-power Alarm,AU-AC Module 1 Port1-4 input power under the rated threshold,"a). AU-AC input power is under the user-defined threshold
+b). There is no input power
+c). External attenuator value is too high","a). Check DL input power and the alarm threshold.
+b). Check the input power from BTS if possible
+c). Use proper attenuator before AU input port
+d). Configure proper attenuation in AU"
+57,Radio Module1 Port3 DL Input Under-power Alarm,AU-AC Module 1 Port1-4 input power under the rated threshold,"a). AU-AC input power is under the user-defined threshold
+b). There is no input power
+c). External attenuator value is too high","a). Check DL input power and the alarm threshold.
+b). Check the input power from BTS if possible
+c). Use proper attenuator before AU input port
+d). Configure proper attenuation in AU"
+58,Radio Module1 Port4 DL Input Under-power Alarm,AU-AC Module 1 Port1-4 input power under the rated threshold,"a). AU-AC input power is under the user-defined threshold
+b). There is no input power
+c). External attenuator value is too high","a). Check DL input power and the alarm threshold.
+b). Check the input power from BTS if possible
+c). Use proper attenuator before AU input port
+d). Configure proper attenuation in AU"
+59,Radio Module1 Port1 DL Input Over-power Alarm,AU-AC Module 1 Port1-4 input power over the rated threshold,AU-AC input power is over the user-defined threshold,"a). Check DL input power and the alarm threshold. The default threshold is 10dBm
+b). Check the input power from BTS if possible
+c). Use proper attenuator before AU input port
+d). Configure proper attenuation in AU"
+60,Radio Module1 Port2 DL Input Over-power Alarm,AU-AC Module 1 Port1-4 input power over the rated threshold,AU-AC input power is over the user-defined threshold,"a). Check DL input power and the alarm threshold. The default threshold is 10dBm
+b). Check the input power from BTS if possible
+c). Use proper attenuator before AU input port
+d). Configure proper attenuation in AU"
+61,Radio Module1 Port3 DL Input Over-power Alarm,AU-AC Module 1 Port1-4 input power over the rated threshold,AU-AC input power is over the user-defined threshold,"a). Check DL input power and the alarm threshold. The default threshold is 10dBm
+b). Check the input power from BTS if possible
+c). Use proper attenuator before AU input port
+d). Configure proper attenuation in AU"
+62,Radio Module1 Port4 DL Input Over-power Alarm,AU-AC Module 1 Port1-4 input power over the rated threshold,AU-AC input power is over the user-defined threshold,"a). Check DL input power and the alarm threshold. The default threshold is 10dBm
+b). Check the input power from BTS if possible
+c). Use proper attenuator before AU input port
+d). Configure proper attenuation in AU"
+63,Radio Module2 Port1 DL Input Under-power Alarm,AU-AC Module 2 Port1-4 input power under the rated threshold,"a). AU-AC input power is under the user-defined threshold
+b). There is no input power
+c). External attenuator value is too high","a). Check DL input power and the alarm threshold.
+b). Check the input power from BTS if possible
+c). Use proper attenuator before AU input port
+d). Configure proper attenuation in AU"
+64,Radio Module2 Port2 DL Input Under-power Alarm,AU-AC Module 2 Port1-4 input power under the rated threshold,"a). AU-AC input power is under the user-defined threshold
+b). There is no input power
+c). External attenuator value is too high","a). Check DL input power and the alarm threshold.
+b). Check the input power from BTS if possible
+c). Use proper attenuator before AU input port
+d). Configure proper attenuation in AU"
+65,Radio Module2 Port3 DL Input Under-power Alarm,AU-AC Module 2 Port1-4 input power under the rated threshold,"a). AU-AC input power is under the user-defined threshold
+b). There is no input power
+c). External attenuator value is too high","a). Check DL input power and the alarm threshold.
+b). Check the input power from BTS if possible
+c). Use proper attenuator before AU input port
+d). Configure proper attenuation in AU"
+66,Radio Module2 Port4 DL Input Under-power Alarm,AU-AC Module 2 Port1-4 input power under the rated threshold,"a). AU-AC input power is under the user-defined threshold
+b). There is no input power
+c). External attenuator value is too high","a). Check DL input power and the alarm threshold.
+b). Check the input power from BTS if possible
+c). Use proper attenuator before AU input port
+d). Configure proper attenuation in AU"
+67,Radio Module2 Port1 DL Input Over-power Alarm,AU-AC Module 2 Port1-4 input power over the rated threshold,AU-AC input power is over the user-defined threshold,"a). Check DL input power and the alarm threshold. The default threshold is 10dBm
+b). Check the input power from BTS if possible
+c). Use proper attenuator before AU input port
+d). Configure proper attenuation in AU"
+68,Radio Module2 Port2 DL Input Over-power Alarm,AU-AC Module 2 Port1-4 input power over the rated threshold,AU-AC input power is over the user-defined threshold,"a). Check DL input power and the alarm threshold. The default threshold is 10dBm
+b). Check the input power from BTS if possible
+c). Use proper attenuator before AU input port
+d). Configure proper attenuation in AU"
+69,Radio Module2 Port3 DL Input Over-power Alarm,AU-AC Module 2 Port1-4 input power over the rated threshold,AU-AC input power is over the user-defined threshold,"a). Check DL input power and the alarm threshold. The default threshold is 10dBm
+b). Check the input power from BTS if possible
+c). Use proper attenuator before AU input port
+d). Configure proper attenuation in AU"
+70,Radio Module2 Port4 DL Input Over-power Alarm,AU-AC Module 2 Port1-4 input power over the rated threshold,AU-AC input power is over the user-defined threshold,"a). Check DL input power and the alarm threshold. The default threshold is 10dBm
+b). Check the input power from BTS if possible
+c). Use proper attenuator before AU input port
+d). Configure proper attenuation in AU"
+71,Radio Module3 Port1 DL Input Under-power Alarm,AU-AC Module 3 Port1-4 input power under the rated threshold,"a). AU-AC input power is under the user-defined threshold
+b). There is no input power
+c). External attenuator value is too high","a). Check DL input power and the alarm threshold.
+b). Check the input power from BTS if possible
+c). Use proper attenuator before AU input port
+d). Configure proper attenuation in AU"
+72,Radio Module3 Port2 DL Input Under-power Alarm,AU-AC Module 3 Port1-4 input power under the rated threshold,"a). AU-AC input power is under the user-defined threshold
+b). There is no input power
+c). External attenuator value is too high","a). Check DL input power and the alarm threshold.
+b). Check the input power from BTS if possible
+c). Use proper attenuator before AU input port
+d). Configure proper attenuation in AU"
+73,Radio Module3 Port3 DL Input Under-power Alarm,AU-AC Module 3 Port1-4 input power under the rated threshold,"a). AU-AC input power is under the user-defined threshold
+b). There is no input power
+c). External attenuator value is too high","a). Check DL input power and the alarm threshold.
+b). Check the input power from BTS if possible
+c). Use proper attenuator before AU input port
+d). Configure proper attenuation in AU"
+74,Radio Module3 Port4 DL Input Under-power Alarm,AU-AC Module 3 Port1-4 input power under the rated threshold,"a). AU-AC input power is under the user-defined threshold
+b). There is no input power
+c). External attenuator value is too high","a). Check DL input power and the alarm threshold.
+b). Check the input power from BTS if possible
+c). Use proper attenuator before AU input port
+d). Configure proper attenuation in AU"
+75,Radio Module3 Port1 DL Input Over-power Alarm,AU-AC Module 3 Port1-4 input power over the rated threshold,AU-AC input power is over the user-defined threshold,"a). Check DL input power and the alarm threshold. The default threshold is 10dBm
+b). Check the input power from BTS if possible
+c). Use proper attenuator before AU input port
+d). Configure proper attenuation in AU"
+76,Radio Module3 Port2 DL Input Over-power Alarm,AU-AC Module 3 Port1-4 input power over the rated threshold,AU-AC input power is over the user-defined threshold,"a). Check DL input power and the alarm threshold. The default threshold is 10dBm
+b). Check the input power from BTS if possible
+c). Use proper attenuator before AU input port
+d). Configure proper attenuation in AU"
+77,Radio Module3 Port3 DL Input Over-power Alarm,AU-AC Module 3 Port1-4 input power over the rated threshold,AU-AC input power is over the user-defined threshold,"a). Check DL input power and the alarm threshold. The default threshold is 10dBm
+b). Check the input power from BTS if possible
+c). Use proper attenuator before AU input port
+d). Configure proper attenuation in AU"
+78,Radio Module3 Port4 DL Input Over-power Alarm,AU-AC Module 3 Port1-4 input power over the rated threshold,AU-AC input power is over the user-defined threshold,"a). Check DL input power and the alarm threshold. The default threshold is 10dBm
+b). Check the input power from BTS if possible
+c). Use proper attenuator before AU input port
+d). Configure proper attenuation in AU"
+79,Radio Module4 Port1 DL Input Under-power Alarm,AU-AC Module 4 Port1-4 input power under the rated threshold,"a). AU-AC input power is under the user-defined threshold
+b). There is no input power
+c). External attenuator value is too high","a). Check DL input power and the alarm threshold.
+b). Check the input power from BTS if possible
+c). Use proper attenuator before AU input port
+d). Configure proper attenuation in AU"
+80,Radio Module4 Port2 DL Input Under-power Alarm,AU-AC Module 4 Port1-4 input power under the rated threshold,"a). AU-AC input power is under the user-defined threshold
+b). There is no input power
+c). External attenuator value is too high","a). Check DL input power and the alarm threshold.
+b). Check the input power from BTS if possible
+c). Use proper attenuator before AU input port
+d). Configure proper attenuation in AU"
+81,Radio Module4 Port3 DL Input Under-power Alarm,AU-AC Module 4 Port1-4 input power under the rated threshold,"a). AU-AC input power is under the user-defined threshold
+b). There is no input power
+c). External attenuator value is too high","a). Check DL input power and the alarm threshold.
+b). Check the input power from BTS if possible
+c). Use proper attenuator before AU input port
+d). Configure proper attenuation in AU"
+82,Radio Module4 Port4 DL Input Under-power Alarm,AU-AC Module 4 Port1-4 input power under the rated threshold,"a). AU-AC input power is under the user-defined threshold
+b). There is no input power
+c). External attenuator value is too high","a). Check DL input power and the alarm threshold.
+b). Check the input power from BTS if possible
+c). Use proper attenuator before AU input port
+d). Configure proper attenuation in AU"
+83,Radio Module4 Port1 DL Input Over-power Alarm,AU-AC Module 4 Port1-4 input power over the rated threshold,AU-AC input power is over the rated threshold,"a). Check DL input power and the alarm threshold. The default threshold is 10dBm
+b). Check the input power from BTS if possible
+c). Use proper attenuator before AU input port
+d). Configure proper attenuation in AU"
+84,Radio Module4 Port2 DL Input Over-power Alarm,AU-AC Module 4 Port1-4 input power over the rated threshold,AU-AC input power is over the rated threshold,"a). Check DL input power and the alarm threshold. The default threshold is 10dBm
+b). Check the input power from BTS if possible
+c). Use proper attenuator before AU input port
+d). Configure proper attenuation in AU"
+85,Radio Module4 Port3 DL Input Over-power Alarm,AU-AC Module 4 Port1-4 input power over the rated threshold,AU-AC input power is over the rated threshold,"a). Check DL input power and the alarm threshold. The default threshold is 10dBm
+b). Check the input power from BTS if possible
+c). Use proper attenuator before AU input port
+d). Configure proper attenuation in AU"
+86,Radio Module4 Port4 DL Input Over-power Alarm,AU-AC Module 4 Port1-4 input power over the rated threshold,AU-AC input power is over the rated threshold,"a). Check DL input power and the alarm threshold. The default threshold is 10dBm
+b). Check the input power from BTS if possible
+c). Use proper attenuator before AU input port
+d). Configure proper attenuation in AU"
+87,Optical Port Switch Alarm,The fiber transmission port of a daisy-changed device has toggled from OP-s to OP-m,"The primary fibre path to the device has become disconnetced, and the redundant loopback path has assumed control ","a). Check integrity of the primary optical fibre cable
+b). Check if the SFP module in primary optical path has failed
+c). Clean optical connectors"
+91,Reserved,,,
+92,Reserved,,,
+93,Reserved,,,
+94,Reserved,,,
+95,Band Configuration Failure Alarm,"Band Configuration of AU-AC is incorrect, or cummulative bandwidth exceeds the maximum",Band Configuration is incorrect during commissioning,"a). Check the Band Configuration in AU
+b). Verify the AU-AC module is the correct band
+c). Configure proper bandwidth and DL/UL center frequency
+d). Check if the system transmission bandwidth is over the maxmimum value"
+96,Radio Module1 Open Load Alarm,,"a). The RF Antenna port is not connected to a load or antenna
+b). RF Connector is loose
+c). Antenna issue","a). Check if the RU output port is open-load or connector is loose
+b). Check if the RU's connection to combiner is incorrect
+c). Check the antenna
+d). Check if feed cable is wet or dirty inside"
+97,Radio Module2 Open Load Alarm,,"a). The RF Antenna port is not connected to a load or antenna
+b). RF Connector is loose
+c). Antenna issue","a). Check if the RU output port is open-load or connector is loose
+b). Check if the RU's connection to combiner is incorrect
+c). Check the antenna
+d). Check if feed cable is wet or dirty inside"
+101,Fan Device Loss Alarm,,The fan has failed,Replace the equipment
+112,Radio Module5 DL Output Over-power Alarm,Remote Unit DL output power exceeds the user-assigned threshold,"a). The DL input signal exceeds system design parameters
+b). The system gain settings have been changed","a). Compare expected DL output power to the alarm threshold.
+b). Verify the input power from all BTS has not changed
+c). Verify attenuation setting in AU and RU have not changed
+d). Adjust attenuator settings as necessary"
+113,Radio Module6 DL Output Over-power Alarm,Remote Unit DL output power exceeds the user-assigned threshold,"a). The DL input signal exceeds system design parameters
+b). The system gain settings have been changed","a). Compare expected DL output power to the alarm threshold.
+b). Verify the input power from all BTS has not changed
+c). Verify attenuation setting in AU and RU have not changed
+d). Adjust attenuator settings as necessary"
+114,Radio Module7 DL Output Over-power Alarm,Remote Unit DL output power exceeds the user-assigned threshold,"a). The DL input signal exceeds system design parameters
+b). The system gain settings have been changed","a). Compare expected DL output power to the alarm threshold.
+b). Verify the input power from all BTS has not changed
+c). Verify attenuation setting in AU and RU have not changed
+d). Adjust attenuator settings as necessary"
+115,Radio Module8 DL Output Over-power Alarm,Remote Unit DL output power exceeds the user-assigned threshold,"a). The DL input signal exceeds system design parameters
+b). The system gain settings have been changed","a). Compare expected DL output power to the alarm threshold.
+b). Verify the input power from all BTS has not changed
+c). Verify attenuation setting in AU and RU have not changed
+d). Adjust attenuator settings as necessary"
+116,Radio Module5 DL Output Under-power Alarm,Remote Unit DL output power is lower than the user-assigned threshold,"a). The DL input signal to AU is lower than expected, perhaps because a BTS has been turned off or removed
+b). The DL PA has failed
+c). The RF Switch in AU-AC module is turned off
+d). The AU-AC module mapping in AU is incorrect","a). Compare expected DL output power to the alarm threshold.
+b). Verify the input power from all BTS has not changed
+c). Verify attenuation setting in AU and RU have not changed
+d). Adjust attenuator settings as necessary"
+117,Radio Module6 DL Output Under-power Alarm,Remote Unit DL output power is lower than the user-assigned threshold,"a). The DL input signal to AU is lower than expected, perhaps because a BTS has been turned off or removed
+b). The DL PA has failed
+c). The RF Switch in AU-AC module is turned off
+d). The AU-AC module mapping in AU is incorrect","a). Compare expected DL output power to the alarm threshold.
+b). Verify the input power from all BTS has not changed
+c). Verify attenuation setting in AU and RU have not changed
+d). Adjust attenuator settings as necessary"
+118,Radio Module7 DL Output Under-power Alarm,Remote Unit DL output power is lower than the user-assigned threshold,"a). The DL input signal to AU is lower than expected, perhaps because a BTS has been turned off or removed
+b). The DL PA has failed
+c). The RF Switch in AU-AC module is turned off
+d). The AU-AC module mapping in AU is incorrect","a). Compare expected DL output power to the alarm threshold.
+b). Verify the input power from all BTS has not changed
+c). Verify attenuation setting in AU and RU have not changed
+d). Adjust attenuator settings as necessary"
+119,Radio Module8 DL Output Under-power Alarm,Remote Unit DL output power is lower than the user-assigned threshold,"a). The DL input signal to AU is lower than expected, perhaps because a BTS has been turned off or removed
+b). The DL PA has failed
+c). The RF Switch in AU-AC module is turned off
+d). The AU-AC module mapping in AU is incorrect","a). Compare expected DL output power to the alarm threshold.
+b). Verify the input power from all BTS has not changed
+c). Verify attenuation setting in AU and RU have not changed
+d). Adjust attenuator settings as necessary"
+120,Radio Module5 ALC Over Range Alarm,Uplink ALC range (RU) has been exceeded.,Uplink input power at RU is too high and there is no more attenuation left for ALC.,Check uplink signal for over-power condition or local interference
+121,Radio Module6 ALC Over Range Alarm,Uplink ALC range (RU) has been exceeded.,Uplink input power at RU is too high and there is no more attenuation left for ALC.,Check uplink signal for over-power condition or local interference
+122,Radio Module7 ALC Over Range Alarm,Uplink ALC range (RU) has been exceeded.,Uplink input power at RU is too high and there is no more attenuation left for ALC.,Check uplink signal for over-power condition or local interference
+123,Radio Module8 ALC Over Range Alarm,Uplink ALC range (RU) has been exceeded.,Uplink input power at RU is too high and there is no more attenuation left for ALC.,Check uplink signal for over-power condition or local interference
+144,Radio Module3 VSWR Alarm,,"a). Feed cable issue (wet/dirt inside/bent/damaged)
+b). RF connector is loose
+c). Antenna issue
+d). Wrong connection to filter port","a). Check the VSWR value and alarm threshold. The default threshold is 2.5
+b). Check if the RU output port is open-load or connector is loose (use correct torque wrench)
+c). Check RU port connection to combiner is incorrect band
+d). Check the feed cable and antenna"
+145,Radio Module4 VSWR Alarm,,"a). Feed cable issue (wet/dirt inside/bent/damaged)
+b). RF connector is loose
+c). Antenna issue
+d). Wrong connection to filter port","a). Check the VSWR value and alarm threshold. The default threshold is 2.5
+b). Check if the RU output port is open-load or connector is loose (use correct torque wrench)
+c). Check RU port connection to combiner is incorrect band
+d). Check the feed cable and antenna"
+146,RF Link Alarm,,"a). Failure to initialize on powerup
+b). Equipment has failed","a). Perform remote reset/re-boot of equipment to reset the RF Link
+b). Replace th equipment if it does not clear after 3 attempts or reoccurs frequently"
+147,OP9 Transceiver Failure Alarm,OP-transceiver (SFP) failure,"a). SFP not installed, or removed
+b). SFP has failed
+c). Fibre cable is disconnected
+d). Optical modules of two sides do not pair","a). Disable this alarm for uniused optical ports
+b). Verify if SFP is plugged in and connected. Replace if failed.
+c). Check if the fiber cable is broken or connector is dirty
+d). Check if the SFP modules of two sides are a mated pair"
+148,OP10 Transceiver Failure Alarm,OP-transceiver (SFP) failure,"a). SFP not installed, or removed
+b). SFP has failed
+c). Fibre cable is disconnected
+d). Optical modules of two sides do not pair","a). Disable this alarm for uniused optical ports
+b). Verify if SFP is plugged in and connected. Replace if failed.
+c). Check if the fiber cable is broken or connector is dirty
+d). Check if the SFP modules of two sides are a mated pair"
+149,OP11 Transceiver Failure Alarm,OP-transceiver (SFP) failure,"a). SFP not installed, or removed
+b). SFP has failed
+c). Fibre cable is disconnected
+d). Optical modules of two sides do not pair","a). Disable this alarm for uniused optical ports
+b). Verify if SFP is plugged in and connected. Replace if failed.
+c). Check if the fiber cable is broken or connector is dirty
+d). Check if the SFP modules of two sides are a mated pair"
+150,OP12 Transceiver Failure Alarm,OP-transceiver (SFP) failure,"a). SFP not installed, or removed
+b). SFP has failed
+c). Fibre cable is disconnected
+d). Optical modules of two sides do not pair","a). Disable this alarm for uniused optical ports
+b). Verify if SFP is plugged in and connected. Replace if failed.
+c). Check if the fiber cable is broken or connector is dirty
+d). Check if the SFP modules of two sides are a mated pair"
+151,OP13 Transceiver Failure Alarm,OP-transceiver (SFP) failure,"a). SFP not installed, or removed
+b). SFP has failed
+c). Fibre cable is disconnected
+d). Optical modules of two sides do not pair","a). Disable this alarm for uniused optical ports
+b). Verify if SFP is plugged in and connected. Replace if failed.
+c). Check if the fiber cable is broken or connector is dirty
+d). Check if the SFP modules of two sides are a mated pair"
+152,OP14 Transceiver Failure Alarm,OP-transceiver (SFP) failure,"a). SFP not installed, or removed
+b). SFP has failed
+c). Fibre cable is disconnected
+d). Optical modules of two sides do not pair","a). Disable this alarm for uniused optical ports
+b). Verify if SFP is plugged in and connected. Replace if failed.
+c). Check if the fiber cable is broken or connector is dirty
+d). Check if the SFP modules of two sides are a mated pair"
+153,OP15 Transceiver Failure Alarm,OP-transceiver (SFP) failure,"a). SFP not installed, or removed
+b). SFP has failed
+c). Fibre cable is disconnected
+d). Optical modules of two sides do not pair","a). Disable this alarm for uniused optical ports
+b). Verify if SFP is plugged in and connected. Replace if failed.
+c). Check if the fiber cable is broken or connector is dirty
+d). Check if the SFP modules of two sides are a mated pair"
+154,OP16 Transceiver Failure Alarm,OP-transceiver (SFP) failure,"a). SFP not installed, or removed
+b). SFP has failed
+c). Fibre cable is disconnected
+d). Optical modules of two sides do not pair","a). Disable this alarm for uniused optical ports
+b). Verify if SFP is plugged in and connected. Replace if failed.
+c). Check if the fiber cable is broken or connector is dirty
+d). Check if the SFP modules of two sides are a mated pair"
+155,MML Failure Alarm,"Master AU fails to detect heartbeat from NMS/LMS. This alarm is displayed in OMT only, and will not generate an SNMP trap","a). Networking connection issue
+b). LMS/NMS is down
+c). LMS/NMS is removed from system","a). Ping the LMS server IP address to see if the server is alive
+b). Check if the LMS/NMS is down or removed from system
+c). Check the connection of AU and server"
+158,Management Link Alarm,NMS/LMS fails to detect heartbeat from Primary AU,"a). Networking connection issue
+b). Heartbeat of AU is not configured
+c). AU is down
+d). AU is removed from system","a). Use the server computer to ping AU IP address to see if the AU is alive
+b). Check the heartbeat of AU
+c). Check if the AU is down or removed from system
+d). Check the connection of AU and server"
+159,Radio Module3 Open Load Alarm,,"a). The RF Antenna port is not connected to a load or antenna
+b). RF Connector is loose
+c). Antenna issue","a). Check if the RU output port is open-load or connector is loose
+b). Check if the RU's connection to combiner is incorrect
+c). Check the antenna
+d). Check if feed cable is wet or dirty inside"
+160,Radio Module4 Open Load Alarm,,"a). The RF Antenna port is not connected to a load or antenna
+b). RF Connector is loose
+c). Antenna issue","a). Check if the RU output port is open-load or connector is loose
+b). Check if the RU's connection to combiner is incorrect
+c). Check the antenna
+d). Check if feed cable is wet or dirty inside"
+161,NTP Alarm," The NTP Service is ON (ntp Switch is set to ON), but the NTP Update request fails in 3 or more successive attempts.","a). NTP IP hasn't been configured
+b). Network connection issue
+c). NTP server is down","a). Verify NTP IP configured
+b). Ping the NTP IP to see if the server is alive"
+162,ESF Function Activated Alarm,,a). Shutdown manually,a). Turn on OP switch
+163,FAN 1 Alarm,"Internal temperature of the Device exceeds safe working threshold.
+Or the fan1 isn't working normally.","a). Installation of equipment does not allow for adequate air circulation
+b). Fan1 unit for this equipment has failed.
+c). Ambient air temperature within the equipment room has elevated beyond working range.","a). Check the device temperature and threshold in OMT. The default threshold is 95oC
+b). Check if the separation of between adjacent AUs is too close without fan
+c). Check if there is no ventilation or air condition for cooling temperature"
+164,FAN 2 Alarm,"Internal temperature of the Device exceeds safe working threshold.
+Or the fan2 isn't working normally.","a). Installation of equipment does not allow for adequate air circulation
+b). Fan2 unit for this equipment has failed.
+c). Ambient air temperature within the equipment room has elevated beyond working range.","a). Check the device temperature and threshold in OMT. The default threshold is 95oC
+b). Check if the separation of between adjacent AUs is too close without fan
+c). Check if there is no ventilation or air condition for cooling temperature"
+165,Radio Module 1 Service Off Alarm,RF Signal Switch for the Module is disabled.,RF Signal Switch for the Module is disabled via user or misclicking,"a) Check if this module is planned to be disabled.
+b) Check if the remote unit is synchronized to system and displayed in DAS Topo"
+166,Radio Module 2 Service Off Alarm,RF Signal Switch for the Module is disabled.,RF Signal Switch for the Module is disabled via user or misclicking,"a) Check if this module is planned to be disabled.
+b) Check if the remote unit is synchronized to system and displayed in DAS Topo"
+167,Radio Module 3 Service Off Alarm,RF Signal Switch for the Module is disabled.,RF Signal Switch for the Module is disabled via user or misclicking,"a) Check if this module is planned to be disabled.
+b) Check if the remote unit is synchronized to system and displayed in DAS Topo"
+168,Radio Module 4 Service Off Alarm,RF Signal Switch for the Module is disabled.,RF Signal Switch for the Module is disabled via user or misclicking,"a) Check if this module is planned to be disabled.
+b) Check if the remote unit is synchronized to system and displayed in DAS Topo"
+169,Radio Module 5 Service Off Alarm,RF Signal Switch for the Module is disabled.,RF Signal Switch for the Module is disabled via user or misclicking,"a) Check if this module is planned to be disabled.
+b) Check if the remote unit is synchronized to system and displayed in DAS Topo"
+170,Radio Module 6 Service Off Alarm,RF Signal Switch for the Module is disabled.,RF Signal Switch for the Module is disabled via user or misclicking,"a) Check if this module is planned to be disabled.
+b) Check if the remote unit is synchronized to system and displayed in DAS Topo"
+171,Radio Module 7 Service Off Alarm,RF Signal Switch for the Module is disabled.,RF Signal Switch for the Module is disabled via user or misclicking,"a) Check if this module is planned to be disabled.
+b) Check if the remote unit is synchronized to system and displayed in DAS Topo"
+172,Radio Module 8 Service Off Alarm,RF Signal Switch for the Module is disabled.,RF Signal Switch for the Module is disabled via user or misclicking,"a) Check if this module is planned to be disabled.
+b) Check if the remote unit is synchronized to system and displayed in DAS Topo"
+173,Power1 Failure Alarm,,"a).External supply has failed
+b).Internal power supply has failed
+c).Power cable has become dislodged","a). Check if the electric supply is powered off
+b). Check the power cable
+c). Check if the equipment will power up and replace if necessary"
+174,Power2 Failure Alarm,,"a).External supply has failed
+b).Internal power supply has failed
+c).Power cable has become dislodged","a). Check if the electric supply is powered off
+b). Check the power cable
+c). Check if the equipment will power up and replace if necessary"
+175,Radio Module1 UL Output Over-power Alarm,,"a). The UL input signal exceeds system design parameters
+b). The system gain settings have been changed","a). Compare expected UL output power to the alarm threshold.
+b). Verify the input power from all BTS has not changed
+c). Verify attenuation setting in AU and RU have not changed
+d). Adjust attenuator settings as necessary"
+176,Radio Module2 UL Output Over Power Alarm,,"a). The UL input signal exceeds system design parameters
+b). The system gain settings have been changed","a). Compare expected UL output power to the alarm threshold.
+b). Verify the input power from all BTS has not changed
+c). Verify attenuation setting in AU and RU have not changed
+d). Adjust attenuator settings as necessary"
+177,Radio Module5 VSWR Alarm,,"a). Feed cable issue (wet/dirt inside/bent/damaged)
+b). RF connector is loose
+c). Antenna issue
+d). Wrong connection to filter port","a). Check the VSWR value and alarm threshold. The default threshold is 2.5
+b). Check if the RU output port is open-load or connector is loose (use correct torque wrench)
+c). Check RU port connection to combiner is incorrect band
+d). Check the feed cable and antenna"
+178,Radio Module6 VSWR Alarm,,"a). Feed cable issue (wet/dirt inside/bent/damaged)
+b). RF connector is loose
+c). Antenna issue
+d). Wrong connection to filter port","a). Check the VSWR value and alarm threshold. The default threshold is 2.5
+b). Check if the RU output port is open-load or connector is loose (use correct torque wrench)
+c). Check RU port connection to combiner is incorrect band
+d). Check the feed cable and antenna"
+179,Radio Module7 VSWR Alarm,,"a). Feed cable issue (wet/dirt inside/bent/damaged)
+b). RF connector is loose
+c). Antenna issue
+d). Wrong connection to filter port","a). Check the VSWR value and alarm threshold. The default threshold is 2.5
+b). Check if the RU output port is open-load or connector is loose (use correct torque wrench)
+c). Check RU port connection to combiner is incorrect band
+d). Check the feed cable and antenna"
+180,Radio Module8 VSWR Alarm,,"a). Feed cable issue (wet/dirt inside/bent/damaged)
+b). RF connector is loose
+c). Antenna issue
+d). Wrong connection to filter port","a). Check the VSWR value and alarm threshold. The default threshold is 2.5
+b). Check if the RU output port is open-load or connector is loose (use correct torque wrench)
+c). Check RU port connection to combiner is incorrect band
+d). Check the feed cable and antenna"
+181,Radio Module5 Open Load Alarm,,"a). The RF Antenna port is not connected to a load or antenna
+b). RF Connector is loose
+c). Antenna issue","a). Check if the RU output port is open-load or connector is loose
+b). Check if the RU's connection to combiner is incorrect
+c). Check the antenna
+d). Check if feed cable is wet or dirty inside"
+182,Radio Module6 Open Load Alarm,,"a). The RF Antenna port is not connected to a load or antenna
+b). RF Connector is loose
+c). Antenna issue","a). Check if the RU output port is open-load or connector is loose
+b). Check if the RU's connection to combiner is incorrect
+c). Check the antenna
+d). Check if feed cable is wet or dirty inside"
+183,Radio Module7 Open Load Alarm,,"a). The RF Antenna port is not connected to a load or antenna
+b). RF Connector is loose
+c). Antenna issue","a). Check if the RU output port is open-load or connector is loose
+b). Check if the RU's connection to combiner is incorrect
+c). Check the antenna
+d). Check if feed cable is wet or dirty inside"
+184,Radio Module7 Open Load Alarm,,"a). The RF Antenna port is not connected to a load or antenna
+b). RF Connector is loose
+c). Antenna issue","a). Check if the RU output port is open-load or connector is loose
+b). Check if the RU's connection to combiner is incorrect
+c). Check the antenna
+d). Check if feed cable is wet or dirty inside"
+185,Version Mismatched  Alarm,The firmware package is not successfully upgraded ,"a). Wrong model in the type file in the package
+b). Signature file verification failed
+c). Failed to decompress package","a). Upgrade the correct package
+b). The host is powered off"

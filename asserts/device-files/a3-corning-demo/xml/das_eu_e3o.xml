@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<matchineroot nodetype="machine" deviceid="00" stationid="00000001" havetopo="0" needlogin="2" ismaster="0"  havesms="0" haveauto="1"  repeatername="DAS E3-O" repeatertype="E3-O" telephone="" protocol="Mobile 4G" AutoNum="09044E0C060000000000" support_en="1">
+  <m_project nodetype="module" name_en="Settings" name="Settings" address="ff" cfglevel="0">
+    <p_status nodetype="page" name_en="DAS Topo" name="DAS Topo" ChmCmd="02" savetime="1332167209">
+      <g_alarm nodetype="pannel" name="Alarm">
+        <p0000 nodetype="gui2_param" AUOP7="0xF1" AUOP8="0xF1" sumEUOPs="6" sumOPs="8"  hasErrorMachn="false"/>
+      </g_alarm>
+    </p_status>
+    <p_user nodetype="page" name_en="Overview" name="Overview" ChmCmd="02" UnCmd="54" SwCmd="35" >
+      <g_netinfo nodetype="group" name_en="Element Identification" name="Element Identification" groupid="snmpgroup" >
+        <p0002 nodetype="param" datatype="02" edittype="00" rate="1" len="20" limit="ro" caption_en="Vendor" caption="Vendor" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0003 nodetype="param1" datatype="03" section_en="overseatype_en" section="overseatype_en" edittype="01" rate="1" len="1" limit="ro" caption_en="Device Category" caption="Device Category" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0006 nodetype="param" datatype="02" edittype="02" rate="1" len="40" limit="nrw" caption_en="Element Model Number" caption="Element Model Number" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0007 nodetype="param" datatype="02" edittype="00" rate="1" len="40" limit="ro" caption_en="Element Serial Number" caption="Element Serial Number" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p000a nodetype="param" datatype="02" edittype="00" rate="1" len="20" limit="ro" caption_en="Software Version" caption="Software Version" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p002d nodetype="param" datatype="02" edittype="00" rate="1" len="40" limit="ro" caption_en ="Hardware Version" caption="Hardware Version" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0ad0 nodetype="param" datatype="02" edittype="00" rate="1" len="10" limit="ro" caption_en="Filesystem Edition" caption="Filesystem Edition" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0021 nodetype="param1" datatype="02" edittype="00" rate="1" len="20" limit="ro" caption_en="FPGA Edition" caption="FPGA Edition" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0101 nodetype="param" datatype="03" edittype="02" rate="1" len="4"  limit="nrw" caption_en="Device ID" caption="Device ID" unit_en="" unit="" range="hexadecimal" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0102 nodetype="param" datatype="00" edittype="02" rate="1" len="1" limit="nrw" caption_en="Device Sub ID" caption="Device Sub ID" unit_en="" unit="" range="decimal" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0023 nodetype="param" datatype="02" edittype="02" rate="1" len="40" limit="nrw" backup="true" caption_en="Installed Location Label" caption="Installed Location Label" unit="" range="40 characters" facevalue="" checked="0" fontcolor="1"/>
+        <p0024 nodetype="param" datatype="02" edittype="00" rate="1" len="100" limit="ro" caption_en="Site Name" caption="Site Name"  unit="" range="100 characters" facevalue="" checked="0" fontcolor="1"/>
+        <p0030 nodetype="param" datatype="02" edittype="02" rate="1" len="40" limit="nrw" backup="true" caption_en="Device Name" caption="Device Name" unit="" range="40 characters" facevalue="" checked="0" fontcolor="1"/>
+        <p0873 nodetype="param1" datatype="09" edittype="00" rate="1" len="4"  limit="ro"  caption_en="Element Routing Address" caption="Element Routing Address" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p002a nodetype="param" datatype="02" edittype="00" rate="1" len="18" limit="ro" caption_en="MAC Address(NMS)" caption="MAC Address(NMS)" range="" note="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p002b nodetype="param" datatype="00" edittype="00" rate="10" len="4" limit="ro" caption_en="Lifetime" caption="Lifetime" unit="hours" range="" note="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p002c nodetype="param" datatype="02" edittype="00" rate="1" len="12" limit="ro" caption_en="Uptime" caption="Uptime" unit="days:hours:minutes" range="" note="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+      </g_netinfo>
+      <g_netinfo nodetype="group" name_en="Date And Time" name="Date And Time" groupid="snmpgroup" >
+        <p0150 nodetype="param" datatype="05" edittype="06" rate="1" len="7" limit="nrw" caption_en="System Date And Time" caption="System Date And Time" onfocus="Dateshow(this)" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+      </g_netinfo>
+      <g_temp nodetype="group" name_en="Temperature" name="Temperature" groupid="snmpgroup" >
+        <p0501 nodetype="param" datatype="01" edittype="00" rate="1" len="1" limit="ro" caption_en="Element Operating Temperature" caption="Element Operating Temperature" unit="℃" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+      </g_temp>
+      <g_netinfo nodetype="group1" name_en="Reset" name="Reset" groupid="snmpgroup" >
+        <p0022 nodetype="param" datatype="03" edittype="01" rate="1" len="1" limit="wo" caption_en="Soft-Reset" caption="Soft-Reset"  section_en="AuSoftReset" section="AuSoftReset" range="" facevalue_en="Reset" facevalue="" checked="0" fontcolor="1"/>
+      </g_netinfo>
+    </p_user>
+    <p_user nodetype="page" name_en="Optical Module Information" name="Optical Module Information" ChmCmd="02" UnCmd="54" SwCmd="35" savetime="1333537342">
+      <g_netinfo nodetype="group" name_en="Optical Module Serial Numbers And Vendor Name" name="Optical Module Serial Numbers And Vendor Name" groupid="snmpgroup" >
+        <p0a96 nodetype="param" specialtype="01" datatype="02" edittype="00" rate="1" len="16" limit="ro" caption_en="OP1 Transceiver" caption="OP1 Transceiver" unit="" range="" facevalue="" checked="0" fontcolor="1">
+          <p0aa6 nodetype="param" datatype="02" edittype="00" rate="1" len="16" limit="ro" caption_en="OP1 Transceiver" caption="OP1 Transceiver" unit="16 characters" range="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a96>
+        <p0a97 nodetype="param" specialtype="01" datatype="02" edittype="00" rate="1" len="16" limit="ro" caption_en="OP2 Transceiver" caption="OP2 Transceiver" unit="" range="" facevalue="" checked="0" fontcolor="1">
+          <p0aa7 nodetype="param" datatype="02" edittype="00" rate="1" len="16" limit="ro" caption_en="OP2 Transceiver" caption="OP2 Transceiver" unit="16 characters" range="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a97>
+        <p0a98 nodetype="param" specialtype="01" datatype="02" edittype="00" rate="1" len="16" limit="ro" caption_en="OP3 Transceiver" caption="OP3 Transceiver" unit="" range="" facevalue="" checked="0" fontcolor="1">
+          <p0aa8 nodetype="param" datatype="02" edittype="00" rate="1" len="16" limit="ro" caption_en="OP3 Transceiver" caption="OP3 Transceiver" unit="16 characters" range="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a98>
+        <p0a99 nodetype="param" specialtype="01" datatype="02" edittype="00" rate="1" len="16" limit="ro" caption_en="OP4 Transceiver" caption="OP4 Transceiver" unit="" range="" facevalue="" checked="0" fontcolor="1">
+          <p0aa9 nodetype="param" datatype="02" edittype="00" rate="1" len="16" limit="ro" caption_en="OP4 Transceiver" caption="OP4 Transceiver" unit="16 characters" range="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a99>
+        <p0a9a nodetype="param" specialtype="01" datatype="02" edittype="00" rate="1" len="16" limit="ro" caption_en="OP5 Transceiver" caption="OP5 Transceiver" unit="" range="" facevalue="" checked="0" fontcolor="1">
+          <p0aaa nodetype="param" datatype="02" edittype="00" rate="1" len="16" limit="ro" caption_en="OP5 Transceiver" caption="OP5 Transceiver" unit="16 characters" range="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a9a>
+        <p0a9b nodetype="param" specialtype="01" datatype="02" edittype="00" rate="1" len="16" limit="ro" caption_en="OP6 Transceiver" caption="OP6 Transceiver" unit="" range="" facevalue="" checked="0" fontcolor="1">
+          <p0aab nodetype="param" datatype="02" edittype="00" rate="1" len="16" limit="ro" caption_en="OP6 Transceiver" caption="OP6 Transceiver" unit="16 characters" range="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a9b>
+        <p0a9c nodetype="param" specialtype="01" datatype="02" edittype="00" rate="1" len="16" limit="ro" caption_en="OP7 Transceiver" caption="OP7 Transceiver" unit="" range="" facevalue="" checked="0" fontcolor="1">
+          <p0aac nodetype="param" datatype="02" edittype="00" rate="1" len="16" limit="ro" caption_en="OP7 Transceiver" caption="OP7 Transceiver" unit="16 characters" range="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a9c>
+        <p0a9d nodetype="param" specialtype="01" datatype="02" edittype="00" rate="1" len="16" limit="ro" caption_en="OP8 Transceiver" caption="OP8 Transceiver" unit="" range="" facevalue="" checked="0" fontcolor="1">
+          <p0aad nodetype="param" datatype="02" edittype="00" rate="1" len="16" limit="ro" caption_en="OP8 Transceiver" caption="OP8 Transceiver" unit="16 characters" range="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a9d>
+        <p0a8f nodetype="param" specialtype="01" datatype="02" edittype="00" rate="1" len="16" limit="ro" caption_en="OP9 Transceiver" caption="OP9 Transceiver" unit="" range="" facevalue="" checked="0" fontcolor="1">
+          <p0aae nodetype="param" datatype="02" edittype="00" rate="1" len="16" limit="ro" caption_en="OP9 Transceiver" caption="OP9 Transceiver" unit="16 characters" range="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a8f>
+        <p0a90 nodetype="param" specialtype="01" datatype="02" edittype="00" rate="1" len="16" limit="ro" caption_en="OP10 Transceiver" caption="OP10 Transceiver" unit="" range="" facevalue="" checked="0" fontcolor="1">
+          <p0aaf nodetype="param" datatype="02" edittype="00" rate="1" len="16" limit="ro" caption_en="OP10 Transceiver" caption="OP10 Transceiver" unit="16 characters" range="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a90>
+        <p0aa0 nodetype="param" specialtype="01" datatype="02" edittype="00" rate="1" len="16" limit="ro" caption_en="OP11 Transceiver" caption="OP11 Transceiver" unit="" range="" facevalue="" checked="0" fontcolor="1">
+          <p0ab0 nodetype="param" datatype="02" edittype="00" rate="1" len="16" limit="ro" caption_en="OP11 Transceiver" caption="OP11 Transceiver" unit="16 characters" range="" facevalue="" checked="0" fontcolor="1"/>
+        </p0aa0>
+        <p0aa1 nodetype="param" specialtype="01" datatype="02" edittype="00" rate="1" len="16" limit="ro" caption_en="OP12 Transceiver" caption="OP12 Transceiver" unit="" range="" facevalue="" checked="0" fontcolor="1">
+          <p0ab1 nodetype="param" datatype="02" edittype="00" rate="1" len="16" limit="ro" caption_en="OP12 Transceiver" caption="OP12 Transceiver" unit="16 characters" range="" facevalue="" checked="0" fontcolor="1"/>
+        </p0aa1>
+        <p0aa2 nodetype="param" specialtype="01" datatype="02" edittype="00" rate="1" len="16" limit="ro" caption_en="OP13 Transceiver" caption="OP13 Transceiver" unit="" range="" facevalue="" checked="0" fontcolor="1">
+          <p0ab2 nodetype="param" datatype="02" edittype="00" rate="1" len="16" limit="ro" caption_en="OP13 Transceiver" caption="OP13 Transceiver" unit="16 characters" range="" facevalue="" checked="0" fontcolor="1"/>
+        </p0aa2>
+        <p0aa3 nodetype="param" specialtype="01" datatype="02" edittype="00" rate="1" len="16" limit="ro" caption_en="OP14 Transceiver" caption="OP14 Transceiver" unit="" range="" facevalue="" checked="0" fontcolor="1">
+          <p0ab3 nodetype="param" datatype="02" edittype="00" rate="1" len="16" limit="ro" caption_en="OP14 Transceiver" caption="OP14 Transceiver" unit="16 characters" range="" facevalue="" checked="0" fontcolor="1"/>
+        </p0aa3>
+        <p0a08 nodetype="param" specialtype="01" datatype="02" edittype="00" rate="1" len="16" limit="ro" caption_en="OP15 Transceiver" caption="OP15 Transceiver" unit="" range="" facevalue="" checked="0" fontcolor="1">
+          <p0a0a nodetype="param" datatype="02" edittype="00" rate="1" len="16" limit="ro" caption_en="OP15 Transceiver" caption="OP15 Transceiver" unit="16 characters" range="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a08>
+        <p0a09 nodetype="param" specialtype="01" datatype="02" edittype="00" rate="1" len="16" limit="ro" caption_en="OP16 Transceiver" caption="OP16 Transceiver" unit="" range="" facevalue="" checked="0" fontcolor="1">
+          <p0a0b nodetype="param" datatype="02" edittype="00" rate="1" len="16" limit="ro" caption_en="OP16 Transceiver" caption="OP16 Transceiver" unit="16 characters" range="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a09>
+      </g_netinfo>
+      <g_netinfo nodetype="group" name_en="Optical Module Tx Power And Rx Power" name="Optical Module Tx Power And Rx Power" groupid="snmpgroup" >
+        <p0a40 nodetype="param" specialtype="01" datatype="01" edittype="00" rate="100" len="2" limit="ro" caption="OP1 Transceiver" caption_en="OP1 Transceiver" unit="dBm" range="" facevalue="" checked="0" fontcolor="1">
+          <p0a50 nodetype="param" datatype="01" edittype="00" rate="100" len="2" limit="ro" caption="OP1 Transceiver Tx/Rx Power" caption_en="OP1 Transceiver Tx/Rx Power" unit="dBm" range="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a40>
+        <p0a41 nodetype="param" specialtype="01" datatype="01" edittype="00" rate="100" len="2" limit="ro" caption="OP2 Transceiver" caption_en="OP2 Transceiver" unit="dBm" range="" facevalue="" checked="0" fontcolor="1">
+          <p0a51 nodetype="param" datatype="01" edittype="00" rate="100" len="2" limit="ro" caption="OP2 Transceiver Tx/Rx Power" caption_en="OP2 Transceiver Tx/Rx Power" unit="dBm" range="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a41>
+        <p0a42 nodetype="param" specialtype="01" datatype="01" edittype="00" rate="100" len="2" limit="ro" caption="OP3 Transceiver" caption_en="OP3 Transceiver" unit="dBm" range="" facevalue="" checked="0" fontcolor="1">
+          <p0a52 nodetype="param" datatype="01" edittype="00" rate="100" len="2" limit="ro" caption="OP3 Transceiver Tx/Rx Power" caption_en="OP3 Transceiver Tx/Rx Power" unit="dBm" range="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a42>
+        <p0a43 nodetype="param" specialtype="01" datatype="01" edittype="00" rate="100" len="2" limit="ro" caption="OP4 Transceiver" caption_en="OP4 Transceiver" unit="dBm" range="" facevalue="" checked="0" fontcolor="1">
+          <p0a53 nodetype="param" datatype="01" edittype="00" rate="100" len="2" limit="ro" caption="OP4 Transceiver Tx/Rx Power" caption_en="OP4 Transceiver Tx/Rx Power" unit="dBm" range="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a43>
+        <p0a44 nodetype="param" specialtype="01" datatype="01" edittype="00" rate="100" len="2" limit="ro" caption="OP5 Transceiver" caption_en="OP5 Transceiver" unit="dBm" range="" facevalue="" checked="0" fontcolor="1">
+          <p0a54 nodetype="param" datatype="01" edittype="00" rate="100" len="2" limit="ro" caption="OP5 Transceiver Tx/Rx Power" caption_en="OP5 Transceiver Tx/Rx Power" unit="dBm" range="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a44>
+        <p0a45 nodetype="param" specialtype="01" datatype="01" edittype="00" rate="100" len="2" limit="ro" caption="OP6 Transceiver" caption_en="OP6 Transceiver" unit="dBm" range="" facevalue="" checked="0" fontcolor="1">
+          <p0a55 nodetype="param" datatype="01" edittype="00" rate="100" len="2" limit="ro" caption="OP6 Transceiver Tx/Rx Power" caption_en="OP6 Transceiver Tx/Rx Power" unit="dBm" range="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a45>
+        <p0a46 nodetype="param" specialtype="01" datatype="01" edittype="00" rate="100" len="2" limit="ro" caption="OP7 Transceiver" caption_en="OP7 Transceiver" unit="dBm" range="" facevalue="" checked="0" fontcolor="1">
+          <p0a56 nodetype="param" datatype="01" edittype="00" rate="100" len="2" limit="ro" caption="OP7 Transceiver Tx/Rx Power" caption_en="OP7 Transceiver Tx/Rx Power" unit="dBm" range="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a46>
+        <p0a47 nodetype="param" specialtype="01" datatype="01" edittype="00" rate="100" len="2" limit="ro" caption="OP8 Transceiver" caption_en="OP8 Transceiver" unit="dBm" range="" facevalue="" checked="0" fontcolor="1">
+          <p0a57 nodetype="param" datatype="01" edittype="00" rate="100" len="2" limit="ro" caption="OP8 Transceiver Tx/Rx Power" caption_en="OP8 Transceiver Tx/Rx Power" unit="dBm" range="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a47>
+        <p0a48 nodetype="param" specialtype="01" datatype="01" edittype="00" rate="100" len="2" limit="ro" caption="OP9 Transceiver" caption_en="OP9 Transceiver" unit="dBm" range="" facevalue="" checked="0" fontcolor="1">
+          <p0a58 nodetype="param" datatype="01" edittype="00" rate="100" len="2" limit="ro" caption="OP9 Transceiver Tx/Rx Power" caption_en="OP9 Transceiver Tx/Rx Power" unit="dBm" range="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a48>
+        <p0a49 nodetype="param" specialtype="01" datatype="01" edittype="00" rate="100" len="2" limit="ro" caption="OP10 Transceiver" caption_en="OP10 Transceiver" unit="dBm" range="" facevalue="" checked="0" fontcolor="1">
+          <p0a59 nodetype="param" datatype="01" edittype="00" rate="100" len="2" limit="ro" caption="OP10 Transceiver Tx/Rx Power" caption_en="OP10 Transceiver Tx/Rx Power" unit="dBm" range="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a49>
+        <p0a4a nodetype="param" specialtype="01" datatype="01" edittype="00" rate="100" len="2" limit="ro" caption="OP11 Transceiver" caption_en="OP11 Transceiver" unit="dBm" range="" facevalue="" checked="0" fontcolor="1">
+          <p0a5a nodetype="param" datatype="01" edittype="00" rate="100" len="2" limit="ro" caption="OP11 Transceiver Tx/Rx Power" caption_en="OP11 Transceiver Tx/Rx Power" unit="dBm" range="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a4a>
+        <p0a4b nodetype="param" specialtype="01" datatype="01" edittype="00" rate="100" len="2" limit="ro" caption="OP12 Transceiver" caption_en="OP12 Transceiver" unit="dBm" range="" facevalue="" checked="0" fontcolor="1">
+          <p0a5b nodetype="param" datatype="01" edittype="00" rate="100" len="2" limit="ro" caption="OP12 Transceiver Tx/Rx Power" caption_en="OP12 Transceiver Tx/Rx Power" unit="dBm" range="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a4b>
+        <p0a4c nodetype="param" specialtype="01" datatype="01" edittype="00" rate="100" len="2" limit="ro" caption="OP13 Transceiver" caption_en="OP13 Transceiver" unit="dBm" range="" facevalue="" checked="0" fontcolor="1">
+          <p0a5c nodetype="param" datatype="01" edittype="00" rate="100" len="2" limit="ro" caption="OP13 Transceiver Tx/Rx Power" caption_en="OP13 Transceiver Tx/Rx Power" unit="dBm" range="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a4c>
+        <p0a4d nodetype="param" specialtype="01" datatype="01" edittype="00" rate="100" len="2" limit="ro" caption="OP14 Transceiver" caption_en="OP14 Transceiver" unit="dBm" range="" facevalue="" checked="0" fontcolor="1">
+          <p0a5d nodetype="param" datatype="01" edittype="00" rate="100" len="2" limit="ro" caption="OP14 Transceiver Tx/Rx Power" caption_en="OP14 Transceiver Tx/Rx Power" unit="dBm" range="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a4d>
+        <p0a0c nodetype="param" specialtype="01" datatype="01" edittype="00" rate="100" len="2" limit="ro" caption="OP15 Transceiver" caption_en="OP15 Transceiver" unit="dBm" range="" facevalue="" checked="0" fontcolor="1">
+          <p0a0e nodetype="param" datatype="01" edittype="00" rate="100" len="2" limit="ro" caption="OP15 Transceiver" caption_en="OP15 Transceiver" unit="dBm" range="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a0c>
+        <p0a0d nodetype="param" specialtype="01" datatype="01" edittype="00" rate="100" len="2" limit="ro" caption="OP16 Transceiver" caption_en="OP16 Transceiver" unit="dBm" range="" facevalue="" checked="0" fontcolor="1">
+          <p0a0f nodetype="param" datatype="01" edittype="00" rate="100" len="2" limit="ro" caption="OP16 Transceiver" caption_en="OP16 Transceiver" unit="dBm" range="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a0d>
+      </g_netinfo>
+    </p_user>
+    <p_cmd_f nodetype="page1" name_en="" name="Factory command1" ChmCmd="b0" UnCmd="54" SwCmd="35" savetime="1332167209">
+      <g_factory nodetype="group" name_en="" name="Factory command1">
+        <p0bbb nodetype="param" datatype="2" edittype="0" section_en="fctmode_en" section="fctmode_en" rate="1" len="30" limit="nrw" caption_en="Upgrade" caption="Upgrade" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0bbc nodetype="param" datatype="2" edittype="0" section_en="fctmode_en" section="fctmode_en" rate="1" len="30" limit="nrw" caption_en="Save configuration parameters" caption="Save configuration parameters" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+      </g_factory>
+    </p_cmd_f>
+    <p_cmd_e nodetype="page1" name="Engineering CMD1" name_en="Engineering CMD1" ChmCmd="b4" UnCmd="54" SwCmd="35" savetime="1332167209">
+      <g_engineer nodetype="group" name="Engineering CMD1" name_en="Engineering CMD1">
+        <p0b75 nodetype="param" datatype="02" edittype="00" rate="1" len="20" limit="nrw" caption="SMS mode query" caption_en="SMS mode query" range="" facevalue="" checked="0" fontcolor="1"/>
+        <p0b90 nodetype="param" datatype="03" edittype="01" section="smsstat" rate="1" len="1" limit="nrw" caption="SMS status query" caption_en="SMS status query" range="" facevalue="" checked="0" fontcolor="1"/>
+        <p0b19 nodetype="param" datatype="3" edittype="0" rate="1" len="1" limit="nrw" caption="Upgrade the DAS host software" facevalue="" range="" checked="0" fontcolor="1"/>
+        <p0b20 nodetype="param" datatype="0" edittype="0" rate="1" len="2" limit="nrw" caption="Upgrade CRC verification" caption_en="Upgrade CRC verification" facevalue="" range="" checked="0" fontcolor="1"/>
+        <p0b17 nodetype="param" datatype="18" edittype="0" rate="1" len="1" limit="nrw" caption="Delete the sub from the device" caption_en="Delete the sub from the device" facevalue="" range="" checked="0" fontcolor="1"/>
+        <p0b31 nodetype="param" datatype="0" edittype="0" rate="1" len="1" limit="rw" caption="Login identity" caption_en="Login identity" facevalue="" range="" checked="0" fontcolor="1"/>
+        <p0b32 nodetype="param" datatype="0" edittype="0" rate="1" len="1" limit="ro" caption="Query ID" caption_en="Query ID" facevalue="" range="" checked="0" fontcolor="1"/>
+        <p0b33 nodetype="param" datatype="2" edittype="0" rate="1" len="12" limit="rw" caption="User name" caption_en="User name" facevalue="" range="" checked="0" fontcolor="1"/>
+        <p0b34 nodetype="param" datatype="0" edittype="0" rate="1" len="1" limit="rw" caption="Login status" caption_en="Login status" facevalue="" range="" checked="0" fontcolor="1"/>
+        <p0b35 nodetype="param" datatype="0" edittype="0" rate="1" len="1" limit="ro" caption="Login rights" caption_en="Login rights" facevalue="" range="" checked="0" fontcolor="1"/>
+        <p0b36 nodetype="param" datatype="0" edittype="0" rate="1" len="1" limit="ro" caption_en="Device Category" caption="Device Category" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0b11 nodetype="param" datatype="02" edittype="00" rate="1" len="40" limit="ro" caption_en="Device Name" caption="Device Name" unit="" range="40 characters" facevalue="" checked="0" fontcolor="1"/>
+      </g_engineer>
+    </p_cmd_e>
+    <p_cmd_e nodetype="page1" name="Engineering CMD2" name_en="Engineering CMD2" ChmCmd="02" UnCmd="54" SwCmd="35" savetime="1332167209">
+      <g_engineer nodetype="group" name="Engineering CMD3" name_en="Engineering CMD3">
+        <p0aec nodetype="param" datatype="22" edittype="8" rate="1" len="40" limit="nrw" caption="Sub Information" caption_en="Sub Information" facevalue="0D01020304060708090B0C0D0E0F" range="" checked="0" fontcolor="1"/>
+        <p0be0 nodetype="param" datatype="4" edittype="0" rate="1" len="4" limit="nrw" caption_en="OP IP address" caption="OP IP address" facevalue="" range="" checked="0" fontcolor="1"/>
+      </g_engineer>
+    </p_cmd_e>
+  </m_project>
+  <m_alarm nodetype="module" name_en="Alarms" name="Alarms" address="fe" cfglevel="0" special="Alarms">
+    <p_alerm nodetype="page" name_en="Element Alarms" name="Element Alarms" ChmCmd="02" UnCmd="54" SwCmd="35" savetime="1333537341" type="alarm">
+      <g_alermpara nodetype="group" name_en="Alarms" name="Alarms">
+        <p0301 nodetype="param" specialtype="01" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="Power Interruption Alarm" caption="Power Interruption Alarm" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p0201 nodetype="param" datatype="03" edittype="04" section_en="severity_en" section="severity_en" rate="1" len="1" limit="nrw" backup="true" caption_en="Power Failure Alarm" caption="Power Failure Alarm" range="" facevalue_en="Warning" facevalue="Warning" checked="0" fontcolor="1"/>
+        </p0301>
+        <p0305 nodetype="param1" specialtype="01" datatype="03" edittype="03" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="Movement Alarm" caption="Movement Alarm" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p0205 nodetype="param1" datatype="03" edittype="01" section_en="severity_en" section="severity_en" rate="1" len="1" limit="nrw" caption_en="Movement Alarm" caption="Movement Alarm" range="" facevalue_en="Warning" facevalue="Warning" checked="0" fontcolor="1"/>
+        </p0305>
+        <p0328 nodetype="param1" specialtype="01" datatype="03" edittype="03" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="Open Case Alarm" caption="Open Case Alarm" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p0228 nodetype="param1" datatype="03" edittype="01" section_en="severity_en" section="severity_en" rate="1" len="1" limit="nrw" caption_en="Open Case Alarm" caption="Open Case Alarm" range="" facevalue_en="Warning" facevalue="Warning" checked="0" fontcolor="1"/>
+        </p0328>
+        <p0306 nodetype="param" specialtype="01" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="Over Temperature Alarm" caption="Over Temperature Alarm" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p0206 nodetype="param" datatype="03" edittype="04" section_en="severity_en" section="severity_en" rate="1" len="1" limit="nrw" backup="true" caption_en="Over Temperature Alarm" caption="Over Temperature Alarm" range="" facevalue_en="Warning" facevalue="Warning" checked="0" fontcolor="1"/>
+        </p0306>
+        <p03b0 nodetype="param1" specialtype="01" datatype="03" edittype="03" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="Operating Mode Changing Alarm" caption="Operating Mode Changing Alarm" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p02b0 nodetype="param1" datatype="03" edittype="01" section_en="severity_en" section="severity_en" rate="1" len="1" limit="nrw" caption_en="Operating Mode Changing Alarm" caption="Operating Mode Changing Alarm" range="" facevalue_en="Warning" facevalue="Warning" checked="0" fontcolor="1"/>
+        </p03b0>
+        <p037e nodetype="param" specialtype="01" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="Optical Port Switch Alarm" caption="Optical Port Switch Alarm" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p027e nodetype="param" datatype="03" edittype="04" section_en="severity_en" section="severity_en" rate="1" len="1" limit="nrw" backup="true" caption_en="Optical Port Switch Alarm" caption="Optical Port Switch Alarm" range="" facevalue_en="Warning" facevalue="Warning" checked="0" fontcolor="1"/>
+        </p037e>
+        <p03d0 nodetype="param1" specialtype="01" datatype="03" edittype="03" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="DPLL Unlocked Alarm" caption="DPLL Unlocked Alarm" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p02d0 nodetype="param1" datatype="03" edittype="01" section_en="severity_en" section="severity_en" rate="1" len="1" limit="nrw" caption_en="DPLL Unlocked Alarm" caption="DPLL Unlocked Alarm" range="" facevalue_en="Warning" facevalue="Warning" checked="0" fontcolor="1"/>
+        </p03d0>
+        <p03a0 nodetype="param" specialtype="01" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP1 Transceiver Failure Alarm" caption="OP1 Transceiver Failure Alarm" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p02a0 nodetype="param" datatype="03" edittype="04" section_en="severity_en" section="severity_en" rate="1" len="1" limit="nrw" backup="true" caption_en="OP1 Transceiver Failure Alarm" caption="OP1 Transceiver Failure Alarm" range="" facevalue_en="Warning" facevalue="Warning" checked="0" fontcolor="1"/>
+        </p03a0>
+        <p03a1 nodetype="param" specialtype="01" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP2 Transceiver Failure Alarm" caption="OP2 Transceiver Failure Alarm" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p02a1 nodetype="param" datatype="03" edittype="04" section_en="severity_en" section="severity_en" rate="1" len="1" limit="nrw" backup="true" caption_en="OP2 Transceiver Failure Alarm" caption="OP2 Transceiver Failure Alarm" range="" facevalue_en="Warning" facevalue="Warning" checked="0" fontcolor="1"/>
+        </p03a1>
+        <p03a2 nodetype="param" specialtype="01" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP3 Transceiver Failure Alarm" caption="OP3 Transceiver Failure Alarm" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p02a2 nodetype="param" datatype="03" edittype="04" section_en="severity_en" section="severity_en" rate="1" len="1" limit="nrw" backup="true" caption_en="OP3 Transceiver Failure Alarm" caption="OP3 Transceiver Failure Alarm" range="" facevalue_en="Warning" facevalue="Warning" checked="0" fontcolor="1"/>
+        </p03a2>
+        <p03a3 nodetype="param" specialtype="01" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP4 Transceiver Failure Alarm" caption="OP4 Transceiver Failure Alarm" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p02a3 nodetype="param" datatype="03" edittype="04" section_en="severity_en" section="severity_en" rate="1" len="1" limit="nrw" backup="true" caption_en="OP4 Transceiver Failure Alarm" caption="OP4 Transceiver Failure Alarm" range="" facevalue_en="Warning" facevalue="Warning" checked="0" fontcolor="1"/>
+        </p03a3>
+        <p03a6 nodetype="param" specialtype="01" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP5 Transceiver Failure Alarm" caption="OP5 Transceiver Failure Alarm" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p02a6 nodetype="param" datatype="03" edittype="04" section_en="severity_en" section="severity_en" rate="1" len="1" limit="nrw" backup="true" caption_en="OP5 Transceiver Failure Alarm" caption="OP5 Transceiver Failure Alarm" range="" facevalue_en="Warning" facevalue="Warning" checked="0" fontcolor="1"/>
+        </p03a6>
+        <p03a7 nodetype="param" specialtype="01" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP6 Transceiver Failure Alarm" caption="OP6 Transceiver Failure Alarm" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p02a7 nodetype="param" datatype="03" edittype="04" section_en="severity_en" section="severity_en" rate="1" len="1" limit="nrw" backup="true" caption_en="OP6 Transceiver Failure Alarm" caption="OP6 Transceiver Failure Alarm" range="" facevalue_en="Warning" facevalue="Warning" checked="0" fontcolor="1"/>
+        </p03a7>
+        <p03a4 nodetype="param" specialtype="01" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP7 Transceiver Failure Alarm" caption="OP7 Transceiver Failure Alarm range" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p02a4 nodetype="param" datatype="03" edittype="04" section_en="severity_en" section="severity_en" rate="1" len="1" limit="nrw" backup="true" caption_en="OP7 Transceiver Failure Alarm" caption="OP7 Transceiver Failure Alarm range=" facevalue_en="Warning" facevalue="Warning" checked="0" fontcolor="1"/>
+        </p03a4>
+        <p03a5 nodetype="param" specialtype="01" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP8 Transceiver Failure Alarm" caption="OP8 Transceiver Failure Alarm" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p02a5 nodetype="param" datatype="03" edittype="04" section_en="severity_en" section="severity_en" rate="1" len="1" limit="nrw" backup="true" caption_en="OP8 Transceiver Failure Alarm" caption="OP8 Transceiver Failure Alarm" range="" facevalue_en="Warning" facevalue="Warning" checked="0" fontcolor="1"/>
+        </p03a5>
+        <p03df nodetype="param" specialtype="01" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP9 Transceiver Failure Alarm" caption="OP9 Transceiver Failure Alarm" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p02df nodetype="param" datatype="03" edittype="04" section_en="severity_en" section="severity_en" rate="1" len="1" limit="nrw" backup="true" caption_en="OP9 Transceiver Failure Alarm" caption="OP9 Transceiver Failure Alarm" range="" facevalue_en="Warning" facevalue="Warning" checked="0" fontcolor="1"/>
+        </p03df>
+        <p03e0 nodetype="param" specialtype="01" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP10 Transceiver Failure Alarm" caption="OP10 Transceiver Failure Alarm" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p02e0 nodetype="param" datatype="03" edittype="04" section_en="severity_en" section="severity_en" rate="1" len="1" limit="nrw" backup="true" caption_en="OP10 Transceiver Failure Alarm" caption="OP10 Transceiver Failure Alarm" range="" facevalue_en="Warning" facevalue="Warning" checked="0" fontcolor="1"/>
+        </p03e0>
+        <p03e1 nodetype="param" specialtype="01" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP11 Transceiver Failure Alarm" caption="OP11 Transceiver Failure Alarm" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p02e1 nodetype="param" datatype="03" edittype="04" section_en="severity_en" section="severity_en" rate="1" len="1" limit="nrw" backup="true" caption_en="OP11 Transceiver Failure Alarm" caption="OP11 Transceiver Failure Alarm" range="" facevalue_en="Warning" facevalue="Warning" checked="0" fontcolor="1"/>
+        </p03e1>
+        <p03e2 nodetype="param" specialtype="01" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP12 Transceiver Failure Alarm" caption="OP12 Transceiver Failure Alarm" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p02e2 nodetype="param" datatype="03" edittype="04" section_en="severity_en" section="severity_en" rate="1" len="1" limit="nrw" backup="true" caption_en="OP12 Transceiver Failure Alarm" caption="OP12 Transceiver Failure Alarm" range="" facevalue_en="Warning" facevalue="Warning" checked="0" fontcolor="1"/>
+        </p03e2>
+        <p03e3 nodetype="param" specialtype="01" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP13 Transceiver Failure Alarm" caption="OP13 Transceiver Failure Alarm" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p02e3 nodetype="param" datatype="03" edittype="04" section_en="severity_en" section="severity_en" rate="1" len="1" limit="nrw" backup="true" caption_en="OP13 Transceiver Failure Alarm" caption="OP13 Transceiver Failure Alarm" range="" facevalue_en="Warning" facevalue="Warning" checked="0" fontcolor="1"/>
+        </p03e3>
+        <p03e4 nodetype="param" specialtype="01" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP14 Transceiver Failure Alarm" caption="OP14 Transceiver Failure Alarm" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p02e4 nodetype="param" datatype="03" edittype="04" section_en="severity_en" section="severity_en" rate="1" len="1" limit="nrw" backup="true" caption_en="OP14 Transceiver Failure Alarm" caption="OP14 Transceiver Failure Alarm" range="" facevalue_en="Warning" facevalue="Warning" checked="0" fontcolor="1"/>
+        </p03e4>
+        <p03e5 nodetype="param" specialtype="01" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP15 Transceiver Failure Alarm" caption="OP15 Transceiver Failure Alarm" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p02e5 nodetype="param" datatype="03" edittype="04" section_en="severity_en" section="severity_en" rate="1" len="1" limit="nrw" backup="true" caption_en="OP15Transceiver Failure Alarm" caption="OP15Transceiver Failure Alarm" range="" facevalue_en="Warning" facevalue="Warning" checked="0" fontcolor="1"/>
+        </p03e5>
+        <p03e6 nodetype="param" specialtype="01" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP16 Transceiver Failure Alarm" caption="OP16 Transceiver Failure Alarm" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p02e6 nodetype="param" datatype="03" edittype="04" section_en="severity_en" section="severity_en" rate="1" len="1" limit="nrw" backup="true" caption_en="OP16 Transceiver Failure Alarm" caption="OP16 Transceiver Failure Alarm" range="" facevalue_en="Warning" facevalue="Warning" checked="0" fontcolor="1"/>
+        </p03e6>
+        <p0320 nodetype="param" specialtype="01" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="External Input Alarm 1" caption="External Input Alarm 1" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p0220 nodetype="param" datatype="03" edittype="04" section_en="severity_en" section="severity_en" rate="1" len="1" limit="nrw" backup="true" caption_en="External Input Alarm 1" caption="External Input Alarm 1" range="" facevalue_en="Warning" facevalue="Warning" checked="0" fontcolor="1"/>
+        </p0320>
+        <p0321 nodetype="param" specialtype="01" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="External Input Alarm 2" caption="External Input Alarm 2" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p0221 nodetype="param" datatype="03" edittype="04" section_en="severity_en" section="severity_en" rate="1" len="1" limit="nrw" backup="true" caption_en="External Input Alarm 2" caption="External Input Alarm 2" range="" facevalue_en="Warning" facevalue="Warning" checked="0" fontcolor="1"/>
+        </p0321>
+        <p030f nodetype="param" specialtype="01" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="Optical Link Alarm" caption="Optical Link Alarm" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p020f nodetype="param" datatype="03" edittype="04" section_en="severity_en" section="severity_en" rate="1" len="1" limit="nrw" backup="true" caption_en="Optical Link Alarm" caption="Optical Link Alarm" range="" facevalue_en="Warning" facevalue="Warning" checked="0" fontcolor="1"/>
+        </p030f>
+      </g_alermpara>
+    </p_alerm>
+    <p_alarmThr nodetype="page" name_en="Alarm Thresholds" name="Alarm Thresholds" ChmCmd="02" UnCmd="54" SwCmd="35" savetime="1333537341">
+      <g_almThr nodetype="group" name_en="Alarm Thresholds" name="Alarm Thresholds">
+        <p0451 nodetype="param" datatype="01" edittype="02" rate="1" len="1" limit="nrw" backup="true" caption_en="Over Temperature Threshold" caption="Over Temperature Threshold" unit="℃" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+      </g_almThr>
+    </p_alarmThr>
+    <p_alarmThr nodetype="page" name_en="External Alarms" name="External Alarms" ChmCmd="02" UnCmd="54" SwCmd="35" savetime="1333537341">
+      <g_almThr nodetype="group" name_en="External Alarms" name="External Alarms">
+        <p0480 nodetype="param" fontcolor="1" checked="0" facevalue="Normal Open" facevalue_en="Normal Open" range="" backup="true" caption="External Input Alarm 1 Mode Select" caption_en="External Input Alarm 1 Mode Select" limit="nrw" len="1" rate="1" edittype="04" datatype="03" section="external_alarmstyle_en" section_en="external_alarmstyle_en"/>
+        <p0481 nodetype="param" fontcolor="1" checked="0" facevalue="Normal Open" facevalue_en="Normal Open" range="" backup="true" caption="External Input Alarm 2 Mode Select" caption_en="External Input Alarm 2 Mode Select" limit="nrw" len="1" rate="1" edittype="04" datatype="03" section="external_alarmstyle_en" section_en="external_alarmstyle_en"/>
+        <p0484 nodetype="param" fontcolor="1" checked="0" facevalue="" range="20 characters" backup="true" caption="External Input Alarm 1 Label" caption_en="External Input Alarm 1 Label" limit="nrw" len="20" rate="1" edittype="02" datatype="02" unit=""/>
+        <p0485 nodetype="param" fontcolor="1" checked="0" facevalue="" range="20 characters" backup="true" caption="External Input Alarm 2 Label" caption_en="External Input Alarm 2 Label" limit="nrw" len="20" rate="1" edittype="02" datatype="02" unit=""/>
+        <p0a21 nodetype="param" fontcolor="1" checked="0" facevalue="Normal Open" facevalue_en="Normal Open" range="" backup="true" caption="External Output Alarm 1 Mode Select" caption_en="External Output Alarm 1 Mode Select" limit="nrw" len="1" rate="1" edittype="04" datatype="03" section="external_alarmstyle_en" section_en="external_alarmstyle_en"/>
+        <p0a23 nodetype="param" fontcolor="1" checked="0" facevalue="Normal Open" facevalue_en="Normal Open" range="" backup="true" caption="External Output Alarm 2 Mode Select" caption_en="External Output Alarm 2 Mode Select" limit="nrw" len="1" rate="1" edittype="04" datatype="03" section="external_alarmstyle_en" section_en="external_alarmstyle_en"/>
+        <p0a25 nodetype="param" datatype="03" section_en="severity_en" section="severity_en" edittype="04" rate="1" len="1" limit="nrw" backup="true" caption_en="External Output Alarm 1 Level" caption="External Output Alarm 1 Level" range="" facevalue_en="Major" facevalue="Major" checked="0" fontcolor="1"/>
+        <p0a27 nodetype="param" datatype="03" section_en="severity_en" section="severity_en" edittype="04" rate="1" len="1" limit="nrw" backup="true" caption_en="External Output Alarm 2 Level" caption="External Output Alarm 2 Level" range="" facevalue_en="Critical" facevalue="Critical" checked="0" fontcolor="1"/>
+        <p0a8c nodetype="param" fontcolor="1" checked="0" facevalue="" facevalue_en="" range="" caption="External Output Alarm 1 Indication" caption_en="External Output Alarm 1 Indication" limit="ro" len="1" rate="1" edittype="05" datatype="03" alarm="alarmgray"/>
+        <p0a95 nodetype="param" fontcolor="1" checked="0" facevalue="" facevalue_en="" range="" caption="External Output Alarm 2 Indication" caption_en="External Output Alarm 2 Indication" limit="ro" len="1" rate="1" edittype="05" datatype="03" alarm="alarmgray"/>
+		</g_almThr>
+    </p_alarmThr>
+  </m_alarm>
+  <m_mainten nodetype="module" name_en="Maintenance" name="Maintenance" address="fd" cfglevel="0" special="Maintenance">
+    <p_releaseinfo nodetype="page" name_en="Optical Info" name="Optical Info" ChmCmd="b4" UnCmd="54" SwCmd="35" savetime="1333537317">
+      <g_litmodule nodetype="group" name_en="Optical Module Info" name="Optical Module Info">
+        <p0a8a nodetype="param" specialtype="3" treetype="3" datatype="23" edittype="00" rate="1" len="13" limit="ro" caption_en="OP1" caption="OP1" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p0a8a nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="DDM Function Availability" caption="DDM Function Availability" unit_en="" unit=""/>
+          <p0a8a nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Tx Power" caption="Tx Power" unit_en="" unit="dBm"/>
+          <p0a8a nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Rx Power" caption="Rx Power" unit_en="" unit="dBm"/>
+          <p0a8a nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Voltage" caption="Voltage" unit_en="" unit="V"/>
+          <p0a8a nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Bias Current" caption="Bias Current" unit_en="" unit="mA"/>
+          <p0a8a nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Temperature" caption="Temperature" unit_en="" unit="°C"/>
+          <p0a8a nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Tx Optical Wavelength" caption="Tx Optical Wavelength" unit="nm"/>
+          <p0b40 nodetype="param" datatype="00" edittype="00" rate="1" len="1" limit="ro" caption_en="OP1 CPRI Loss Sync Counter" caption="OP1 CPRI Loss Sync Counter" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+          <p0b69 nodetype="param" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP1 CPRI Sync Alarm" caption="OP1 CPRI Sync Alarm" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+          <p0b71 nodetype="param" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP1 LOS Alarm" caption="OP1 LOS Alarm" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a8a>
+        <p0a8b nodetype="param" specialtype="3" treetype="3" datatype="23" edittype="00" rate="1" len="13" limit="ro" caption_en="OP2" caption="OP2" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p0a8b nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="DDM Function Availability" caption="DDM Function Availability" unit_en="" unit=""/>
+          <p0a8b nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Tx Power" caption="Tx Power" unit_en="" unit="dBm"/>
+          <p0a8b nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Rx Power" caption="Rx Power" unit_en="" unit="dBm"/>
+          <p0a8b nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Voltage" caption="Voltage" unit_en="" unit="V"/>
+          <p0a8b nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Bias Current" caption="Bias Current" unit_en="" unit="mA"/>
+          <p0a8b nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Temperature" caption="Temperature" unit_en="" unit="°C"/>
+          <p0a8b nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Tx Optical Wavelength" caption="Tx Optical Wavelength" unit="nm"/>
+          <p0b41 nodetype="param" datatype="00" edittype="00" rate="1" len="1" limit="ro" caption_en="OP2 CPRI Loss Sync Counter" caption="OP2 CPRI Loss Sync Counter" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+          <p0b6a nodetype="param" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP2 CPRI Sync Alarm" caption="OP2 CPRI Sync Alarm" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+          <p0b72 nodetype="param" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP2 LOS Alarm" caption="OP2 LOS Alarm" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a8b>
+        <p0a8c nodetype="param" specialtype="3" treetype="3" datatype="23" edittype="00" rate="1" len="13" limit="ro" caption_en="OP3" caption="OP3" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p0a8c nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="DDM Function Availability" caption="DDM Function Availability" unit_en="" unit=""/>
+          <p0a8c nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Tx Power" caption="Tx Power" unit_en="" unit="dBm"/>
+          <p0a8c nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Rx Power" caption="Rx Power" unit_en="" unit="dBm"/>
+          <p0a8c nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Voltage" caption="Voltage" unit_en="" unit="V"/>
+          <p0a8c nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Bias Current" caption="Bias Current" unit_en="" unit="mA"/>
+          <p0a8c nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Temperature" caption="Temperature" unit_en="" unit="°C"/>
+          <p0a8c nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Tx Optical Wavelength" caption="Tx Optical Wavelength" unit="nm"/>
+          <p0b42 nodetype="param" datatype="00" edittype="00" rate="1" len="1" limit="ro" caption_en="OP3 CPRI Loss Sync Counter" caption="OP3 CPRI Loss Sync Counter" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+          <p0b6b nodetype="param" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP3 CPRI Sync Alarm" caption="OP3 CPRI Sync Alarm" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+          <p0b73 nodetype="param" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP3 LOS Alarm" caption="OP3 LOS Alarm" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a8c>
+        <p0a8d nodetype="param" specialtype="3" treetype="3" datatype="23" edittype="00" rate="1" len="13" limit="ro" caption_en="OP4" caption="OP4" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p0a8d nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="DDM Function Availability" caption="DDM Function Availability" unit_en="" unit=""/>
+          <p0a8d nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Tx Power" caption="Tx Power" unit_en="" unit="dBm"/>
+          <p0a8d nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Rx Power" caption="Rx Power" unit_en="" unit="dBm"/>
+          <p0a8d nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Voltage" caption="Voltage" unit_en="" unit="V"/>
+          <p0a8d nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Bias Current" caption="Bias Current" unit_en="" unit="mA"/>
+          <p0a8d nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Temperature" caption="Temperature" unit_en="" unit="°C"/>
+          <p0a8d nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Tx Optical Wavelength" caption="Tx Optical Wavelength" unit="nm"/>
+          <p0b43 nodetype="param" datatype="00" edittype="00" rate="1" len="1" limit="ro" caption_en="OP4 CPRI Loss Sync Counter" caption="OP4 CPRI Loss Sync Counter" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+          <p0b6c nodetype="param" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP4 CPRI Sync Alarm" caption="OP4 CPRI Sync Alarm" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+          <p0b74 nodetype="param" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP4 LOS Alarm" caption="OP4 LOS Alarm" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a8d>
+        <p0a8e nodetype="param" specialtype="3" treetype="3" datatype="23" edittype="00" rate="1" len="13" limit="ro" caption_en="OP5" caption="OP5" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p0a8e nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="DDM Function Availability" caption="DDM Function Availability" unit_en="" unit=""/>
+          <p0a8e nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Tx Power" caption="Tx Power" unit_en="" unit="dBm"/>
+          <p0a8e nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Rx Power" caption="Rx Power" unit_en="" unit="dBm"/>
+          <p0a8e nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Voltage" caption="Voltage" unit_en="" unit="V"/>
+          <p0a8e nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Bias Current" caption="Bias Current" unit_en="" unit="mA"/>
+          <p0a8e nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Temperature" caption="Temperature" unit_en="" unit="°C"/>
+          <p0a8e nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Tx Optical Wavelength" caption="Tx Optical Wavelength" unit="nm"/>
+          <p0b44 nodetype="param" datatype="00" edittype="00" rate="1" len="1" limit="ro" caption_en="OP5 CPRI Loss Sync Counter" caption="OP5 CPRI Loss Sync Counter" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+          <p0b6d nodetype="param" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP5 CPRI Sync Alarm" caption="OP5 CPRI Sync Alarm" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+          <p0b76 nodetype="param" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP5 LOS Alarm" caption="OP5 LOS Alarm" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a8e>
+        <p0a8f nodetype="param" specialtype="3" treetype="3" datatype="23" edittype="00" rate="1" len="13" limit="ro" caption_en="OP6" caption="OP6" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p0a8f nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="DDM Function Availability" caption="DDM Function Availability" unit_en="" unit=""/>
+          <p0a8f nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Tx Power" caption="Tx Power" unit_en="" unit="dBm"/>
+          <p0a8f nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Rx Power" caption="Rx Power" unit_en="" unit="dBm"/>
+          <p0a8f nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Voltage" caption="Voltage" unit_en="" unit="V"/>
+          <p0a8f nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Bias Current" caption="Bias Current" unit_en="" unit="mA"/>
+          <p0a8f nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Temperature" caption="Temperature" unit_en="" unit="°C"/>
+          <p0a8f nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Tx Optical Wavelength" caption="Tx Optical Wavelength" unit="nm"/>
+          <p0b45 nodetype="param" datatype="00" edittype="00" rate="1" len="1" limit="ro" caption_en="OP6 CPRI Loss Sync Counter" caption="OP6 CPRI Loss Sync Counter" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+          <p0b6e nodetype="param" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP6 CPRI Sync Alarm" caption="OP6 CPRI Sync Alarm" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+          <p0b77 nodetype="param" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP6 LOS Alarm" caption="OP6 LOS Alarm" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a8f>
+        <p0a90 nodetype="param" specialtype="3" treetype="3" datatype="23" edittype="00" rate="1" len="13" limit="ro" caption_en="OP7" caption="OP7" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p0a90 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="DDM Function Availability" caption="DDM Function Availability" unit_en="" unit=""/>
+          <p0a90 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Tx Power" caption="Tx Power" unit_en="" unit="dBm"/>
+          <p0a90 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Rx Power" caption="Rx Power" unit_en="" unit="dBm"/>
+          <p0a90 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Voltage" caption="Voltage" unit_en="" unit="V"/>
+          <p0a90 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Bias Current" caption="Bias Current" unit_en="" unit="mA"/>
+          <p0a90 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Temperature" caption="Temperature" unit_en="" unit="°C"/>
+          <p0a90 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Tx Optical Wavelength" caption="Tx Optical Wavelength" unit="nm"/>
+          <p0b46 nodetype="param" datatype="00" edittype="00" rate="1" len="1" limit="ro" caption_en="OP7 CPRI Loss Sync Counter" caption="OP7 CPRI Loss Sync Counter" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+          <p0b6f nodetype="param" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP7 CPRI Sync Alarm" caption="OP7 CPRI Sync Alarm" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+          <p0baa nodetype="param" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP7 LOS Alarm" caption="OP7 LOS Alarm" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a90>
+        <p0a91 nodetype="param" specialtype="3" treetype="3" datatype="23" edittype="00" rate="1" len="13" limit="ro" caption_en="OP8" caption="OP8" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p0a91 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="DDM Function Availability" caption="DDM Function Availability" unit_en="" unit=""/>
+          <p0a91 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Tx Power" caption="Tx Power" unit_en="" unit="dBm"/>
+          <p0a91 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Rx Power" caption="Rx Power" unit_en="" unit="dBm"/>
+          <p0a91 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Voltage" caption="Voltage" unit_en="" unit="V"/>
+          <p0a91 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Bias Current" caption="Bias Current" unit_en="" unit="mA"/>
+          <p0a91 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Temperature" caption="Temperature" unit_en="" unit="°C"/>
+          <p0a91 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Tx Optical Wavelength" caption="Tx Optical Wavelength" unit="nm"/>
+          <p0b47 nodetype="param" datatype="00" edittype="00" rate="1" len="1" limit="ro" caption_en="OP8 CPRI Loss Sync Counter" caption="OP8 CPRI Loss Sync Counter" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+          <p0b70 nodetype="param" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP8 CPRI Sync Alarm" caption="OP8 CPRI Sync Alarm" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+          <p0bab nodetype="param" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP8 LOS Alarm" caption="OP8 LOS Alarm" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a91>
+        <p0a92 nodetype="param" specialtype="3" treetype="3" datatype="23" edittype="00" rate="1" len="13" limit="ro" caption_en="OP9" caption="OP9" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p0a92 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="DDM Function Availability" caption="DDM Function Availability" unit_en="" unit=""/>
+          <p0a92 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Tx Power" caption="Tx Power" unit_en="" unit="dBm"/>
+          <p0a92 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Rx Power" caption="Rx Power" unit_en="" unit="dBm"/>
+          <p0a92 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Voltage" caption="Voltage" unit_en="" unit="V"/>
+          <p0a92 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Bias Current" caption="Bias Current" unit_en="" unit="mA"/>
+          <p0a92 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Temperature" caption="Temperature" unit_en="" unit="°C"/>
+          <p0a92 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Tx Optical Wavelength" caption="Tx Optical Wavelength" unit="nm"/>
+          <p0b48 nodetype="param" datatype="00" edittype="00" rate="1" len="1" limit="ro" caption_en="OP9 CPRI Loss Sync Counter" caption="OP9 CPRI Loss Sync Counter" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+          <p0ba2 nodetype="param" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP9 CPRI Sync Alarm" caption="OP9 CPRI Sync Alarm" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+          <p0bac nodetype="param" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP9 LOS Alarm" caption="OP9 LOS Alarm" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a92>
+        <p0a93 nodetype="param" specialtype="3" treetype="3" datatype="23" edittype="00" rate="1" len="13" limit="ro" caption_en="OP10" caption="OP10" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p0a93 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="DDM Function Availability" caption="DDM Function Availability" unit_en="" unit=""/>
+          <p0a93 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Tx Power" caption="Tx Power" unit_en="" unit="dBm"/>
+          <p0a93 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Rx Power" caption="Rx Power" unit_en="" unit="dBm"/>
+          <p0a93 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Voltage" caption="Voltage" unit_en="" unit="V"/>
+          <p0a93 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Bias Current" caption="Bias Current" unit_en="" unit="mA"/>
+          <p0a93 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Temperature" caption="Temperature" unit_en="" unit="°C"/>
+          <p0a93 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Tx Optical Wavelength" caption="Tx Optical Wavelength" unit="nm"/>
+          <p0b49 nodetype="param" datatype="00" edittype="00" rate="1" len="1" limit="ro" caption_en="OP10 CPRI Loss Sync Counter" caption="OP10 CPRI Loss Sync Counter" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+          <p0ba3 nodetype="param" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP10 CPRI Sync Alarm" caption="OP10 CPRI Sync Alarm" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+          <p0bad nodetype="param" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP10 LOS Alarm" caption="OP10 LOS Alarm" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a93>
+        <p0a94 nodetype="param" specialtype="3" treetype="3" datatype="23" edittype="00" rate="1" len="13" limit="ro" caption_en="OP11" caption="OP11" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p0a94 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="DDM Function Availability" caption="DDM Function Availability" unit_en="" unit=""/>
+          <p0a94 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Tx Power" caption="Tx Power" unit_en="" unit="dBm"/>
+          <p0a94 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Rx Power" caption="Rx Power" unit_en="" unit="dBm"/>
+          <p0a94 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Voltage" caption="Voltage" unit_en="" unit="V"/>
+          <p0a94 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Bias Current" caption="Bias Current" unit_en="" unit="mA"/>
+          <p0a94 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Temperature" caption="Temperature" unit_en="" unit="°C"/>
+          <p0a94 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Tx Optical Wavelength" caption="Tx Optical Wavelength" unit="nm"/>
+          <p0b4a nodetype="param" datatype="00" edittype="00" rate="1" len="1" limit="ro" caption_en="OP11 CPRI Loss Sync Counter" caption="OP11 CPRI Loss Sync Counter" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+          <p0ba4 nodetype="param" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP11 CPRI Sync Alarm" caption="OP11 CPRI Sync Alarm" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+          <p0bae nodetype="param" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP11 LOS Alarm" caption="OP11 LOS Alarm" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a94>
+        <p0a95 nodetype="param" specialtype="3" treetype="3" datatype="23" edittype="00" rate="1" len="13" limit="ro" caption_en="OP12" caption="OP12" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p0a95 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="DDM Function Availability" caption="DDM Function Availability" unit_en="" unit=""/>
+          <p0a95 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Tx Power" caption="Tx Power" unit_en="" unit="dBm"/>
+          <p0a95 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Rx Power" caption="Rx Power" unit_en="" unit="dBm"/>
+          <p0a95 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Voltage" caption="Voltage" unit_en="" unit="V"/>
+          <p0a95 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Bias Current" caption="Bias Current" unit_en="" unit="mA"/>
+          <p0a95 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Temperature" caption="Temperature" unit_en="" unit="°C"/>
+          <p0a95 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Tx Optical Wavelength" caption="Tx Optical Wavelength" unit="nm"/>
+          <p0b4b nodetype="param" datatype="00" edittype="00" rate="1" len="1" limit="ro" caption_en="OP12 CPRI Loss Sync Counter" caption="OP12 CPRI Loss Sync Counter" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+          <p0ba5 nodetype="param" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP12 CPRI Sync Alarm" caption="OP12 CPRI Sync Alarm" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+          <p0baf nodetype="param" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP12 LOS Alarm" caption="OP12 LOS Alarm" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a95>
+        <p0a96 nodetype="param" specialtype="3" treetype="3" datatype="23" edittype="00" rate="1" len="13" limit="ro" caption_en="OP13" caption="OP13" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p0a96 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="DDM Function Availability" caption="DDM Function Availability" unit_en="" unit=""/>
+          <p0a96 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Tx Power" caption="Tx Power" unit_en="" unit="dBm"/>
+          <p0a96 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Rx Power" caption="Rx Power" unit_en="" unit="dBm"/>
+          <p0a96 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Voltage" caption="Voltage" unit_en="" unit="V"/>
+          <p0a96 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Bias Current" caption="Bias Current" unit_en="" unit="mA"/>
+          <p0a96 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Temperature" caption="Temperature" unit_en="" unit="°C"/>
+          <p0a96 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Tx Optical Wavelength" caption="Tx Optical Wavelength" unit="nm"/>
+          <p0b4c nodetype="param" datatype="00" edittype="00" rate="1" len="1" limit="ro" caption_en="OP13 CPRI Loss Sync Counter" caption="OP13 CPRI Loss Sync Counter" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+          <p0ba6 nodetype="param" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP13 CPRI Sync Alarm" caption="OP13 CPRI Sync Alarm" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+          <p0bb0 nodetype="param" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP13 LOS Alarm" caption="OP13 LOS Alarm" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a96>
+        <p0a97 nodetype="param" specialtype="3" treetype="3" datatype="23" edittype="00" rate="1" len="13" limit="ro" caption_en="OP14" caption="OP14" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p0a97 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="DDM Function Availability" caption="DDM Function Availability" unit_en="" unit=""/>
+          <p0a97 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Tx Power" caption="Tx Power" unit_en="" unit="dBm"/>
+          <p0a97 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Rx Power" caption="Rx Power" unit_en="" unit="dBm"/>
+          <p0a97 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Voltage" caption="Voltage" unit_en="" unit="V"/>
+          <p0a97 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Bias Current" caption="Bias Current" unit_en="" unit="mA"/>
+          <p0a97 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Temperature" caption="Temperature" unit_en="" unit="°C"/>
+          <p0a97 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Tx Optical Wavelength" caption="Tx Optical Wavelength" unit="nm"/>
+          <p0b4d nodetype="param" datatype="00" edittype="00" rate="1" len="1" limit="ro" caption_en="OP14 CPRI Loss Sync Counter" caption="OP14 CPRI Loss Sync Counter" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+          <p0ba7 nodetype="param" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP14 CPRI Sync Alarm" caption="OP14 CPRI Sync Alarm" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+          <p0bb1 nodetype="param" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP14 LOS Alarm" caption="OP14 LOS Alarm" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a97>
+        <p0a98 nodetype="param" specialtype="3" treetype="3" datatype="23" edittype="00" rate="1" len="13" limit="ro" caption_en="OP15" caption="OP15" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p0a98 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="DDM Function Availability" caption="DDM Function Availability" unit_en="" unit=""/>
+          <p0a98 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Tx Power" caption="Tx Power" unit_en="" unit="dBm"/>
+          <p0a98 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Rx Power" caption="Rx Power" unit_en="" unit="dBm"/>
+          <p0a98 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Voltage" caption="Voltage" unit_en="" unit="V"/>
+          <p0a98 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Bias Current" caption="Bias Current" unit_en="" unit="mA"/>
+          <p0a98 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Temperature" caption="Temperature" unit_en="" unit="°C"/>
+          <p0a98 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Tx Optical Wavelength" caption="Tx Optical Wavelength" unit="nm"/>
+          <p0b4e nodetype="param" datatype="00" edittype="00" rate="1" len="1" limit="ro" caption_en="OP15 CPRI Loss Sync Counter" caption="OP15 CPRI Loss Sync Counter" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+          <p0ba8 nodetype="param" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP15 CPRI Sync Alarm" caption="OP15 CPRI Sync Alarm" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+          <p0bb2 nodetype="param" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP15 LOS Alarm" caption="OP15 LOS Alarm" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a98>
+        <p0a99 nodetype="param" specialtype="3" treetype="3" datatype="23" edittype="00" rate="1" len="13" limit="ro" caption_en="OP16" caption="OP16" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1">
+          <p0a99 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="DDM Function Availability" caption="DDM Function Availability" unit_en="" unit=""/>
+          <p0a99 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Tx Power" caption="Tx Power" unit_en="" unit="dBm"/>
+          <p0a99 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Rx Power" caption="Rx Power" unit_en="" unit="dBm"/>
+          <p0a99 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Voltage" caption="Voltage" unit_en="" unit="V"/>
+          <p0a99 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Bias Current" caption="Bias Current" unit_en="" unit="mA"/>
+          <p0a99 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Temperature" caption="Temperature" unit_en="" unit="°C"/>
+          <p0a99 nodetype="param" treetype="4" datatype="03" edittype="00" rate="1" len="11" limit="ro" caption_en="Tx Optical Wavelength" caption="Tx Optical Wavelength" unit="nm"/>
+          <p0b4f nodetype="param" datatype="00" edittype="00" rate="1" len="1" limit="ro" caption_en="OP16 CPRI Loss Sync Counter" caption="OP16 CPRI Loss Sync Counter" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+          <p0ba9 nodetype="param" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP16 CPRI Sync Alarm" caption="OP16 CPRI Sync Alarm" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+          <p0bb3 nodetype="param" datatype="03" edittype="05" alarm="alarmgray" rate="1" len="1" limit="ro" caption_en="OP16 LOS Alarm" caption="OP16 LOS Alarm" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        </p0a99>
+      </g_litmodule>
+    </p_releaseinfo>
+    <p_engineer nodetype="page" name_en="Engineering" name="Engineering" ChmCmd="b4" UnCmd="54" SwCmd="35" savetime="1333537341">
+      <g_engineer nodetype="group" name_en="Engineering Info" name="Engineering Info">
+        <p0b02 nodetype="param1" datatype="05" edittype="00" rate="1" len="7" limit="ro" caption_en="Data Update Time" caption="Data Update Time" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0b05 nodetype="param" datatype="03" edittype="00" rate="1" len="2" limit="ro" caption_en="ARM CRC" caption="ARM CRC" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0b8c nodetype="param" datatype="03" edittype="00" rate="1" len="2" limit="ro" caption_en="FPGA CRC" caption="FPGA CRC" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0b27 nodetype="param" datatype="03" edittype="00" rate="1" len="2" limit="ro" caption_en="E3 CRC" caption="E3 CRC" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0b7c nodetype="param1" datatype="03" edittype="00" rate="1" len="2" limit="nrw" caption_en="Configuration CRC" caption="Configuration CRC" facevalue="" range="" checked="0" fontcolor="1"/>
+        <p0b7f nodetype="param" datatype="03" edittype="00" rate="1" len="2" limit="ro" caption_en="Configuration CRC" caption="Configuration CRC" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+      </g_engineer>
+      <g_gxx nodetype="group" name_en="OP Info" name="OP Info">
+        <p0b50 nodetype="param" datatype="03" section_en="resetarm_en" section="resetarm_en" edittype="01" rate="1" len="1" limit="wo" caption_en="Sync Loss Counter Reset" caption="Sync Loss Counter Reset" range="" facevalue_en="Reset" facevalue="Reset" checked="0" fontcolor="1"/>
+      </g_gxx>
+      <g_gjzl nodetype="group" name_en="Advanced Command" name="Advanced Command">
+        <p0ba1 nodetype="param" datatype="03" section_en="resetarm_en" section="resetarm_en" edittype="01" rate="1" len="1" limit="wo" caption_en="Hardware Reset" caption="Hardware Reset" range="" facevalue_en="Reset" facevalue="Reset" checked="0" fontcolor="1"/>
+        <p0b01 nodetype="param1" datatype="03" section_en="resetarm_en" section="resetarm_en" edittype="01" rate="1" len="1" limit="wo" caption_en="Firmware Reset" caption="Firmware Reset" range="" facevalue_en="Reset" facevalue="Reset" checked="0" fontcolor="1"/>
+        <p0b09 nodetype="param" datatype="03" section_en="initdevice_en_uq" section="initdevice_en_uq" edittype="04" rate="1" len="1" limit="wo" caption_en="Alarm Initialization" caption="Alarm Initialization" range="" facevalue_en="Initialization" facevalue="Initialization" checked="0" fontcolor="1"/>
+        <p0b92 nodetype="param" datatype="03" section_en="alarmstyle_en" section="alarmstyle_en" edittype="04" rate="1" len="1" limit="wo" caption_en="Alarm Mode Select" caption="Alarm Mode Select" range="" facevalue_en="Normal Mode 3min" facevalue="Normal Mode 3min" checked="0" fontcolor="1"/>
+      </g_gjzl>
+    </p_engineer>
+    <p_fact nodetype="page" name_en="Factory Command" name="Factory Command" power="0" ChmCmd="b0" UnCmd="54" SwCmd="35" savetime="1333537341"  >
+      <g_factpara nodetype="group" name_en="Factory Parameters" name="Factory Parameters">
+        <p0aff nodetype="param" datatype="8" edittype="03" section_en="fctmode_en" section="fctmode_en" rate="1" len="9" limit="wo" caption_en="Factory Mode" caption="Factory Mode" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0aef nodetype="param" datatype="2" edittype="07" rate="1" len="20" limit="wo" caption_en="Factory Command" caption="Factory Command" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+      </g_factpara>
+    </p_fact>
+  </m_mainten>
+  <m_digital nodetype="module" name_en="Digital Module" name="Digital Module" power="1" address="ef" cfglevel="1">
+    <p_dzfwjk nodetype="page" name_en="Address Interface" name="Address Interface" ChmCmd="b2" savetime="1332167209">
+      <g_devic nodetype="group" name_en="Address Interface" name="Address Interface">
+        <p0ccc nodetype="param" datatype="18" edittype="00" rate="1" len="5" limit="nrw" caption_en="Address Interface" caption="Address Interface" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+      </g_devic>
+    </p_dzfwjk>
+    <p_interface nodetype="page" name_en="Debug Parameters" name="Debug Parameters" ChmCmd="b2" UnCmd="54" SwCmd="35" savetime="1333537307">
+      <g_gin nodetype="group" name_en="Basic Parameters" name="Basic Parameters">
+        <p0800 nodetype="param1" datatype="03" edittype="04" section_en="ClockSourceSel_en" section="ClockSourceSel_en" rate="1" len="1" limit="nrw" caption_en="Clock Reference Source" caption="Clock Reference Source" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0200 nodetype="param" datatype="03" edittype="02" rate="1" len="1" limit="nrw" caption_en="RST" caption="RST" range="Byte:1" note="8h00" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0303 nodetype="param1" datatype="03" edittype="00" section_en="Clocklock_en" section="Clocklock_en" rate="1" len="1" limit="ro" caption_en="Clock Lock" caption="Clock Lock" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0304 nodetype="param1" datatype="03" edittype="00" rate="1" len="1" limit="ro" caption_en="RLOC" caption="RLOC" range="Byte:1" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p031b nodetype="param" datatype="06" edittype="00" rate="1" len="6" limit="ro" caption_en="Host MAC Address" caption="Host MAC Address" range="Byte:6" note="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p031c nodetype="param" datatype="06" edittype="00" rate="1" len="4" limit="ro" caption_en="IP Address" caption="IP Address" range="Byte:4" note="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0812 nodetype="param" datatype="01" edittype="00" rate="1" len="1" limit="ro" caption_en="Digital Plate Temperature" caption="Digital Plate Temperature" range="" unit="℃" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0813 nodetype="param1" datatype="3" edittype="02" section_en="ennable_en" section="ennable_en" rate="1" len="1" limit="nrw" caption_en="Software Auto Update Switch" caption="Software Auto Update Switch" range="" facevalue_en="Enable" facevalue="Enable" checked="0" fontcolor="1"/>
+        <p0a1c nodetype="param" datatype="02" edittype="00" rate="1" len="40" limit="nrw" caption_en="Digital Board SN" caption="Digital Board SN" range="40 characters" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p01d3 nodetype="param1" datatype="00" edittype="02" rate="1" len="1" limit="rw" caption="Port Jump" caption_en="Port Jump" facevalue="" range="" checked="0" fontcolor="1"/>
+        <p01d4 nodetype="param1" datatype="02" edittype="02" rate="1" len="50" limit="nrw" caption="Setlog Download" caption_en="Setlog Download" facevalue="" range="" checked="0" fontcolor="1"/>
+      </g_gin>
+    </p_interface>
+    <p_factory nodetype="page" name_en="MCU Parameter" name="MCU Parameter" ChmCmd="b2" savetime="1332167209">
+      <g_devic nodetype="group" name_en="Device Information" name="Device Information">
+        <p0af0 nodetype="param" datatype="02" edittype="02" rate="1" len="20" limit="nrw" caption_en="Vendor" caption="Vendor" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0af1 nodetype="param1" datatype="00" edittype="00" rate="1" len="1" limit="nrw" caption_en="Device Category" caption="Device Category" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0af4 nodetype="param" datatype="02" edittype="02" rate="1" len="40" limit="nrw" caption_en="Element Model Number" caption="Element Model Number" range="40 characters" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0af3 nodetype="param" datatype="02" edittype="02" rate="1" len="40" limit="nrw" caption_en="Element Serial Number" caption="Element Serial Number" range="40 characters,only alphabets or alphanumeric combination" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p031d nodetype="param" datatype="06" edittype="02" rate="1" len="6" limit="nrw" caption_en="MAC Address" caption="MAC Address" range="Byte:6" note="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p01d1 nodetype="param" datatype="02" edittype="02" rate="1" len="200" limit="nrw" caption_en="Optical Module Certified" caption="Optical Module Certified" range="200 characters" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0af5 nodetype="param1" datatype="00" edittype="00" rate="1" len="1" limit="nrw" caption_en="Battery Test Cycle" caption="Battery Test Cycle" range="1 ~ 4" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+        <p0af6 nodetype="param1" datatype="00" edittype="00" rate="1" len="1" limit="nrw" caption_en="Battery Test Time" caption="Battery Test Time" range="" facevalue_en="" facevalue="" unit_en="Minute" unit="Minute" checked="0" fontcolor="1"/>
+        <p0bbd nodetype="param" datatype="03" edittype="03" section_en="on/off_en" section="on/off_en" rate="1" len="1" limit="nrw" caption_en="The FPGA Debugging Mode Switch" caption="The FPGA Debugging Mode Switch" range="" facevalue_en="Open" facevalue="Open" checked="0" fontcolor="1"/>
+        <p0310 nodetype="param" datatype="02" edittype="00" rate="1" len="20" limit="ro" caption="Web Version" caption_en="Web Version" facevalue="" range="" checked="0" fontcolor="1"/>
+        <p031e nodetype="param" datatype="02" edittype="00" rate="1" len="40" limit="nrw" caption_en ="Hardware Version" caption="Hardware Version" range="" facevalue_en="" facevalue="" checked="0" fontcolor="1"/>
+      </g_devic>
+    </p_factory>
+  </m_digital>
+</matchineroot>

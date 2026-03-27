@@ -1,0 +1,35 @@
+{
+  "tip": {
+    "willRestartSoon": "It will restart soon.If not,please manual restart!",
+    "LoadConfigurationFailed": "Load configuration file failed",
+    "RegisterReadFailed": "Register read failed",
+    "FileUploadedSuccessfully": "File uploaded successfully",
+    "FileUploadedFailed": "File uploaded failed",
+    "UserCreatedSuccessfully": "User created successfully",
+    "RequestFailed": "Request failed",
+    "UserModifiedSuccessfully": "User modified successfully",
+    "UserCreatedFailed": "User created failed",
+    "UserModifiedFailed": "User modified failed",
+    "UserDeletedSuccessfully": "User deleted successfully",
+    "UserDeletedFailed": "User deleted failed",
+    "NotLogin": "Not login",
+    "GetParameterValuesSuccessfully": "Get parameter values successfully",
+    "SetParameterValuesSuccessfully": "Set parameter values successfully",
+    "ResponseWithFaultCode": "response with fault code",
+    "fileDeletedSuccessfully": "File deleted successfully",
+    "getFirmwareListSuccessfully": "Get firmware list successfully",
+    "getFirmwareListFailed": "Get firmware list failed",
+
+    "firmwareDeletedFailed": "Firmware deleted failed",
+    "firmwareDeletedSuccessfully": "Firmware deleted successfully",
+    "successfully": "Successfully",
+    "selectOne": "Must Select One"
+  },
+  "button": {
+    "Retry": "Retry",
+    "close": "Close"
+  },
+  "ping": {
+    "getTokenError": "Get Token Error"
+  }
+}

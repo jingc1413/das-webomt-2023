@@ -1,0 +1,5284 @@
+[
+  {
+    "PrivOid": "T02.P0002",
+    "Name": "Vendor",
+    "Groups": [
+      "Settings,LAN Connectivity,Element Identification"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 20
+  },
+  {
+    "PrivOid": "T02.P0004",
+    "Name": "Element Model Number",
+    "Groups": [
+      "Settings,LAN Connectivity,Element Identification"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 20
+  },
+  {
+    "PrivOid": "T02.P0005",
+    "Name": "Element Serial Number",
+    "Groups": [
+      "Settings,LAN Connectivity,Element Identification"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 20
+  },
+  {
+    "PrivOid": "T02.P000A",
+    "Name": "Software Version",
+    "Groups": [
+      "Settings,LAN Connectivity,Element Identification"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 20
+  },
+  {
+    "PrivOid": "T02.P0101",
+    "Name": "Device ID",
+    "Groups": [
+      "Settings,LAN Connectivity,Element Identification"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Tips": "Hexadecimal",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "binary",
+    "ByteSize": 4
+  },
+  {
+    "PrivOid": "T02.P0102",
+    "Name": "Device Sub ID",
+    "Groups": [
+      "Settings,LAN Connectivity,Element Identification"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Tips": "Decimalism",
+    "Access": "rw",
+    "DataType": "uint8",
+    "InputType": "number",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "T02.P0023",
+    "Name": "Installed Location Label",
+    "Groups": [
+      "Settings,LAN Connectivity,Element Identification"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 20
+  },
+  {
+    "PrivOid": "T02.P0024",
+    "Name": "Site Name",
+    "Groups": [
+      "Settings,LAN Connectivity,Element Identification"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 100
+  },
+  {
+    "PrivOid": "T02.P0030",
+    "Name": "Device Name",
+    "Groups": [
+      "Settings,LAN Connectivity,Element Identification"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 40
+  },
+  {
+    "PrivOid": "T02.P0501",
+    "Name": "Element Operating Temperature",
+    "Groups": [
+      "Settings,LAN Connectivity,Element Identification"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "℃",
+    "Access": "ro",
+    "DataType": "int8",
+    "InputType": "default",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "T02.P0A96",
+    "Name": "OP1 Transceiver Serial Number",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Serial Number And Vendor Name"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "T02.P0AA6",
+    "Name": "OP1 Transceiver Vendor Name",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Serial Number And Vendor Name"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "T02.P0A97",
+    "Name": "OP2 Transceiver Serial Number",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Serial Number And Vendor Name"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "T02.P0AA7",
+    "Name": "OP2 Transceiver Vendor Name",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Serial Number And Vendor Name"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "T02.P0A98",
+    "Name": "OP3 Transceiver Serial Number",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Serial Number And Vendor Name"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "T02.P0AA8",
+    "Name": "OP3 Transceiver Vendor Name",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Serial Number And Vendor Name"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "T02.P0A99",
+    "Name": "OP4 Transceiver Serial Number",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Serial Number And Vendor Name"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "T02.P0AA9",
+    "Name": "OP4 Transceiver Vendor Name",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Serial Number And Vendor Name"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "T02.P0A9A",
+    "Name": "OP5 Transceiver Serial Number",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Serial Number And Vendor Name"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "T02.P0AAA",
+    "Name": "OP5 Transceiver Vendor Name",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Serial Number And Vendor Name"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "T02.P0A9B",
+    "Name": "OP6 Transceiver Serial Number",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Serial Number And Vendor Name"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "T02.P0AAB",
+    "Name": "OP6 Transceiver Vendor Name",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Serial Number And Vendor Name"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "T02.P0A9C",
+    "Name": "OP7 Transceiver Serial Number",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Serial Number And Vendor Name"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "T02.P0AAC",
+    "Name": "OP7 Transceiver Vendor Name",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Serial Number And Vendor Name"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "T02.P0A9D",
+    "Name": "OP8 Transceiver Serial Number",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Serial Number And Vendor Name"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "T02.P0AAD",
+    "Name": "OP8 Transceiver Vendor Name",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Serial Number And Vendor Name"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "T02.P0A8F",
+    "Name": "OP9 Transceiver Serial Number",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Serial Number And Vendor Name"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "T02.P0AAE",
+    "Name": "OP9 Transceiver Vendor Name",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Serial Number And Vendor Name"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "T02.P0A90",
+    "Name": "OP10 Transceiver Serial Number",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Serial Number And Vendor Name"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "T02.P0AAF",
+    "Name": "OP10 Transceiver Vendor Name",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Serial Number And Vendor Name"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "T02.P0AA0",
+    "Name": "OP11 Transceiver Serial Number",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Serial Number And Vendor Name"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "T02.P0AB0",
+    "Name": "OP11 Transceiver Vendor Name",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Serial Number And Vendor Name"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "T02.P0AA1",
+    "Name": "OP12 Transceiver Serial Number",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Serial Number And Vendor Name"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "T02.P0AB1",
+    "Name": "OP12 Transceiver Vendor Name",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Serial Number And Vendor Name"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "T02.P0AA2",
+    "Name": "OP13 Transceiver Serial Number",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Serial Number And Vendor Name"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "T02.P0AB2",
+    "Name": "OP13 Transceiver Vendor Name",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Serial Number And Vendor Name"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "T02.P0AA3",
+    "Name": "OP14 Transceiver Serial Number",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Serial Number And Vendor Name"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "T02.P0AB3",
+    "Name": "OP14 Transceiver Vendor Name",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Serial Number And Vendor Name"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "T02.P0A9E",
+    "Name": "OP Slave Transceiver Serial Number",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Serial Number And Vendor Name"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "T02.P0A01",
+    "Name": "OP Slave Transceiver Vendor Name",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Serial Number And Vendor Name"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "T02.P0A9F",
+    "Name": "OP Master Transceiver Serial Number",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Serial Number And Vendor Name"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "T02.P0A04",
+    "Name": "OP Master Transceiver Vendor Name",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Serial Number And Vendor Name"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "T02.P0A40",
+    "Name": "OP1 Transceiver Tx Power",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Tx Power And Rx Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 100
+  },
+  {
+    "PrivOid": "T02.P0A50",
+    "Name": "OP1 Transceiver Rx Power",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Tx Power And Rx Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 100
+  },
+  {
+    "PrivOid": "T02.P0A41",
+    "Name": "OP2 Transceiver Tx Power",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Tx Power And Rx Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 100
+  },
+  {
+    "PrivOid": "T02.P0A51",
+    "Name": "OP2 Transceiver Rx Power",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Tx Power And Rx Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 100
+  },
+  {
+    "PrivOid": "T02.P0A42",
+    "Name": "OP3 Transceiver Tx Power",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Tx Power And Rx Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 100
+  },
+  {
+    "PrivOid": "T02.P0A52",
+    "Name": "OP3 Transceiver Rx Power",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Tx Power And Rx Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 100
+  },
+  {
+    "PrivOid": "T02.P0A43",
+    "Name": "OP4 Transceiver Tx Power",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Tx Power And Rx Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 100
+  },
+  {
+    "PrivOid": "T02.P0A53",
+    "Name": "OP4 Transceiver Rx Power",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Tx Power And Rx Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 100
+  },
+  {
+    "PrivOid": "T02.P0A44",
+    "Name": "OP5 Transceiver Tx Power",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Tx Power And Rx Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 100
+  },
+  {
+    "PrivOid": "T02.P0A54",
+    "Name": "OP5 Transceiver Rx Power",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Tx Power And Rx Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 100
+  },
+  {
+    "PrivOid": "T02.P0A45",
+    "Name": "OP6 Transceiver Tx Power",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Tx Power And Rx Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 100
+  },
+  {
+    "PrivOid": "T02.P0A55",
+    "Name": "OP6 Transceiver Rx Power",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Tx Power And Rx Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 100
+  },
+  {
+    "PrivOid": "T02.P0A46",
+    "Name": "OP7 Transceiver Tx Power",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Tx Power And Rx Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 100
+  },
+  {
+    "PrivOid": "T02.P0A56",
+    "Name": "OP7 Transceiver Rx Power",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Tx Power And Rx Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 100
+  },
+  {
+    "PrivOid": "T02.P0A47",
+    "Name": "OP8 Transceiver Tx Power",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Tx Power And Rx Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 100
+  },
+  {
+    "PrivOid": "T02.P0A57",
+    "Name": "OP8 Transceiver Rx Power",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Tx Power And Rx Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 100
+  },
+  {
+    "PrivOid": "T02.P0A48",
+    "Name": "OP9 Transceiver Tx Power",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Tx Power And Rx Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 100
+  },
+  {
+    "PrivOid": "T02.P0A58",
+    "Name": "OP9 Transceiver Rx Power",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Tx Power And Rx Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 100
+  },
+  {
+    "PrivOid": "T02.P0A49",
+    "Name": "OP10 Transceiver Tx Power",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Tx Power And Rx Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 100
+  },
+  {
+    "PrivOid": "T02.P0A59",
+    "Name": "OP10 Transceiver Rx Power",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Tx Power And Rx Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 100
+  },
+  {
+    "PrivOid": "T02.P0A4A",
+    "Name": "OP11 Transceiver Tx Power",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Tx Power And Rx Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 100
+  },
+  {
+    "PrivOid": "T02.P0A5A",
+    "Name": "OP11 Transceiver Rx Power",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Tx Power And Rx Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 100
+  },
+  {
+    "PrivOid": "T02.P0A4B",
+    "Name": "OP12 Transceiver Tx Power",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Tx Power And Rx Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 100
+  },
+  {
+    "PrivOid": "T02.P0A5B",
+    "Name": "OP12 Transceiver Rx Power",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Tx Power And Rx Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 100
+  },
+  {
+    "PrivOid": "T02.P0A4C",
+    "Name": "OP13 Transceiver Tx Power",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Tx Power And Rx Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 100
+  },
+  {
+    "PrivOid": "T02.P0A5C",
+    "Name": "OP13 Transceiver Rx Power",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Tx Power And Rx Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 100
+  },
+  {
+    "PrivOid": "T02.P0A4D",
+    "Name": "OP14 Transceiver Tx Power",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Tx Power And Rx Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 100
+  },
+  {
+    "PrivOid": "T02.P0A5D",
+    "Name": "OP14 Transceiver Rx Power",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Tx Power And Rx Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 100
+  },
+  {
+    "PrivOid": "T02.P0A02",
+    "Name": "OP Slave Transceiver Tx Power",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Tx Power And Rx Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 100
+  },
+  {
+    "PrivOid": "T02.P0A03",
+    "Name": "OP Slave Transceiver Rx Power",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Tx Power And Rx Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 100
+  },
+  {
+    "PrivOid": "T02.P0A05",
+    "Name": "OP Master Transceiver Tx Power",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Tx Power And Rx Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 100
+  },
+  {
+    "PrivOid": "T02.P0A06",
+    "Name": "OP Master Transceiver Rx Power",
+    "Groups": [
+      "Settings,LAN Connectivity,Optical Module Tx Power And Rx Power"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 100
+  },
+  {
+    "PrivOid": "T02.P0150",
+    "Name": "System Date And Time",
+    "Groups": [
+      "Settings,LAN Connectivity,Date And Time"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "datetime",
+    "InputType": "datetime",
+    "ByteSize": 7
+  },
+  {
+    "PrivOid": "T02.P0301",
+    "Name": "Power Interruption Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P0201",
+    "Name": "Power Interruption Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "02": "Warning",
+      "03": "Minor",
+      "04": "Major",
+      "05": "Critical"
+    }
+  },
+  {
+    "PrivOid": "T02.P0306",
+    "Name": "Over Temperature Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P0206",
+    "Name": "Over Temperature Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "02": "Warning",
+      "03": "Minor",
+      "04": "Major",
+      "05": "Critical"
+    }
+  },
+  {
+    "PrivOid": "T02.P037E",
+    "Name": "Optical Port Switch Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P027E",
+    "Name": "Optical Port Switch Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "02": "Warning",
+      "03": "Minor",
+      "04": "Major",
+      "05": "Critical"
+    }
+  },
+  {
+    "PrivOid": "T02.P03A0",
+    "Name": "OP1 Transceiver Failure Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P02A0",
+    "Name": "OP1 Transceiver Failure Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "02": "Warning",
+      "03": "Minor",
+      "04": "Major",
+      "05": "Critical"
+    }
+  },
+  {
+    "PrivOid": "T02.P03A1",
+    "Name": "OP2 Transceiver Failure Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P02A1",
+    "Name": "OP2 Transceiver Failure Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "02": "Warning",
+      "03": "Minor",
+      "04": "Major",
+      "05": "Critical"
+    }
+  },
+  {
+    "PrivOid": "T02.P03A2",
+    "Name": "OP3 Transceiver Failure Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P02A2",
+    "Name": "OP3 Transceiver Failure Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "02": "Warning",
+      "03": "Minor",
+      "04": "Major",
+      "05": "Critical"
+    }
+  },
+  {
+    "PrivOid": "T02.P03A3",
+    "Name": "OP4 Transceiver Failure Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P02A3",
+    "Name": "OP4 Transceiver Failure Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "02": "Warning",
+      "03": "Minor",
+      "04": "Major",
+      "05": "Critical"
+    }
+  },
+  {
+    "PrivOid": "T02.P03A6",
+    "Name": "OP5 Transceiver Failure Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P02A6",
+    "Name": "OP5 Transceiver Failure Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "02": "Warning",
+      "03": "Minor",
+      "04": "Major",
+      "05": "Critical"
+    }
+  },
+  {
+    "PrivOid": "T02.P03A7",
+    "Name": "OP6 Transceiver Failure Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P02A7",
+    "Name": "OP6 Transceiver Failure Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "02": "Warning",
+      "03": "Minor",
+      "04": "Major",
+      "05": "Critical"
+    }
+  },
+  {
+    "PrivOid": "T02.P03A4",
+    "Name": "OP7 Transceiver Failure Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P02A4",
+    "Name": "OP7 Transceiver Failure Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "02": "Warning",
+      "03": "Minor",
+      "04": "Major",
+      "05": "Critical"
+    }
+  },
+  {
+    "PrivOid": "T02.P03A5",
+    "Name": "OP8 Transceiver Failure Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P02A5",
+    "Name": "OP8 Transceiver Failure Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "02": "Warning",
+      "03": "Minor",
+      "04": "Major",
+      "05": "Critical"
+    }
+  },
+  {
+    "PrivOid": "T02.P03DF",
+    "Name": "OP9 Transceiver Failure Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P02DF",
+    "Name": "OP9 Transceiver Failure Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "02": "Warning",
+      "03": "Minor",
+      "04": "Major",
+      "05": "Critical"
+    }
+  },
+  {
+    "PrivOid": "T02.P03E0",
+    "Name": "OP10 Transceiver Failure Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P02E0",
+    "Name": "OP10 Transceiver Failure Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "02": "Warning",
+      "03": "Minor",
+      "04": "Major",
+      "05": "Critical"
+    }
+  },
+  {
+    "PrivOid": "T02.P03E1",
+    "Name": "OP11 Transceiver Failure Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P02E1",
+    "Name": "OP11 Transceiver Failure Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "02": "Warning",
+      "03": "Minor",
+      "04": "Major",
+      "05": "Critical"
+    }
+  },
+  {
+    "PrivOid": "T02.P03E2",
+    "Name": "OP12 Transceiver Failure Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P02E2",
+    "Name": "OP12 Transceiver Failure Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "02": "Warning",
+      "03": "Minor",
+      "04": "Major",
+      "05": "Critical"
+    }
+  },
+  {
+    "PrivOid": "T02.P03E3",
+    "Name": "OP13 Transceiver Failure Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P02E3",
+    "Name": "OP13 Transceiver Failure Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "02": "Warning",
+      "03": "Minor",
+      "04": "Major",
+      "05": "Critical"
+    }
+  },
+  {
+    "PrivOid": "T02.P03E4",
+    "Name": "OP14 Transceiver Failure Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P02E4",
+    "Name": "OP14 Transceiver Failure Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "02": "Warning",
+      "03": "Minor",
+      "04": "Major",
+      "05": "Critical"
+    }
+  },
+  {
+    "PrivOid": "T02.P03A8",
+    "Name": "OP Slave Transceiver Failure Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P02A8",
+    "Name": "OP Slave Transceiver Failure Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "02": "Warning",
+      "03": "Minor",
+      "04": "Major",
+      "05": "Critical"
+    }
+  },
+  {
+    "PrivOid": "T02.P03A9",
+    "Name": "OP Master Transceiver Failure Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P02A9",
+    "Name": "OP Master Transceiver Failure Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "02": "Warning",
+      "03": "Minor",
+      "04": "Major",
+      "05": "Critical"
+    }
+  },
+  {
+    "PrivOid": "T02.P0320",
+    "Name": "External Input 1 Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P0220",
+    "Name": "External Input 1 Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "02": "Warning",
+      "03": "Minor",
+      "04": "Major",
+      "05": "Critical"
+    }
+  },
+  {
+    "PrivOid": "T02.P0321",
+    "Name": "External Input 2 Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P0221",
+    "Name": "External Input 2 Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "02": "Warning",
+      "03": "Minor",
+      "04": "Major",
+      "05": "Critical"
+    }
+  },
+  {
+    "PrivOid": "T02.P0322",
+    "Name": "External Input 3 Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P0222",
+    "Name": "External Input 3 Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "02": "Warning",
+      "03": "Minor",
+      "04": "Major",
+      "05": "Critical"
+    }
+  },
+  {
+    "PrivOid": "T02.P0323",
+    "Name": "External Input 4 Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P0223",
+    "Name": "External Input 4 Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "02": "Warning",
+      "03": "Minor",
+      "04": "Major",
+      "05": "Critical"
+    }
+  },
+  {
+    "PrivOid": "T02.P030F",
+    "Name": "Optical Link Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P020F",
+    "Name": "Optical Link Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "02": "Warning",
+      "03": "Minor",
+      "04": "Major",
+      "05": "Critical"
+    }
+  },
+  {
+    "PrivOid": "T02.P0451",
+    "Name": "Over Temperature Threshold",
+    "Groups": [
+      "Alarms,Alarm Thresholds,Alarm Thresholds"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "UnitName": "℃",
+    "Access": "rw",
+    "DataType": "int8",
+    "InputType": "number",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "T02.P0480",
+    "Name": "External Input 1 Alarm Mode Select",
+    "Groups": [
+      "Alarms,Alarm Thresholds,External Alarms"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normally closed",
+      "01": "Normally open"
+    }
+  },
+  {
+    "PrivOid": "T02.P0481",
+    "Name": "External Input 2 Alarm Mode Select",
+    "Groups": [
+      "Alarms,Alarm Thresholds,External Alarms"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normally closed",
+      "01": "Normally open"
+    }
+  },
+  {
+    "PrivOid": "T02.P0482",
+    "Name": "External Input 3 Alarm Mode Select",
+    "Groups": [
+      "Alarms,Alarm Thresholds,External Alarms"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normally closed",
+      "01": "Normally open"
+    }
+  },
+  {
+    "PrivOid": "T02.P0483",
+    "Name": "External Input 4 Alarm Mode Select",
+    "Groups": [
+      "Alarms,Alarm Thresholds,External Alarms"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normally closed",
+      "01": "Normally open"
+    }
+  },
+  {
+    "PrivOid": "T02.P0484",
+    "Name": "External Input 1 Alarm Label",
+    "Groups": [
+      "Alarms,Alarm Thresholds,External Alarms"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 20
+  },
+  {
+    "PrivOid": "T02.P0485",
+    "Name": "External Input 2 Alarm Label",
+    "Groups": [
+      "Alarms,Alarm Thresholds,External Alarms"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 20
+  },
+  {
+    "PrivOid": "T02.P0486",
+    "Name": "External Input 3 Alarm Label",
+    "Groups": [
+      "Alarms,Alarm Thresholds,External Alarms"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 20
+  },
+  {
+    "PrivOid": "T02.P0487",
+    "Name": "External Input 4 Alarm Label",
+    "Groups": [
+      "Alarms,Alarm Thresholds,External Alarms"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 20
+  },
+  {
+    "PrivOid": "T02.P0A91",
+    "Name": "External Output Alarm(Warning) Mode Select",
+    "Groups": [
+      "Alarms,Alarm Thresholds,External Alarms"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normally closed",
+      "01": "Normally open"
+    }
+  },
+  {
+    "PrivOid": "T02.P0A92",
+    "Name": "External Output Alarm(Minor) Mode Select",
+    "Groups": [
+      "Alarms,Alarm Thresholds,External Alarms"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normally closed",
+      "01": "Normally open"
+    }
+  },
+  {
+    "PrivOid": "T02.P0A93",
+    "Name": "External Output Alarm(Major) Mode Select",
+    "Groups": [
+      "Alarms,Alarm Thresholds,External Alarms"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normally closed",
+      "01": "Normally open"
+    }
+  },
+  {
+    "PrivOid": "T02.P0A94",
+    "Name": "External Output Alarm(Critical) Mode Select",
+    "Groups": [
+      "Alarms,Alarm Thresholds,External Alarms"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normally closed",
+      "01": "Normally open"
+    }
+  },
+  {
+    "PrivOid": "T02.P0A2C",
+    "Name": "External Output Alarm(Warning)",
+    "Groups": [
+      "Alarms,Alarm Thresholds,External Alarms"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P0A2D",
+    "Name": "External Output Alarm(Minor)",
+    "Groups": [
+      "Alarms,Alarm Thresholds,External Alarms"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P0A2E",
+    "Name": "External Output Alarm(Major)",
+    "Groups": [
+      "Alarms,Alarm Thresholds,External Alarms"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P0A2F",
+    "Name": "External Output Alarm(Critical)",
+    "Groups": [
+      "Alarms,Alarm Thresholds,External Alarms"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0A8A",
+    "Name": "OP1 Transceiver Optical Module",
+    "Groups": [
+      "Maintenance,Optical Info,Optical Module Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "object",
+    "InputType": "default",
+    "ByteSize": 13,
+    "Split": "^",
+    "Child": [
+      {
+        "PrivOid": "TB4.P0A8A[0]",
+        "Name": "DDM Function Availability",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "Access": "ro",
+        "DataType": "binary",
+        "InputType": "default",
+        "ByteSize": 1,
+        "Options": {
+          "00": "no",
+          "01": "yes"
+        }
+      },
+      {
+        "PrivOid": "TB4.P0A8A[1]",
+        "Name": "Tx Power",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "dBm",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A8A[2]",
+        "Name": "Rx Power",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "dBm",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A8A[3]",
+        "Name": "Voltage",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "V",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 10
+      },
+      {
+        "PrivOid": "TB4.P0A8A[4]",
+        "Name": "Bias Current",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "mA",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A8A[5]",
+        "Name": "Temperature",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "℃",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 10
+      },
+      {
+        "PrivOid": "TB4.P0A8A[6]",
+        "Name": "Tx Optical Wavelength",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "nm",
+        "Access": "ro",
+        "DataType": "uint16",
+        "InputType": "default",
+        "ByteSize": 2
+      }
+    ]
+  },
+  {
+    "PrivOid": "TB4.P0A8B",
+    "Name": "OP2 Transceiver Optical Module",
+    "Groups": [
+      "Maintenance,Optical Info,Optical Module Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "object",
+    "InputType": "default",
+    "ByteSize": 13,
+    "Split": "^",
+    "Child": [
+      {
+        "PrivOid": "TB4.P0A8B[0]",
+        "Name": "DDM Function Availability",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "Access": "ro",
+        "DataType": "binary",
+        "InputType": "default",
+        "ByteSize": 1,
+        "Options": {
+          "00": "no",
+          "01": "yes"
+        }
+      },
+      {
+        "PrivOid": "TB4.P0A8B[1]",
+        "Name": "Tx Power",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "dBm",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A8B[2]",
+        "Name": "Rx Power",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "dBm",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A8B[3]",
+        "Name": "Voltage",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "V",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 10
+      },
+      {
+        "PrivOid": "TB4.P0A8B[4]",
+        "Name": "Bias Current",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "mA",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A8B[5]",
+        "Name": "Temperature",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "℃",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 10
+      },
+      {
+        "PrivOid": "TB4.P0A8B[6]",
+        "Name": "Tx Optical Wavelength",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "nm",
+        "Access": "ro",
+        "DataType": "uint16",
+        "InputType": "default",
+        "ByteSize": 2
+      }
+    ]
+  },
+  {
+    "PrivOid": "TB4.P0A8C",
+    "Name": "OP3 Transceiver Optical Module",
+    "Groups": [
+      "Maintenance,Optical Info,Optical Module Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "object",
+    "InputType": "default",
+    "ByteSize": 13,
+    "Split": "^",
+    "Child": [
+      {
+        "PrivOid": "TB4.P0A8C[0]",
+        "Name": "DDM Function Availability",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "Access": "ro",
+        "DataType": "binary",
+        "InputType": "default",
+        "ByteSize": 1,
+        "Options": {
+          "00": "no",
+          "01": "yes"
+        }
+      },
+      {
+        "PrivOid": "TB4.P0A8C[1]",
+        "Name": "Tx Power",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "dBm",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A8C[2]",
+        "Name": "Rx Power",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "dBm",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A8C[3]",
+        "Name": "Voltage",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "V",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 10
+      },
+      {
+        "PrivOid": "TB4.P0A8C[4]",
+        "Name": "Bias Current",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "mA",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A8C[5]",
+        "Name": "Temperature",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "℃",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 10
+      },
+      {
+        "PrivOid": "TB4.P0A8C[6]",
+        "Name": "Tx Optical Wavelength",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "nm",
+        "Access": "ro",
+        "DataType": "uint16",
+        "InputType": "default",
+        "ByteSize": 2
+      }
+    ]
+  },
+  {
+    "PrivOid": "TB4.P0A8D",
+    "Name": "OP4 Transceiver Optical Module",
+    "Groups": [
+      "Maintenance,Optical Info,Optical Module Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "object",
+    "InputType": "default",
+    "ByteSize": 13,
+    "Split": "^",
+    "Child": [
+      {
+        "PrivOid": "TB4.P0A8D[0]",
+        "Name": "DDM Function Availability",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "Access": "ro",
+        "DataType": "binary",
+        "InputType": "default",
+        "ByteSize": 1,
+        "Options": {
+          "00": "no",
+          "01": "yes"
+        }
+      },
+      {
+        "PrivOid": "TB4.P0A8D[1]",
+        "Name": "Tx Power",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "dBm",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A8D[2]",
+        "Name": "Rx Power",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "dBm",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A8D[3]",
+        "Name": "Voltage",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "V",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 10
+      },
+      {
+        "PrivOid": "TB4.P0A8D[4]",
+        "Name": "Bias Current",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "mA",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A8D[5]",
+        "Name": "Temperature",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "℃",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 10
+      },
+      {
+        "PrivOid": "TB4.P0A8D[6]",
+        "Name": "Tx Optical Wavelength",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "nm",
+        "Access": "ro",
+        "DataType": "uint16",
+        "InputType": "default",
+        "ByteSize": 2
+      }
+    ]
+  },
+  {
+    "PrivOid": "TB4.P0A8E",
+    "Name": "OP5 Transceiver Optical Module",
+    "Groups": [
+      "Maintenance,Optical Info,Optical Module Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "object",
+    "InputType": "default",
+    "ByteSize": 13,
+    "Split": "^",
+    "Child": [
+      {
+        "PrivOid": "TB4.P0A8E[0]",
+        "Name": "DDM Function Availability",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "Access": "ro",
+        "DataType": "binary",
+        "InputType": "default",
+        "ByteSize": 1,
+        "Options": {
+          "00": "no",
+          "01": "yes"
+        }
+      },
+      {
+        "PrivOid": "TB4.P0A8E[1]",
+        "Name": "Tx Power",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "dBm",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A8E[2]",
+        "Name": "Rx Power",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "dBm",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A8E[3]",
+        "Name": "Voltage",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "V",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 10
+      },
+      {
+        "PrivOid": "TB4.P0A8E[4]",
+        "Name": "Bias Current",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "mA",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A8E[5]",
+        "Name": "Temperature",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "℃",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 10
+      },
+      {
+        "PrivOid": "TB4.P0A8E[6]",
+        "Name": "Tx Optical Wavelength",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "nm",
+        "Access": "ro",
+        "DataType": "uint16",
+        "InputType": "default",
+        "ByteSize": 2
+      }
+    ]
+  },
+  {
+    "PrivOid": "TB4.P0A8F",
+    "Name": "OP6 Transceiver Optical Module",
+    "Groups": [
+      "Maintenance,Optical Info,Optical Module Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "object",
+    "InputType": "default",
+    "ByteSize": 13,
+    "Split": "^",
+    "Child": [
+      {
+        "PrivOid": "TB4.P0A8F[0]",
+        "Name": "DDM Function Availability",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "Access": "ro",
+        "DataType": "binary",
+        "InputType": "default",
+        "ByteSize": 1,
+        "Options": {
+          "00": "no",
+          "01": "yes"
+        }
+      },
+      {
+        "PrivOid": "TB4.P0A8F[1]",
+        "Name": "Tx Power",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "dBm",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A8F[2]",
+        "Name": "Rx Power",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "dBm",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A8F[3]",
+        "Name": "Voltage",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "V",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 10
+      },
+      {
+        "PrivOid": "TB4.P0A8F[4]",
+        "Name": "Bias Current",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "mA",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A8F[5]",
+        "Name": "Temperature",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "℃",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 10
+      },
+      {
+        "PrivOid": "TB4.P0A8F[6]",
+        "Name": "Tx Optical Wavelength",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "nm",
+        "Access": "ro",
+        "DataType": "uint16",
+        "InputType": "default",
+        "ByteSize": 2
+      }
+    ]
+  },
+  {
+    "PrivOid": "TB4.P0A90",
+    "Name": "OP7 Transceiver Optical Module",
+    "Groups": [
+      "Maintenance,Optical Info,Optical Module Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "object",
+    "InputType": "default",
+    "ByteSize": 13,
+    "Split": "^",
+    "Child": [
+      {
+        "PrivOid": "TB4.P0A90[0]",
+        "Name": "DDM Function Availability",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "Access": "ro",
+        "DataType": "binary",
+        "InputType": "default",
+        "ByteSize": 1,
+        "Options": {
+          "00": "no",
+          "01": "yes"
+        }
+      },
+      {
+        "PrivOid": "TB4.P0A90[1]",
+        "Name": "Tx Power",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "dBm",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A90[2]",
+        "Name": "Rx Power",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "dBm",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A90[3]",
+        "Name": "Voltage",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "V",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 10
+      },
+      {
+        "PrivOid": "TB4.P0A90[4]",
+        "Name": "Bias Current",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "mA",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A90[5]",
+        "Name": "Temperature",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "℃",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 10
+      },
+      {
+        "PrivOid": "TB4.P0A90[6]",
+        "Name": "Tx Optical Wavelength",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "nm",
+        "Access": "ro",
+        "DataType": "uint16",
+        "InputType": "default",
+        "ByteSize": 2
+      }
+    ]
+  },
+  {
+    "PrivOid": "TB4.P0A91",
+    "Name": "OP8 Transceiver Optical Module",
+    "Groups": [
+      "Maintenance,Optical Info,Optical Module Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "object",
+    "InputType": "default",
+    "ByteSize": 13,
+    "Split": "^",
+    "Child": [
+      {
+        "PrivOid": "TB4.P0A91[0]",
+        "Name": "DDM Function Availability",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "Access": "ro",
+        "DataType": "binary",
+        "InputType": "default",
+        "ByteSize": 1,
+        "Options": {
+          "00": "no",
+          "01": "yes"
+        }
+      },
+      {
+        "PrivOid": "TB4.P0A91[1]",
+        "Name": "Tx Power",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "dBm",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A91[2]",
+        "Name": "Rx Power",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "dBm",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A91[3]",
+        "Name": "Voltage",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "V",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 10
+      },
+      {
+        "PrivOid": "TB4.P0A91[4]",
+        "Name": "Bias Current",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "mA",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A91[5]",
+        "Name": "Temperature",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "℃",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 10
+      },
+      {
+        "PrivOid": "TB4.P0A91[6]",
+        "Name": "Tx Optical Wavelength",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "nm",
+        "Access": "ro",
+        "DataType": "uint16",
+        "InputType": "default",
+        "ByteSize": 2
+      }
+    ]
+  },
+  {
+    "PrivOid": "TB4.P0A92",
+    "Name": "OP9 Transceiver Optical Module",
+    "Groups": [
+      "Maintenance,Optical Info,Optical Module Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "object",
+    "InputType": "default",
+    "ByteSize": 13,
+    "Split": "^",
+    "Child": [
+      {
+        "PrivOid": "TB4.P0A92[0]",
+        "Name": "DDM Function Availability",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "Access": "ro",
+        "DataType": "binary",
+        "InputType": "default",
+        "ByteSize": 1,
+        "Options": {
+          "00": "no",
+          "01": "yes"
+        }
+      },
+      {
+        "PrivOid": "TB4.P0A92[1]",
+        "Name": "Tx Power",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "dBm",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A92[2]",
+        "Name": "Rx Power",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "dBm",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A92[3]",
+        "Name": "Voltage",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "V",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 10
+      },
+      {
+        "PrivOid": "TB4.P0A92[4]",
+        "Name": "Bias Current",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "mA",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A92[5]",
+        "Name": "Temperature",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "℃",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 10
+      },
+      {
+        "PrivOid": "TB4.P0A92[6]",
+        "Name": "Tx Optical Wavelength",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "nm",
+        "Access": "ro",
+        "DataType": "uint16",
+        "InputType": "default",
+        "ByteSize": 2
+      }
+    ]
+  },
+  {
+    "PrivOid": "TB4.P0A93",
+    "Name": "OP10 Transceiver Optical Module",
+    "Groups": [
+      "Maintenance,Optical Info,Optical Module Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "object",
+    "InputType": "default",
+    "ByteSize": 13,
+    "Split": "^",
+    "Child": [
+      {
+        "PrivOid": "TB4.P0A93[0]",
+        "Name": "DDM Function Availability",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "Access": "ro",
+        "DataType": "binary",
+        "InputType": "default",
+        "ByteSize": 1,
+        "Options": {
+          "00": "no",
+          "01": "yes"
+        }
+      },
+      {
+        "PrivOid": "TB4.P0A93[1]",
+        "Name": "Tx Power",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "dBm",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A93[2]",
+        "Name": "Rx Power",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "dBm",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A93[3]",
+        "Name": "Voltage",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "V",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 10
+      },
+      {
+        "PrivOid": "TB4.P0A93[4]",
+        "Name": "Bias Current",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "mA",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A93[5]",
+        "Name": "Temperature",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "℃",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 10
+      },
+      {
+        "PrivOid": "TB4.P0A93[6]",
+        "Name": "Tx Optical Wavelength",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "nm",
+        "Access": "ro",
+        "DataType": "uint16",
+        "InputType": "default",
+        "ByteSize": 2
+      }
+    ]
+  },
+  {
+    "PrivOid": "TB4.P0A94",
+    "Name": "OP11 Transceiver Optical Module",
+    "Groups": [
+      "Maintenance,Optical Info,Optical Module Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "object",
+    "InputType": "default",
+    "ByteSize": 13,
+    "Split": "^",
+    "Child": [
+      {
+        "PrivOid": "TB4.P0A94[0]",
+        "Name": "DDM Function Availability",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "Access": "ro",
+        "DataType": "binary",
+        "InputType": "default",
+        "ByteSize": 1,
+        "Options": {
+          "00": "no",
+          "01": "yes"
+        }
+      },
+      {
+        "PrivOid": "TB4.P0A94[1]",
+        "Name": "Tx Power",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "dBm",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A94[2]",
+        "Name": "Rx Power",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "dBm",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A94[3]",
+        "Name": "Voltage",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "V",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 10
+      },
+      {
+        "PrivOid": "TB4.P0A94[4]",
+        "Name": "Bias Current",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "mA",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A94[5]",
+        "Name": "Temperature",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "℃",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 10
+      },
+      {
+        "PrivOid": "TB4.P0A94[6]",
+        "Name": "Tx Optical Wavelength",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "nm",
+        "Access": "ro",
+        "DataType": "uint16",
+        "InputType": "default",
+        "ByteSize": 2
+      }
+    ]
+  },
+  {
+    "PrivOid": "TB4.P0A95",
+    "Name": "OP12 Transceiver Optical Module",
+    "Groups": [
+      "Maintenance,Optical Info,Optical Module Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "object",
+    "InputType": "default",
+    "ByteSize": 13,
+    "Split": "^",
+    "Child": [
+      {
+        "PrivOid": "TB4.P0A95[0]",
+        "Name": "DDM Function Availability",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "Access": "ro",
+        "DataType": "binary",
+        "InputType": "default",
+        "ByteSize": 1,
+        "Options": {
+          "00": "no",
+          "01": "yes"
+        }
+      },
+      {
+        "PrivOid": "TB4.P0A95[1]",
+        "Name": "Tx Power",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "dBm",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A95[2]",
+        "Name": "Rx Power",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "dBm",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A95[3]",
+        "Name": "Voltage",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "V",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 10
+      },
+      {
+        "PrivOid": "TB4.P0A95[4]",
+        "Name": "Bias Current",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "mA",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A95[5]",
+        "Name": "Temperature",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "℃",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 10
+      },
+      {
+        "PrivOid": "TB4.P0A95[6]",
+        "Name": "Tx Optical Wavelength",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "nm",
+        "Access": "ro",
+        "DataType": "uint16",
+        "InputType": "default",
+        "ByteSize": 2
+      }
+    ]
+  },
+  {
+    "PrivOid": "TB4.P0A96",
+    "Name": "OP13 Transceiver Optical Module",
+    "Groups": [
+      "Maintenance,Optical Info,Optical Module Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "object",
+    "InputType": "default",
+    "ByteSize": 13,
+    "Split": "^",
+    "Child": [
+      {
+        "PrivOid": "TB4.P0A96[0]",
+        "Name": "DDM Function Availability",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "Access": "ro",
+        "DataType": "binary",
+        "InputType": "default",
+        "ByteSize": 1,
+        "Options": {
+          "00": "no",
+          "01": "yes"
+        }
+      },
+      {
+        "PrivOid": "TB4.P0A96[1]",
+        "Name": "Tx Power",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "dBm",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A96[2]",
+        "Name": "Rx Power",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "dBm",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A96[3]",
+        "Name": "Voltage",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "V",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 10
+      },
+      {
+        "PrivOid": "TB4.P0A96[4]",
+        "Name": "Bias Current",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "mA",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A96[5]",
+        "Name": "Temperature",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "℃",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 10
+      },
+      {
+        "PrivOid": "TB4.P0A96[6]",
+        "Name": "Tx Optical Wavelength",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "nm",
+        "Access": "ro",
+        "DataType": "uint16",
+        "InputType": "default",
+        "ByteSize": 2
+      }
+    ]
+  },
+  {
+    "PrivOid": "TB4.P0A97",
+    "Name": "OP14 Transceiver Optical Module",
+    "Groups": [
+      "Maintenance,Optical Info,Optical Module Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "object",
+    "InputType": "default",
+    "ByteSize": 13,
+    "Split": "^",
+    "Child": [
+      {
+        "PrivOid": "TB4.P0A97[0]",
+        "Name": "DDM Function Availability",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "Access": "ro",
+        "DataType": "binary",
+        "InputType": "default",
+        "ByteSize": 1,
+        "Options": {
+          "00": "no",
+          "01": "yes"
+        }
+      },
+      {
+        "PrivOid": "TB4.P0A97[1]",
+        "Name": "Tx Power",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "dBm",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A97[2]",
+        "Name": "Rx Power",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "dBm",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A97[3]",
+        "Name": "Voltage",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "V",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 10
+      },
+      {
+        "PrivOid": "TB4.P0A97[4]",
+        "Name": "Bias Current",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "mA",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A97[5]",
+        "Name": "Temperature",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "℃",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 10
+      },
+      {
+        "PrivOid": "TB4.P0A97[6]",
+        "Name": "Tx Optical Wavelength",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "nm",
+        "Access": "ro",
+        "DataType": "uint16",
+        "InputType": "default",
+        "ByteSize": 2
+      }
+    ]
+  },
+  {
+    "PrivOid": "TB4.P0A98",
+    "Name": "Port Slave Optical Module",
+    "Groups": [
+      "Maintenance,Optical Info,Optical Module Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "object",
+    "InputType": "default",
+    "ByteSize": 13,
+    "Split": "^",
+    "Child": [
+      {
+        "PrivOid": "TB4.P0A98[0]",
+        "Name": "DDM Function Availability",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "Access": "ro",
+        "DataType": "binary",
+        "InputType": "default",
+        "ByteSize": 1,
+        "Options": {
+          "00": "no",
+          "01": "yes"
+        }
+      },
+      {
+        "PrivOid": "TB4.P0A98[1]",
+        "Name": "Tx Power",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "dBm",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A98[2]",
+        "Name": "Rx Power",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "dBm",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A98[3]",
+        "Name": "Voltage",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "V",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 10
+      },
+      {
+        "PrivOid": "TB4.P0A98[4]",
+        "Name": "Bias Current",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "mA",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A98[5]",
+        "Name": "Temperature",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "℃",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 10
+      },
+      {
+        "PrivOid": "TB4.P0A98[6]",
+        "Name": "Tx Optical Wavelength",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "nm",
+        "Access": "ro",
+        "DataType": "uint16",
+        "InputType": "default",
+        "ByteSize": 2
+      }
+    ]
+  },
+  {
+    "PrivOid": "TB4.P0A99",
+    "Name": "Port Master Optical Module",
+    "Groups": [
+      "Maintenance,Optical Info,Optical Module Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "object",
+    "InputType": "default",
+    "ByteSize": 13,
+    "Split": "^",
+    "Child": [
+      {
+        "PrivOid": "TB4.P0A99[0]",
+        "Name": "DDM Function Availability",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "Access": "ro",
+        "DataType": "binary",
+        "InputType": "default",
+        "ByteSize": 1,
+        "Options": {
+          "00": "no",
+          "01": "yes"
+        }
+      },
+      {
+        "PrivOid": "TB4.P0A99[1]",
+        "Name": "Tx Power",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "dBm",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A99[2]",
+        "Name": "Rx Power",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "dBm",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A99[3]",
+        "Name": "Voltage",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "V",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 10
+      },
+      {
+        "PrivOid": "TB4.P0A99[4]",
+        "Name": "Bias Current",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "mA",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A99[5]",
+        "Name": "Temperature",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "℃",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 10
+      },
+      {
+        "PrivOid": "TB4.P0A99[6]",
+        "Name": "Tx Optical Wavelength",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "nm",
+        "Access": "ro",
+        "DataType": "uint16",
+        "InputType": "default",
+        "ByteSize": 2
+      }
+    ]
+  },
+  {
+    "PrivOid": "TB4.P0B02",
+    "Name": "Data Update Time",
+    "Groups": [
+      "Maintenance,Engineering,Engineering Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "datetime",
+    "InputType": "default",
+    "ByteSize": 7
+  },
+  {
+    "PrivOid": "TB4.P0B05",
+    "Name": "ARM CRC",
+    "Groups": [
+      "Maintenance,Engineering,Engineering Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "default",
+    "ByteSize": 2
+  },
+  {
+    "PrivOid": "TB4.P0B8C",
+    "Name": "FPGA CRC",
+    "Groups": [
+      "Maintenance,Engineering,Engineering Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "default",
+    "ByteSize": 2
+  },
+  {
+    "PrivOid": "TB4.P0B27",
+    "Name": "E2 CRC",
+    "Groups": [
+      "Maintenance,Engineering,Engineering Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "default",
+    "ByteSize": 2
+  },
+  {
+    "PrivOid": "TB4.P0B7F",
+    "Name": "Configuration CRC",
+    "Groups": [
+      "Maintenance,Engineering,Engineering Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "default",
+    "ByteSize": 2
+  },
+  {
+    "PrivOid": "TB4.P0B50",
+    "Name": "Sync Loss Counter Reset",
+    "Groups": [
+      "Maintenance,Engineering,OP Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "wo",
+    "DataType": "binary",
+    "InputType": "button",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Reset"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0B40",
+    "Name": "OP1 Transceiver CPRI Loss Sync Counter",
+    "Groups": [
+      "Maintenance,Engineering,OP Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "uint8",
+    "InputType": "default",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "TB4.P0B41",
+    "Name": "OP2 Transceiver CPRI Loss Sync Counter",
+    "Groups": [
+      "Maintenance,Engineering,OP Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "uint8",
+    "InputType": "default",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "TB4.P0B42",
+    "Name": "OP3 Transceiver CPRI Loss Sync Counter",
+    "Groups": [
+      "Maintenance,Engineering,OP Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "uint8",
+    "InputType": "default",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "TB4.P0B43",
+    "Name": "OP4 Transceiver CPRI Loss Sync Counter",
+    "Groups": [
+      "Maintenance,Engineering,OP Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "uint8",
+    "InputType": "default",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "TB4.P0B44",
+    "Name": "OP5 Transceiver CPRI Loss Sync Counter",
+    "Groups": [
+      "Maintenance,Engineering,OP Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "uint8",
+    "InputType": "default",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "TB4.P0B45",
+    "Name": "OP6 Transceiver CPRI Loss Sync Counter",
+    "Groups": [
+      "Maintenance,Engineering,OP Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "uint8",
+    "InputType": "default",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "TB4.P0B46",
+    "Name": "OP7 Transceiver CPRI Loss Sync Counter",
+    "Groups": [
+      "Maintenance,Engineering,OP Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "uint8",
+    "InputType": "default",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "TB4.P0B47",
+    "Name": "OP8 Transceiver CPRI Loss Sync Counter",
+    "Groups": [
+      "Maintenance,Engineering,OP Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "uint8",
+    "InputType": "default",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "TB4.P0B48",
+    "Name": "OP9 Transceiver CPRI Loss Sync Counter",
+    "Groups": [
+      "Maintenance,Engineering,OP Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "uint8",
+    "InputType": "default",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "TB4.P0B49",
+    "Name": "OP10 Transceiver CPRI Loss Sync Counter",
+    "Groups": [
+      "Maintenance,Engineering,OP Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "uint8",
+    "InputType": "default",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "TB4.P0B4A",
+    "Name": "OP11 Transceiver CPRI Loss Sync Counter",
+    "Groups": [
+      "Maintenance,Engineering,OP Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "uint8",
+    "InputType": "default",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "TB4.P0B4B",
+    "Name": "OP12 Transceiver CPRI Loss Sync Counter",
+    "Groups": [
+      "Maintenance,Engineering,OP Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "uint8",
+    "InputType": "default",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "TB4.P0B4C",
+    "Name": "OP13 Transceiver CPRI Loss Sync Counter",
+    "Groups": [
+      "Maintenance,Engineering,OP Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "uint8",
+    "InputType": "default",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "TB4.P0B4D",
+    "Name": "OP14 Transceiver CPRI Loss Sync Counter",
+    "Groups": [
+      "Maintenance,Engineering,OP Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "uint8",
+    "InputType": "default",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "TB4.P0B4E",
+    "Name": "OP Slave Transceiver CPRI Loss Sync Counter",
+    "Groups": [
+      "Maintenance,Engineering,OP Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "uint8",
+    "InputType": "default",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "TB4.P0B4F",
+    "Name": "OP Master Transceiver CPRI Loss Sync Counter",
+    "Groups": [
+      "Maintenance,Engineering,OP Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "uint8",
+    "InputType": "default",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "TB4.P0B69",
+    "Name": "OP1 Transceiver CPRI Sync Alarm",
+    "Groups": [
+      "Maintenance,Engineering,OP Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Sync",
+      "01": "Unsync"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0B6A",
+    "Name": "OP2 Transceiver CPRI Sync Alarm",
+    "Groups": [
+      "Maintenance,Engineering,OP Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Sync",
+      "01": "Unsync"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0B6B",
+    "Name": "OP3 Transceiver CPRI Sync Alarm",
+    "Groups": [
+      "Maintenance,Engineering,OP Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Sync",
+      "01": "Unsync"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0B6C",
+    "Name": "OP4 Transceiver CPRI Sync Alarm",
+    "Groups": [
+      "Maintenance,Engineering,OP Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Sync",
+      "01": "Unsync"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0B6D",
+    "Name": "OP5 Transceiver CPRI Sync Alarm",
+    "Groups": [
+      "Maintenance,Engineering,OP Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Sync",
+      "01": "Unsync"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0B6E",
+    "Name": "OP6 Transceiver CPRI Sync Alarm",
+    "Groups": [
+      "Maintenance,Engineering,OP Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Sync",
+      "01": "Unsync"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0B6F",
+    "Name": "OP7 Transceiver CPRI Sync Alarm",
+    "Groups": [
+      "Maintenance,Engineering,OP Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Sync",
+      "01": "Unsync"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0B70",
+    "Name": "OP8 Transceiver CPRI Sync Alarm",
+    "Groups": [
+      "Maintenance,Engineering,OP Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Sync",
+      "01": "Unsync"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0BA2",
+    "Name": "OP9 Transceiver CPRI Sync Alarm",
+    "Groups": [
+      "Maintenance,Engineering,OP Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Sync",
+      "01": "Unsync"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0BA3",
+    "Name": "OP10 Transceiver CPRI Sync Alarm",
+    "Groups": [
+      "Maintenance,Engineering,OP Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Sync",
+      "01": "Unsync"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0BA4",
+    "Name": "OP11 Transceiver CPRI Sync Alarm",
+    "Groups": [
+      "Maintenance,Engineering,OP Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Sync",
+      "01": "Unsync"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0BA5",
+    "Name": "OP12 Transceiver CPRI Sync Alarm",
+    "Groups": [
+      "Maintenance,Engineering,OP Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Sync",
+      "01": "Unsync"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0BA6",
+    "Name": "OP13 Transceiver CPRI Sync Alarm",
+    "Groups": [
+      "Maintenance,Engineering,OP Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Sync",
+      "01": "Unsync"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0BA7",
+    "Name": "OP14 Transceiver CPRI Sync Alarm",
+    "Groups": [
+      "Maintenance,Engineering,OP Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Sync",
+      "01": "Unsync"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0BA8",
+    "Name": "OP Slave Transceiver CPRI Sync Alarm",
+    "Groups": [
+      "Maintenance,Engineering,OP Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Sync",
+      "01": "Unsync"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0BA9",
+    "Name": "OP Master Transceiver CPRI Sync Alarm",
+    "Groups": [
+      "Maintenance,Engineering,OP Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Sync",
+      "01": "Unsync"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0B71",
+    "Name": "OP1 Transceiver LOS Alarm",
+    "Groups": [
+      "Maintenance,Engineering,OP Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0B72",
+    "Name": "OP2 Transceiver LOS Alarm",
+    "Groups": [
+      "Maintenance,Engineering,OP Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0B73",
+    "Name": "OP3 Transceiver LOS Alarm",
+    "Groups": [
+      "Maintenance,Engineering,OP Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0B74",
+    "Name": "OP4 Transceiver LOS Alarm",
+    "Groups": [
+      "Maintenance,Engineering,OP Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0B76",
+    "Name": "OP5 Transceiver LOS Alarm",
+    "Groups": [
+      "Maintenance,Engineering,OP Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0B77",
+    "Name": "OP6 Transceiver LOS Alarm",
+    "Groups": [
+      "Maintenance,Engineering,OP Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0BAA",
+    "Name": "OP7 Transceiver LOS Alarm",
+    "Groups": [
+      "Maintenance,Engineering,OP Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0BAB",
+    "Name": "OP8 Transceiver LOS Alarm",
+    "Groups": [
+      "Maintenance,Engineering,OP Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0BAC",
+    "Name": "OP9 Transceiver LOS Alarm",
+    "Groups": [
+      "Maintenance,Engineering,OP Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0BAD",
+    "Name": "OP10 Transceiver LOS Alarm",
+    "Groups": [
+      "Maintenance,Engineering,OP Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0BAE",
+    "Name": "OP11 Transceiver LOS Alarm",
+    "Groups": [
+      "Maintenance,Engineering,OP Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0BAF",
+    "Name": "OP12 Transceiver LOS Alarm",
+    "Groups": [
+      "Maintenance,Engineering,OP Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0BB0",
+    "Name": "OP13 Transceiver LOS Alarm",
+    "Groups": [
+      "Maintenance,Engineering,OP Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0BB1",
+    "Name": "OP14 Transceiver LOS Alarm",
+    "Groups": [
+      "Maintenance,Engineering,OP Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0BB2",
+    "Name": "OP Slave Transceiver LOS Alarm",
+    "Groups": [
+      "Maintenance,Engineering,OP Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0BB3",
+    "Name": "OP Master Transceiver LOS Alarm",
+    "Groups": [
+      "Maintenance,Engineering,OP Info"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0BA1",
+    "Name": "Hardware Reset",
+    "Groups": [
+      "Maintenance,Engineering,Advanced Command"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "wo",
+    "DataType": "binary",
+    "InputType": "button",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Reset"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0B01",
+    "Name": "Firmware Reset",
+    "Groups": [
+      "Maintenance,Engineering,Advanced Command"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "wo",
+    "DataType": "binary",
+    "InputType": "button",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Reset"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0B09",
+    "Name": "Alarm Initialization",
+    "Groups": [
+      "Maintenance,Engineering,Advanced Command"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "wo",
+    "DataType": "binary",
+    "InputType": "buttonGroup",
+    "ByteSize": 1,
+    "Options": {
+      "04": "Report Fault Correcting",
+      "FF": "Initialization"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0B92",
+    "Name": "Alarm Mode Select",
+    "Groups": [
+      "Maintenance,Engineering,Advanced Command"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal Mode 3min",
+      "01": "Test Mode 1min"
+    }
+  },
+  {
+    "PrivOid": "TB0.P0AFF",
+    "Name": "Factory Mode",
+    "Groups": [
+      "Maintenance,Factory Command,Factory Parameters"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "switch",
+    "ByteSize": 9,
+    "Options": {
+      "5A": "Factory Pattern",
+      "A5": "Quit"
+    }
+  },
+  {
+    "PrivOid": "TB0.P0AEF",
+    "Name": "Factory Mode Password",
+    "Groups": [
+      "Maintenance,Factory Command,Factory Parameters"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "wo",
+    "DataType": "string",
+    "InputType": "password",
+    "ByteSize": 20
+  },
+  {
+    "PrivOid": "TB2.P0CCC",
+    "Name": "Address Interface",
+    "Groups": [
+      "Digital Module,Address Interface,"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "object",
+    "InputType": "default",
+    "ByteSize": 8,
+    "Child": [
+      {
+        "PrivOid": "TB2.P0CCC[0]",
+        "Name": "Module ID",
+        "Groups": [
+          "Digital Module,Address Interface,"
+        ],
+        "Paths": null,
+        "Access": "rw",
+        "DataType": "binary",
+        "InputType": "select",
+        "ByteSize": 1
+      },
+      {
+        "PrivOid": "TB2.P0CCC[1]",
+        "Name": "Register Address",
+        "Groups": [
+          "Digital Module,Address Interface,"
+        ],
+        "Paths": null,
+        "Access": "rw",
+        "DataType": "uint16",
+        "InputType": "number",
+        "ByteSize": 2,
+        "Max": 65535,
+        "Min": 0
+      },
+      {
+        "PrivOid": "TB2.P0CCC[2]",
+        "Name": "Byte Size",
+        "Groups": [
+          "Digital Module,Address Interface,"
+        ],
+        "Paths": null,
+        "Access": "rw",
+        "DataType": "binary",
+        "InputType": "radio",
+        "ByteSize": 1
+      },
+      {
+        "PrivOid": "TB2.P0CCC[3]",
+        "Name": "Byte Buffer",
+        "Groups": [
+          "Digital Module,Address Interface,"
+        ],
+        "Paths": null,
+        "Access": "rw",
+        "DataType": "binary",
+        "InputType": "binary",
+        "ByteSize": 4
+      }
+    ]
+  },
+  {
+    "PrivOid": "TB2.P0801",
+    "Name": "Register 0-3",
+    "Groups": [
+      "Digital Module,Registers,LMK04808"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "TB2.P0802",
+    "Name": "Register 4-7",
+    "Groups": [
+      "Digital Module,Registers,LMK04808"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "TB2.P0803",
+    "Name": "Register 8-12",
+    "Groups": [
+      "Digital Module,Registers,LMK04808"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "default",
+    "ByteSize": 20
+  },
+  {
+    "PrivOid": "TB2.P0804",
+    "Name": "Register 13-16",
+    "Groups": [
+      "Digital Module,Registers,LMK04808"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "TB2.P0805",
+    "Name": "Register 24-27",
+    "Groups": [
+      "Digital Module,Registers,LMK04808"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "TB2.P0806",
+    "Name": "Register 28-31",
+    "Groups": [
+      "Digital Module,Registers,LMK04808"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "TB2-DEBUG.P0800",
+    "Name": "Clock Reference Source",
+    "Groups": [
+      "Digital Module,Debug Parameters,Basic Parameters"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Reference source 30.72M",
+      "01": "Reference source 10M",
+      "02": "Reference source 307.2M",
+      "03": "Reference source 61.44M"
+    }
+  },
+  {
+    "PrivOid": "TB2-DEBUG.P0200",
+    "Name": "RST",
+    "Groups": [
+      "Digital Module,Debug Parameters,Basic Parameters"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "binary",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "TB2-DEBUG.P0303",
+    "Name": "Clock Lock",
+    "Groups": [
+      "Digital Module,Debug Parameters,Basic Parameters"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "default",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Unlock",
+      "01": "Lock"
+    }
+  },
+  {
+    "PrivOid": "TB2-DEBUG.P0220",
+    "Name": "Master MAC Address",
+    "Groups": [
+      "Digital Module,Debug Parameters,Basic Parameters"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "default",
+    "ByteSize": 6
+  },
+  {
+    "PrivOid": "TB2-DEBUG.P0221",
+    "Name": "IP Address",
+    "Groups": [
+      "Digital Module,Debug Parameters,Basic Parameters"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "default",
+    "ByteSize": 4
+  },
+  {
+    "PrivOid": "TB2-DEBUG.P0812",
+    "Name": "Digital Plate Temperature",
+    "Groups": [
+      "Digital Module,Debug Parameters,Basic Parameters"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "int8",
+    "InputType": "default",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "TB2-DEBUG.P0A1C",
+    "Name": "Digital Board SN",
+    "Groups": [
+      "Digital Module,Debug Parameters,Basic Parameters"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 40
+  },
+  {
+    "PrivOid": "TB2-MCU.P0AF0",
+    "Name": "Vendor",
+    "Groups": [
+      "Digital Module,MCU Parameter,Device Information"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 20
+  },
+  {
+    "PrivOid": "TB2-MCU.P0AF2",
+    "Name": "Element Product Model",
+    "Groups": [
+      "Digital Module,MCU Parameter,Device Information"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 20
+  },
+  {
+    "PrivOid": "TB2-MCU.P0AF3",
+    "Name": "Element Serial Number",
+    "Groups": [
+      "Digital Module,MCU Parameter,Device Information"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 20
+  },
+  {
+    "PrivOid": "TB2-MCU.P0BBD",
+    "Name": "The FPGA Debugging Mode Switch",
+    "Groups": [
+      "Digital Module,MCU Parameter,Device Information"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "switch",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Off",
+      "01": "On"
+    }
+  },
+  {
+    "PrivOid": "TB2-MCU.P0AD0",
+    "Name": "Filesystem Edition",
+    "Groups": [
+      "Digital Module,MCU Parameter,Device Information"
+    ],
+    "Paths": null,
+    "Versions": "corning,2.0;corning,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 10
+  }
+]

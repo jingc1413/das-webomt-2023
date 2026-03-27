@@ -1,0 +1,117 @@
+[
+        {
+            "path": [
+                "overview",
+                "element_information"
+            ],
+            "data": [
+                {
+                    "oid": "T02.P0006",
+                    "value": "0"
+                },
+                {
+                    "oid": "T02.P0101",
+                    "value": "0D150666"
+                },
+                {
+                    "oid": "T02.P0102",
+                    "value": 1111
+                },
+                {
+                    "oid": "T02.P0023",
+                    "value": "hello2024"
+                },
+                {
+                    "oid": "T02.P0024",
+                    "value": "PQ234568-ppppqqqq"
+                },
+                {
+                    "oid": "T02.P0030",
+                    "value": "A3-8889"
+                },
+                {
+                    "oid": "T02.P0150",
+                    "value": "2024-01-27 20:46:22"
+                }
+            ]
+        },
+        {
+            "path": [
+                "radio_signal_configuration",
+                "radio_module"
+            ],
+            "data": [
+                {
+                    "oid": "T02.P04D3",
+                    "value": 0.5
+                },
+                {
+                    "oid": "T02.P04A0",
+                    "value": "05"
+                },
+                {
+                    "oid": "T02.P04D2",
+                    "value": 0.25
+                },
+                {
+                    "oid": "T02.P04D5",
+                    "value": 5
+                },
+                {
+                    "oid": "T02.P04A1",
+                    "value": "00"
+                },
+                {
+                    "oid": "T02.P04D4",
+                    "value": 10
+                },
+                {
+                    "oid": "T02.P04D7",
+                    "value": 2
+                },
+                {
+                    "oid": "T02.P04A2",
+                    "value": "00"
+                },
+                {
+                    "oid": "T02.P04D6",
+                    "value": 6
+                },
+                {
+                    "oid": "T02.P04D9",
+                    "value": 1.5
+                },
+                {
+                    "oid": "T02.P04A3",
+                    "value": "01"
+                },
+                {
+                    "oid": "T02.P04D8",
+                    "value": 5.75
+                }
+            ]
+        },
+        {
+            "path": [
+                "radio_signal_configuration",
+                "radio_configuration",
+                "attenuation"
+            ],
+            "data": [
+                {
+                    "oid": "T02.P087B",
+                    "value": "00"
+                },
+                {
+                    "oid": "T02.P087A",
+                    "value": "01"
+                },
+                {
+                    "oid": "T02.P087C",
+                    "value": "00"
+                }
+            ]
+        }
+    ]
+
+

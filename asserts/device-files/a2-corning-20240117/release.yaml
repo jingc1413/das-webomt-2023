@@ -1,0 +1,45 @@
+schema: "corning"
+revision: 20240117
+devices:
+  - deviceTypeName: "Primary A2"
+    softwareVersion: 2.2
+    softwareRevision: 20240117
+  - deviceTypeName: "Master A2"
+    softwareVersion: 2.2
+    softwareRevision: 20240117
+  - deviceTypeName: "Secondary A2"
+    softwareVersion: 2.2
+    softwareRevision: 20240117
+  - deviceTypeName: "Slave A2"
+    softwareVersion: 2.2
+    softwareRevision: 20240117
+  - deviceTypeName: "SA2"
+    softwareVersion: 2.2
+    softwareRevision: 20240117
+  - deviceTypeName: E2-O
+    softwareVersion: 2.0
+    softwareRevision: 20211108
+  - deviceTypeName: N2-RU
+    softwareVersion: 2.1
+    softwareRevision: 20240102
+  - deviceTypeName: M2-RU
+    softwareVersion: 2.2
+    softwareRevision: 20230516
+  - deviceTypeName: H2-RU
+    softwareVersion: 1.1
+    softwareRevision: 20220526
+  - deviceTypeName: X2-RU
+    softwareVersion: 0
+    softwareRevision: 0
+  - deviceTypeName: EU-O
+    softwareVersion: 2.0
+    softwareRevision: 20211109
+  - deviceTypeName: EU
+    softwareVersion: 2.0
+    softwareRevision: 20211109
+  - deviceTypeName: HP-RU
+    softwareVersion: 2.0
+    softwareRevision: 20211109
+  - deviceTypeName: HP-F-RU
+    softwareVersion: 2.0
+    softwareRevision: 20211109

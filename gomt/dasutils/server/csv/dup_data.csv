@@ -1,0 +1,3 @@
+Module Type ID,Downlink Frequency Start,Downlink Frequency End,Port 1 Input Power Slope,Port 1 Input Power Nodal Increment,Port 2 Input Power Slope,Port 2 Input Power Nodal Increment,Port 3 Input Power Slope,Port 3 Input Power Nodal Increment,Port 4 Input Power Slope,Port 4 Input Power Nodal Increment
+A6,3450,3800,0.095,-74.952,0.095,-74.952,0.095,-74.952,0.095,-74.952
+A7,3450,3800,0.095,-74.952,0.095,-74.952,0.095,-74.952,0.095,-74.952

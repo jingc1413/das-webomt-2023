@@ -1,0 +1,130 @@
+
+{{define "storyDesc" -}}
+作为用户，需要管理{{.Name}}对象配置信息列表，并按表格形式呈现，这样方便查看和管理多个对象的配置参数信息。
+{{$table := .Data -}}
+{{$toolbar := getAction $table "toolbar" -}}
+{{if $toolbar -}}
+## 工具栏定义
+{{range $item := $toolbar.Items -}}
+{{if (eq $item.Type "Button") -}}
+--- {{$item.Name}}
+{{else if (eq $item.Type "Param") -}}
+{{$param := getParam $item -}}
+---- {{$item.Name}}{{if $param}}, OID={{$param.PrivOid}}, 读写模式={{$param.Access}}, 数据类型={{$param.DataType}}, 字节数={{$param.ByteSize}}{{if $param.Ratio}}, 倍率={{$param.Ratio}}{{end}}{{if $param.Min}}, 最小值={{$param.Min}}{{end}}{{if $param.Max}}, 最大值={{$param.Max}}{{end}}{{end}}
+{{else if (eq $item.Type "Component:ParamGroup:2") -}}
+---- {{$item.Name}}
+{{range $subIndex, $sub := $item.Items -}}
+{{$param2 := getParam $sub -}}
+----- {{$sub.Name}}{{if $param2}}, OID={{$param2.PrivOid}}, 读写模式={{$param2.Access}}, 数据类型={{$param2.DataType}}, 字节数={{$param2.ByteSize}}{{if $param2.Ratio}}, 倍率={{$param2.Ratio}}{{end}}{{if $param2.Min}}, 最小值={{$param2.Min}}{{end}}{{if $param2.Max}}, 最大值={{$param2.Max}}{{end}}{{end}}
+{{ end}}
+{{- end}}
+{{- end}}
+{{- end}}
+## 对象定义
+{{$row := index $table.Data 0 -}}
+--- 对象名称：{{.Name}}
+--- 对象配置参数列表
+{{range $colIndex, $col := $table.Items -}}
+{{$data := index $row $col.Key -}}
+{{if $data -}}
+{{if (eq $data.Type "Label") -}}
+---- {{$col.Name}}{{if (eq $table.Unique $col.Key)}}, 数量={{getTableSize $table}}{{end}}
+{{else if (eq $data.Type "Button") -}}
+---- {{$col.Name}}{{if (eq $table.Unique $col.Key)}}, 数量={{getTableSize $table}}{{end}}
+{{else if (eq $data.Type "Param") -}}
+{{$param := getParam $data -}}
+---- {{$col.Name}}{{if $param}}, OID={{$param.PrivOid}}, 读写模式={{$param.Access}}, 数据类型={{$param.DataType}}, 字节数={{$param.ByteSize}}{{if $param.Ratio}}, 倍率={{$param.Ratio}}{{end}}{{if $param.Min}}, 最小值={{$param.Min}}{{end}}{{if $param.Max}}, 最大值={{$param.Max}}{{end}}{{end}}
+{{else if (eq $data.Type "Component:ParamGroup:2") -}}
+---- {{$col.Name}}
+{{range $subIndex, $sub := $data.Items -}}
+{{$param2 := getParam $sub -}}
+----- {{$sub.Name}}{{if $param2}}, OID={{$param2.PrivOid}}, 读写模式={{$param2.Access}}, 数据类型={{$param2.DataType}}, 字节数={{$param2.ByteSize}}{{if $param2.Ratio}}, 倍率={{$param2.Ratio}}{{end}}{{if $param2.Min}}, 最小值={{$param2.Min}}{{end}}{{if $param2.Max}}, 最大值={{$param2.Max}}{{end}}{{end}}
+{{ end}}
+{{- end}}
+{{- end}}
+{{- end}}
+{{- end}}
+
+{{define "storyNormalflow" -}}
+{{$table := .Data -}}
+{{$supportExport := supportExportTable $table -}}
+{{$supportImport := supportImportTable $table -}}
+{{$supportView := supportViewTableItem $table -}}
+{{$supportEdit := supportEditTableItem $table -}}
+--- 在{{.Name}}对象配置管理界面，包括对象配置信息列表区域；
+---- 对象配置信息列表区域：显示对象配置信息列表（{{$table.Name}}）；
+---- 进入对象配置管理界面，自动发起请求读取所有对象的配置参数值，并更新到对象配置信息列表；
+--- 点击查询按钮（Refresh），手动发起请求读取所有对象的配置参数值；
+---- 收到响应读取成功，显示全局成功信息（Get parameter values successfully），并更新到对象配置信息列表；
+{{if $supportView -}}
+--- 在{{.Name}}对象配置管理界面的对象配置信息列表（{{$table.Name}}），点击列表行选择对象，显示对象配置信息的详情界面；
+---- 在对象配置信息的详情界面，显示选择对象的详细配置参数列表；
+{{end -}}
+{{if $supportEdit -}}
+--- 在对象配置信息的详情界面，修改可写的配置参数值，点击提交按钮（Submit），发起请求设置对象的配置参数值；
+---- 收到响应设置成功，显示全局成功信息（Set parameter values successfully），自动发起请求读取该对象的配置参数值，并更新到对象信息列表；
+---- 收到响应设置成功，返回参数包含错误码，显示全局失败信息（Set parameter values successfully, response with fault code），自动发起请求读取该对象的配置参数值，并更新到对象信息列表；
+{{end -}}
+{{if $supportImport -}}
+--- 点击导出按钮（Export），弹出文件保存对话框，选择文件保存路径，保存导出文件；
+---- 打开保存文件，查看文件内容与{{.Name}}对象配置管理界面显示信息一致；
+--- 进入{{.Name}}对象配置管理界面，点击导入按钮（Import），弹出批量导入对话框；
+---- 在批量导入对话框，点击选择文件按钮（Select），弹出打开文件对话框，选择文件；
+---- 成功导入文件，显示导入信息列表，列表中显示参数值与导入文件内容一致；
+---- 在导入信息列表中，选择多行对象，点击提交按钮（Submit），发起请求批量设置对象的配置参数值；
+---- 收到响应设置成功，显示全局成功信息（Set parameter values successfully），取消选择对象，自动发起请求读取配置参数值，并更新到对象信息列表；
+{{- end}}
+{{- end}}
+
+{{define "storyAlternativeflow" -}}
+{{$table := .Data -}}
+{{$supportExport := supportExportTable $table -}}
+{{$supportImport := supportImportTable $table -}}
+{{$supportView := supportViewTableItem $table -}}
+{{$supportEdit := supportEditTableItem $table -}}
+--- 点击查询按钮（Refresh），收到响应请求失败，显示全局失败信息（Request failed）；
+{{if $supportView -}}
+--- 在对象配置信息的详情界面，点击关闭按钮（Close），关闭详情界面；
+{{end -}}
+{{if $supportEdit -}}
+--- 在对象配置信息的详情界面，修改可写的配置参数值，点击提交按钮（Submit），收到响应请求失败，显示全局失败信息（Request failed）；
+{{end -}}
+{{if $supportImport -}}
+--- 在导出操作文件保存对话框，点击关闭按钮，取消导出文件；
+{{end -}}
+{{if $supportImport -}}
+--- 在批量导入对话框，点击关闭按钮，关闭批量导入对话框；
+--- 在批量导入对话框，导入文件中列名中缺少关键索引列时，忽略该行内容；
+--- 在批量导入对话框，导入文件中列名与当前对象配置参数名不一致时，忽略该列内容；
+--- 在批量导入对话框，导入文件中参数值与当前对象配置参数值不一致时，高亮显示导入参数值；
+--- 在批量导入对话框，删除选择文件，清空导入信息列表；
+--- 在导入信息列表中，选择多行对象，点击提交按钮（Submit），收到响应请求失败，显示全局失败信息（Request failed），不取消选择对象，批量导入对话框界面保持不变；
+{{- end}}
+{{- end}}
+
+{{define "name" -}}
+管理{{.Name}}对象的配置信息列表
+{{- end}}
+
+{{define "desc" -}}
+{{template "storyDesc" .}}
+{{- end}}
+
+{{define "normalflow" -}}
+{{template "storyNormalflow" .}}
+{{- end}}
+
+{{define "alternativeflow" -}}
+{{template "storyAlternativeflow" .}}
+{{- end}}
+
+{{define "design" -}}
+## 功能
+--- 与原OMT功能相同，优化界面设计和操作交互流程；
+## 输入项
+--- 无
+## 输出项
+--- 无
+## 主要数据结构/全局变量/静态变量
+--- 模型定义：参数定义和布局定义符合《OMT数据模型详细设计 V1.0》
+{{- end}}

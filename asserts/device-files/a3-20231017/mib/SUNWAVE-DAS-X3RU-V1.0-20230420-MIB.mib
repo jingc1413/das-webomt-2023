@@ -1,0 +1,4046 @@
+-- MIB created by Sunwave
+-- version 1.0, created on April 20, 2023.
+-- released on April 20, 2023
+
+SUNWAVE-DAS-X3RU-MIB DEFINITIONS ::= BEGIN
+	IMPORTS
+	  OBJECT-TYPE, NOTIFICATION-TYPE, MODULE-IDENTITY,
+	IpAddress,Integer32,Unsigned32,TimeTicks
+	FROM SNMPv2-SMI
+	TEXTUAL-CONVENTION,MacAddress,DisplayString
+	FROM SNMPv2-TC
+	enterprises FROM RFC1155-SMI ;
+		
+sunwave              OBJECT IDENTIFIER ::= { enterprises 31731} 
+g3CrossFire      OBJECT IDENTIFIER ::= { sunwave 30}  
+
+x3RU     	             OBJECT IDENTIFIER ::= { g3CrossFire 7}  
+
+-- AlarmTable
+alarms               OBJECT IDENTIFIER ::= { x3RU 2}
+alarmTable OBJECT-TYPE
+    SYNTAX        SEQUENCE OF AlarmEntry
+    MAX-ACCESS    not-accessible
+    STATUS        current
+    DESCRIPTION
+        "Configure each possible alarm on the device (trap, relay out,
+         severity...)."
+    ::= { alarms 1 }    
+    
+alarmEntry OBJECT-TYPE
+    SYNTAX        AlarmEntry
+    MAX-ACCESS    not-accessible
+    STATUS        current
+    DESCRIPTION
+        "An entry containing one alarm informations."
+    INDEX
+        { alarmId }
+    ::= { alarmTable 1 }
+    
+AlarmEntry ::= SEQUENCE
+{   
+    alarmId             INTEGER,
+    alarmSeverity       INTEGER,
+    alarmStat           INTEGER,
+    alarmName   		DisplayString
+}
+
+alarmId OBJECT-TYPE
+    SYNTAX        INTEGER(1..200) 
+    MAX-ACCESS    not-accessible
+    STATUS        current
+    DESCRIPTION
+    "
+       1:Power Interruption Alarm,
+	   4:Over-temperature Alarm, 
+       6: Optical Link Alarm,     
+       28:OP S Transceiver Failure Alarm,
+       29:OP M Transceiver Failure Alarm,
+       30:Radio Module1 DL Output Over-power Alarm, 
+       31:Radio Module2 DL Output Over-power Alarm, 
+       32:Radio Module3 DL Output Over-power Alarm, 
+       33:Radio Module4 DL Output Over-power Alarm, 
+       34:Radio Module1 DL Output Under-power Alarm, 		
+       35:Radio Module2 DL Output Under-power Alarm, 	
+       36:Radio Module3 DL Output Under-power Alarm, 	
+       37:Radio Module4 DL Output Under-power Alarm,
+	   38:External Input Alarm 1,
+	   39:External Input Alarm 2,
+	   49:Module1 VSWR Alarm,
+	   50:Module2 VSWR Alarm,
+       51:Radio Module1 ALC Over Range Alarm,
+       52:Radio Module2 ALC Over Range Alarm,
+       53:Radio Module3 ALC Over Range Alarm,
+       54:Radio Module4 ALC Over Range Alarm,
+       87:Optical Port Switch Alarm,
+	   96:Radio Module1 Open Load Alarm,
+	   97:Radio Module2 Open Load Alarm,
+	   144:Module3 VSWR Alarm,
+	   145:Module4 VSWR Alarm,
+	   159:Radio Module3 Open Load Alarm,
+	   160:Radio Module4 Open Load Alarm,
+	   165:Radio Module 1 Service OFF  Alarm,
+	   166:Radio Module 2 Service OFF  Alarm,
+	   167:Radio Module 3 Service OFF  Alarm,
+	   168:Radio Module 4 Service OFF  Alarm
+	"
+    ::= { alarmEntry 1 }
+  
+alarmSeverity OBJECT-TYPE
+    SYNTAX        INTEGER
+    {
+   		disable(0),
+      warning(2),
+      minor(3),
+      major(4),
+      critical(5)
+     }
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION
+       "Alarm's level,if set it 0,device will not report this alarm"
+    ::= { alarmEntry 2 }
+
+alarmStat OBJECT-TYPE
+   SYNTAX        INTEGER 
+   {
+      normal(0),
+      alarm(1)
+  } 
+   MAX-ACCESS    read-only
+   STATUS        current
+   DESCRIPTION
+      "Alarm's status"
+   ::= { alarmEntry 3 }
+
+
+        
+alarmName OBJECT-TYPE
+    SYNTAX        DisplayString
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION
+        "Alarm's name;
+         refer to the description of alarmId
+        "
+    ::= { alarmEntry 4 }
+    
+alarmTHD				 OBJECT IDENTIFIER ::= { alarms 2}
+overTemperatureThreshold                OBJECT-TYPE
+    SYNTAX        INTEGER (-55..125)
+    UNITS	 			"Celsius"
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "the threshold of Over temperature Alarm.
+    Alarm when device temperature over this threshold "
+    ::= { alarmTHD 1 }
+
+radioModule1OutputPowerUnderThreshold          OBJECT-TYPE
+    SYNTAX        Integer32 (190..520)
+    UNITS					"0.1dBm"
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "the threshold of module1 down link under output-power alarm.
+    Alarm when the output power level of module1 is under this threshold.
+    unit:0.1dBm,	rate:10, 
+    for example: the value of 200 that sent or received actually means 20dBm.
+    "
+    ::= { alarmTHD 2 }
+
+radioModule2OutputPowerUnderThreshold          OBJECT-TYPE
+    SYNTAX        Integer32 (190..520)
+    UNITS					"0.1dBm"
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION    
+    "the threshold of module2 down link under output-power alarm.
+    Alarm when the output power level of module2 is under this threshold.
+    unit:0.1dBm, rate:10, 
+    for example: the value of 200 that sent or received actually means 20dBm.
+    "
+    ::= { alarmTHD 3 }
+
+radioModule3OutputPowerUnderThreshold          OBJECT-TYPE
+    SYNTAX        Integer32 (190..520)
+    UNITS					"0.1dBm"
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "the threshold of module1 down link under output-power alarm.
+    Alarm when the output power level of module1 is under this threshold.
+    unit:0.1dBm,	rate:10, 
+    for example: the value of 200 that sent or received actually means 20dBm.
+    "
+    ::= { alarmTHD 4}
+
+radioModule4OutputPowerUnderThreshold          OBJECT-TYPE
+    SYNTAX        Integer32 (190..520)
+    UNITS					"0.1dBm"
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "the threshold of module1 down link under output-power alarm.
+    Alarm when the output power level of module1 is under this threshold.
+    unit:0.1dBm,	rate:10, 
+    for example: the value of 200 that sent or received actually means 20dBm.
+    "
+    ::= { alarmTHD 5 }
+		
+radioModule1OutputPowerOverThreshold          OBJECT-TYPE
+    SYNTAX        Integer32 (190..520)
+    UNITS					"0.1dBm"
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "the threshold of module1 down link over output-power alarm.
+     Alarm when the output power level of module1 is over this threshold.
+    unit:0.1dBm, rate:10, 
+    for example: the value of 200 that sent or received actually means 20dBm.
+    "
+    ::= { alarmTHD 6 }
+
+radioModule2OutputPowerOverThreshold          OBJECT-TYPE
+    SYNTAX        Integer32 (190..520)
+    UNITS					"0.1dBm"
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "the threshold of module2 down link over output-power alarm.
+    Alarm when the output power level of module2 is over this threshold.
+    unit:0.1dBm, rate:10, 
+    for example: the value of 200 that sent or received actually means 20dBm.
+    "
+    ::= { alarmTHD 7 }
+
+radioModule3OutputPowerOverThreshold          OBJECT-TYPE
+    SYNTAX        Integer32 (190..520)
+    UNITS					"0.1dBm"
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "the threshold of module1 down link over output-power alarm.
+     Alarm when the output power level of module1 is over this threshold.
+    unit:0.1dBm, rate:10, 
+    for example: the value of 200 that sent or received actually means 20dBm.
+    "
+    ::= { alarmTHD 8 }
+
+radioModule4OutputPowerOverThreshold          OBJECT-TYPE
+    SYNTAX        Integer32 (190..520)
+    UNITS					"0.1dBm"
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "the threshold of module2 down link over output-power alarm.
+    Alarm when the output power level of module2 is over this threshold.
+    unit:0.1dBm, rate:10, 
+    for example: the value of 200 that sent or received actually means 20dBm.
+    "
+    ::= { alarmTHD 9 }
+	
+vswrThreshold          OBJECT-TYPE
+    SYNTAX        Integer32 (10..100)
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "the threshold of VSWR.
+     rate:10, 
+    for example: the value of 25  actually means 2.5.
+    "
+    ::= { alarmTHD 10 }	
+	
+externalAlarm				 OBJECT IDENTIFIER ::= { alarms 3}
+externalInputAlarm1ModeSelection     OBJECT-TYPE
+		SYNTAX       INTEGER    
+		{   
+        normallyClosed(0),
+        normallyOpen(1)
+		}
+    	MAX-ACCESS    read-write
+    	STATUS        current
+    	DESCRIPTION   " 
+    	External 1 Alarm Mode Selection
+    	0-normallyClosed
+		1-normallyOpen
+    	"
+    ::= { externalAlarm 1 }
+
+externalInputAlarm2ModeSelection     OBJECT-TYPE
+		SYNTAX       INTEGER    
+		{   
+        normallyClosed(0),
+        normallyOpen(1)
+		}
+    	MAX-ACCESS    read-write
+    	STATUS        current
+    	DESCRIPTION   " 
+    	External 2 Alarm Mode Selection
+    	0-normallyClosed
+		1-normallyOpen
+    	"
+    ::= { externalAlarm 2 }	
+	
+externalInputAlarm1Label          OBJECT-TYPE
+    SYNTAX       DisplayString(SIZE(0..20))
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "
+    	External 1 Alarm Label    "
+    ::= { externalAlarm 5 }
+	
+externalInputAlarm2Label          OBJECT-TYPE
+    SYNTAX       DisplayString(SIZE(0..20))
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "
+    	External 2 Alarm Label    "
+    ::= { externalAlarm 6 }
+	
+externalAlarmOut1ModeSelection     OBJECT-TYPE
+		SYNTAX       INTEGER
+		{
+        normallyClosed(0),
+        normallyOpen(1)
+		}
+    	MAX-ACCESS    read-write
+    	STATUS        current
+    	DESCRIPTION   "
+    	External Alarm OUT 1 Mode Selection
+    	0-normally_closed
+    	1-normally_open
+    	"
+    ::= { externalAlarm 17 }
+
+externalAlarmOut2ModeSelection     OBJECT-TYPE
+		SYNTAX       INTEGER
+		{
+        normallyClosed(0),
+        normallyOpen(1)
+		}
+    	MAX-ACCESS    read-write
+    	STATUS        current
+    	DESCRIPTION   "
+    	External Alarm OUT 2 Mode Selection
+    	0-normally_closed
+    	1-normally_open
+    	"
+    ::= { externalAlarm 18 }
+
+externalAlarmOut1Level     OBJECT-TYPE
+     SYNTAX       INTEGER
+     {
+		disable(0),
+		warning(2),
+        minor(3),
+        major(4),
+        critical(5)
+
+    }
+     MAX-ACCESS    read-write
+     STATUS        current
+     DESCRIPTION
+    "External Output Alarm 1 Level"
+   ::= { externalAlarm 19 }
+
+externalAlarmOut2Level     OBJECT-TYPE
+     SYNTAX       INTEGER
+     {
+        disable(0),
+		warning(2),
+        minor(3),
+        major(4),
+        critical(5)
+
+    }
+     MAX-ACCESS    read-write
+     STATUS        current
+     DESCRIPTION
+    "External Output Alarm 2 Level"
+   ::= { externalAlarm 20 }
+
+externalAlarmOut1Indication     OBJECT-TYPE
+    SYNTAX       INTEGER
+	{
+        normal(0),
+        alarm(1)
+	}
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION
+    "External Alarm OUT 1 State"
+    ::= { externalAlarm 21 }
+
+
+externalAlarmOut2Indication     OBJECT-TYPE
+    SYNTAX       INTEGER
+	{
+        normal(0),
+        alarm(1)
+	}
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION
+    "External Alarm OUT 2 State"
+    ::= { externalAlarm 22 }
+	    
+--trap 
+traps                  OBJECT IDENTIFIER ::= { x3RU 3}   
+
+trapEvents             OBJECT IDENTIFIER ::={ traps 0 }
+alarmTrap NOTIFICATION-TYPE
+    OBJECTS
+        { trapAlarmId,trapAlarmName, trapAlarmState, trapAlarmSeverity, trapAlarmDeviceType, trapAlarmModuleID, trapAlarmCreateTime,trapAlarmClearTime,
+        trapAlarmLocation,trapAlarmSiteName,trapAlarmDeviceName,trapAlarmDeviceAddress,
+        trapAlarmProbableCause, trapAlarmProposedAction,trapAlarmSequenceNo,trapAlarmDeviceIP,trapAlarmElementSerialNumber }
+    STATUS        current
+    DESCRIPTION
+        "Trap send in an alarm rising edge."
+    ::= { trapEvents 1 }
+
+trapAlarmObjects OBJECT IDENTIFIER ::= { traps 1 }	
+trapAlarmId OBJECT-TYPE
+    SYNTAX        INTEGER(1..200) 
+    MAX-ACCESS    accessible-for-notify
+    STATUS        current
+    DESCRIPTION
+         "<<<<The ID of the alarm (see trapAlarmName)>>>>"
+    ::= { trapAlarmObjects 1 }
+    
+trapAlarmName OBJECT-TYPE
+    SYNTAX        DisplayString
+    MAX-ACCESS    accessible-for-notify
+    STATUS        current
+    DESCRIPTION
+    "
+	   1:Power Interruption Alarm,
+	   4:Over-temperature Alarm, 
+       6: Optical Link Alarm,     
+       28:OP S Transceiver Failure Alarm,
+       29:OP M Transceiver Failure Alarm,
+       30:Radio Module1 DL Output Over-power Alarm, 
+       31:Radio Module2 DL Output Over-power Alarm, 
+       32:Radio Module3 DL Output Over-power Alarm, 
+       33:Radio Module4 DL Output Over-power Alarm, 
+       34:Radio Module1 DL Output Under-power Alarm, 		
+       35:Radio Module2 DL Output Under-power Alarm, 	
+       36:Radio Module3 DL Output Under-power Alarm, 	
+       37:Radio Module4 DL Output Under-power Alarm,
+	   38:External Input Alarm 1,
+	   39:External Input Alarm 2,
+	   49:Module1 VSWR Alarm,
+	   50:Module2 VSWR Alarm,
+       51:Radio Module1 ALC Over Range Alarm,
+       52:Radio Module2 ALC Over Range Alarm,
+       53:Radio Module3 ALC Over Range Alarm,
+       54:Radio Module4 ALC Over Range Alarm,
+       87:Optical Port Switch Alarm,
+	   96:Radio Module1 Open Load Alarm,
+	   97:Radio Module2 Open Load Alarm,
+	   144:Module3 VSWR Alarm,
+	   145:Module4 VSWR Alarm,
+	   159:Radio Module3 Open Load Alarm,
+	   160:Radio Module4 Open Load Alarm,
+	   165:Radio Module 1 Service OFF  Alarm,
+	   166:Radio Module 2 Service OFF  Alarm,
+	   167:Radio Module 3 Service OFF  Alarm,
+	   168:Radio Module 4 Service OFF  Alarm
+	"
+    ::= { trapAlarmObjects 2 }
+    
+trapAlarmState OBJECT-TYPE
+    SYNTAX        INTEGER 
+    {
+      normal(0),
+      alarm(1)
+    } 
+    MAX-ACCESS    accessible-for-notify
+    STATUS        current
+    DESCRIPTION
+        "Alarm Status.
+        If trapAlarmState  is 0 (normal) means that the alarm is clear while 1(alarm) means the alarm is set. 
+        "
+    ::= { trapAlarmObjects 3 }
+    
+trapAlarmSeverity OBJECT-TYPE
+    SYNTAX        INTEGER
+    {
+    	disable(0),
+   		normal(1),
+   		warning(2),
+        minor(3),
+        major(4),
+        critical(5)
+    }
+    MAX-ACCESS    accessible-for-notify
+    STATUS        current
+    DESCRIPTION
+        "Alarm severity.
+        If alarm (trapAlarmState=1) is set, this value will be 2(warning) or 3(minor) or 4(major) or 5(critical). 
+        And if alarm (trapAlarmState=0) is clear, this value will be 1(normal).
+        "
+    ::= { trapAlarmObjects 4 }
+
+trapAlarmDeviceType				OBJECT-TYPE
+    SYNTAX DisplayString
+    MAX-ACCESS    accessible-for-notify
+    STATUS        current
+    DESCRIPTION
+        "There are some kinds of type, Primary A3,secondary A3, E3O, N3RU, M3RU-L etc."
+    ::= { trapAlarmObjects 5 } 
+      
+ trapAlarmModuleID 				OBJECT-TYPE
+    SYNTAX       DisplayString
+    MAX-ACCESS    accessible-for-notify
+    STATUS        current
+    DESCRIPTION
+        " Unique module identifier 
+        (based on this field the operator should be able to identify 
+        which module of which system is sending this alarm)
+        #deviceID#devicesubID"
+    ::= { trapAlarmObjects 6 } 
+
+trapAlarmCreateTime OBJECT-TYPE
+    SYNTAX       DisplayString
+    MAX-ACCESS    accessible-for-notify
+    STATUS        current
+    DESCRIPTION
+        " The time when the alarm is detected. 
+        format: yyyy-mm-mm-dd hh:mm:ss, such as , 2013-07-20 16:07:50
+        "
+    ::= { trapAlarmObjects 7 }   
+    
+trapAlarmClearTime OBJECT-TYPE
+    SYNTAX       DisplayString
+    MAX-ACCESS    accessible-for-notify
+    STATUS        current
+    DESCRIPTION
+        "The time when the alarm is cleared. 
+        format: yyyy-mm-mm-dd hh:mm:ss, such as , 2013-07-20 16:07:50
+        "
+    ::= { trapAlarmObjects 8 }  
+ 
+trapAlarmLocation 				OBJECT-TYPE
+    SYNTAX       DisplayString
+    MAX-ACCESS    accessible-for-notify
+    STATUS        current
+    DESCRIPTION
+        "The Location assigned to the originating equipment(installed location lable)"
+    ::= { trapAlarmObjects  9} 
+
+trapAlarmSiteName 				OBJECT-TYPE
+    SYNTAX       DisplayString
+    MAX-ACCESS    accessible-for-notify
+    STATUS        current
+    DESCRIPTION
+        "The Name assigned to the originating Master Access Unit (SiteName)"
+    ::= { trapAlarmObjects 10 } 
+
+trapAlarmDeviceName 				OBJECT-TYPE
+    SYNTAX       DisplayString
+    MAX-ACCESS    accessible-for-notify
+    STATUS        current
+    DESCRIPTION
+        "The Name assigned to the originating equipment (DeviceName)"
+    ::= { trapAlarmObjects 11 } 
+
+trapAlarmDeviceAddress 				OBJECT-TYPE
+    SYNTAX       DisplayString
+    MAX-ACCESS    accessible-for-notify
+    STATUS        current
+    DESCRIPTION
+        "The hierarchical path from A3 to originating equipment"
+    ::= { trapAlarmObjects 12 } 
+
+trapAlarmProbableCause 				OBJECT-TYPE
+    SYNTAX       DisplayString
+    MAX-ACCESS    accessible-for-notify
+    STATUS        current
+    DESCRIPTION
+        "Plain text description of probable cause"
+    ::= { trapAlarmObjects 13 } 
+
+trapAlarmProposedAction 				OBJECT-TYPE
+    SYNTAX       DisplayString
+    MAX-ACCESS    accessible-for-notify
+    STATUS        current
+    DESCRIPTION
+        "Plain text description of proposed actions for resolution"
+    ::= { trapAlarmObjects 14 } 
+
+trapAlarmSequenceNo 				OBJECT-TYPE
+    SYNTAX       Unsigned32
+    MAX-ACCESS    accessible-for-notify
+    STATUS        current
+    DESCRIPTION
+        "Sequence identifier is unique number for each trap. It is only incremented when a new alarm trap is sent. 
+        It is unchanged when the Clear trap is send. It ranges from 0 to 4294967296.
+        "
+    ::= { trapAlarmObjects 15 } 
+
+trapAlarmDeviceIP 				OBJECT-TYPE
+    SYNTAX       DisplayString
+    MAX-ACCESS    accessible-for-notify
+    STATUS        current
+    DESCRIPTION
+        "IP of Primary A3 which alarmed device connect to"
+    ::= { trapAlarmObjects 16 } 
+	
+trapAlarmElementSerialNumber 				OBJECT-TYPE
+    SYNTAX       DisplayString
+    MAX-ACCESS    accessible-for-notify
+    STATUS        current
+    DESCRIPTION
+        "Element Serial Number"
+    ::= { trapAlarmObjects 17 } 
+
+lanConnectivity		 			OBJECT IDENTIFIER ::= { x3RU 4} 
+elementIdentification           OBJECT IDENTIFIER ::= { lanConnectivity 1}
+opticalModuleInfo               OBJECT IDENTIFIER ::= { lanConnectivity 6}
+
+vendor 	OBJECT-TYPE
+    SYNTAX        DisplayString(SIZE(0..20))
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    " Code  to distinguish from different manufacturers"
+    ::= { elementIdentification 1 }
+
+productModel          OBJECT-TYPE
+    SYNTAX       DisplayString(SIZE(0..40))
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "product model of the device"
+    ::= { elementIdentification 2 }
+    
+serialNumber 	OBJECT-TYPE
+    SYNTAX        DisplayString(SIZE(0..40))
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   "serial number of the device"
+    ::= { elementIdentification 3}
+    
+softwareVersion 	OBJECT-TYPE
+    SYNTAX       DisplayString(SIZE(0..20))
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    " Current version of remote monitoring software. "
+    ::= { elementIdentification 4 }    
+	
+deviceID          OBJECT-TYPE
+    SYNTAX        DisplayString(SIZE(8))
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   "The unique identification number of site in the system" 
+    ::= { elementIdentification 6 }
+ 
+deviceSubID          OBJECT-TYPE
+    SYNTAX        Integer32
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   "Number assigned by the system to distinguish the subsets in the same site "
+    ::= { elementIdentification 7 }
+    
+installedLocationLabel          OBJECT-TYPE
+    SYNTAX       DisplayString(SIZE(0..40))
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "
+    	Device Location    "
+    ::= { elementIdentification 8 }
+
+deviceName          OBJECT-TYPE
+    SYNTAX       DisplayString(SIZE(0..40))
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "
+    Device Name
+    "
+    ::= { elementIdentification 9 } 
+
+systemDateAndTime          OBJECT-TYPE
+    SYNTAX       DisplayString
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "
+    	device's current date and time.
+    	format: yyyy-mm-mm-d hh:mm:ss, such as , 2013-07-20 16:07:50
+    "
+    ::= { elementIdentification 10 }  
+    
+siteName          OBJECT-TYPE
+    SYNTAX       DisplayString(SIZE(0..100))
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "
+    Site Name
+    "
+    ::= { elementIdentification 15 } 
+
+macAddress          OBJECT-TYPE
+    SYNTAX       DisplayString(SIZE(0..18))
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "
+    Mac Address
+    "
+    ::= { elementIdentification 30 }
+	
+lifeTime 	OBJECT-TYPE
+    SYNTAX        Integer32
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    " Life time,
+	unit:hours,
+	rate:10.
+	"
+    ::= { elementIdentification 31 }
+	
+upTime          OBJECT-TYPE
+    SYNTAX       DisplayString(SIZE(0..12))
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "
+    Up time,
+	unit:days:hours:minutes
+    "
+    ::= { elementIdentification 32 }
+	
+systemReset			OBJECT-TYPE
+		SYNTAX       INTEGER
+		{
+		update(1)      			 
+		}
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   "System Reset "
+    ::= { elementIdentification 33 }
+
+filesystemVersion 	OBJECT-TYPE
+    SYNTAX       DisplayString(SIZE(0..10))
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    " Current version of remote monitoring software. "
+    ::= { elementIdentification 34 }	
+	
+oPSTransceiverSerialNumber          OBJECT-TYPE
+    SYNTAX       DisplayString(SIZE(0..16))
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "
+    	OPP Transceiver Serial Number    "
+    ::= { opticalModuleInfo 15 }
+	
+oPMTransceiverSerialNumber          OBJECT-TYPE
+    SYNTAX       DisplayString(SIZE(0..16))
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "
+    	OPS Transceiver Serial Number    "
+    ::= { opticalModuleInfo 16 }	
+
+oPSTransceiverVenderName          OBJECT-TYPE
+    SYNTAX       DisplayString(SIZE(0..16))
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "
+    	OPP Transceiver Serial Number    "
+    ::= { opticalModuleInfo 31 }
+	
+oPMTransceiverVenderName          OBJECT-TYPE
+    SYNTAX       DisplayString(SIZE(0..16))
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "
+    	OPS Transceiver Serial Number    "
+    ::= { opticalModuleInfo 32 }	
+
+oPSTransceiverTXpower         OBJECT-TYPE
+    SYNTAX       Integer32
+    UNITS		"0.01dBm" 
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "	rate:100
+    	OPP Transceiver TX optical power    "
+    ::= { opticalModuleInfo 47 }
+ 
+oPMTransceiverTXpower         OBJECT-TYPE
+    SYNTAX       Integer32
+    UNITS		"0.01dBm" 
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "	rate:100
+    	OPS Transceiver TX optical power    "
+    ::= { opticalModuleInfo 48 }
+
+oPSTransceiverRXpower         OBJECT-TYPE
+    SYNTAX       Integer32
+    UNITS		"0.01dBm" 
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "	rate:100
+    	OPP Transceiver RX optical power    "
+    ::= { opticalModuleInfo 63 }
+ 
+oPMTransceiverRXpower         OBJECT-TYPE
+    SYNTAX       Integer32
+    UNITS		"0.01dBm" 
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "	rate:100
+    	OPS Transceiver RX optical power    "
+    ::= { opticalModuleInfo 64 }
+
+
+--systemInfo    
+systemInfo 	           OBJECT IDENTIFIER ::= { x3RU 5}
+sysGeneral         	   OBJECT IDENTIFIER ::= { systemInfo 5}
+deviceTemperature	OBJECT-TYPE
+    SYNTAX        Integer32
+    UNITS	 			  "Celsius"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   "device temperature"
+    ::= { sysGeneral 1 }
+	
+openLoadDetectSwitch      OBJECT-TYPE
+    SYNTAX       INTEGER {
+     off(0),
+     on(1)
+			}
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   "Open Load Detect Switch"
+    ::= { sysGeneral 3 }
+
+polymericPowerInfo         	   OBJECT IDENTIFIER ::= { systemInfo 21}
+polymeric1UlBasebandInputPower		OBJECT-TYPE
+    SYNTAX       Integer32 
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "polymeric1 UpLink Baseband InputPower 
+    unit: 0.1dBm
+    rate: 10"
+    ::= { polymericPowerInfo 1} 
+	
+polymeric2UlBasebandInputPower		OBJECT-TYPE
+    SYNTAX       Integer32 
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "polymeric2 UpLink Baseband InputPower 
+    unit: 0.1dBm
+    rate: 10"
+    ::= { polymericPowerInfo 2}
+
+radioModule1Info               OBJECT IDENTIFIER ::= { systemInfo 1}
+radioModule1RfSignalSwitch             OBJECT-TYPE
+    SYNTAX       INTEGER {
+       		 	 off(0),
+       			 on(1)
+			}
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   "Grid Voltage Switch of channel 1"
+    ::= { radioModule1Info 1 }
+
+
+radioModule1UlAttenuation		OBJECT-TYPE
+    SYNTAX       INTEGER(0..30)
+    UNITS					"0.5dB"
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "Increase the value to decrease the up-link gain of channel 1.
+    unit:0.5dB, 
+    rate:2, for example: the value of 2 actually means 1dB.
+    "
+    ::= { radioModule1Info 2 }
+
+
+radioModule1DlAttenuation		OBJECT-TYPE
+    SYNTAX       INTEGER(0..30)
+     UNITS					"0.5dB"
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "Increase the value to decrease the down-link gain of channel 1 
+    unit:0.5dB, 
+    rate:2,  for example: the value of 2 actually means 1dB.
+    "
+    ::= { radioModule1Info 3}
+
+radioModule1UlInputpower		OBJECT-TYPE
+    SYNTAX       INTEGER (-750..-300)
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "module1 UL Input-power
+	rate:10	"
+    ::= { radioModule1Info 7 }
+
+
+radioModule1DlOutputpower		OBJECT-TYPE
+    SYNTAX       INTEGER (240..480)
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "module1 DL Output-power 
+	 rate:10"
+    ::= { radioModule1Info 8}
+	
+radioModule1vswr	OBJECT-TYPE
+		SYNTAX       INTEGER(10..35)
+		UNITS					"0.1"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION  
+    "
+    rate:10, for example: the value of 14 actually means 1.4
+    " 
+    ::= { radioModule1Info 9 } 
+ 
+module1UlBasebandInputPower		OBJECT-TYPE
+    SYNTAX       Integer32 
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "module1 UpLink Baseband InputPower 
+    unit: 0.1dBm
+    rate: 10"
+    ::= { radioModule1Info 10} 
+ 
+module1DlBasebandOutputPower		OBJECT-TYPE
+    SYNTAX       Integer32
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "module1 DownLink Baseband OutputPower 
+    unit: 0.1dBm
+    rate: 10"
+    ::= { radioModule1Info 11}     
+radioModule2Info               OBJECT IDENTIFIER ::= { systemInfo 2}  
+radioModule2RfSignalSwitch             OBJECT-TYPE
+    SYNTAX       INTEGER {
+       		 	 off(0),
+       			 on(1)
+			}
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION  "Grid Voltage Switch of channel 2"
+    ::= { radioModule2Info 1 }
+
+
+radioModule2UlAttenuation		OBJECT-TYPE
+    SYNTAX       INTEGER(0..30)
+    UNITS					"0.5dB"
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+     "Increase the value to decrease the up-link gain of channe2 
+     unit:0.5dB, 
+    rate:2, for example: the value of 2 actually means 1dB.
+    "
+    ::= { radioModule2Info 2 }
+
+
+radioModule2DlAttenuation    	OBJECT-TYPE
+    SYNTAX       INTEGER (0..30)
+    UNITS					"0.5dB"
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+     "Increase the value to decrease the down-link gain of channe2
+     unit:0.5dB, 
+    rate:2, for example: the value of 2 actually means 1dB.
+    "
+    ::= { radioModule2Info 3 }
+    
+radioModule2UlInputpower		OBJECT-TYPE
+    SYNTAX       INTEGER (-750..-300)
+    UNITS					"0.1db"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "module2 UL Input-power 
+	rate:10"
+    ::= { radioModule2Info 7 }
+
+
+radioModule2DlOutputpower		OBJECT-TYPE
+    SYNTAX       INTEGER (240..480)
+    UNITS					"0.1db"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "module2 DL Output-power
+	rate:10	"
+    ::= { radioModule2Info 8 }
+	
+radioModule2vswr	OBJECT-TYPE
+		SYNTAX       INTEGER(10..35)
+		UNITS					"0.1"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION  
+    "
+    rate:10, for example: the value of 14 actually means 1.4
+    " 
+    ::= { radioModule2Info 9 } 
+	
+module2UlBasebandInputPower		OBJECT-TYPE
+    SYNTAX       Integer32
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "module2 UpLink Baseband InputPower 
+    unit: 0.1dBm
+    rate: 10"
+    ::= { radioModule2Info 10}
+	
+module2DlBasebandOutputPower		OBJECT-TYPE
+    SYNTAX       Integer32
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "module2 DownLink Baseband OutputPower 
+    unit: 0.1dBm
+    rate: 10"
+    ::= { radioModule2Info 11}  
+    
+radioModule3Info               OBJECT IDENTIFIER ::= { systemInfo 3}  
+radioModule3RfSignalSwitch             OBJECT-TYPE
+    SYNTAX       INTEGER {
+       		 	 off(0),
+       			 on(1)
+			}
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION  "Grid Voltage Switch of channel 3"
+    ::= { radioModule3Info 1 }
+
+
+radioModule3UlAttenuation		OBJECT-TYPE
+    SYNTAX       INTEGER(0..30)
+    UNITS					"0.5dB"
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+     "Increase the value to decrease the up-link gain of channe 3 
+     unit:0.5dB, 
+    rate:2, for example: the value of 2 actually means 1dB.
+    "
+    ::= { radioModule3Info 2 }
+
+
+radioModule3DlAttenuation    	OBJECT-TYPE
+    SYNTAX       INTEGER (0..30)
+    UNITS					"0.5dB"
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+     "Increase the value to decrease the down-link gain of channe 3
+     unit:0.5dB, 
+    rate:2, for example: the value of 2 actually means 1dB.
+    "
+    ::= { radioModule3Info 3 }
+    
+radioModule3UlInputpower		OBJECT-TYPE
+    SYNTAX       INTEGER (-750..-300)
+    UNITS					"0.1db"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "module3 UL Input-power
+    rate:10	"
+    ::= { radioModule3Info 7 }
+
+
+radioModule3DlOutputpower		OBJECT-TYPE
+    SYNTAX       INTEGER (240..480)
+    UNITS					"0.1db"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "module3 DL Output-power 
+	rate:10 "
+    ::= { radioModule3Info 8 }
+
+radioModule3vswr	OBJECT-TYPE
+		SYNTAX       INTEGER(10..35)
+		UNITS					"0.1"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION  
+    "
+    rate:10, for example: the value of 14 actually means 1.4
+    " 
+    ::= { radioModule3Info 9 } 
+
+module3UlBasebandInputPower		OBJECT-TYPE
+    SYNTAX       Integer32
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "module3 UpLink Baseband InputPower 
+    unit: 0.1dBm
+    rate: 10"
+    ::= { radioModule3Info 10}
+
+module3DlBasebandOutputPower		OBJECT-TYPE
+    SYNTAX       Integer32
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "module3 DownLink Baseband OutputPower 
+    unit: 0.1dBm
+    rate: 10"
+    ::= { radioModule3Info 11}    
+radioModule4Info               OBJECT IDENTIFIER ::= { systemInfo 4}  
+radioModule4RfSignalSwitch             OBJECT-TYPE
+    SYNTAX       INTEGER {
+       		 	 off(0),
+       			 on(1)
+			}
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION  "Grid Voltage Switch of channel 4"
+    ::= { radioModule4Info 1 }
+
+
+radioModule4UlAttenuation		OBJECT-TYPE
+    SYNTAX       INTEGER(0..30)
+    UNITS					"0.5dB"
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+     "Increase the value to decrease the up-link gain of channe 4
+     unit:0.5dB, 
+    rate:2, for example: the value of 2 actually means 1dB.
+    "
+    ::= { radioModule4Info 2 }
+
+
+radioModule4DlAttenuation    	OBJECT-TYPE
+    SYNTAX       INTEGER (0..30)
+    UNITS					"0.5dB"
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+     "Increase the value to decrease the down-link gain of channe 4
+     unit:0.5dB, 
+    rate:2, for example: the value of 2 actually means 1dB.
+    "
+    ::= { radioModule4Info 3 }
+    
+radioModule4UlInputpower		OBJECT-TYPE
+    SYNTAX       INTEGER (-750..-300)
+    UNITS					"0.1db"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "module4 UL Input-power 
+	rate:10"
+    ::= { radioModule4Info 7 }
+
+
+radioModule4DlOutputpower		OBJECT-TYPE
+    SYNTAX       INTEGER (240..480)
+    UNITS					"0.1db"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "module4 DL Output-power 
+	rate:10"
+    ::= { radioModule4Info 8 }
+
+radioModule4vswr	OBJECT-TYPE
+		SYNTAX       INTEGER(10..35)
+		UNITS					"0.1"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION  
+    "
+    rate:10, for example: the value of 14 actually means 1.4
+    " 
+    ::= { radioModule4Info 9 } 
+	
+module4UlBasebandInputPower		OBJECT-TYPE
+    SYNTAX       Integer32
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "module4 UpLink Baseband InputPower 
+    unit: 0.1dBm
+    rate: 10"
+    ::= { radioModule4Info 10}   
+
+module4DlBasebandOutputPower		OBJECT-TYPE
+    SYNTAX       Integer32
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "module4 DownLink Baseband OutputPower 
+    unit: 0.1dBm
+    rate: 10"
+    ::= { radioModule4Info 11}   
+	
+--bandConfiguration  
+bandConfiguration	      OBJECT IDENTIFIER ::= { x3RU 7}        
+
+module1bandConfig       OBJECT IDENTIFIER ::= { bandConfiguration 3}
+module2bandConfig       OBJECT IDENTIFIER ::= { bandConfiguration 4}
+module3bandConfig       OBJECT IDENTIFIER ::= { bandConfiguration 5}
+module4bandConfig       OBJECT IDENTIFIER ::= { bandConfiguration 6}
+
+module1UlFreqLow			OBJECT-TYPE
+		SYNTAX       Integer32
+    UNITS					"0.001MHZ"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "The up-link frequence range lower limit  of channel1.
+    unit:0.001MHZ, 
+    rate:1000, for example: the value of 800000 actually means 800MHz.
+    "
+    ::= { module1bandConfig 2 }
+
+
+module1UlFreqHigh			OBJECT-TYPE
+		SYNTAX       Integer32
+    UNITS					"0.001MHZ"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "The UP-link frequence range upper limit of channel1.
+    unit:0.001MHZ, 
+    rate:1000, for example: the value of 800000 actually means 800MHz.
+    "
+    ::= { module1bandConfig 3 }
+    
+
+module1DlFreqLow			OBJECT-TYPE
+		SYNTAX       Integer32
+    UNITS					"0.001MHZ"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "The down-link frequence range lower limit of channel1.
+    unit:0.001MHZ, 
+    rate:1000, for example: the value of 800000 actually means 800MHz.
+    "
+    ::= { module1bandConfig 4 }
+    
+
+module1DlFreqHigh			OBJECT-TYPE
+		SYNTAX       Integer32
+    UNITS					"0.001MHZ"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "The down-link frequence range upper limit of channel1.
+    unit:0.001MHZ, 
+    rate:1000, for example: the value of 800000 actually means 800MHz.
+    "
+    ::= { module1bandConfig 5 }
+	
+module1C1ULCentreFrequency		OBJECT-TYPE
+		SYNTAX       Integer32
+    UNITS					"0.001MHZ"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "The carrier1 up-link center frequence of channel1.
+    unit:0.001MHZ, 
+    rate:1000, for example: the value of 800000 actually means 800MHz.
+    "
+    ::= { module1bandConfig 20 }
+    
+module1C1DLCentreFrequency		OBJECT-TYPE
+		SYNTAX       Integer32
+    UNITS					"0.001MHZ"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION              		
+    "The carrier1 down-link center frequence of channel1.
+    unit:0.001MHZ, 
+    rate:1000, for example: the value of 800000 actually means 800MHz.
+    "
+    ::= { module1bandConfig 21 }
+
+module1C1DigitalSignalBandwidthSelect			 OBJECT-TYPE
+		SYNTAX       INTEGER    
+		{   
+        custom(0),
+		fiveMhz(5),
+		tenMhz(10),
+		fifteenMhz(15),
+		twentyMhz(20),
+		twentyfiveMhz(25),
+		thirtyMhz(30),
+		fortyMhz(40),
+		fiftyMhz(50),
+		sixtyMhz(60),
+		seventyMhz(70),
+		eightyMhz(80),
+		ninetyMhz(90),
+		onehundredMhz(100)
+		}
+    	MAX-ACCESS    read-only
+    	STATUS        current
+    	DESCRIPTION   " 
+    	Bandwidth Selection
+    	"
+    ::= { module1bandConfig 22 }  
+
+module1C1DigitalSignalBandwidth			OBJECT-TYPE
+		SYNTAX       Integer32
+    UNITS					"0.001MHZ"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "The carrier1 bandwidth of channel1.
+    unit:0.001MHZ, 
+    rate:1000, for example: the value of 800000 actually means 800MHz.
+    "
+    ::= { module1bandConfig 23 }
+
+module1C1CarrierSwitch			OBJECT-TYPE
+	SYNTAX       INTEGER    
+	{   
+    off(0),
+    on(1)
+	}
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "
+	Module1-C1 Carrier Switch,Turn off when not in use.
+    "
+    ::= { module1bandConfig 24 }
+
+module1C2ULCentreFrequency		OBJECT-TYPE
+		SYNTAX       Integer32
+    UNITS					"0.001MHZ"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "The carrier1 up-link center frequence of channel1.
+    unit:0.001MHZ, 
+    rate:1000, for example: the value of 800000 actually means 800MHz.
+    "
+    ::= { module1bandConfig 27 }
+    
+
+module1C2DLCentreFrequency		OBJECT-TYPE
+		SYNTAX       Integer32
+    UNITS					"0.001MHZ"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION              		
+    "The carrier1 down-link center frequence of channel1.
+    unit:0.001MHZ, 
+    rate:1000, for example: the value of 800000 actually means 800MHz.
+    "
+    ::= { module1bandConfig 28 }
+
+module1C2DigitalSignalBandwidthSelect			 OBJECT-TYPE
+		SYNTAX       INTEGER    
+		{   
+        custom(0),
+		fiveMhz(5),
+		tenMhz(10),
+		fifteenMhz(15),
+		twentyMhz(20),
+		twentyfiveMhz(25),
+		thirtyMhz(30),
+		fortyMhz(40),
+		fiftyMhz(50),
+		sixtyMhz(60),
+		seventyMhz(70),
+		eightyMhz(80),
+		ninetyMhz(90),
+		onehundredMhz(100)
+		}
+    	MAX-ACCESS    read-only
+    	STATUS        current
+    	DESCRIPTION   " 
+    	Bandwidth Selection
+    	"
+    ::= { module1bandConfig 29 }  
+
+module1C2DigitalSignalBandwidth			OBJECT-TYPE
+		SYNTAX       Integer32
+    UNITS					"0.001MHZ"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "The carrier1 bandwidth of channel1.
+    unit:0.001MHZ, 
+    rate:1000, for example: the value of 800000 actually means 800MHz.
+    "
+    ::= { module1bandConfig 30 }
+	
+module1C2CarrierSwitch			OBJECT-TYPE
+	SYNTAX       INTEGER    
+	{   
+    off(0),
+    on(1)
+	}
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "
+	Module1-C2 Carrier Switch,Turn off when not in use.
+    "
+    ::= { module1bandConfig 31 }
+
+module1C3ULCentreFrequency		OBJECT-TYPE
+		SYNTAX       Integer32
+    UNITS					"0.001MHZ"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "The carrier1 up-link center frequence of channel1.
+    unit:0.001MHZ, 
+    rate:1000, for example: the value of 800000 actually means 800MHz.
+    "
+    ::= { module1bandConfig 34 }
+    
+
+module1C3DLCentreFrequency		OBJECT-TYPE
+		SYNTAX       Integer32
+    UNITS					"0.001MHZ"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION              		
+    "The carrier1 down-link center frequence of channel1.
+    unit:0.001MHZ, 
+    rate:1000, for example: the value of 800000 actually means 800MHz.
+    "
+    ::= { module1bandConfig 35 }
+
+module1C3DigitalSignalBandwidthSelect			 OBJECT-TYPE
+		SYNTAX       INTEGER    
+		{   
+        custom(0),
+		fiveMhz(5),
+		tenMhz(10),
+		fifteenMhz(15),
+		twentyMhz(20),
+		twentyfiveMhz(25),
+		thirtyMhz(30),
+		fortyMhz(40),
+		fiftyMhz(50),
+		sixtyMhz(60),
+		seventyMhz(70),
+		eightyMhz(80),
+		ninetyMhz(90),
+		onehundredMhz(100)
+		}
+    	MAX-ACCESS    read-only
+    	STATUS        current
+    	DESCRIPTION   " 
+    	Bandwidth Selection
+    	"
+    ::= { module1bandConfig 36 }  
+
+module1C3DigitalSignalBandwidth			OBJECT-TYPE
+		SYNTAX       Integer32
+    UNITS					"0.001MHZ"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "The carrier1 bandwidth of channel1.
+    unit:0.001MHZ, 
+    rate:1000, for example: the value of 800000 actually means 800MHz.
+    "
+    ::= { module1bandConfig 37 }
+	
+module1C3CarrierSwitch			OBJECT-TYPE
+	SYNTAX       INTEGER    
+	{   
+    off(0),
+    on(1)
+	}
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "
+	Module1-C3 Carrier Switch,Turn off when not in use.
+    "
+    ::= { module1bandConfig 38 }
+
+module1C4ULCentreFrequency		OBJECT-TYPE
+		SYNTAX       Integer32
+    UNITS					"0.001MHZ"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "The carrier1 up-link center frequence of channel1.
+    unit:0.001MHZ, 
+    rate:1000, for example: the value of 800000 actually means 800MHz.
+    "
+    ::= { module1bandConfig 41 }
+    
+
+module1C4DLCentreFrequency		OBJECT-TYPE
+		SYNTAX       Integer32
+    UNITS					"0.001MHZ"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION              		
+    "The carrier1 down-link center frequence of channel1.
+    unit:0.001MHZ, 
+    rate:1000, for example: the value of 800000 actually means 800MHz.
+    "
+    ::= { module1bandConfig 42 }
+
+module1C4DigitalSignalBandwidthSelect			 OBJECT-TYPE
+		SYNTAX       INTEGER    
+		{   
+        custom(0),
+		fiveMhz(5),
+		tenMhz(10),
+		fifteenMhz(15),
+		twentyMhz(20),
+		twentyfiveMhz(25),
+		thirtyMhz(30),
+		fortyMhz(40),
+		fiftyMhz(50),
+		sixtyMhz(60),
+		seventyMhz(70),
+		eightyMhz(80),
+		ninetyMhz(90),
+		onehundredMhz(100)
+		}
+    	MAX-ACCESS    read-only
+    	STATUS        current
+    	DESCRIPTION   " 
+    	Bandwidth Selection
+    	"
+    ::= { module1bandConfig 43 }  
+
+module1C4DigitalSignalBandwidth			OBJECT-TYPE
+		SYNTAX       Integer32
+    UNITS					"0.001MHZ"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "The carrier1 bandwidth of channel1.
+    unit:0.001MHZ, 
+    rate:1000, for example: the value of 800000 actually means 800MHz.
+    "
+    ::= { module1bandConfig 44 }
+
+module1C4CarrierSwitch			OBJECT-TYPE
+	SYNTAX       INTEGER    
+	{   
+    off(0),
+    on(1)
+	}
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "
+	Module1-C4 Carrier Switch,Turn off when not in use.
+    "
+    ::= { module1bandConfig 45 }	
+
+module2UlFreqLow			OBJECT-TYPE
+		SYNTAX       Integer32
+    UNITS					"0.001MHZ"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "The up-link frequence range lower limit  of channel2.
+    unit:0.001MHZ, 
+    rate:1000, for example: the value of 800000 actually means 800MHz.
+    "
+    ::= { module2bandConfig 2 }
+
+
+module2UlFreqHigh			OBJECT-TYPE
+		SYNTAX       Integer32
+    UNITS					"0.001MHZ"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "The UP-link frequence range upper limit of channel2.
+    unit:0.001MHZ, 
+    rate:1000, for example: the value of 800000 actually means 800MHz.
+    "
+    ::= { module2bandConfig 3 }
+    
+
+module2DlFreqLow			OBJECT-TYPE
+		SYNTAX       Integer32
+    UNITS					"0.001MHZ"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "The down-link frequence range lower limit of channel2.
+    unit:0.001MHZ, 
+    rate:1000, for example: the value of 800000 actually means 800MHz.
+    "
+    ::= { module2bandConfig 4 }
+    
+
+module2DlFreqHigh			OBJECT-TYPE
+		SYNTAX       Integer32
+    UNITS					"0.001MHZ"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "The down-link frequence range upper limit of channel2.
+    unit:0.001MHZ, 
+    rate:1000, for example: the value of 800000 actually means 800MHz.
+    "
+    ::= { module2bandConfig 5 }
+	
+module2C1ULCentreFrequency		OBJECT-TYPE
+		SYNTAX       Integer32
+    UNITS					"0.001MHZ"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "The carrier1 up-link center frequence of channel1.
+    unit:0.001MHZ, 
+    rate:1000, for example: the value of 800000 actually means 800MHz.
+    "
+    ::= { module2bandConfig 20 }
+    
+module2C1DLCentreFrequency		OBJECT-TYPE
+		SYNTAX       Integer32
+    UNITS					"0.001MHZ"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION              		
+    "The carrier1 down-link center frequence of channel1.
+    unit:0.001MHZ, 
+    rate:1000, for example: the value of 800000 actually means 800MHz.
+    "
+    ::= { module2bandConfig 21 }
+
+module2C1DigitalSignalBandwidthSelect			 OBJECT-TYPE
+		SYNTAX       INTEGER    
+		{   
+        custom(0),
+		fiveMhz(5),
+		tenMhz(10),
+		fifteenMhz(15),
+		twentyMhz(20),
+		twentyfiveMhz(25),
+		thirtyMhz(30),
+		fortyMhz(40),
+		fiftyMhz(50),
+		sixtyMhz(60),
+		seventyMhz(70),
+		eightyMhz(80),
+		ninetyMhz(90),
+		onehundredMhz(100)
+		}
+    	MAX-ACCESS    read-only
+    	STATUS        current
+    	DESCRIPTION   " 
+    	Bandwidth Selection
+    	"
+    ::= { module2bandConfig 22 }  
+
+module2C1DigitalSignalBandwidth			OBJECT-TYPE
+		SYNTAX       Integer32
+    UNITS					"0.001MHZ"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "The carrier1 bandwidth of channel1.
+    unit:0.001MHZ, 
+    rate:1000, for example: the value of 800000 actually means 800MHz.
+    "
+    ::= { module2bandConfig 23 }
+	
+module2C1CarrierSwitch			OBJECT-TYPE
+	SYNTAX       INTEGER    
+	{   
+    off(0),
+    on(1)
+	}
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "
+	Module2-C1 Carrier Switch,Turn off when not in use.
+    "
+    ::= { module2bandConfig 24 }
+
+module2C2ULCentreFrequency		OBJECT-TYPE
+		SYNTAX       Integer32
+    UNITS					"0.001MHZ"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "The carrier1 up-link center frequence of channel1.
+    unit:0.001MHZ, 
+    rate:1000, for example: the value of 800000 actually means 800MHz.
+    "
+    ::= { module2bandConfig 27 }
+    
+
+module2C2DLCentreFrequency		OBJECT-TYPE
+		SYNTAX       Integer32
+    UNITS					"0.001MHZ"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION              		
+    "The carrier1 down-link center frequence of channel1.
+    unit:0.001MHZ, 
+    rate:1000, for example: the value of 800000 actually means 800MHz.
+    "
+    ::= { module2bandConfig 28 }
+
+module2C2DigitalSignalBandwidthSelect			 OBJECT-TYPE
+		SYNTAX       INTEGER    
+		{   
+        custom(0),
+		fiveMhz(5),
+		tenMhz(10),
+		fifteenMhz(15),
+		twentyMhz(20),
+		twentyfiveMhz(25),
+		thirtyMhz(30),
+		fortyMhz(40),
+		fiftyMhz(50),
+		sixtyMhz(60),
+		seventyMhz(70),
+		eightyMhz(80),
+		ninetyMhz(90),
+		onehundredMhz(100)
+		}
+    	MAX-ACCESS    read-only
+    	STATUS        current
+    	DESCRIPTION   " 
+    	Bandwidth Selection
+    	"
+    ::= { module2bandConfig 29 }  
+
+module2C2DigitalSignalBandwidth			OBJECT-TYPE
+		SYNTAX       Integer32
+    UNITS					"0.001MHZ"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "The carrier1 bandwidth of channel1.
+    unit:0.001MHZ, 
+    rate:1000, for example: the value of 800000 actually means 800MHz.
+    "
+    ::= { module2bandConfig 30 }
+	
+module2C2CarrierSwitch			OBJECT-TYPE
+	SYNTAX       INTEGER    
+	{   
+    off(0),
+    on(1)
+	}
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "
+	Module2-C2 Carrier Switch,Turn off when not in use.
+    "
+    ::= { module2bandConfig 31 }
+
+module2C3ULCentreFrequency		OBJECT-TYPE
+		SYNTAX       Integer32
+    UNITS					"0.001MHZ"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "The carrier1 up-link center frequence of channel1.
+    unit:0.001MHZ, 
+    rate:1000, for example: the value of 800000 actually means 800MHz.
+    "
+    ::= { module2bandConfig 34 }
+    
+
+module2C3DLCentreFrequency		OBJECT-TYPE
+		SYNTAX       Integer32
+    UNITS					"0.001MHZ"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION              		
+    "The carrier1 down-link center frequence of channel1.
+    unit:0.001MHZ, 
+    rate:1000, for example: the value of 800000 actually means 800MHz.
+    "
+    ::= { module2bandConfig 35 }
+
+module2C3DigitalSignalBandwidthSelect			 OBJECT-TYPE
+		SYNTAX       INTEGER    
+		{   
+        custom(0),
+		fiveMhz(5),
+		tenMhz(10),
+		fifteenMhz(15),
+		twentyMhz(20),
+		twentyfiveMhz(25),
+		thirtyMhz(30),
+		fortyMhz(40),
+		fiftyMhz(50),
+		sixtyMhz(60),
+		seventyMhz(70),
+		eightyMhz(80),
+		ninetyMhz(90),
+		onehundredMhz(100)
+		}
+    	MAX-ACCESS    read-only
+    	STATUS        current
+    	DESCRIPTION   " 
+    	Bandwidth Selection
+    	"
+    ::= { module2bandConfig 36 }  
+
+module2C3DigitalSignalBandwidth			OBJECT-TYPE
+		SYNTAX       Integer32
+    UNITS					"0.001MHZ"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "The carrier1 bandwidth of channel1.
+    unit:0.001MHZ, 
+    rate:1000, for example: the value of 800000 actually means 800MHz.
+    "
+    ::= { module2bandConfig 37 }
+	
+module2C3CarrierSwitch			OBJECT-TYPE
+	SYNTAX       INTEGER    
+	{   
+    off(0),
+    on(1)
+	}
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "
+	Module2-C3 Carrier Switch,Turn off when not in use.
+    "
+    ::= { module2bandConfig 38 }
+
+module2C4ULCentreFrequency		OBJECT-TYPE
+		SYNTAX       Integer32
+    UNITS					"0.001MHZ"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "The carrier1 up-link center frequence of channel1.
+    unit:0.001MHZ, 
+    rate:1000, for example: the value of 800000 actually means 800MHz.
+    "
+    ::= { module2bandConfig 41 }
+    
+
+module2C4DLCentreFrequency		OBJECT-TYPE
+		SYNTAX       Integer32
+    UNITS					"0.001MHZ"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION              		
+    "The carrier1 down-link center frequence of channel1.
+    unit:0.001MHZ, 
+    rate:1000, for example: the value of 800000 actually means 800MHz.
+    "
+    ::= { module2bandConfig 42 }
+
+module2C4DigitalSignalBandwidthSelect			 OBJECT-TYPE
+		SYNTAX       INTEGER    
+		{   
+        custom(0),
+		fiveMhz(5),
+		tenMhz(10),
+		fifteenMhz(15),
+		twentyMhz(20),
+		twentyfiveMhz(25),
+		thirtyMhz(30),
+		fortyMhz(40),
+		fiftyMhz(50),
+		sixtyMhz(60),
+		seventyMhz(70),
+		eightyMhz(80),
+		ninetyMhz(90),
+		onehundredMhz(100)
+		}
+    	MAX-ACCESS    read-only
+    	STATUS        current
+    	DESCRIPTION   " 
+    	Bandwidth Selection
+    	"
+    ::= { module2bandConfig 43 }  
+
+module2C4DigitalSignalBandwidth			OBJECT-TYPE
+		SYNTAX       Integer32
+    UNITS					"0.001MHZ"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "The carrier1 bandwidth of channel1.
+    unit:0.001MHZ, 
+    rate:1000, for example: the value of 800000 actually means 800MHz.
+    "
+    ::= { module2bandConfig 44 }
+
+module2C4CarrierSwitch			OBJECT-TYPE
+	SYNTAX       INTEGER    
+	{   
+    off(0),
+    on(1)
+	}
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "
+	Module2-C4 Carrier Switch,Turn off when not in use.
+    "
+    ::= { module2bandConfig 45 }	
+
+module3UlFreqLow			OBJECT-TYPE
+		SYNTAX       Integer32
+    UNITS					"0.001MHZ"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "The up-link frequence range lower limit  of channel3.
+    unit:0.001MHZ, 
+    rate:1000, for example: the value of 800000 actually means 800MHz.
+    "
+    ::= { module3bandConfig 2 }
+
+
+module3UlFreqHigh			OBJECT-TYPE
+		SYNTAX       Integer32
+    UNITS					"0.001MHZ"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "The UP-link frequence range upper limit of channel3.
+    unit:0.001MHZ, 
+    rate:1000, for example: the value of 800000 actually means 800MHz.
+    "
+    ::= { module3bandConfig 3 }
+    
+
+module3DlFreqLow			OBJECT-TYPE
+		SYNTAX       Integer32
+    UNITS					"0.001MHZ"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "The down-link frequence range lower limit of channel3.
+    unit:0.001MHZ, 
+    rate:1000, for example: the value of 800000 actually means 800MHz.
+    "
+    ::= { module3bandConfig 4 }
+    
+
+module3DlFreqHigh			OBJECT-TYPE
+		SYNTAX       Integer32
+    UNITS					"0.001MHZ"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "The down-link frequence range upper limit of channel3.
+    unit:0.001MHZ, 
+    rate:1000, for example: the value of 800000 actually means 800MHz.
+    "
+    ::= { module3bandConfig 5 }	
+	
+module3C1ULCentreFrequency		OBJECT-TYPE
+		SYNTAX       Integer32
+    UNITS					"0.001MHZ"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "The carrier1 up-link center frequence of channel1.
+    unit:0.001MHZ, 
+    rate:1000, for example: the value of 800000 actually means 800MHz.
+    "
+    ::= { module3bandConfig 20 }
+    
+module3C1DLCentreFrequency		OBJECT-TYPE
+		SYNTAX       Integer32
+    UNITS					"0.001MHZ"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION              		
+    "The carrier1 down-link center frequence of channel1.
+    unit:0.001MHZ, 
+    rate:1000, for example: the value of 800000 actually means 800MHz.
+    "
+    ::= { module3bandConfig 21 }
+
+module3C1DigitalSignalBandwidthSelect			 OBJECT-TYPE
+		SYNTAX       INTEGER    
+		{   
+        custom(0),
+		fiveMhz(5),
+		tenMhz(10),
+		fifteenMhz(15),
+		twentyMhz(20),
+		twentyfiveMhz(25),
+		thirtyMhz(30),
+		fortyMhz(40),
+		fiftyMhz(50),
+		sixtyMhz(60),
+		seventyMhz(70),
+		eightyMhz(80),
+		ninetyMhz(90),
+		onehundredMhz(100)
+		}
+    	MAX-ACCESS    read-only
+    	STATUS        current
+    	DESCRIPTION   " 
+    	Bandwidth Selection
+    	"
+    ::= { module3bandConfig 22 }  
+
+module3C1DigitalSignalBandwidth			OBJECT-TYPE
+		SYNTAX       Integer32
+    UNITS					"0.001MHZ"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "The carrier1 bandwidth of channel1.
+    unit:0.001MHZ, 
+    rate:1000, for example: the value of 800000 actually means 800MHz.
+    "
+    ::= { module3bandConfig 23 }
+	
+module3C1CarrierSwitch			OBJECT-TYPE
+	SYNTAX       INTEGER    
+	{   
+    off(0),
+    on(1)
+	}
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "
+	Module3-C1 Carrier Switch,Turn off when not in use.
+    "
+    ::= { module3bandConfig 24 }
+
+module3C2ULCentreFrequency		OBJECT-TYPE
+		SYNTAX       Integer32
+    UNITS					"0.001MHZ"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "The carrier1 up-link center frequence of channel1.
+    unit:0.001MHZ, 
+    rate:1000, for example: the value of 800000 actually means 800MHz.
+    "
+    ::= { module3bandConfig 27 }
+    
+
+module3C2DLCentreFrequency		OBJECT-TYPE
+		SYNTAX       Integer32
+    UNITS					"0.001MHZ"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION              		
+    "The carrier1 down-link center frequence of channel1.
+    unit:0.001MHZ, 
+    rate:1000, for example: the value of 800000 actually means 800MHz.
+    "
+    ::= { module3bandConfig 28 }
+
+module3C2DigitalSignalBandwidthSelect			 OBJECT-TYPE
+		SYNTAX       INTEGER    
+		{   
+        custom(0),
+		fiveMhz(5),
+		tenMhz(10),
+		fifteenMhz(15),
+		twentyMhz(20),
+		twentyfiveMhz(25),
+		thirtyMhz(30),
+		fortyMhz(40),
+		fiftyMhz(50),
+		sixtyMhz(60),
+		seventyMhz(70),
+		eightyMhz(80),
+		ninetyMhz(90),
+		onehundredMhz(100)
+		}
+    	MAX-ACCESS    read-only
+    	STATUS        current
+    	DESCRIPTION   " 
+    	Bandwidth Selection
+    	"
+    ::= { module3bandConfig 29 }  
+
+module3C2DigitalSignalBandwidth			OBJECT-TYPE
+		SYNTAX       Integer32
+    UNITS					"0.001MHZ"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "The carrier1 bandwidth of channel1.
+    unit:0.001MHZ, 
+    rate:1000, for example: the value of 800000 actually means 800MHz.
+    "
+    ::= { module3bandConfig 30 }
+	
+module3C2CarrierSwitch			OBJECT-TYPE
+	SYNTAX       INTEGER    
+	{   
+    off(0),
+    on(1)
+	}
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "
+	Module3-C2 Carrier Switch,Turn off when not in use.
+    "
+    ::= { module3bandConfig 31 }
+
+module3C3ULCentreFrequency		OBJECT-TYPE
+		SYNTAX       Integer32
+    UNITS					"0.001MHZ"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "The carrier1 up-link center frequence of channel1.
+    unit:0.001MHZ, 
+    rate:1000, for example: the value of 800000 actually means 800MHz.
+    "
+    ::= { module3bandConfig 34 }
+    
+
+module3C3DLCentreFrequency		OBJECT-TYPE
+		SYNTAX       Integer32
+    UNITS					"0.001MHZ"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION              		
+    "The carrier1 down-link center frequence of channel1.
+    unit:0.001MHZ, 
+    rate:1000, for example: the value of 800000 actually means 800MHz.
+    "
+    ::= { module3bandConfig 35 }
+
+module3C3DigitalSignalBandwidthSelect			 OBJECT-TYPE
+		SYNTAX       INTEGER    
+		{   
+        custom(0),
+		fiveMhz(5),
+		tenMhz(10),
+		fifteenMhz(15),
+		twentyMhz(20),
+		twentyfiveMhz(25),
+		thirtyMhz(30),
+		fortyMhz(40),
+		fiftyMhz(50),
+		sixtyMhz(60),
+		seventyMhz(70),
+		eightyMhz(80),
+		ninetyMhz(90),
+		onehundredMhz(100)
+		}
+    	MAX-ACCESS    read-only
+    	STATUS        current
+    	DESCRIPTION   " 
+    	Bandwidth Selection
+    	"
+    ::= { module3bandConfig 36 }  
+
+module3C3DigitalSignalBandwidth			OBJECT-TYPE
+		SYNTAX       Integer32
+    UNITS					"0.001MHZ"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "The carrier1 bandwidth of channel1.
+    unit:0.001MHZ, 
+    rate:1000, for example: the value of 800000 actually means 800MHz.
+    "
+    ::= { module3bandConfig 37 }
+	
+module3C3CarrierSwitch			OBJECT-TYPE
+	SYNTAX       INTEGER    
+	{   
+    off(0),
+    on(1)
+	}
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "
+	Module3-C3 Carrier Switch,Turn off when not in use.
+    "
+    ::= { module3bandConfig 38 }
+
+module3C4ULCentreFrequency		OBJECT-TYPE
+		SYNTAX       Integer32
+    UNITS					"0.001MHZ"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "The carrier1 up-link center frequence of channel1.
+    unit:0.001MHZ, 
+    rate:1000, for example: the value of 800000 actually means 800MHz.
+    "
+    ::= { module3bandConfig 41 }
+    
+
+module3C4DLCentreFrequency		OBJECT-TYPE
+		SYNTAX       Integer32
+    UNITS					"0.001MHZ"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION              		
+    "The carrier1 down-link center frequence of channel1.
+    unit:0.001MHZ, 
+    rate:1000, for example: the value of 800000 actually means 800MHz.
+    "
+    ::= { module3bandConfig 42 }
+
+module3C4DigitalSignalBandwidthSelect			 OBJECT-TYPE
+		SYNTAX       INTEGER    
+		{   
+        custom(0),
+		fiveMhz(5),
+		tenMhz(10),
+		fifteenMhz(15),
+		twentyMhz(20),
+		twentyfiveMhz(25),
+		thirtyMhz(30),
+		fortyMhz(40),
+		fiftyMhz(50),
+		sixtyMhz(60),
+		seventyMhz(70),
+		eightyMhz(80),
+		ninetyMhz(90),
+		onehundredMhz(100)
+		}
+    	MAX-ACCESS    read-only
+    	STATUS        current
+    	DESCRIPTION   " 
+    	Bandwidth Selection
+    	"
+    ::= { module3bandConfig 43 }  
+
+module3C4DigitalSignalBandwidth			OBJECT-TYPE
+		SYNTAX       Integer32
+    UNITS					"0.001MHZ"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "The carrier1 bandwidth of channel1.
+    unit:0.001MHZ, 
+    rate:1000, for example: the value of 800000 actually means 800MHz.
+    "
+    ::= { module3bandConfig 44 }
+
+module3C4CarrierSwitch			OBJECT-TYPE
+	SYNTAX       INTEGER    
+	{   
+    off(0),
+    on(1)
+	}
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "
+	Module3-C4 Carrier Switch,Turn off when not in use.
+    "
+    ::= { module3bandConfig 45 }	
+	
+module4UlFreqLow			OBJECT-TYPE
+		SYNTAX       Integer32
+    UNITS					"0.001MHZ"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "The up-link frequence range lower limit  of channel4.
+    unit:0.001MHZ, 
+    rate:1000, for example: the value of 800000 actually means 800MHz.
+    "
+    ::= { module4bandConfig 2 }
+
+
+module4UlFreqHigh			OBJECT-TYPE
+		SYNTAX       Integer32
+    UNITS					"0.001MHZ"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "The UP-link frequence range upper limit of channel4.
+    unit:0.001MHZ, 
+    rate:1000, for example: the value of 800000 actually means 800MHz.
+    "
+    ::= { module4bandConfig 3 }
+    
+
+module4DlFreqLow			OBJECT-TYPE
+		SYNTAX       Integer32
+    UNITS					"0.001MHZ"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "The down-link frequence range lower limit of channel4.
+    unit:0.001MHZ, 
+    rate:1000, for example: the value of 800000 actually means 800MHz.
+    "
+    ::= { module4bandConfig 4 }
+    
+
+module4DlFreqHigh			OBJECT-TYPE
+		SYNTAX       Integer32
+    UNITS					"0.001MHZ"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "The down-link frequence range upper limit of channel4.
+    unit:0.001MHZ, 
+    rate:1000, for example: the value of 800000 actually means 800MHz.
+    "
+    ::= { module4bandConfig 5 }
+
+module4C1ULCentreFrequency		OBJECT-TYPE
+		SYNTAX       Integer32
+    UNITS					"0.001MHZ"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "The carrier1 up-link center frequence of channel1.
+    unit:0.001MHZ, 
+    rate:1000, for example: the value of 800000 actually means 800MHz.
+    "
+    ::= { module4bandConfig 20 }
+    
+module4C1DLCentreFrequency		OBJECT-TYPE
+		SYNTAX       Integer32
+    UNITS					"0.001MHZ"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION              		
+    "The carrier1 down-link center frequence of channel1.
+    unit:0.001MHZ, 
+    rate:1000, for example: the value of 800000 actually means 800MHz.
+    "
+    ::= { module4bandConfig 21 }
+
+module4C1DigitalSignalBandwidthSelect			 OBJECT-TYPE
+		SYNTAX       INTEGER    
+		{   
+        custom(0),
+		fiveMhz(5),
+		tenMhz(10),
+		fifteenMhz(15),
+		twentyMhz(20),
+		twentyfiveMhz(25),
+		thirtyMhz(30),
+		fortyMhz(40),
+		fiftyMhz(50),
+		sixtyMhz(60),
+		seventyMhz(70),
+		eightyMhz(80),
+		ninetyMhz(90),
+		onehundredMhz(100)
+		}
+    	MAX-ACCESS    read-only
+    	STATUS        current
+    	DESCRIPTION   " 
+    	Bandwidth Selection
+    	"
+    ::= { module4bandConfig 22 }  
+
+module4C1DigitalSignalBandwidth			OBJECT-TYPE
+		SYNTAX       Integer32
+    UNITS					"0.001MHZ"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "The carrier1 bandwidth of channel1.
+    unit:0.001MHZ, 
+    rate:1000, for example: the value of 800000 actually means 800MHz.
+    "
+    ::= { module4bandConfig 23 }
+	
+module4C1CarrierSwitch			OBJECT-TYPE
+	SYNTAX       INTEGER    
+	{   
+    off(0),
+    on(1)
+	}
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "
+	Module4-C1 Carrier Switch,Turn off when not in use.
+    "
+    ::= { module4bandConfig 24 }
+
+module4C2ULCentreFrequency		OBJECT-TYPE
+		SYNTAX       Integer32
+    UNITS					"0.001MHZ"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "The carrier1 up-link center frequence of channel1.
+    unit:0.001MHZ, 
+    rate:1000, for example: the value of 800000 actually means 800MHz.
+    "
+    ::= { module4bandConfig 27 }
+    
+
+module4C2DLCentreFrequency		OBJECT-TYPE
+		SYNTAX       Integer32
+    UNITS					"0.001MHZ"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION              		
+    "The carrier1 down-link center frequence of channel1.
+    unit:0.001MHZ, 
+    rate:1000, for example: the value of 800000 actually means 800MHz.
+    "
+    ::= { module4bandConfig 28 }
+
+module4C2DigitalSignalBandwidthSelect			 OBJECT-TYPE
+		SYNTAX       INTEGER    
+		{   
+        custom(0),
+		fiveMhz(5),
+		tenMhz(10),
+		fifteenMhz(15),
+		twentyMhz(20),
+		twentyfiveMhz(25),
+		thirtyMhz(30),
+		fortyMhz(40),
+		fiftyMhz(50),
+		sixtyMhz(60),
+		seventyMhz(70),
+		eightyMhz(80),
+		ninetyMhz(90),
+		onehundredMhz(100)
+		}
+    	MAX-ACCESS    read-only
+    	STATUS        current
+    	DESCRIPTION   " 
+    	Bandwidth Selection
+    	"
+    ::= { module4bandConfig 29 }  
+
+module4C2DigitalSignalBandwidth			OBJECT-TYPE
+		SYNTAX       Integer32
+    UNITS					"0.001MHZ"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "The carrier1 bandwidth of channel1.
+    unit:0.001MHZ, 
+    rate:1000, for example: the value of 800000 actually means 800MHz.
+    "
+    ::= { module4bandConfig 30 }
+	
+module4C2CarrierSwitch			OBJECT-TYPE
+	SYNTAX       INTEGER    
+	{   
+    off(0),
+    on(1)
+	}
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "
+	Module4-C2 Carrier Switch,Turn off when not in use.
+    "
+    ::= { module4bandConfig 31 }
+
+module4C3ULCentreFrequency		OBJECT-TYPE
+		SYNTAX       Integer32
+    UNITS					"0.001MHZ"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "The carrier1 up-link center frequence of channel1.
+    unit:0.001MHZ, 
+    rate:1000, for example: the value of 800000 actually means 800MHz.
+    "
+    ::= { module4bandConfig 34 }
+    
+
+module4C3DLCentreFrequency		OBJECT-TYPE
+		SYNTAX       Integer32
+    UNITS					"0.001MHZ"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION              		
+    "The carrier1 down-link center frequence of channel1.
+    unit:0.001MHZ, 
+    rate:1000, for example: the value of 800000 actually means 800MHz.
+    "
+    ::= { module4bandConfig 35 }
+
+module4C3DigitalSignalBandwidthSelect			 OBJECT-TYPE
+		SYNTAX       INTEGER    
+		{   
+        custom(0),
+		fiveMhz(5),
+		tenMhz(10),
+		fifteenMhz(15),
+		twentyMhz(20),
+		twentyfiveMhz(25),
+		thirtyMhz(30),
+		fortyMhz(40),
+		fiftyMhz(50),
+		sixtyMhz(60),
+		seventyMhz(70),
+		eightyMhz(80),
+		ninetyMhz(90),
+		onehundredMhz(100)
+		}
+    	MAX-ACCESS    read-only
+    	STATUS        current
+    	DESCRIPTION   " 
+    	Bandwidth Selection
+    	"
+    ::= { module4bandConfig 36 }  
+
+module4C3DigitalSignalBandwidth			OBJECT-TYPE
+		SYNTAX       Integer32
+    UNITS					"0.001MHZ"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "The carrier1 bandwidth of channel1.
+    unit:0.001MHZ, 
+    rate:1000, for example: the value of 800000 actually means 800MHz.
+    "
+    ::= { module4bandConfig 37 }
+	
+module4C3CarrierSwitch			OBJECT-TYPE
+	SYNTAX       INTEGER    
+	{   
+    off(0),
+    on(1)
+	}
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "
+	Module4-C3 Carrier Switch,Turn off when not in use.
+    "
+    ::= { module4bandConfig 38 }
+
+module4C4ULCentreFrequency		OBJECT-TYPE
+		SYNTAX       Integer32
+    UNITS					"0.001MHZ"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "The carrier1 up-link center frequence of channel1.
+    unit:0.001MHZ, 
+    rate:1000, for example: the value of 800000 actually means 800MHz.
+    "
+    ::= { module4bandConfig 41 }
+    
+
+module4C4DLCentreFrequency		OBJECT-TYPE
+		SYNTAX       Integer32
+    UNITS					"0.001MHZ"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION              		
+    "The carrier1 down-link center frequence of channel1.
+    unit:0.001MHZ, 
+    rate:1000, for example: the value of 800000 actually means 800MHz.
+    "
+    ::= { module4bandConfig 42 }
+
+module4C4DigitalSignalBandwidthSelect			 OBJECT-TYPE
+		SYNTAX       INTEGER    
+		{   
+        custom(0),
+		fiveMhz(5),
+		tenMhz(10),
+		fifteenMhz(15),
+		twentyMhz(20),
+		twentyfiveMhz(25),
+		thirtyMhz(30),
+		fortyMhz(40),
+		fiftyMhz(50),
+		sixtyMhz(60),
+		seventyMhz(70),
+		eightyMhz(80),
+		ninetyMhz(90),
+		onehundredMhz(100)
+		}
+    	MAX-ACCESS    read-only
+    	STATUS        current
+    	DESCRIPTION   " 
+    	Bandwidth Selection
+    	"
+    ::= { module4bandConfig 43 }  
+
+module4C4DigitalSignalBandwidth			OBJECT-TYPE
+		SYNTAX       Integer32
+    UNITS					"0.001MHZ"
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "The carrier1 bandwidth of channel1.
+    unit:0.001MHZ, 
+    rate:1000, for example: the value of 800000 actually means 800MHz.
+    "
+    ::= { module4bandConfig 44 }
+
+module4C4CarrierSwitch			OBJECT-TYPE
+	SYNTAX       INTEGER    
+	{   
+    off(0),
+    on(1)
+	}
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "
+	Module4-C4 Carrier Switch,Turn off when not in use.
+    "
+    ::= { module4bandConfig 45 }	
+	
+moduleMapping         OBJECT IDENTIFIER ::= { bandConfiguration 8}
+radioModule1ULDL	OBJECT-TYPE
+    SYNTAX        DisplayString
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   "Channel 1 frequence range"
+    ::= { moduleMapping 7 }  
+
+radioModuleMap1	OBJECT-TYPE
+    SYNTAX        DisplayString
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   "Channel Map 1"
+    ::= { moduleMapping 8 }  
+
+radioModule2ULDL	OBJECT-TYPE
+    SYNTAX        DisplayString
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   "Channel 2 frequence range"
+    ::= { moduleMapping 9 }  
+
+radioModuleMap2	OBJECT-TYPE
+    SYNTAX        DisplayString
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   "Channel Map 2"
+    ::= { moduleMapping 10 } 
+
+radioModule3ULDL	OBJECT-TYPE
+    SYNTAX        DisplayString
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   "Channel 3 frequence range"
+    ::= { moduleMapping 11 }  
+
+radioModuleMap3	OBJECT-TYPE
+    SYNTAX        DisplayString
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   "Channel Map 3"
+    ::= { moduleMapping 12 }  
+
+radioModule4ULDL	OBJECT-TYPE
+    SYNTAX        DisplayString
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   "Channel 4 frequence range"
+    ::= { moduleMapping 13 }  
+
+radioModuleMap4	OBJECT-TYPE
+    SYNTAX        DisplayString
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   "Channel Map 4"
+    ::= { moduleMapping 14 }	
+    			
+--carrierpower
+carrierPower	     	         		OBJECT IDENTIFIER ::= { x3RU 9}
+ 
+module1CarrierPowerConfig       	OBJECT IDENTIFIER ::= { carrierPower 1}
+module1C1CarrierULAttenuation 			 OBJECT-TYPE
+		SYNTAX       INTEGER (0..150)
+    	MAX-ACCESS    read-write
+    	STATUS        current
+    	DESCRIPTION   " 
+    	module1-C1 Carrier UL Attenuation  
+    	unit:0.1db, 
+    	rate:10.    	    	"
+    ::= { module1CarrierPowerConfig 1 }
+	
+module1C1CarrierDLAttenuation 			 OBJECT-TYPE
+		SYNTAX       Integer32    
+    	MAX-ACCESS    read-write
+    	STATUS        current
+    	DESCRIPTION   " 
+    	module1-C1 Carrier DL Attenuation  
+    	unit:0.1db, 
+    	rate:10.    	    	"
+    ::= { module1CarrierPowerConfig 2 }
+	
+module1C1ULCarrierPower			 OBJECT-TYPE
+		SYNTAX       Integer32    
+    	MAX-ACCESS    read-only
+    	STATUS        current
+    	DESCRIPTION   " 
+    	module1-C1 UL Carrier Power  
+    	unit:0.1dbm, 
+    	rate:10.    	    	"
+    ::= { module1CarrierPowerConfig 3}
+	
+module1C1DLCarrierPower			 OBJECT-TYPE
+		SYNTAX       Integer32    
+    	MAX-ACCESS    read-only
+    	STATUS        current
+    	DESCRIPTION   " 
+    	module1-C1 DL Carrier Power  
+    	unit:0.1dbm, 
+    	rate:10.    	    	"
+    ::= { module1CarrierPowerConfig 4}
+	
+module1C2CarrierULAttenuation 			 OBJECT-TYPE
+		SYNTAX       INTEGER (0..150)    
+    	MAX-ACCESS    read-write
+    	STATUS        current
+    	DESCRIPTION   " 
+    	module1-C2 Carrier UL Attenuation  
+    	unit:0.1db, 
+    	rate:10.    	    	"
+    ::= { module1CarrierPowerConfig 5 }
+	
+module1C2CarrierDLAttenuation 			 OBJECT-TYPE
+		SYNTAX       Integer32    
+    	MAX-ACCESS    read-write
+    	STATUS        current
+    	DESCRIPTION   " 
+    	module1-C2 Carrier DL Attenuation  
+    	unit:0.1db, 
+    	rate:10.    	    	"
+    ::= { module1CarrierPowerConfig 6 }
+	
+module1C2ULCarrierPower			 OBJECT-TYPE
+		SYNTAX       Integer32    
+    	MAX-ACCESS    read-only
+    	STATUS        current
+    	DESCRIPTION   " 
+    	module1-C2 UL Carrier Power  
+    	unit:0.1dbm, 
+    	rate:10.    	    	"
+    ::= { module1CarrierPowerConfig 7}
+	
+module1C2DLCarrierPower			 OBJECT-TYPE
+		SYNTAX       Integer32    
+    	MAX-ACCESS    read-only
+    	STATUS        current
+    	DESCRIPTION   " 
+    	module1-C2 DL Carrier Power  
+    	unit:0.1dbm, 
+    	rate:10.    	    	"
+    ::= { module1CarrierPowerConfig 8}
+
+module1C3CarrierULAttenuation 			 OBJECT-TYPE
+		SYNTAX       INTEGER (0..150)   
+    	MAX-ACCESS    read-write
+    	STATUS        current
+    	DESCRIPTION   " 
+    	module1-C3 Carrier UL Attenuation  
+    	unit:0.1db, 
+    	rate:10.    	    	"
+    ::= { module1CarrierPowerConfig 9 }
+	
+module1C3CarrierDLAttenuation 			 OBJECT-TYPE
+		SYNTAX       Integer32    
+    	MAX-ACCESS    read-write
+    	STATUS        current
+    	DESCRIPTION   " 
+    	module1-C3 Carrier DL Attenuation  
+    	unit:0.1db, 
+    	rate:10.    	    	"
+    ::= { module1CarrierPowerConfig 10 }
+	
+module1C3ULCarrierPower			 OBJECT-TYPE
+		SYNTAX       Integer32    
+    	MAX-ACCESS    read-only
+    	STATUS        current
+    	DESCRIPTION   " 
+    	module1-C3 UL Carrier Power  
+    	unit:0.1dbm, 
+    	rate:10.    	    	"
+    ::= { module1CarrierPowerConfig 11}
+	
+module1C3DLCarrierPower			 OBJECT-TYPE
+		SYNTAX       Integer32    
+    	MAX-ACCESS    read-only
+    	STATUS        current
+    	DESCRIPTION   " 
+    	module1-C3 DL Carrier Power  
+    	unit:0.1dbm, 
+    	rate:10.    	    	"
+    ::= { module1CarrierPowerConfig 12}
+	
+module1C4CarrierULAttenuation 			 OBJECT-TYPE
+		SYNTAX       INTEGER (0..150)   
+    	MAX-ACCESS    read-write
+    	STATUS        current
+    	DESCRIPTION   " 
+    	module1-C4 Carrier UL Attenuation  
+    	unit:0.1db, 
+    	rate:10.    	    	"
+    ::= { module1CarrierPowerConfig 13 }
+	
+module1C4CarrierDLAttenuation 			 OBJECT-TYPE
+		SYNTAX       Integer32    
+    	MAX-ACCESS    read-write
+    	STATUS        current
+    	DESCRIPTION   " 
+    	module1-C4 Carrier DL Attenuation  
+    	unit:0.1db, 
+    	rate:10.    	    	"
+    ::= { module1CarrierPowerConfig 14 }
+	
+module1C4ULCarrierPower			 OBJECT-TYPE
+		SYNTAX       Integer32    
+    	MAX-ACCESS    read-only
+    	STATUS        current
+    	DESCRIPTION   " 
+    	module1-C4 UL Carrier Power  
+    	unit:0.1dbm, 
+    	rate:10.    	    	"
+    ::= { module1CarrierPowerConfig 15}
+	
+module1C4DLCarrierPower			 OBJECT-TYPE
+		SYNTAX       Integer32    
+    	MAX-ACCESS    read-only
+    	STATUS        current
+    	DESCRIPTION   " 
+    	module1-C4 DL Carrier Power  
+    	unit:0.1dbm, 
+    	rate:10.    	    	"
+    ::= { module1CarrierPowerConfig 16}
+
+module2CarrierPowerConfig       	OBJECT IDENTIFIER ::= { carrierPower 2}
+module2C1CarrierULAttenuation 			 OBJECT-TYPE
+		SYNTAX       INTEGER (0..150)   
+    	MAX-ACCESS    read-write
+    	STATUS        current
+    	DESCRIPTION   " 
+    	module2-C1 Carrier UL Attenuation  
+    	unit:0.1db, 
+    	rate:10.    	    	"
+    ::= { module2CarrierPowerConfig 1 }
+	
+module2C1CarrierDLAttenuation 			 OBJECT-TYPE
+		SYNTAX       Integer32    
+    	MAX-ACCESS    read-write
+    	STATUS        current
+    	DESCRIPTION   " 
+    	module2-C1 Carrier DL Attenuation  
+    	unit:0.1db, 
+    	rate:10.    	    	"
+    ::= { module2CarrierPowerConfig 2 }
+	
+module2C1ULCarrierPower			 OBJECT-TYPE
+		SYNTAX       Integer32    
+    	MAX-ACCESS    read-only
+    	STATUS        current
+    	DESCRIPTION   " 
+    	module2-C1 UL Carrier Power  
+    	unit:0.1dbm, 
+    	rate:10.    	    	"
+    ::= { module2CarrierPowerConfig 3}
+	
+module2C1DLCarrierPower			 OBJECT-TYPE
+		SYNTAX       Integer32    
+    	MAX-ACCESS    read-only
+    	STATUS        current
+    	DESCRIPTION   " 
+    	module2-C1 DL Carrier Power  
+    	unit:0.1dbm, 
+    	rate:10.    	    	"
+    ::= { module2CarrierPowerConfig 4}
+	
+module2C2CarrierULAttenuation 			 OBJECT-TYPE
+		SYNTAX       INTEGER (0..150)   
+    	MAX-ACCESS    read-write
+    	STATUS        current
+    	DESCRIPTION   " 
+    	module2-C2 Carrier UL Attenuation  
+    	unit:0.1db, 
+    	rate:10.    	    	"
+    ::= { module2CarrierPowerConfig 5 }
+	
+module2C2CarrierDLAttenuation 			 OBJECT-TYPE
+		SYNTAX       Integer32    
+    	MAX-ACCESS    read-write
+    	STATUS        current
+    	DESCRIPTION   " 
+    	module2-C2 Carrier DL Attenuation  
+    	unit:0.1db, 
+    	rate:10.    	    	"
+    ::= { module2CarrierPowerConfig 6 }
+	
+module2C2ULCarrierPower			 OBJECT-TYPE
+		SYNTAX       Integer32    
+    	MAX-ACCESS    read-only
+    	STATUS        current
+    	DESCRIPTION   " 
+    	module2-C2 UL Carrier Power  
+    	unit:0.1dbm, 
+    	rate:10.    	    	"
+    ::= { module2CarrierPowerConfig 7}
+	
+module2C2DLCarrierPower			 OBJECT-TYPE
+		SYNTAX       Integer32    
+    	MAX-ACCESS    read-only
+    	STATUS        current
+    	DESCRIPTION   " 
+    	module2-C2 DL Carrier Power  
+    	unit:0.1dbm, 
+    	rate:10.    	    	"
+    ::= { module2CarrierPowerConfig 8}
+
+module2C3CarrierULAttenuation 			 OBJECT-TYPE
+		SYNTAX       INTEGER (0..150)   
+    	MAX-ACCESS    read-write
+    	STATUS        current
+    	DESCRIPTION   " 
+    	module2-C3 Carrier UL Attenuation  
+    	unit:0.1db, 
+    	rate:10.    	    	"
+    ::= { module2CarrierPowerConfig 9 }
+	
+module2C3CarrierDLAttenuation 			 OBJECT-TYPE
+		SYNTAX       Integer32    
+    	MAX-ACCESS    read-write
+    	STATUS        current
+    	DESCRIPTION   " 
+    	module2-C3 Carrier DL Attenuation  
+    	unit:0.1db, 
+    	rate:10.    	    	"
+    ::= { module2CarrierPowerConfig 10 }
+	
+module2C3ULCarrierPower			 OBJECT-TYPE
+		SYNTAX       Integer32    
+    	MAX-ACCESS    read-only
+    	STATUS        current
+    	DESCRIPTION   " 
+    	module2-C3 UL Carrier Power  
+    	unit:0.1dbm, 
+    	rate:10.    	    	"
+    ::= { module2CarrierPowerConfig 11}
+	
+module2C3DLCarrierPower			 OBJECT-TYPE
+		SYNTAX       Integer32    
+    	MAX-ACCESS    read-only
+    	STATUS        current
+    	DESCRIPTION   " 
+    	module2-C3 DL Carrier Power  
+    	unit:0.1dbm, 
+    	rate:10.    	    	"
+    ::= { module2CarrierPowerConfig 12}
+	
+module2C4CarrierULAttenuation 			 OBJECT-TYPE
+		SYNTAX       INTEGER (0..150)   
+    	MAX-ACCESS    read-write
+    	STATUS        current
+    	DESCRIPTION   " 
+    	module2-C4 Carrier UL Attenuation  
+    	unit:0.1db, 
+    	rate:10.    	    	"
+    ::= { module2CarrierPowerConfig 13 }
+	
+module2C4CarrierDLAttenuation 			 OBJECT-TYPE
+		SYNTAX       Integer32    
+    	MAX-ACCESS    read-write
+    	STATUS        current
+    	DESCRIPTION   " 
+    	module2-C4 Carrier DL Attenuation  
+    	unit:0.1db, 
+    	rate:10.    	    	"
+    ::= { module2CarrierPowerConfig 14 }
+	
+module2C4ULCarrierPower			 OBJECT-TYPE
+		SYNTAX       Integer32    
+    	MAX-ACCESS    read-only
+    	STATUS        current
+    	DESCRIPTION   " 
+    	module2-C4 UL Carrier Power  
+    	unit:0.1dbm, 
+    	rate:10.    	    	"
+    ::= { module2CarrierPowerConfig 15}
+	
+module2C4DLCarrierPower			 OBJECT-TYPE
+		SYNTAX       Integer32    
+    	MAX-ACCESS    read-only
+    	STATUS        current
+    	DESCRIPTION   " 
+    	module2-C4 DL Carrier Power  
+    	unit:0.1dbm, 
+    	rate:10.    	    	"
+    ::= { module2CarrierPowerConfig 16}
+
+module3CarrierPowerConfig       	OBJECT IDENTIFIER ::= { carrierPower 3}
+module3C1CarrierULAttenuation 			 OBJECT-TYPE
+		SYNTAX       INTEGER (0..150)    
+    	MAX-ACCESS    read-write
+    	STATUS        current
+    	DESCRIPTION   " 
+    	module3-C1 Carrier UL Attenuation  
+    	unit:0.1db, 
+    	rate:10.    	    	"
+    ::= { module3CarrierPowerConfig 1 }
+	
+module3C1CarrierDLAttenuation 			 OBJECT-TYPE
+		SYNTAX       Integer32    
+    	MAX-ACCESS    read-write
+    	STATUS        current
+    	DESCRIPTION   " 
+    	module3-C1 Carrier DL Attenuation  
+    	unit:0.1db, 
+    	rate:10.    	    	"
+    ::= { module3CarrierPowerConfig 2 }
+	
+module3C1ULCarrierPower			 OBJECT-TYPE
+		SYNTAX       Integer32    
+    	MAX-ACCESS    read-only
+    	STATUS        current
+    	DESCRIPTION   " 
+    	module3-C1 UL Carrier Power  
+    	unit:0.1dbm, 
+    	rate:10.    	    	"
+    ::= { module3CarrierPowerConfig 3}
+	
+module3C1DLCarrierPower			 OBJECT-TYPE
+		SYNTAX       Integer32    
+    	MAX-ACCESS    read-only
+    	STATUS        current
+    	DESCRIPTION   " 
+    	module3-C1 DL Carrier Power  
+    	unit:0.1dbm, 
+    	rate:10.    	    	"
+    ::= { module3CarrierPowerConfig 4}
+	
+module3C2CarrierULAttenuation 			 OBJECT-TYPE
+		SYNTAX       INTEGER (0..150)   
+    	MAX-ACCESS    read-write
+    	STATUS        current
+    	DESCRIPTION   " 
+    	module3-C2 Carrier UL Attenuation  
+    	unit:0.1db, 
+    	rate:10.    	    	"
+    ::= { module3CarrierPowerConfig 5 }
+	
+module3C2CarrierDLAttenuation 			 OBJECT-TYPE
+		SYNTAX       Integer32    
+    	MAX-ACCESS    read-write
+    	STATUS        current
+    	DESCRIPTION   " 
+    	module3-C2 Carrier DL Attenuation  
+    	unit:0.1db, 
+    	rate:10.    	    	"
+    ::= { module3CarrierPowerConfig 6 }
+	
+module3C2ULCarrierPower			 OBJECT-TYPE
+		SYNTAX       Integer32    
+    	MAX-ACCESS    read-only
+    	STATUS        current
+    	DESCRIPTION   " 
+    	module3-C2 UL Carrier Power  
+    	unit:0.1dbm, 
+    	rate:10.    	    	"
+    ::= { module3CarrierPowerConfig 7}
+	
+module3C2DLCarrierPower			 OBJECT-TYPE
+		SYNTAX       Integer32    
+    	MAX-ACCESS    read-only
+    	STATUS        current
+    	DESCRIPTION   " 
+    	module3-C2 DL Carrier Power  
+    	unit:0.1dbm, 
+    	rate:10.    	    	"
+    ::= { module3CarrierPowerConfig 8}
+
+module3C3CarrierULAttenuation 			 OBJECT-TYPE
+		SYNTAX       INTEGER (0..150)   
+    	MAX-ACCESS    read-write
+    	STATUS        current
+    	DESCRIPTION   " 
+    	module3-C3 Carrier UL Attenuation  
+    	unit:0.1db, 
+    	rate:10.    	    	"
+    ::= { module3CarrierPowerConfig 9 }
+	
+module3C3CarrierDLAttenuation 			 OBJECT-TYPE
+		SYNTAX       Integer32    
+    	MAX-ACCESS    read-write
+    	STATUS        current
+    	DESCRIPTION   " 
+    	module3-C3 Carrier DL Attenuation  
+    	unit:0.1db, 
+    	rate:10.    	    	"
+    ::= { module3CarrierPowerConfig 10 }
+	
+module3C3ULCarrierPower			 OBJECT-TYPE
+		SYNTAX       Integer32    
+    	MAX-ACCESS    read-only
+    	STATUS        current
+    	DESCRIPTION   " 
+    	module3-C3 UL Carrier Power  
+    	unit:0.1dbm, 
+    	rate:10.    	    	"
+    ::= { module3CarrierPowerConfig 11}
+	
+module3C3DLCarrierPower			 OBJECT-TYPE
+		SYNTAX       Integer32    
+    	MAX-ACCESS    read-only
+    	STATUS        current
+    	DESCRIPTION   " 
+    	module3-C3 DL Carrier Power  
+    	unit:0.1dbm, 
+    	rate:10.    	    	"
+    ::= { module3CarrierPowerConfig 12}
+	
+module3C4CarrierULAttenuation 			 OBJECT-TYPE
+		SYNTAX       INTEGER (0..150)   
+    	MAX-ACCESS    read-write
+    	STATUS        current
+    	DESCRIPTION   " 
+    	module3-C4 Carrier UL Attenuation  
+    	unit:0.1db, 
+    	rate:10.    	    	"
+    ::= { module3CarrierPowerConfig 13 }
+	
+module3C4CarrierDLAttenuation 			 OBJECT-TYPE
+		SYNTAX       Integer32    
+    	MAX-ACCESS    read-write
+    	STATUS        current
+    	DESCRIPTION   " 
+    	module3-C4 Carrier DL Attenuation  
+    	unit:0.1db, 
+    	rate:10.    	    	"
+    ::= { module3CarrierPowerConfig 14 }
+	
+module3C4ULCarrierPower			 OBJECT-TYPE
+		SYNTAX       Integer32    
+    	MAX-ACCESS    read-only
+    	STATUS        current
+    	DESCRIPTION   " 
+    	module3-C4 UL Carrier Power  
+    	unit:0.1dbm, 
+    	rate:10.    	    	"
+    ::= { module3CarrierPowerConfig 15}
+	
+module3C4DLCarrierPower			 OBJECT-TYPE
+		SYNTAX       Integer32    
+    	MAX-ACCESS    read-only
+    	STATUS        current
+    	DESCRIPTION   " 
+    	module3-C4 DL Carrier Power  
+    	unit:0.1dbm, 
+    	rate:10.    	    	"
+    ::= { module3CarrierPowerConfig 16}
+
+module4CarrierPowerConfig       	OBJECT IDENTIFIER ::= { carrierPower 4}
+module4C1CarrierULAttenuation 			 OBJECT-TYPE
+		SYNTAX       INTEGER (0..150)   
+    	MAX-ACCESS    read-write
+    	STATUS        current
+    	DESCRIPTION   " 
+    	module4-C1 Carrier UL Attenuation  
+    	unit:0.1db, 
+    	rate:10.    	    	"
+    ::= { module4CarrierPowerConfig 1 }
+	
+module4C1CarrierDLAttenuation 			 OBJECT-TYPE
+		SYNTAX       Integer32    
+    	MAX-ACCESS    read-write
+    	STATUS        current
+    	DESCRIPTION   " 
+    	module4-C1 Carrier DL Attenuation  
+    	unit:0.1db, 
+    	rate:10.    	    	"
+    ::= { module4CarrierPowerConfig 2 }
+	
+module4C1ULCarrierPower			 OBJECT-TYPE
+		SYNTAX       Integer32    
+    	MAX-ACCESS    read-only
+    	STATUS        current
+    	DESCRIPTION   " 
+    	module4-C1 UL Carrier Power  
+    	unit:0.1dbm, 
+    	rate:10.    	    	"
+    ::= { module4CarrierPowerConfig 3}
+	
+module4C1DLCarrierPower			 OBJECT-TYPE
+		SYNTAX       Integer32    
+    	MAX-ACCESS    read-only
+    	STATUS        current
+    	DESCRIPTION   " 
+    	module4-C1 DL Carrier Power  
+    	unit:0.1dbm, 
+    	rate:10.    	    	"
+    ::= { module4CarrierPowerConfig 4}
+	
+module4C2CarrierULAttenuation 			 OBJECT-TYPE
+		SYNTAX       INTEGER (0..150)   
+    	MAX-ACCESS    read-write
+    	STATUS        current
+    	DESCRIPTION   " 
+    	module4-C2 Carrier UL Attenuation  
+    	unit:0.1db, 
+    	rate:10.    	    	"
+    ::= { module4CarrierPowerConfig 5 }
+	
+module4C2CarrierDLAttenuation 			 OBJECT-TYPE
+		SYNTAX       Integer32    
+    	MAX-ACCESS    read-write
+    	STATUS        current
+    	DESCRIPTION   " 
+    	module4-C2 Carrier DL Attenuation  
+    	unit:0.1db, 
+    	rate:10.    	    	"
+    ::= { module4CarrierPowerConfig 6 }
+	
+module4C2ULCarrierPower			 OBJECT-TYPE
+		SYNTAX       Integer32    
+    	MAX-ACCESS    read-only
+    	STATUS        current
+    	DESCRIPTION   " 
+    	module4-C2 UL Carrier Power  
+    	unit:0.1dbm, 
+    	rate:10.    	    	"
+    ::= { module4CarrierPowerConfig 7}
+	
+module4C2DLCarrierPower			 OBJECT-TYPE
+		SYNTAX       Integer32    
+    	MAX-ACCESS    read-only
+    	STATUS        current
+    	DESCRIPTION   " 
+    	module4-C2 DL Carrier Power  
+    	unit:0.1dbm, 
+    	rate:10.    	    	"
+    ::= { module4CarrierPowerConfig 8}
+
+module4C3CarrierULAttenuation 			 OBJECT-TYPE
+		SYNTAX       INTEGER (0..150)   
+    	MAX-ACCESS    read-write
+    	STATUS        current
+    	DESCRIPTION   " 
+    	module4-C3 Carrier UL Attenuation  
+    	unit:0.1db, 
+    	rate:10.    	    	"
+    ::= { module4CarrierPowerConfig 9 }
+	
+module4C3CarrierDLAttenuation 			 OBJECT-TYPE
+		SYNTAX       Integer32    
+    	MAX-ACCESS    read-write
+    	STATUS        current
+    	DESCRIPTION   " 
+    	module4-C3 Carrier DL Attenuation  
+    	unit:0.1db, 
+    	rate:10.    	    	"
+    ::= { module4CarrierPowerConfig 10 }
+	
+module4C3ULCarrierPower			 OBJECT-TYPE
+		SYNTAX       Integer32    
+    	MAX-ACCESS    read-only
+    	STATUS        current
+    	DESCRIPTION   " 
+    	module4-C3 UL Carrier Power  
+    	unit:0.1dbm, 
+    	rate:10.    	    	"
+    ::= { module4CarrierPowerConfig 11}
+	
+module4C3DLCarrierPower			 OBJECT-TYPE
+		SYNTAX       Integer32    
+    	MAX-ACCESS    read-only
+    	STATUS        current
+    	DESCRIPTION   " 
+    	module4-C3 DL Carrier Power  
+    	unit:0.1dbm, 
+    	rate:10.    	    	"
+    ::= { module4CarrierPowerConfig 12}
+	
+module4C4CarrierULAttenuation 			 OBJECT-TYPE
+		SYNTAX       INTEGER (0..150)   
+    	MAX-ACCESS    read-write
+    	STATUS        current
+    	DESCRIPTION   " 
+    	module4-C4 Carrier UL Attenuation  
+    	unit:0.1db, 
+    	rate:10.    	    	"
+    ::= { module4CarrierPowerConfig 13 }
+	
+module4C4CarrierDLAttenuation 			 OBJECT-TYPE
+		SYNTAX       Integer32    
+    	MAX-ACCESS    read-write
+    	STATUS        current
+    	DESCRIPTION   " 
+    	module4-C4 Carrier DL Attenuation  
+    	unit:0.1db, 
+    	rate:10.    	    	"
+    ::= { module4CarrierPowerConfig 14 }
+	
+module4C4ULCarrierPower			 OBJECT-TYPE
+		SYNTAX       Integer32    
+    	MAX-ACCESS    read-only
+    	STATUS        current
+    	DESCRIPTION   " 
+    	module4-C4 UL Carrier Power  
+    	unit:0.1dbm, 
+    	rate:10.    	    	"
+    ::= { module4CarrierPowerConfig 15}
+	
+module4C4DLCarrierPower			 OBJECT-TYPE
+		SYNTAX       Integer32    
+    	MAX-ACCESS    read-only
+    	STATUS        current
+    	DESCRIPTION   " 
+    	module1-C4 DL Carrier Power  
+    	unit:0.1dbm, 
+    	rate:10.    	    	"
+    ::= { module4CarrierPowerConfig 16}
+	
+capacityManagement					 OBJECT IDENTIFIER ::= { x3RU 10}
+capacitySwitch             	 OBJECT IDENTIFIER ::= { capacityManagement 1}
+allocationSwitch          OBJECT-TYPE
+    SYNTAX        INTEGER{
+    	off(0),
+    	on(1)
+    }
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   "Capacity Allocation Switch
+    off(0)
+    on(1)
+    "
+    ::= { capacitySwitch 1 }
+        
+auCarrconfigInfo             OBJECT IDENTIFIER ::= { capacityManagement 2}
+primaryAuModule1UL         OBJECT-TYPE
+    SYNTAX        DisplayString
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "  Primary AU channel1  uplink frequency range "
+    ::= { auCarrconfigInfo 1 }
+    
+primaryAuModule1DL          OBJECT-TYPE
+    SYNTAX        DisplayString
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "  primary AU channel1 downlink frequency range "
+    ::= { auCarrconfigInfo 2 }
+    
+primaryAuModule2UL          OBJECT-TYPE
+    SYNTAX        DisplayString
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "  primary AU channel2 uplink frequnecy range"
+    ::= { auCarrconfigInfo 3 }
+    
+primaryAuModule2DL          OBJECT-TYPE
+    SYNTAX        DisplayString
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "   primary AU channel2 downlink frequency range"
+    ::= { auCarrconfigInfo 4 }
+    
+primaryAuModule3UL          OBJECT-TYPE
+    SYNTAX        DisplayString
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "   primary AU channel3 uplink frequency range"
+    ::= { auCarrconfigInfo 5 }
+    
+primaryAuModule3DL          OBJECT-TYPE
+    SYNTAX        DisplayString
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "   primary AU channel3 downlink frequency range"
+    ::= { auCarrconfigInfo 6 }
+    
+primaryAuModule4UL          OBJECT-TYPE
+    SYNTAX        DisplayString
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "   primary AU channel4 uplink frequency range"
+    ::= { auCarrconfigInfo 7 }
+    
+primaryAuModule4DL          OBJECT-TYPE
+    SYNTAX        DisplayString
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "   Primary AU channel4 downlink frequency range"
+    ::= { auCarrconfigInfo 8 } 
+    
+secondaryAu1Module1UL          OBJECT-TYPE
+    SYNTAX        DisplayString
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "   secondary AU1 channel1 uplink frequency range"
+    ::= { auCarrconfigInfo 9 }
+    
+secondaryAu1Module1DL          OBJECT-TYPE
+    SYNTAX        DisplayString
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "   secondary AU1 channel1 downlink frequency range "
+    ::= { auCarrconfigInfo 10 }
+    
+secondaryAu1Module2UL          OBJECT-TYPE
+    SYNTAX        DisplayString
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "   secondary AU1 channel2 uplink frequency range"
+    ::= { auCarrconfigInfo 11 }
+    
+secondaryAu1Module2DL          OBJECT-TYPE
+    SYNTAX        DisplayString
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "   secondary AU1 channel2 downlink frequency range"
+    ::= { auCarrconfigInfo 12 }
+    
+secondaryAu1Module3UL          OBJECT-TYPE
+    SYNTAX        DisplayString
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "   secondary AU1 channel3 uplink frequency range"
+    ::= { auCarrconfigInfo 13 }
+    
+secondaryAu1Module3DL          OBJECT-TYPE
+    SYNTAX        DisplayString
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "   secondary AU1 channel3 downlink frequency range"
+    ::= { auCarrconfigInfo 14 }
+    
+secondaryAu1Module4UL          OBJECT-TYPE
+    SYNTAX        DisplayString
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "  secondary AU1 channel4 uplink frequency range"
+    ::= { auCarrconfigInfo 15 }
+    
+secondaryAu1Module4DL          OBJECT-TYPE
+    SYNTAX        DisplayString
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "   secondary AU1 channel4 downlink frequency range "
+    ::= { auCarrconfigInfo 16 }   
+     
+secondaryAu2Module1UL          OBJECT-TYPE
+    SYNTAX        DisplayString
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "  secondary AU2 channel1 uplink frequency range"
+    ::= { auCarrconfigInfo 17 }
+    
+secondaryAu2Module1DL          OBJECT-TYPE
+    SYNTAX        DisplayString
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "   secondary AU2 channel1 downlink frequency range"
+    ::= { auCarrconfigInfo 18 }
+    
+secondaryAu2Module2UL          OBJECT-TYPE
+    SYNTAX        DisplayString
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "   secondary AU2 channel2 uplink frequency range "
+    ::= { auCarrconfigInfo 19 }
+    
+secondaryAu2Module2DL          OBJECT-TYPE
+    SYNTAX        DisplayString
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "   secondary AU2 channel2 downlink frequency range "
+    ::= { auCarrconfigInfo 20 }
+    
+secondaryAu2Module3UL          OBJECT-TYPE
+    SYNTAX        DisplayString
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "  secondary AU2 channel3 uplink frequency range"
+    ::= { auCarrconfigInfo 21 }
+    
+secondaryAu2Module3DL          OBJECT-TYPE
+    SYNTAX        DisplayString
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "   secondary AU2 channel3 downlink frequency range"
+    ::= { auCarrconfigInfo 22 }
+    
+secondaryAu2Module4UL          OBJECT-TYPE
+    SYNTAX        DisplayString
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "  secondary AU2 channel4 uplink frequency range"
+    ::= { auCarrconfigInfo 23 }
+    
+secondaryAu2Module4DL          OBJECT-TYPE
+    SYNTAX        DisplayString
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "   secondary AU2 channel4 downlink frequency range"
+    ::= { auCarrconfigInfo 24 }
+
+
+rfGroupsMapInfo              OBJECT IDENTIFIER ::= { capacityManagement 4}
+group1          OBJECT-TYPE
+    SYNTAX         DisplayString
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "GROUP1 RF CHANNEL MAPPING INFORMATION"
+    ::= { rfGroupsMapInfo 1 }
+group2          OBJECT-TYPE
+    SYNTAX         DisplayString
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "GROUP2 RF CHANNEL MAPPING INFORMATION"
+    ::= { rfGroupsMapInfo 2 }
+group3          OBJECT-TYPE
+    SYNTAX         DisplayString
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   
+    "GROUP3 RF CHANNEL MAPPING INFORMATION"
+    ::= { rfGroupsMapInfo 3 }
+   
+rfMappingConfiguration       OBJECT IDENTIFIER ::= { capacityManagement 5}    
+capacitygroup          OBJECT-TYPE
+    SYNTAX        INTEGER
+    {
+    	group1(0),
+	group2(1),
+	group3(2)
+    }
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "   RF CHANNEL MAPPING CONFIGURATION
+        CAPACITY GROUP    "
+    ::= { rfMappingConfiguration 1 }
+ 
+mapConfUpdate			OBJECT-TYPE
+		SYNTAX       INTEGER
+		{
+			update(1)
+		}
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   " "
+    ::= { rfMappingConfiguration 6 } 
+
+radioModule1FreqULDL	OBJECT-TYPE
+    SYNTAX        DisplayString
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   "Channel 1 frequence range to AU"
+    ::= { rfMappingConfiguration 7 }  
+    
+x3RUModule1          OBJECT-TYPE
+    SYNTAX        INTEGER
+    {
+			null(0),
+			auModule1(1),
+				auModule2(2),
+				auModule3(4),
+				auModule4(8),			
+				sAu1Module1(16),
+				sAu1Module2(32),
+				sAu1Module3(64),
+				sAu1Module4(128),				
+				sAu2Module1(256),
+				sAu2Module2(512),
+				sAu2Module3(1024),
+				sAu2Module4(2048)
+    }
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "   RF CHANNEL MAPPING CONFIGURATION
+         "
+    ::= { rfMappingConfiguration 8 }
+    
+radioModule2FreqULDL	OBJECT-TYPE
+    SYNTAX        DisplayString
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   "Channel 2 frequence range to AU"
+    ::= { rfMappingConfiguration 9 }  
+
+x3RUModule2          OBJECT-TYPE
+    SYNTAX        INTEGER
+      {
+    		null(0),
+			auModule1(1),
+				auModule2(2),
+				auModule3(4),
+				auModule4(8),			
+				sAu1Module1(16),
+				sAu1Module2(32),
+				sAu1Module3(64),
+				sAu1Module4(128),				
+				sAu2Module1(256),
+				sAu2Module2(512),
+				sAu2Module3(1024),
+				sAu2Module4(2048)
+    }
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "   RF CHANNEL MAPPING CONFIGURATION
+         "
+    ::= { rfMappingConfiguration 10 }
+	
+radioModule3FreqULDL	OBJECT-TYPE
+    SYNTAX        DisplayString
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   "Channel 2 frequence range to AU"
+    ::= { rfMappingConfiguration 11 }  
+
+m3RULModule3          OBJECT-TYPE
+    SYNTAX        INTEGER
+      {
+    		null(0),
+			auModule1(1),
+				auModule2(2),
+				auModule3(4),
+				auModule4(8),			
+				sAu1Module1(16),
+				sAu1Module2(32),
+				sAu1Module3(64),
+				sAu1Module4(128),				
+				sAu2Module1(256),
+				sAu2Module2(512),
+				sAu2Module3(1024),
+				sAu2Module4(2048)
+    }
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "   RF CHANNEL MAPPING CONFIGURATION
+         "
+    ::= { rfMappingConfiguration 12 }
+	
+radioModule4FreqULDL	OBJECT-TYPE
+    SYNTAX        DisplayString
+    MAX-ACCESS    read-only
+    STATUS        current
+    DESCRIPTION   "Channel 2 frequence range to AU"
+    ::= { rfMappingConfiguration 13 }  
+
+m3RULModule4          OBJECT-TYPE
+    SYNTAX        INTEGER
+      {
+			null(0),
+			auModule1(1),
+				auModule2(2),
+				auModule3(4),
+				auModule4(8),			
+				sAu1Module1(16),
+				sAu1Module2(32),
+				sAu1Module3(64),
+				sAu1Module4(128),				
+				sAu2Module1(256),
+				sAu2Module2(512),
+				sAu2Module3(1024),
+				sAu2Module4(2048)
+				
+    }
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "   RF CHANNEL MAPPING CONFIGURATION
+         "
+    ::= { rfMappingConfiguration 14 }
+			   
+sundayServiceSwitch          OBJECT IDENTIFIER ::= { capacityManagement 6}
+mondayServiceSwitch          OBJECT IDENTIFIER ::= { capacityManagement 7}
+tuesdayServiceSwitch         OBJECT IDENTIFIER ::= { capacityManagement 8}
+wednesdayServiceSwitch       OBJECT IDENTIFIER ::= { capacityManagement 9}
+thursdayServiceSwitch        OBJECT IDENTIFIER ::= { capacityManagement 10}
+fridayServiceSwitch          OBJECT IDENTIFIER ::= { capacityManagement 11}
+saturdayServiceSwitch        OBJECT IDENTIFIER ::= { capacityManagement 12}
+    
+sunWorkingHoursStarting          OBJECT-TYPE
+    SYNTAX        INTEGER(0..24)
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "   WORKING HOURS STARTING
+         "
+    ::= { sundayServiceSwitch 1 }
+sunWorkingHoursEnding          OBJECT-TYPE
+    SYNTAX        INTEGER(0..24)
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "   WORKING HOURS ENDING
+         "
+    ::= { sundayServiceSwitch 2 }
+    
+sunGroupForWorkingHours   OBJECT-TYPE
+    SYNTAX        INTEGER
+    {
+    	group1(0),
+	    group2(1),
+	    group3(2)
+    }
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "   SERVICE GROUP(WORKING HOURS)
+         "
+    ::= { sundayServiceSwitch 3 }
+    
+sunServiceGroupForNonWorkingHours   OBJECT-TYPE
+    SYNTAX        INTEGER
+     {
+    	group1(0),
+			group2(1),
+			group3(2)
+    }
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "   SERVICE GROUP(NONWORKING HOURS)
+         "
+    ::= { sundayServiceSwitch 4 }
+ 
+monWorkingHoursStarting          OBJECT-TYPE
+    SYNTAX        INTEGER(0..24)
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "   WORKING HOURS STARTING
+         "
+    ::= { mondayServiceSwitch 1 }
+monWorkingHoursEnding          OBJECT-TYPE
+    SYNTAX        INTEGER(0..24)
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "   WORKING HOURS ENDING
+         "
+    ::= { mondayServiceSwitch 2 }
+monGroupForWorkingHours   OBJECT-TYPE
+    SYNTAX        INTEGER
+    {
+    	group1(0),
+	    group2(1),
+	    group3(2)
+    }
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "   SERVICE GROUP(WORKING HOURS)
+         "
+    ::= { mondayServiceSwitch 3 }
+monServiceGroupForNonWorkingHours   OBJECT-TYPE
+    SYNTAX        INTEGER
+    {
+    	group1(0),
+	    group2(1),
+	    group3(2)
+    }
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "   SERVICE GROUP(NONWORKING HOURS)
+         "
+    ::= { mondayServiceSwitch 4 }    
+    
+tueWorkingHoursStarting          OBJECT-TYPE
+    SYNTAX        INTEGER(0..24)
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "   WORKING HOURS STARTING
+         "
+    ::= { tuesdayServiceSwitch 1 }
+    
+tueWorkingHoursEnding          OBJECT-TYPE
+    SYNTAX        INTEGER(0..24)
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "   WORKING HOURS ENDING
+         "
+    ::= { tuesdayServiceSwitch 2 }
+    
+tueGroupForWorkingHours   OBJECT-TYPE
+    SYNTAX        INTEGER
+    {
+    	group1(0),
+		  group2(1),
+	    group3(2)
+    }
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "   SERVICE GROUP(WORKING HOURS)
+         "
+    ::= { tuesdayServiceSwitch 3 }
+    
+tueServiceGroupForNonWorkingHours   OBJECT-TYPE
+    SYNTAX        INTEGER
+    {
+    	group1(0),
+	group2(1),
+	group3(2)
+    }
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "   SERVICE GROUP(NONWORKING HOURS)
+         "
+    ::= { tuesdayServiceSwitch 4 } 
+    
+wedWorkingHoursStarting          OBJECT-TYPE
+    SYNTAX        INTEGER(0..24)
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "   WORKING HOURS STARTING
+         "
+    ::= { wednesdayServiceSwitch 1 }
+    
+wedWorkingHoursEnding          OBJECT-TYPE
+    SYNTAX        INTEGER(0..24)
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "   WORKING HOURS ENDING
+         "
+    ::= { wednesdayServiceSwitch 2 }
+    
+wedGroupForWorkingHours   OBJECT-TYPE
+    SYNTAX        INTEGER
+    {
+    	group1(0),
+	group2(1),
+	group3(2)
+    }
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "   SERVICE GROUP(WORKING HOURS)
+         "
+    ::= { wednesdayServiceSwitch 3 }
+    
+wedServiceGroupForNonWorkingHours   OBJECT-TYPE
+    SYNTAX        INTEGER
+    {
+    	group1(0),
+	    group2(1),
+	    group3(2)
+    }
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "   SERVICE GROUP(NONWORKING HOURS)
+         "
+    ::= { wednesdayServiceSwitch 4 }
+
+thuWorkingHoursStarting          OBJECT-TYPE
+    SYNTAX        INTEGER(0..24)
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "   WORKING HOURS STARTING
+         "
+    ::= { thursdayServiceSwitch 1 }
+    
+thuWorkingHoursEnding          OBJECT-TYPE
+    SYNTAX        INTEGER(0..24)
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "   WORKING HOURS ENDING
+         "
+    ::= { thursdayServiceSwitch 2 }
+    
+thuGroupForWorkingHours   OBJECT-TYPE
+    SYNTAX        INTEGER
+    {
+    	group1(0),
+	group2(1),
+	group3(2)
+    }
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "   SERVICE GROUP(WORKING HOURS)
+         "
+    ::= { thursdayServiceSwitch 3 }
+    
+thuServiceGroupForNonWorkingHours   OBJECT-TYPE
+    SYNTAX        INTEGER
+    {
+    	group1(0),
+	    group2(1),
+	    group3(2)
+    }
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "   SERVICE GROUP(NONWORKING HOURS)
+         "
+    ::= { thursdayServiceSwitch 4 }
+
+friWorkingHoursStarting          OBJECT-TYPE
+    SYNTAX        INTEGER(0..24)
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "   WORKING HOURS STARTING
+         "
+    ::= { fridayServiceSwitch 1 }
+    
+friWorkingHoursEnding          OBJECT-TYPE
+    SYNTAX        INTEGER(0..24)
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "   WORKING HOURS ENDING
+         "
+    ::= { fridayServiceSwitch 2 }
+    
+friGroupForWorkingHours   OBJECT-TYPE
+    SYNTAX        INTEGER
+    {
+    	group1(0),
+	group2(1),
+	group3(2)
+    }
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "   SERVICE GROUP(WORKING HOURS)
+         "
+    ::= { fridayServiceSwitch 3 }
+    
+friServiceGroupForNonWorkingHours   OBJECT-TYPE
+    SYNTAX        INTEGER
+    {
+    	group1(0),
+	group2(1),
+	group3(2)
+    }
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "   SERVICE GROUP(NONWORKING HOURS)
+         "
+    ::= { fridayServiceSwitch 4 }
+    
+satWorkingHoursStarting          OBJECT-TYPE
+    SYNTAX        INTEGER(0..24)
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "   WORKING HOURS STARTING
+         "
+    ::= { saturdayServiceSwitch 1 }
+    
+satWorkingHoursEnding          OBJECT-TYPE
+    SYNTAX        INTEGER(0..24)
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "   WORKING HOURS ENDING
+         "
+    ::= { saturdayServiceSwitch 2 }
+    
+satGroupForWorkingHours   OBJECT-TYPE
+    SYNTAX        INTEGER
+    {
+    	group1(0),
+	group2(1),
+	group3(2)
+    }
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "   SERVICE GROUP(WORKING HOURS)
+         "
+    ::= { saturdayServiceSwitch 3 }
+    
+satServiceGroupForNonWorkingHours   OBJECT-TYPE
+    SYNTAX        INTEGER
+    {
+    	group1(0),
+	group2(1),
+	group3(2)
+    }
+    MAX-ACCESS    read-write
+    STATUS        current
+    DESCRIPTION   
+    "   SERVICE GROUP(NONWORKING HOURS)
+         "
+    ::= { saturdayServiceSwitch 4 }
+ 
+END

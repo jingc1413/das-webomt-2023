@@ -1,0 +1,49 @@
+FROM node:20 AS build-node
+RUN npm config set registry https://registry.npmmirror.com 
+WORKDIR /source
+COPY ./app-v3/package.json .
+COPY ./app-v3/package-lock.json .
+RUN npm install --force
+COPY ./app-v3 .
+RUN rm -rf ./public/mock
+RUN rm -rf ./public/models
+COPY ./models/models ./public/models
+RUN find ./public/models -name "*.json" | sed 's/.*/"&"/' | xargs rm -f
+RUN find ./public/models -name "*.csv" | sed 's/.*/"&"/' | xargs rm -f
+RUN npm run build
+RUN chmod -R og-w /source/dist
+RUN chmod -R a+r /source/dist
+
+FROM golang:1.21 AS build-gomt
+ENV GO111MODULE=auto
+ENV GOPROXY=https://goproxy.cn
+ENV GOOS=linux
+ENV GOARCH=arm
+ENV GOARM=6
+ENV CGO_ENABLED=0
+ENV CC=arm-linux-gnueabi-gcc
+ENV CXX=arm-linux-gnueabi-g++
+ENV APP_NAME="gomt"
+WORKDIR /source
+COPY ./gomt .
+RUN rm -rf go.work; go work init dmkit core gomt das
+RUN rm -rf ./gomt/dist; mkdir -p ./gomt/dist; touch ./gomt/dist/empty
+RUN go build -a -installsuffix cgo -ldflags "-s -w" -o /source/bin/${APP_NAME}.arm ./gomt/app.go
+
+FROM golang:1.21 AS build-omtapp
+ENV GO111MODULE=auto
+ENV GOPROXY=https://goproxy.cn
+ENV APP_NAME=omtapp
+WORKDIR /source
+COPY ./gomt .
+RUN rm -rf go.work; go work init dmkit core gomt das 
+RUN rm -rf ./gomt/dist
+COPY --from=build-node /source/dist ./gomt/dist
+RUN cd gomt; GOOS=windows GOARCH=amd64 CGO_ENABLED=0 go build -a -installsuffix cgo -o /source/bin/${APP_NAME}.exe ./app.go
+RUN cd gomt; GOOS=linux GOARCH=amd64 CGO_ENABLED=0 go build -a -installsuffix cgo -o /source/bin/${APP_NAME} ./app.go
+
+FROM base/alpine:3.18
+WORKDIR /release
+COPY --from=build-gomt /source/bin ./bin
+COPY --from=build-omtapp /source/bin ./bin
+COPY --from=build-node /source/dist ./dist

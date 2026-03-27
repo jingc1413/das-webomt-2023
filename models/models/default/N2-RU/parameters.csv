@@ -1,0 +1,871 @@
+Groups,Paths,OID,Name,Unit,Tips,AccessMode,DataType,ByteSize,Ratio,Range,Options
+"Settings,Overview,Element Identification",,T02.P0002,Vendor,,,ro,string,20,,,
+"Settings,Overview,Element Identification",,T02.P0004,Element Model Number,,,rw,string,20,,,
+"Settings,Overview,Element Identification",,T02.P0005,Element Serial Number,,,ro,string,20,,,
+"Settings,Overview,Element Identification",,T02.P000A,Software Version,,,ro,string,20,,,
+"Settings,Overview,Element Identification",,T02.P0101,Device ID,,Hexadecimal,rw,binary,4,,,
+"Settings,Overview,Element Identification",,T02.P0102,Device Sub ID,,Decimalism,rw,uint8,1,,,
+"Settings,Overview,Element Identification",,T02.P0023,Installed Location Label,,,rw,string,40,,,
+"Settings,Overview,Element Identification",,T02.P0024,Site Name,,,ro,string,100,,,
+"Settings,Overview,Element Identification",,T02.P0030,Device Name,,,rw,string,40,,,
+"Settings,Overview,Date And Time",,T02.P0150,System Date And Time,,,rw,datetime,7,,,
+"Settings,Band Configuration,Radio Module 1",,T02.P04A0,Radio Module 1 RF Signal Active,,,rw,binary,1,,,00=Off;01=On
+"Settings,Band Configuration,Radio Module 1",,T02.P04D2,Radio Module 1 UL Attenuation,dB,,rw,uint8,1,2,0 ~ 30,
+"Settings,Band Configuration,Radio Module 1",,T02.P04D3,Radio Module 1 DL Attenuation,dB,,rw,uint8,1,2,0 ~ 30,
+"Settings,Band Configuration,Radio Module 2",,T02.P04A1,Radio Module 2 RF Signal Active,,,rw,binary,1,,,00=Off;01=On
+"Settings,Band Configuration,Radio Module 2",,T02.P04D4,Radio Module 2 UL Attenuation,dB,,rw,uint8,1,2,0 ~ 30,
+"Settings,Band Configuration,Radio Module 2",,T02.P04D5,Radio Module 2 DL Attenuation,dB,,rw,uint8,1,2,0 ~ 30,
+"Settings,Band Configuration,Radio Module 3",,T02.P04A2,Radio Module 3 RF Signal Active,,,rw,binary,1,,,00=Off;01=On
+"Settings,Band Configuration,Radio Module 3",,T02.P04D6,Radio Module 3 UL Attenuation,dB,,rw,uint8,1,2,0 ~ 30,
+"Settings,Band Configuration,Radio Module 3",,T02.P04D7,Radio Module 3 DL Attenuation,dB,,rw,uint8,1,2,0 ~ 30,
+"Settings,Band Configuration,Radio Module 4",,T02.P04A3,Radio Module 4 RF Signal Active,,,rw,binary,1,,,00=Off;01=On
+"Settings,Band Configuration,Radio Module 4",,T02.P04D8,Radio Module 4 UL Attenuation,dB,,rw,uint8,1,2,0 ~ 30,
+"Settings,Band Configuration,Radio Module 4",,T02.P04D9,Radio Module 4 DL Attenuation,dB,,rw,uint8,1,2,0 ~ 30,
+"Settings,Band Configuration,Radio Module 5",,T02.P04A4,Radio Module 5 RF Signal Active,,,rw,binary,1,,,00=Off;01=On
+"Settings,Band Configuration,Radio Module 5",,T02.P04DA,Radio Module 5 UL Attenuation,dB,,rw,uint8,1,2,0 ~ 30,
+"Settings,Band Configuration,Radio Module 5",,T02.P04DB,Radio Module 5 DL Attenuation,dB,,rw,uint8,1,2,0 ~ 30,
+"Settings,Band Configuration,Radio Module 6",,T02.P04A5,Radio Module 6 RF Signal Active,,,rw,binary,1,,,00=Off;01=On
+"Settings,Band Configuration,Radio Module 6",,T02.P04DC,Radio Module 6 UL Attenuation,dB,,rw,uint8,1,2,0 ~ 30,
+"Settings,Band Configuration,Radio Module 6",,T02.P04DD,Radio Module 6 DL Attenuation,dB,,rw,uint8,1,2,0 ~ 30,
+"Settings,Band Configuration,Radio Module 7",,T02.P04A6,Radio Module 7 RF Signal Active,,,rw,binary,1,,,00=Off;01=On
+"Settings,Band Configuration,Radio Module 7",,T02.P04DE,Radio Module 7 UL Attenuation,dB,,rw,uint8,1,2,0 ~ 30,
+"Settings,Band Configuration,Radio Module 7",,T02.P04DF,Radio Module 7 DL Attenuation,dB,,rw,uint8,1,2,0 ~ 30,
+"Settings,Band Configuration,Radio Module 8",,T02.P04A7,Radio Module 8 RF Signal Active,,,rw,binary,1,,,00=Off;01=On
+"Settings,Band Configuration,Radio Module 8",,T02.P04E2,Radio Module 8 UL Attenuation,dB,,rw,uint8,1,2,0 ~ 30,
+"Settings,Band Configuration,Radio Module 8",,T02.P04E1,Radio Module 8 DL Attenuation,dB,,rw,uint8,1,2,0 ~ 30,
+"Settings,Band Configuration,Radio Module Mapping (with Access Unit Radio Module)",,T02.P0969,Radio Module 1 UL,,,ro,string,27,,,
+"Settings,Band Configuration,Radio Module Mapping (with Access Unit Radio Module)",,T02.P0979,Radio Module 1 DL,,,ro,string,30,,,
+"Settings,Band Configuration,Radio Module Mapping (with Access Unit Radio Module)",,T02.P096B,Radio Module 2 UL,,,ro,string,27,,,
+"Settings,Band Configuration,Radio Module Mapping (with Access Unit Radio Module)",,T02.P097A,Radio Module 2 DL,,,ro,string,30,,,
+"Settings,Band Configuration,Radio Module Mapping (with Access Unit Radio Module)",,T02.P096D,Radio Module 3 UL,,,ro,string,27,,,
+"Settings,Band Configuration,Radio Module Mapping (with Access Unit Radio Module)",,T02.P097B,Radio Module 3 DL,,,ro,string,30,,,
+"Settings,Band Configuration,Radio Module Mapping (with Access Unit Radio Module)",,T02.P096F,Radio Module 4 UL,,,ro,string,27,,,
+"Settings,Band Configuration,Radio Module Mapping (with Access Unit Radio Module)",,T02.P097C,Radio Module 4 DL,,,ro,string,30,,,
+"Settings,Band Configuration,Radio Module Mapping (with Access Unit Radio Module)",,T02.P0971,Radio Module 5 UL,,,ro,string,27,,,
+"Settings,Band Configuration,Radio Module Mapping (with Access Unit Radio Module)",,T02.P097D,Radio Module 5 DL,,,ro,string,30,,,
+"Settings,Band Configuration,Radio Module Mapping (with Access Unit Radio Module)",,T02.P0973,Radio Module 6 UL,,,ro,string,27,,,
+"Settings,Band Configuration,Radio Module Mapping (with Access Unit Radio Module)",,T02.P097E,Radio Module 6 DL,,,ro,string,30,,,
+"Settings,Band Configuration,Radio Module Mapping (with Access Unit Radio Module)",,T02.P0975,Radio Module 7 UL,,,ro,string,27,,,
+"Settings,Band Configuration,Radio Module Mapping (with Access Unit Radio Module)",,T02.P097F,Radio Module 7 DL,,,ro,string,30,,,
+"Settings,Band Configuration,Radio Module Mapping (with Access Unit Radio Module)",,T02.P0977,Radio Module 8 UL,,,ro,string,27,,,
+"Settings,Band Configuration,Radio Module Mapping (with Access Unit Radio Module)",,T02.P0980,Radio Module 8 DL,,,ro,string,30,,,
+"Settings,Radio Signal Information,Radio Module 1",,T02.P05D0,Radio Module 1 Digital Filter Bandwidth,MHz,,ro,uint32,4,1000,,
+"Settings,Radio Signal Information,Radio Module 1",,T02.P05D1,Radio Module 1 UL Centre Frequency,MHz,,ro,uint32,4,1000,,
+"Settings,Radio Signal Information,Radio Module 1",,T02.P05D2,Radio Module 1 DL Centre Frequency,MHz,,ro,uint32,4,1000,,
+"Settings,Radio Signal Information,Radio Module 1",,T02.P0A31,Radio Module 1 UL Input Power,dBm,,ro,int16,2,10,-750 ~ -200,
+"Settings,Radio Signal Information,Radio Module 1",,T02.P0578,Radio Module 1 DL Output Power,dBm,,ro,int16,2,10,50 ~ 230,
+"Settings,Radio Signal Information,Radio Module 1",,T02.P0A30,Radio Module 1 UL Baseband Input Power,dBm,,ro,int16,2,10,,
+"Settings,Radio Signal Information,Radio Module 1",,T02.P0A38,Radio Module 1 DL Baseband Output Power,dBm,,ro,int16,2,10,,
+"Settings,Radio Signal Information,Radio Module 2",,T02.P05D3,Radio Module 2 Digital Filter Bandwidth,MHz,,ro,uint32,4,1000,,
+"Settings,Radio Signal Information,Radio Module 2",,T02.P05D4,Radio Module 2 UL Centre Frequency,MHz,,ro,uint32,4,1000,,
+"Settings,Radio Signal Information,Radio Module 2",,T02.P05D5,Radio Module 2 DL Centre Frequency,MHz,,ro,uint32,4,1000,,
+"Settings,Radio Signal Information,Radio Module 2",,T02.P0A33,Radio Module 2 UL Input Power,dBm,,ro,int16,2,10,-750 ~ -200,
+"Settings,Radio Signal Information,Radio Module 2",,T02.P0579,Radio Module 2 DL Output Power,dBm,,ro,int16,2,10,50 ~ 230,
+"Settings,Radio Signal Information,Radio Module 2",,T02.P0A32,Radio Module 2 UL Baseband Input Power,dBm,,ro,int16,2,10,,
+"Settings,Radio Signal Information,Radio Module 2",,T02.P0A39,Radio Module 2 DL Baseband Output Power,dBm,,ro,int16,2,10,,
+"Settings,Radio Signal Information,Radio Module 3",,T02.P05D6,Radio Module 3 Digital Filter Bandwidth,MHz,,ro,uint32,4,1000,,
+"Settings,Radio Signal Information,Radio Module 3",,T02.P05D7,Radio Module 3 UL Centre Frequency,MHz,,ro,uint32,4,1000,,
+"Settings,Radio Signal Information,Radio Module 3",,T02.P05D8,Radio Module 3 DL Centre Frequency,MHz,,ro,uint32,4,1000,,
+"Settings,Radio Signal Information,Radio Module 3",,T02.P0A35,Radio Module 3 UL Input Power,dBm,,ro,int16,2,10,-750 ~ -200,
+"Settings,Radio Signal Information,Radio Module 3",,T02.P053A,Radio Module 3 DL Output Power,dBm,,ro,int16,2,10,50 ~ 230,
+"Settings,Radio Signal Information,Radio Module 3",,T02.P0A34,Radio Module 3 UL Baseband Input Power,dBm,,ro,int16,2,10,,
+"Settings,Radio Signal Information,Radio Module 3",,T02.P0A3A,Radio Module 3 DL Baseband Output Power,dBm,,ro,int16,2,10,,
+"Settings,Radio Signal Information,Radio Module 4",,T02.P05D9,Radio Module 4 Digital Filter Bandwidth,MHz,,ro,uint32,4,1000,,
+"Settings,Radio Signal Information,Radio Module 4",,T02.P05DA,Radio Module 4 UL Centre Frequency,MHz,,ro,uint32,4,1000,,
+"Settings,Radio Signal Information,Radio Module 4",,T02.P05DB,Radio Module 4 DL Centre Frequency,MHz,,ro,uint32,4,1000,,
+"Settings,Radio Signal Information,Radio Module 4",,T02.P0A37,Radio Module 4 UL Input Power,dBm,,ro,int16,2,10,-750 ~ -200,
+"Settings,Radio Signal Information,Radio Module 4",,T02.P053B,Radio Module 4 DL Output Power,dBm,,ro,int16,2,10,50 ~ 230,
+"Settings,Radio Signal Information,Radio Module 4",,T02.P0A36,Radio Module 4 UL Baseband Input Power,dBm,,ro,int16,2,10,,
+"Settings,Radio Signal Information,Radio Module 4",,T02.P0A3B,Radio Module 4 DL Baseband Output Power,dBm,,ro,int16,2,10,,
+"Settings,Radio Signal Information,Radio Module 5",,T02.P05DC,Radio Module 5 Digital Filter Bandwidth,MHz,,ro,uint32,4,1000,,
+"Settings,Radio Signal Information,Radio Module 5",,T02.P05DD,Radio Module 5 UL Centre Frequency,MHz,,ro,uint32,4,1000,,
+"Settings,Radio Signal Information,Radio Module 5",,T02.P05DE,Radio Module 5 DL Centre Frequency,MHz,,ro,uint32,4,1000,,
+"Settings,Radio Signal Information,Radio Module 5",,T02.P0A3C,Radio Module 5 UL Input Power,dBm,,ro,int16,2,10,-750 ~ -200,
+"Settings,Radio Signal Information,Radio Module 5",,T02.P053C,Radio Module 5 DL Output Power,dBm,,ro,int16,2,10,50 ~ 230,
+"Settings,Radio Signal Information,Radio Module 5",,T02.P0541,Radio Module 5 UL Baseband Input Power,dBm,,ro,int16,2,10,,
+"Settings,Radio Signal Information,Radio Module 5",,T02.P0545,Radio Module 5 DL Baseband Output Power,dBm,,ro,int16,2,10,,
+"Settings,Radio Signal Information,Radio Module 6",,T02.P05DF,Radio Module 6 Digital Filter Bandwidth,MHz,,ro,uint32,4,1000,,
+"Settings,Radio Signal Information,Radio Module 6",,T02.P05E1,Radio Module 6 UL Centre Frequency,MHz,,ro,uint32,4,1000,,
+"Settings,Radio Signal Information,Radio Module 6",,T02.P05E2,Radio Module 6 DL Centre Frequency,MHz,,ro,uint32,4,1000,,
+"Settings,Radio Signal Information,Radio Module 6",,T02.P0A3D,Radio Module 6 UL Input Power,dBm,,ro,int16,2,10,-750 ~ -200,
+"Settings,Radio Signal Information,Radio Module 6",,T02.P053D,Radio Module 6 DL Output Power,dBm,,ro,int16,2,10,50 ~ 230,
+"Settings,Radio Signal Information,Radio Module 6",,T02.P0542,Radio Module 6 UL Baseband Input Power,dBm,,ro,int16,2,10,,
+"Settings,Radio Signal Information,Radio Module 6",,T02.P0546,Radio Module 6 DL Baseband Output Power,dBm,,ro,int16,2,10,,
+"Settings,Radio Signal Information,Radio Module 7",,T02.P05E3,Radio Module 7 Digital Filter Bandwidth,MHz,,ro,uint32,4,1000,,
+"Settings,Radio Signal Information,Radio Module 7",,T02.P05E4,Radio Module 7 UL Centre Frequency,MHz,,ro,uint32,4,1000,,
+"Settings,Radio Signal Information,Radio Module 7",,T02.P05E5,Radio Module 7 DL Centre Frequency,MHz,,ro,uint32,4,1000,,
+"Settings,Radio Signal Information,Radio Module 7",,T02.P0A3E,Radio Module 7 UL Input Power,dBm,,ro,int16,2,10,-750 ~ -200,
+"Settings,Radio Signal Information,Radio Module 7",,T02.P053E,Radio Module 7 DL Output Power,dBm,,ro,int16,2,10,50 ~ 230,
+"Settings,Radio Signal Information,Radio Module 7",,T02.P0543,Radio Module 7 UL Baseband Input Power,dBm,,ro,int16,2,10,,
+"Settings,Radio Signal Information,Radio Module 7",,T02.P0547,Radio Module 7 DL Baseband Output Power,dBm,,ro,int16,2,10,,
+"Settings,Radio Signal Information,Radio Module 8",,T02.P05E7,Radio Module 8 Digital Filter Bandwidth,MHz,,ro,uint32,4,1000,,
+"Settings,Radio Signal Information,Radio Module 8",,T02.P05E8,Radio Module 8 UL Centre Frequency,MHz,,ro,uint32,4,1000,,
+"Settings,Radio Signal Information,Radio Module 8",,T02.P05E9,Radio Module 8 DL Centre Frequency,MHz,,ro,uint32,4,1000,,
+"Settings,Radio Signal Information,Radio Module 8",,T02.P0A3F,Radio Module 8 UL Input Power,dBm,,ro,int16,2,10,-750 ~ -200,
+"Settings,Radio Signal Information,Radio Module 8",,T02.P053F,Radio Module 8 DL Output Power,dBm,,ro,int16,2,10,50 ~ 230,
+"Settings,Radio Signal Information,Radio Module 8",,T02.P0544,Radio Module 8 UL Baseband Input Power,dBm,,ro,int16,2,10,,
+"Settings,Radio Signal Information,Radio Module 8",,T02.P0548,Radio Module 8 DL Baseband Output Power,dBm,,ro,int16,2,10,,
+"Settings,Radio Signal Information,General",,T02.P0501,Element Operating Temperature,℃,,ro,int8,1,,,
+"Settings,Radio Signal Information,General",,T02.P08F9,Fan Work Mode,,,rw,binary,1,,,00=Low Noise;01=Normal
+"Settings,Theoretical Gain,Radio Module 1 Theoretical Gain ",,T02.P0ED0,Port 1 UL Gain,dB,,ro,int8,1,,,
+"Settings,Theoretical Gain,Radio Module 1 Theoretical Gain ",,T02.P0ED1,Port 2 UL Gain,dB,,ro,int8,1,,,
+"Settings,Theoretical Gain,Radio Module 1 Theoretical Gain ",,T02.P0ED2,Port 3 UL Gain,dB,,ro,int8,1,,,
+"Settings,Theoretical Gain,Radio Module 1 Theoretical Gain ",,T02.P0ED3,Port 4 UL Gain,dB,,ro,int8,1,,,
+"Settings,Theoretical Gain,Radio Module 1 Theoretical Gain ",,T02.P0F00,Port 1 DL Gain,dB,,ro,int8,1,,,
+"Settings,Theoretical Gain,Radio Module 1 Theoretical Gain ",,T02.P0F01,Port 2 DL Gain,dB,,ro,int8,1,,,
+"Settings,Theoretical Gain,Radio Module 1 Theoretical Gain ",,T02.P0F02,Port 3 DL Gain,dB,,ro,int8,1,,,
+"Settings,Theoretical Gain,Radio Module 1 Theoretical Gain ",,T02.P0F03,Port 4 DL Gain,dB,,ro,int8,1,,,
+"Settings,Theoretical Gain,Radio Module 2 Theoretical Gain",,T02.P0ED4,Port 1 UL Gain,dB,,ro,int8,1,,,
+"Settings,Theoretical Gain,Radio Module 2 Theoretical Gain",,T02.P0ED5,Port 2 UL Gain,dB,,ro,int8,1,,,
+"Settings,Theoretical Gain,Radio Module 2 Theoretical Gain",,T02.P0ED6,Port 3 UL Gain,dB,,ro,int8,1,,,
+"Settings,Theoretical Gain,Radio Module 2 Theoretical Gain",,T02.P0ED7,Port 4 UL Gain,dB,,ro,int8,1,,,
+"Settings,Theoretical Gain,Radio Module 2 Theoretical Gain",,T02.P0F04,Port 1 DL Gain,dB,,ro,int8,1,,,
+"Settings,Theoretical Gain,Radio Module 2 Theoretical Gain",,T02.P0F05,Port 2 DL Gain,dB,,ro,int8,1,,,
+"Settings,Theoretical Gain,Radio Module 2 Theoretical Gain",,T02.P0F06,Port 3 DL Gain,dB,,ro,int8,1,,,
+"Settings,Theoretical Gain,Radio Module 2 Theoretical Gain",,T02.P0F07,Port 4 DL Gain,dB,,ro,int8,1,,,
+"Settings,Theoretical Gain,Radio Module 3 Theoretical Gain ",,T02.P0ED8,Port 1 UL Gain,dB,,ro,int8,1,,,
+"Settings,Theoretical Gain,Radio Module 3 Theoretical Gain ",,T02.P0ED9,Port 2 UL Gain,dB,,ro,int8,1,,,
+"Settings,Theoretical Gain,Radio Module 3 Theoretical Gain ",,T02.P0EDA,Port 3 UL Gain,dB,,ro,int8,1,,,
+"Settings,Theoretical Gain,Radio Module 3 Theoretical Gain ",,T02.P0EDB,Port 4 UL Gain,dB,,ro,int8,1,,,
+"Settings,Theoretical Gain,Radio Module 3 Theoretical Gain ",,T02.P0F08,Port 1 DL Gain,dB,,ro,int8,1,,,
+"Settings,Theoretical Gain,Radio Module 3 Theoretical Gain ",,T02.P0F09,Port 2 DL Gain,dB,,ro,int8,1,,,
+"Settings,Theoretical Gain,Radio Module 3 Theoretical Gain ",,T02.P0EFA,Port 3 DL Gain,dB,,ro,int8,1,,,
+"Settings,Theoretical Gain,Radio Module 3 Theoretical Gain ",,T02.P0EFB,Port 4 DL Gain,dB,,ro,int8,1,,,
+"Settings,Theoretical Gain,Radio Module 4 Theoretical Gain ",,T02.P0EDC,Port 1 UL Gain,dB,,ro,int8,1,,,
+"Settings,Theoretical Gain,Radio Module 4 Theoretical Gain ",,T02.P0EDD,Port 2 UL Gain,dB,,ro,int8,1,,,
+"Settings,Theoretical Gain,Radio Module 4 Theoretical Gain ",,T02.P0EDE,Port 3 UL Gain,dB,,ro,int8,1,,,
+"Settings,Theoretical Gain,Radio Module 4 Theoretical Gain ",,T02.P0EDF,Port 4 UL Gain,dB,,ro,int8,1,,,
+"Settings,Theoretical Gain,Radio Module 4 Theoretical Gain ",,T02.P0EFC,Port 1 DL Gain,dB,,ro,int8,1,,,
+"Settings,Theoretical Gain,Radio Module 4 Theoretical Gain ",,T02.P0EFD,Port 2 DL Gain,dB,,ro,int8,1,,,
+"Settings,Theoretical Gain,Radio Module 4 Theoretical Gain ",,T02.P0EFE,Port 3 DL Gain,dB,,ro,int8,1,,,
+"Settings,Theoretical Gain,Radio Module 4 Theoretical Gain ",,T02.P0EFF,Port 4 DL Gain,dB,,ro,int8,1,,,
+"Settings,Theoretical Gain,Radio Module 5 Theoretical Gain ",,T02.P06A0,Port 1 UL Gain,dB,,ro,int8,1,,,
+"Settings,Theoretical Gain,Radio Module 5 Theoretical Gain ",,T02.P06A1,Port 2 UL Gain,dB,,ro,int8,1,,,
+"Settings,Theoretical Gain,Radio Module 5 Theoretical Gain ",,T02.P06A2,Port 3 UL Gain,dB,,ro,int8,1,,,
+"Settings,Theoretical Gain,Radio Module 5 Theoretical Gain ",,T02.P06A3,Port 4 UL Gain,dB,,ro,int8,1,,,
+"Settings,Theoretical Gain,Radio Module 5 Theoretical Gain ",,T02.P06A4,Port 1 DL Gain,dB,,ro,int8,1,,,
+"Settings,Theoretical Gain,Radio Module 5 Theoretical Gain ",,T02.P06A5,Port 2 DL Gain,dB,,ro,int8,1,,,
+"Settings,Theoretical Gain,Radio Module 5 Theoretical Gain ",,T02.P06A6,Port 3 DL Gain,dB,,ro,int8,1,,,
+"Settings,Theoretical Gain,Radio Module 5 Theoretical Gain ",,T02.P06A7,Port 4 DL Gain,dB,,ro,int8,1,,,
+"Settings,Theoretical Gain,Radio Module 6 Theoretical Gain ",,T02.P06A8,Port 1 UL Gain,dB,,ro,int8,1,,,
+"Settings,Theoretical Gain,Radio Module 6 Theoretical Gain ",,T02.P06A9,Port 2 UL Gain,dB,,ro,int8,1,,,
+"Settings,Theoretical Gain,Radio Module 6 Theoretical Gain ",,T02.P06AA,Port 3 UL Gain,dB,,ro,int8,1,,,
+"Settings,Theoretical Gain,Radio Module 6 Theoretical Gain ",,T02.P06AB,Port 4 UL Gain,dB,,ro,int8,1,,,
+"Settings,Theoretical Gain,Radio Module 6 Theoretical Gain ",,T02.P06AC,Port 1 DL Gain,dB,,ro,int8,1,,,
+"Settings,Theoretical Gain,Radio Module 6 Theoretical Gain ",,T02.P06AD,Port 2 DL Gain,dB,,ro,int8,1,,,
+"Settings,Theoretical Gain,Radio Module 6 Theoretical Gain ",,T02.P06AE,Port 3 DL Gain,dB,,ro,int8,1,,,
+"Settings,Theoretical Gain,Radio Module 6 Theoretical Gain ",,T02.P06AF,Port 4 DL Gain,dB,,ro,int8,1,,,
+"Settings,Theoretical Gain,Radio Module 7 Theoretical Gain ",,T02.P06F0,Port 1 UL Gain,dB,,ro,int8,1,,,
+"Settings,Theoretical Gain,Radio Module 7 Theoretical Gain ",,T02.P06F1,Port 2 UL Gain,dB,,ro,int8,1,,,
+"Settings,Theoretical Gain,Radio Module 7 Theoretical Gain ",,T02.P06F2,Port 3 UL Gain,dB,,ro,int8,1,,,
+"Settings,Theoretical Gain,Radio Module 7 Theoretical Gain ",,T02.P06F3,Port 4 UL Gain,dB,,ro,int8,1,,,
+"Settings,Theoretical Gain,Radio Module 7 Theoretical Gain ",,T02.P06F4,Port 1 DL Gain,dB,,ro,int8,1,,,
+"Settings,Theoretical Gain,Radio Module 7 Theoretical Gain ",,T02.P06F5,Port 2 DL Gain,dB,,ro,int8,1,,,
+"Settings,Theoretical Gain,Radio Module 7 Theoretical Gain ",,T02.P06F6,Port 3 DL Gain,dB,,ro,int8,1,,,
+"Settings,Theoretical Gain,Radio Module 7 Theoretical Gain ",,T02.P06F7,Port 4 DL Gain,dB,,ro,int8,1,,,
+"Settings,Theoretical Gain,Radio Module 8 Theoretical Gain ",,T02.P06F8,Port 1 UL Gain,dB,,ro,int8,1,,,
+"Settings,Theoretical Gain,Radio Module 8 Theoretical Gain ",,T02.P06F9,Port 2 UL Gain,dB,,ro,int8,1,,,
+"Settings,Theoretical Gain,Radio Module 8 Theoretical Gain ",,T02.P06FA,Port 3 UL Gain,dB,,ro,int8,1,,,
+"Settings,Theoretical Gain,Radio Module 8 Theoretical Gain ",,T02.P06FB,Port 4 UL Gain,dB,,ro,int8,1,,,
+"Settings,Theoretical Gain,Radio Module 8 Theoretical Gain ",,T02.P06FC,Port 1 DL Gain,dB,,ro,int8,1,,,
+"Settings,Theoretical Gain,Radio Module 8 Theoretical Gain ",,T02.P06FD,Port 2 DL Gain,dB,,ro,int8,1,,,
+"Settings,Theoretical Gain,Radio Module 8 Theoretical Gain ",,T02.P06FE,Port 3 DL Gain,dB,,ro,int8,1,,,
+"Settings,Theoretical Gain,Radio Module 8 Theoretical Gain ",,T02.P06FF,Port 4 DL Gain,dB,,ro,int8,1,,,
+"Settings,Optical Module Information,Optical Module Info",,T02.P0A96,OP1 Transceiver,,,ro,string,16,,,
+"Settings,Optical Module Information,Optical Module Info",,T02.P0AA6,OP1 Transceiver,,,ro,string,16,,,
+"Settings,Optical Module Information,Optical Module Info",,T02.P0AB6,OP1 Transceiver,,,ro,string,16,,,
+"Settings,Optical Module Information,Optical Module Info",,T02.P0A97,OP2 Transceiver,,,ro,string,16,,,
+"Settings,Optical Module Information,Optical Module Info",,T02.P0AA7,OP2 Transceiver,,,ro,string,16,,,
+"Settings,Optical Module Information,Optical Module Info",,T02.P0AB7,OP2 Transceiver,,,ro,string,16,,,
+"Settings,Optical Module Information,Optical Module",,T02.P0A40,OP1 Transceiver,dBm,,ro,int16,2,100,,
+"Settings,Optical Module Information,Optical Module",,T02.P0A50,OP1 Transceiver Tx/Rx Power,dBm,,ro,int16,2,100,,
+"Settings,Optical Module Information,Optical Module",,T02.P0A41,OP2 Transceiver,dBm,,ro,int16,2,100,,
+"Settings,Optical Module Information,Optical Module",,T02.P0A51,OP2 Transceiver Tx/Rx Power,dBm,,ro,int16,2,100,,
+"Settings,LAN Connectivity,Bluetooth Beacon Settings",,T02.P0F24,Beacon Active,,,rw,binary,1,,,00=Off;01=On
+"Settings,LAN Connectivity,Bluetooth Beacon Settings",,T02.P0F25,UUID,,,rw,string,32,,,
+"Settings,LAN Connectivity,Bluetooth Beacon Settings",,T02.P0F22,Major,,,rw,uint32,4,,0 ~ 65535,
+"Settings,LAN Connectivity,Bluetooth Beacon Settings",,T02.P0F23,Minor,,,rw,uint32,4,,0 ~ 65535,
+"Settings,Engineering CMD,",,TB4.P0B75,,,,rw,string,20,,,
+"Settings,Engineering CMD,",,TB4.P0B90,,,,rw,binary,1,,,
+"Settings,Engineering CMD,",,TB4.P0B19,,,,rw,binary,1,,,
+"Settings,Engineering CMD,",,TB4.P0B20,,,,rw,uint16,2,,,
+"Settings,Engineering CMD,",,TB4.P0B17,,,,rw,binary,1,,,
+"Settings,Engineering CMD,",,TB4.P0AED,,,,rw,binary,7,,,
+"Settings,Engineering CMD,",,TB4.P0B31,,,,rw,uint8,1,,,
+"Settings,Engineering CMD,",,TB4.P0B32,,,,ro,uint8,1,,,
+"Settings,Engineering CMD,",,TB4.P0B33,,,,rw,string,12,,,
+"Settings,Engineering CMD,",,TB4.P0B34,,,,rw,uint8,1,,,
+"Settings,Engineering CMD,",,TB4.P0B35,,,,ro,uint8,1,,,
+"Settings,Engineering CMD,",,TB4.P0B36,Device Category,,,ro,uint8,1,,,
+"Settings,Engineering CMD,",,TB4.P0B11,Device Name,,,ro,string,40,,,
+"Settings,Engineering CMD2,",,T02.P0AEC,,,,rw,binary,40,,,
+"Settings,Engineering CMD2,",,T02.P0BE0,OP IP address,,,rw,ipv4,4,,,
+"Alarms,Element Alarms,Alarm",,T02.P0306,Over Temperature Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Alarms,Element Alarms,Alarm",,T02.P0206,Over Temperature Alarm,,,rw,binary,1,,,00=Disable;02=Warning;03=Minor;04=Major;05=Critical
+"Alarms,Element Alarms,Alarm",,T02.P0364,Radio Module 1 UL ALC Over Range Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Alarms,Element Alarms,Alarm",,T02.P0264,Radio Module 1 UL ALC Over Range Alarm,,,rw,binary,1,,,00=Disable;02=Warning;03=Minor;04=Major;05=Critical
+"Alarms,Element Alarms,Alarm",,T02.P0365,Radio Module 2 UL ALC Over Range Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Alarms,Element Alarms,Alarm",,T02.P0265,Radio Module 2 UL ALC Over Range Alarm,,,rw,binary,1,,,00=Disable;02=Warning;03=Minor;04=Major;05=Critical
+"Alarms,Element Alarms,Alarm",,T02.P0366,Radio Module 3 UL ALC Over Range Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Alarms,Element Alarms,Alarm",,T02.P0266,Radio Module 3 UL ALC Over Range Alarm,,,rw,binary,1,,,00=Disable;02=Warning;03=Minor;04=Major;05=Critical
+"Alarms,Element Alarms,Alarm",,T02.P0367,Radio Module 4 UL ALC Over Range Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Alarms,Element Alarms,Alarm",,T02.P0267,Radio Module 4 UL ALC Over Range Alarm,,,rw,binary,1,,,00=Disable;02=Warning;03=Minor;04=Major;05=Critical
+"Alarms,Element Alarms,Alarm",,T02.P039B,Radio Module 5 UL ALC Over Range Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Alarms,Element Alarms,Alarm",,T02.P029B,Radio Module 5 UL ALC Over Range Alarm,,,rw,binary,1,,,00=Disable;02=Warning;03=Minor;04=Major;05=Critical
+"Alarms,Element Alarms,Alarm",,T02.P039C,Radio Module 6 UL ALC Over Range Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Alarms,Element Alarms,Alarm",,T02.P029C,Radio Module 6 UL ALC Over Range Alarm,,,rw,binary,1,,,00=Disable;02=Warning;03=Minor;04=Major;05=Critical
+"Alarms,Element Alarms,Alarm",,T02.P039D,Radio Module 7 UL ALC Over Range Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Alarms,Element Alarms,Alarm",,T02.P029D,Radio Module 7 UL ALC Over Range Alarm,,,rw,binary,1,,,00=Disable;02=Warning;03=Minor;04=Major;05=Critical
+"Alarms,Element Alarms,Alarm",,T02.P039E,Radio Module 8 UL ALC Over Range Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Alarms,Element Alarms,Alarm",,T02.P029E,Radio Module 8 UL ALC Over Range Alarm,,,rw,binary,1,,,00=Disable;02=Warning;03=Minor;04=Major;05=Critical
+"Alarms,Element Alarms,Alarm",,T02.P03A0,OP1 Transceiver Failure Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Alarms,Element Alarms,Alarm",,T02.P02A0,OP1 Transceiver Failure Alarm,,,rw,binary,1,,,00=Disable;02=Warning;03=Minor;04=Major;05=Critical
+"Alarms,Element Alarms,Alarm",,T02.P03A1,OP2 Transceiver Failure Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Alarms,Element Alarms,Alarm",,T02.P02A1,OP2 Transceiver Failure Alarm,,,rw,binary,1,,,00=Disable;02=Warning;03=Minor;04=Major;05=Critical
+"Alarms,Element Alarms,Alarm",,T02.P038E,Radio Module 1 DL Output Under Power Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Alarms,Element Alarms,Alarm",,T02.P028E,Radio Module 1 DL Output Under Power Alarm,,,rw,binary,1,,,00=Disable;02=Warning;03=Minor;04=Major;05=Critical
+"Alarms,Element Alarms,Alarm",,T02.P039F,Radio Module 2 DL Output Under Power Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Alarms,Element Alarms,Alarm",,T02.P029F,Radio Module 2 DL Output Under Power Alarm,,,rw,binary,1,,,00=Disable;02=Warning;03=Minor;04=Major;05=Critical
+"Alarms,Element Alarms,Alarm",,T02.P033F,Radio Module 3 DL Output Under Power Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Alarms,Element Alarms,Alarm",,T02.P023F,Radio Module 3 DL Output Under Power Alarm,,,rw,binary,1,,,00=Disable;02=Warning;03=Minor;04=Major;05=Critical
+"Alarms,Element Alarms,Alarm",,T02.P036B,Radio Module 4 DL Output Under Power Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Alarms,Element Alarms,Alarm",,T02.P026B,Radio Module 4 DL Output Under Power Alarm,,,rw,binary,1,,,00=Disable;02=Warning;03=Minor;04=Major;05=Critical
+"Alarms,Element Alarms,Alarm",,T02.P03C4,Radio Module 5 DL Output Under Power Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Alarms,Element Alarms,Alarm",,T02.P02C4,Radio Module 5 DL Output Under Power Alarm,,,rw,binary,1,,,00=Disable;02=Warning;03=Minor;04=Major;05=Critical
+"Alarms,Element Alarms,Alarm",,T02.P03C5,Radio Module 6 DL Output Under Power Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Alarms,Element Alarms,Alarm",,T02.P02C5,Radio Module 6 DL Output Under Power Alarm,,,rw,binary,1,,,00=Disable;02=Warning;03=Minor;04=Major;05=Critical
+"Alarms,Element Alarms,Alarm",,T02.P03C6,Radio Module 7 DL Output Under Power Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Alarms,Element Alarms,Alarm",,T02.P02C6,Radio Module 7 DL Output Under Power Alarm,,,rw,binary,1,,,00=Disable;02=Warning;03=Minor;04=Major;05=Critical
+"Alarms,Element Alarms,Alarm",,T02.P03C7,Radio Module 8 DL Output Under Power Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Alarms,Element Alarms,Alarm",,T02.P02C7,Radio Module 8 DL Output Under Power Alarm,,,rw,binary,1,,,00=Disable;02=Warning;03=Minor;04=Major;05=Critical
+"Alarms,Element Alarms,Alarm",,T02.P037F,Radio Module 1 DL Output Over Power Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Alarms,Element Alarms,Alarm",,T02.P027F,Radio Module 1 DL Output Over Power Alarm,,,rw,binary,1,,,00=Disable;02=Warning;03=Minor;04=Major;05=Critical
+"Alarms,Element Alarms,Alarm",,T02.P038F,Radio Module 2 DL Output Over Power Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Alarms,Element Alarms,Alarm",,T02.P028F,Radio Module 2 DL Output Over Power Alarm,,,rw,binary,1,,,00=Disable;02=Warning;03=Minor;04=Major;05=Critical
+"Alarms,Element Alarms,Alarm",,T02.P033E,Radio Module 3 DL Output Over Power Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Alarms,Element Alarms,Alarm",,T02.P023E,Radio Module 3 DL Output Over Power Alarm,,,rw,binary,1,,,00=Disable;02=Warning;03=Minor;04=Major;05=Critical
+"Alarms,Element Alarms,Alarm",,T02.P036A,Radio Module 4 DL Output Over Power Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Alarms,Element Alarms,Alarm",,T02.P026A,Radio Module 4 DL Output Over Power Alarm,,,rw,binary,1,,,00=Disable;02=Warning;03=Minor;04=Major;05=Critical
+"Alarms,Element Alarms,Alarm",,T02.P03C8,Radio Module 5 DL Output Over Power Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Alarms,Element Alarms,Alarm",,T02.P02C8,Radio Module 5 DL Output Over Power Alarm,,,rw,binary,1,,,00=Disable;02=Warning;03=Minor;04=Major;05=Critical
+"Alarms,Element Alarms,Alarm",,T02.P03C9,Radio Module 6 DL Output Over Power Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Alarms,Element Alarms,Alarm",,T02.P02C9,Radio Module 6 DL Output Over Power Alarm,,,rw,binary,1,,,00=Disable;02=Warning;03=Minor;04=Major;05=Critical
+"Alarms,Element Alarms,Alarm",,T02.P03CA,Radio Module 7 DL Output Over Power Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Alarms,Element Alarms,Alarm",,T02.P02CA,Radio Module 7 DL Output Over Power Alarm,,,rw,binary,1,,,00=Disable;02=Warning;03=Minor;04=Major;05=Critical
+"Alarms,Element Alarms,Alarm",,T02.P03CB,Radio Module 8 DL Output Over Power Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Alarms,Element Alarms,Alarm",,T02.P02CB,Radio Module 8 DL Output Over Power Alarm,,,rw,binary,1,,,00=Disable;02=Warning;03=Minor;04=Major;05=Critical
+"Alarms,Element Alarms,Alarm",,T02.P0370,Fan Device Loss Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Alarms,Element Alarms,Alarm",,T02.P0270,Fan Device Loss Alarm,,,rw,binary,1,,,00=Disable;02=Warning;03=Minor;04=Major;05=Critical
+"Alarms,Element Alarms,Alarm",,T02.P037E,Optical Port Switch Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Alarms,Element Alarms,Alarm",,T02.P027E,Optical Port Switch Alarm,,,rw,binary,1,,,00=Disable;02=Warning;03=Minor;04=Major;05=Critical
+"Alarms,Element Alarms,Alarm",,T02.P030F,Optical Link Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Alarms,Element Alarms,Alarm",,T02.P020F,Optical Link Alarm,,,rw,binary,1,,,00=Disable;02=Warning;03=Minor;04=Major;05=Critical
+"Alarms,Element Alarms,Alarm",,T02.P036C,RF Link Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Alarms,Element Alarms,Alarm",,T02.P026C,RF Link Alarm,,,rw,binary,1,,,00=Disable;02=Warning;03=Minor;04=Major;05=Critical
+"Alarms,Alarm Thresholds,Alarm Thresholds",,T02.P0498,Radio Module 1 DL Output Under Power Threshold,dBm,,rw,int16,2,10,50 ~ 250,
+"Alarms,Alarm Thresholds,Alarm Thresholds",,T02.P0499,Radio Module 2 DL Output Under Power Threshold,dBm,,rw,int16,2,10,50 ~ 250,
+"Alarms,Alarm Thresholds,Alarm Thresholds",,T02.P0492,Radio Module 3 DL Output Under Power Threshold,dBm,,rw,int16,2,10,50 ~ 250,
+"Alarms,Alarm Thresholds,Alarm Thresholds",,T02.P0493,Radio Module 4 DL Output Under Power Threshold,dBm,,rw,int16,2,10,50 ~ 250,
+"Alarms,Alarm Thresholds,Alarm Thresholds",,T02.P0916,Radio Module 5 DL Output Under Power Threshold,dBm,,rw,int16,2,10,50 ~ 250,
+"Alarms,Alarm Thresholds,Alarm Thresholds",,T02.P0917,Radio Module 6 DL Output Under Power Threshold,dBm,,rw,int16,2,10,50 ~ 250,
+"Alarms,Alarm Thresholds,Alarm Thresholds",,T02.P0918,Radio Module 7 DL Output Under Power Threshold,dBm,,rw,int16,2,10,50 ~ 250,
+"Alarms,Alarm Thresholds,Alarm Thresholds",,T02.P0919,Radio Module 8 DL Output Under Power Threshold,dBm,,rw,int16,2,10,50 ~ 250,
+"Alarms,Alarm Thresholds,Alarm Thresholds",,T02.P049A,Radio Module 1 DL Output Over Power Threshold,dBm,,rw,int16,2,10,50 ~ 250,
+"Alarms,Alarm Thresholds,Alarm Thresholds",,T02.P049B,Radio Module 2 DL Output Over Power Threshold,dBm,,rw,int16,2,10,50 ~ 250,
+"Alarms,Alarm Thresholds,Alarm Thresholds",,T02.P0496,Radio Module 3 DL Output Over Power Threshold,dBm,,rw,int16,2,10,50 ~ 250,
+"Alarms,Alarm Thresholds,Alarm Thresholds",,T02.P0497,Radio Module 4 DL Output Over Power Threshold,dBm,,rw,int16,2,10,50 ~ 250,
+"Alarms,Alarm Thresholds,Alarm Thresholds",,T02.P091A,Radio Module 5 DL Output Over Power Threshold,dBm,,rw,int16,2,10,50 ~ 250,
+"Alarms,Alarm Thresholds,Alarm Thresholds",,T02.P091B,Radio Module 6 DL Output Over Power Threshold,dBm,,rw,int16,2,10,50 ~ 250,
+"Alarms,Alarm Thresholds,Alarm Thresholds",,T02.P091C,Radio Module 7 DL Output Over Power Threshold,dBm,,rw,int16,2,10,50 ~ 250,
+"Alarms,Alarm Thresholds,Alarm Thresholds",,T02.P091D,Radio Module 8 DL Output Over Power Threshold,dBm,,rw,int16,2,10,50 ~ 250,
+"Alarms,Alarm Thresholds,Alarm Thresholds",,T02.P0451,Over Temperature Threshold,℃,,rw,int8,1,,,
+"Maintenance,Optical Info,Optical Module Info",,TB4.P0A8A,OP1 Transceiver,,,ro,object,13,,,
+"Maintenance,Optical Info,Optical Module Info",,TB4.P0B40,OP1 Transceiver CPRI Loss Sync Counter,,,ro,uint8,1,,,
+"Maintenance,Optical Info,Optical Module Info",,TB4.P0B69,OP1 Transceiver CPRI Sync Alarm,,,ro,binary,1,,,00=Sync;01=Unsync
+"Maintenance,Optical Info,Optical Module Info",,TB4.P0B71,OP1 Transceiver LOS Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Maintenance,Optical Info,Optical Module Info",,TB4.P0A8B,OP2 Transceiver,,,ro,object,13,,,
+"Maintenance,Optical Info,Optical Module Info",,TB4.P0B41,OP2 Transceiver CPRI Loss Sync Counter,,,ro,uint8,1,,,
+"Maintenance,Optical Info,Optical Module Info",,TB4.P0B6A,OP2 Transceiver CPRI Sync Alarm,,,ro,binary,1,,,00=Sync;01=Unsync
+"Maintenance,Optical Info,Optical Module Info",,TB4.P0B72,OP2 Transceiver LOS Alarm,,,ro,binary,1,,,00=Normal;01=Alarm
+"Maintenance,Engineering,Engineering Info",,TB4.P0B02,Data Update Time,,,ro,datetime,7,,,
+"Maintenance,Engineering,Engineering Info",,TB4.P0B05,ARM CRC,,,ro,binary,2,,,
+"Maintenance,Engineering,Engineering Info",,TB4.P0B8C,FPGA CRC,,,ro,binary,2,,,
+"Maintenance,Engineering,Engineering Info",,TB4.P0B27,N2-RU CRC,,,ro,binary,2,,,
+"Maintenance,Engineering,Engineering Info",,TB4.P0B7F,Configuration CRC,,,ro,binary,2,,,
+"Maintenance,Engineering,Wi-FI Access Point Module",,TB4.P0F27,AP Module Active,,,rw,binary,1,,,00=Off;01=On
+"Maintenance,Engineering,Wi-FI Access Point Module",,TB4.P0F26,AP Module Reset,,,wo,binary,1,,,00=Reset
+"Maintenance,Engineering,Digital Panel Information",,TB4.P0B8A,Max Fiber Delay Core A,us,,ro,uint16,2,100,,
+"Maintenance,Engineering,Digital Panel Information",,TB4.P0B8D,Max Fiber Delay Core B,us,,ro,uint16,2,100,,
+"Maintenance,Engineering,OP Info",,TB4.P0B42,Sync Loss Counter Reset,,,wo,binary,1,,,00=Reset
+"Maintenance,Engineering,ALC Indication",,TB4.P03AA,Radio Module 1 UL ALC Working,,,ro,binary,1,,,00=Normal;01=Alarm
+"Maintenance,Engineering,ALC Indication",,TB4.P03AB,Radio Module 2 UL ALC Working,,,ro,binary,1,,,00=Normal;01=Alarm
+"Maintenance,Engineering,ALC Indication",,TB4.P03AC,Radio Module 3 UL ALC Working,,,ro,binary,1,,,00=Normal;01=Alarm
+"Maintenance,Engineering,ALC Indication",,TB4.P03AD,Radio Module 4 UL ALC Working,,,ro,binary,1,,,00=Normal;01=Alarm
+"Maintenance,Engineering,ALC Indication",,TB4.P03AE,Radio Module 5 UL ALC Working,,,ro,binary,1,,,00=Normal;01=Alarm
+"Maintenance,Engineering,ALC Indication",,TB4.P03AF,Radio Module 6 UL ALC Working,,,ro,binary,1,,,00=Normal;01=Alarm
+"Maintenance,Engineering,ALC Indication",,TB4.P03B0,Radio Module 7 UL ALC Working,,,ro,binary,1,,,00=Normal;01=Alarm
+"Maintenance,Engineering,ALC Indication",,TB4.P03B1,Radio Module 8 UL ALC Working,,,ro,binary,1,,,00=Normal;01=Alarm
+"Maintenance,Engineering,Radio ALC Limiting Value",,TB4.P03BA,Radio Module 1 ALC Limiting Value,,,ro,uint8,1,2,,
+"Maintenance,Engineering,Radio ALC Limiting Value",,TB4.P03BB,Radio Module 2 ALC Limiting Value,,,ro,uint8,1,2,,
+"Maintenance,Engineering,Radio ALC Limiting Value",,TB4.P03BC,Radio Module 3 ALC Limiting Value,,,ro,uint8,1,2,,
+"Maintenance,Engineering,Radio ALC Limiting Value",,TB4.P03BD,Radio Module 4 ALC Limiting Value,,,ro,uint8,1,2,,
+"Maintenance,Engineering,Radio ALC Limiting Value",,TB4.P03BE,Radio Module 5 ALC Limiting Value,,,ro,uint8,1,2,,
+"Maintenance,Engineering,Radio ALC Limiting Value",,TB4.P03BF,Radio Module 6 ALC Limiting Value,,,ro,uint8,1,2,,
+"Maintenance,Engineering,Radio ALC Limiting Value",,TB4.P03C0,Radio Module 7 ALC Limiting Value,,,ro,uint8,1,2,,
+"Maintenance,Engineering,Radio ALC Limiting Value",,TB4.P03C1,Radio Module 8 ALC Limiting Value,,,ro,uint8,1,2,,
+"Maintenance,Engineering,Auto Protection",,TB4.P0815,Auto Protection Status,,,ro,binary,1,,,00=Normal;01=Alarm
+"Maintenance,Engineering,Advanced Command",,TB4.P0BA1,System Reset,,,wo,binary,1,,,00=Reset
+"Maintenance,Engineering,Advanced Command",,TB4.P0B09,Alarm Initialization,,,wo,binary,1,,,04=Report Fault Correcting;FF=Initialization
+"Maintenance,Engineering,Advanced Command",,TB4.P0B92,Alarm Mode Select,,,rw,binary,1,,,00=Normal Mode 3min;01=Test Mode 1min
+"Maintenance,Engineering,TDD Test Mode",,TB4.P0610,UL/DL Switch,,,rw,binary,1,,,00=Auto;01=Downlink Open;02=Uplink Open;03=Close
+"Maintenance,Engineering,Device Led Blink",,TB4.P0B00,Blink Switch,,,rw,binary,1,,,00=Off;01=On
+"Maintenance,Engineering,Device Led Blink",,TB4.P0B03,Run Led Switch,,,rw,binary,1,,,00=Off;01=On
+"Maintenance,Factory Command,Factory Parameters",,TB0.P0AFF,Factory Mode,,,rw,binary,9,,,5A=Factory Pattern;A5=Quit
+"Maintenance,Factory Command,Factory Parameters",,TB0.P0AEF,Factory Command,,,wo,string,20,,,
+"Management,Service Configuration,Capacity Allocation Switch",,T02.P0C00,Capacity Allocation Switch,,,rw,binary,1,,,00=Off;01=On
+"Management,Service Configuration,A2 Operator/Service Configuration",,T02.P0C83,"Master A2, Radio Module 1 UL",MHz,,ro,uint32:array,8,1000,,
+"Management,Service Configuration,A2 Operator/Service Configuration",,T02.P0D01,"Master A2, Radio Module 1 DL",MHz,,ro,uint32:array,8,1000,,
+"Management,Service Configuration,A2 Operator/Service Configuration",,T02.P0C84,"Master A2, Radio Module 2 UL",MHz,,ro,uint32:array,8,1000,,
+"Management,Service Configuration,A2 Operator/Service Configuration",,T02.P0D02,"Master A2, Radio Module 2 DL",MHz,,ro,uint32:array,8,1000,,
+"Management,Service Configuration,A2 Operator/Service Configuration",,T02.P0C85,"Master A2, Radio Module 3 UL",MHz,,ro,uint32:array,8,1000,,
+"Management,Service Configuration,A2 Operator/Service Configuration",,T02.P0D03,"Master A2, Radio Module 3 DL",MHz,,ro,uint32:array,8,1000,,
+"Management,Service Configuration,A2 Operator/Service Configuration",,T02.P0C86,"Master A2, Radio Module 4 UL",MHz,,ro,uint32:array,8,1000,,
+"Management,Service Configuration,A2 Operator/Service Configuration",,T02.P0D04,"Master A2, Radio Module 4 DL",MHz,,ro,uint32:array,8,1000,,
+"Management,Service Configuration,A2 Operator/Service Configuration",,T02.P0C93,"1st SA2, Radio Module 1 UL",MHz,,ro,uint32:array,8,1000,,
+"Management,Service Configuration,A2 Operator/Service Configuration",,T02.P0C9B,"1st SA2, Radio Module 1 DL",MHz,,ro,uint32:array,8,1000,,
+"Management,Service Configuration,A2 Operator/Service Configuration",,T02.P0C94,"1st SA2, Radio Module 2 UL",MHz,,ro,uint32:array,8,1000,,
+"Management,Service Configuration,A2 Operator/Service Configuration",,T02.P0C9C,"1st SA2, Radio Module 2 DL",MHz,,ro,uint32:array,8,1000,,
+"Management,Service Configuration,A2 Operator/Service Configuration",,T02.P0C95,"1st SA2, Radio Module 3 UL",MHz,,ro,uint32:array,8,1000,,
+"Management,Service Configuration,A2 Operator/Service Configuration",,T02.P0C9D,"1st SA2, Radio Module 3 DL",MHz,,ro,uint32:array,8,1000,,
+"Management,Service Configuration,A2 Operator/Service Configuration",,T02.P0C96,"1st SA2, Radio Module 4 UL",MHz,,ro,uint32:array,8,1000,,
+"Management,Service Configuration,A2 Operator/Service Configuration",,T02.P0C9E,"1st SA2, Radio Module 4 DL",MHz,,ro,uint32:array,8,1000,,
+"Management,Service Configuration,A2 Operator/Service Configuration",,T02.P0C97,"2nd SA2, Radio Module 1 UL",MHz,,ro,uint32:array,8,1000,,
+"Management,Service Configuration,A2 Operator/Service Configuration",,T02.P0C9F,"2nd SA2, Radio Module 1 DL",MHz,,ro,uint32:array,8,1000,,
+"Management,Service Configuration,A2 Operator/Service Configuration",,T02.P0C98,"2nd SA2, Radio Module 2 UL",MHz,,ro,uint32:array,8,1000,,
+"Management,Service Configuration,A2 Operator/Service Configuration",,T02.P0D10,"2nd SA2, Radio Module 2 DL",MHz,,ro,uint32:array,8,1000,,
+"Management,Service Configuration,A2 Operator/Service Configuration",,T02.P0C99,"2nd SA2, Radio Module 3 UL",MHz,,ro,uint32:array,8,1000,,
+"Management,Service Configuration,A2 Operator/Service Configuration",,T02.P0D11,"2nd SA2, Radio Module 3 DL",MHz,,ro,uint32:array,8,1000,,
+"Management,Service Configuration,A2 Operator/Service Configuration",,T02.P0C9A,"2nd SA2, Radio Module 4 UL",MHz,,ro,uint32:array,8,1000,,
+"Management,Service Configuration,A2 Operator/Service Configuration",,T02.P0D12,"2nd SA2, Radio Module 4 DL",MHz,,ro,uint32:array,8,1000,,
+"Management,Service Configuration,RF Module Mapping",,T02.P0C90,Group1,,,ro,binary,4,,,
+"Management,Service Configuration,RF Module Mapping",,T02.P0966,Group1,,,ro,binary,4,,,
+"Management,Service Configuration,RF Module Mapping",,T02.P0C91,Group2,,,ro,binary,4,,,
+"Management,Service Configuration,RF Module Mapping",,T02.P0967,Group2,,,ro,binary,4,,,
+"Management,Service Configuration,RF Module Mapping",,T02.P0C92,Group3,,,ro,binary,4,,,
+"Management,Service Configuration,RF Module Mapping",,T02.P0968,Group3,,,ro,binary,4,,,
+"Management,Service Configuration,RF Module Mapping Configuration",,T02.P0C87,Capacity Group,,,rw,binary,1,,,00=Group1;01=Group2;02=Group3
+"Management,Service Configuration,RF Module Mapping Configuration",,T02.P0981,Radio Module 1 (UL/DL),,,ro,string:array:2,27,,,
+"Management,Service Configuration,RF Module Mapping Configuration",,T02.P096A,Radio Module 1 Mapping,,,rw,binary,1,,,00=A2_1;01=A2_2;02=A2_3;03=A2_4;04=SA2 1_1;05=SA2 1_2;06=SA2 1_3;07=SA2 1_4;08=SA2 2_1;09=SA2 2_2;0A=SA2 2_3;0B=SA2 2_4;FF=NULL
+"Management,Service Configuration,RF Module Mapping Configuration",,T02.P0982,Radio Module 2 (UL/DL),,,ro,string:array:2,27,,,
+"Management,Service Configuration,RF Module Mapping Configuration",,T02.P096C,Radio Module 2 Mapping,,,rw,binary,1,,,00=A2_1;01=A2_2;02=A2_3;03=A2_4;04=SA2 1_1;05=SA2 1_2;06=SA2 1_3;07=SA2 1_4;08=SA2 2_1;09=SA2 2_2;0A=SA2 2_3;0B=SA2 2_4;FF=NULL
+"Management,Service Configuration,RF Module Mapping Configuration",,T02.P0983,Radio Module 3 (UL/DL),,,ro,string:array:2,27,,,
+"Management,Service Configuration,RF Module Mapping Configuration",,T02.P096E,Radio Module 3 Mapping,,,rw,binary,1,,,00=A2_1;01=A2_2;02=A2_3;03=A2_4;04=SA2 1_1;05=SA2 1_2;06=SA2 1_3;07=SA2 1_4;08=SA2 2_1;09=SA2 2_2;0A=SA2 2_3;0B=SA2 2_4;FF=NULL
+"Management,Service Configuration,RF Module Mapping Configuration",,T02.P0984,Radio Module 4 (UL/DL),,,ro,string:array:2,27,,,
+"Management,Service Configuration,RF Module Mapping Configuration",,T02.P0970,Radio Module 4 Mapping,,,rw,binary,1,,,00=A2_1;01=A2_2;02=A2_3;03=A2_4;04=SA2 1_1;05=SA2 1_2;06=SA2 1_3;07=SA2 1_4;08=SA2 2_1;09=SA2 2_2;0A=SA2 2_3;0B=SA2 2_4;FF=NULL
+"Management,Service Configuration,RF Module Mapping Configuration",,T02.P0985,Radio Module 5 (UL/DL),,,ro,string:array:2,27,,,
+"Management,Service Configuration,RF Module Mapping Configuration",,T02.P0972,Radio Module 5 Mapping,,,rw,binary,1,,,00=A2_1;01=A2_2;02=A2_3;03=A2_4;04=SA2 1_1;05=SA2 1_2;06=SA2 1_3;07=SA2 1_4;08=SA2 2_1;09=SA2 2_2;0A=SA2 2_3;0B=SA2 2_4;FF=NULL
+"Management,Service Configuration,RF Module Mapping Configuration",,T02.P0986,Radio Module 6 (UL/DL),,,ro,string:array:2,27,,,
+"Management,Service Configuration,RF Module Mapping Configuration",,T02.P0974,Radio Module 6 Mapping,,,rw,binary,1,,,00=A2_1;01=A2_2;02=A2_3;03=A2_4;04=SA2 1_1;05=SA2 1_2;06=SA2 1_3;07=SA2 1_4;08=SA2 2_1;09=SA2 2_2;0A=SA2 2_3;0B=SA2 2_4;FF=NULL
+"Management,Service Configuration,RF Module Mapping Configuration",,T02.P0987,Radio Module 7 (UL/DL),,,ro,string:array:2,27,,,
+"Management,Service Configuration,RF Module Mapping Configuration",,T02.P0976,Radio Module 7 Mapping,,,rw,binary,1,,,00=A2_1;01=A2_2;02=A2_3;03=A2_4;04=SA2 1_1;05=SA2 1_2;06=SA2 1_3;07=SA2 1_4;08=SA2 2_1;09=SA2 2_2;0A=SA2 2_3;0B=SA2 2_4;FF=NULL
+"Management,Service Configuration,RF Module Mapping Configuration",,T02.P0988,Radio Module 8 (UL/DL),,,ro,string:array:2,27,,,
+"Management,Service Configuration,RF Module Mapping Configuration",,T02.P0978,Radio Module 8 Mapping,,,rw,binary,1,,,00=A2_1;01=A2_2;02=A2_3;03=A2_4;04=SA2 1_1;05=SA2 1_2;06=SA2 1_3;07=SA2 1_4;08=SA2 2_1;09=SA2 2_2;0A=SA2 2_3;0B=SA2 2_4;FF=NULL
+"Management,Service Configuration,RF Module Mapping Configuration",,T02.P0C1C,Capacity Group Update,,,wo,binary,1,,,01=Update
+"Management,Service Switch,Sunday",,T02.P0C1E,Sunday Working Hours Start (24h),,,rw,uint8,1,,,
+"Management,Service Switch,Sunday",,T02.P0C1F,Sunday Working Hours End (24h),,,rw,uint8,1,,,
+"Management,Service Switch,Sunday",,T02.P0C20,Sunday Service Group(Working Hours),,,rw,binary,1,,,00=Group1;01=Group2;02=Group3
+"Management,Service Switch,Sunday",,T02.P0C21,Sunday Service Group(Non-Working Hours),,,rw,binary,1,,,00=Group1;01=Group2;02=Group3
+"Management,Service Switch,Monday",,T02.P0C22,Monday Working Hours Start (24h),,,rw,uint8,1,,,
+"Management,Service Switch,Monday",,T02.P0C23,Monday Working Hours End (24h),,,rw,uint8,1,,,
+"Management,Service Switch,Monday",,T02.P0C24,Monday Service Group(Working Hours),,,rw,binary,1,,,00=Group1;01=Group2;02=Group3
+"Management,Service Switch,Monday",,T02.P0C25,Monday Service Group(Non-Working Hours),,,rw,binary,1,,,00=Group1;01=Group2;02=Group3
+"Management,Service Switch,Tuesday",,T02.P0C26,Tuesday Working Hours Start (24h),,,rw,uint8,1,,,
+"Management,Service Switch,Tuesday",,T02.P0C27,Tuesday Working Hours End (24h),,,rw,uint8,1,,,
+"Management,Service Switch,Tuesday",,T02.P0C28,Tuesday Service Group(Working Hours),,,rw,binary,1,,,00=Group1;01=Group2;02=Group3
+"Management,Service Switch,Tuesday",,T02.P0C29,Tuesday Service Group(Non-Working Hours),,,rw,binary,1,,,00=Group1;01=Group2;02=Group3
+"Management,Service Switch,Wednesday",,T02.P0C2A,Wednesday Working Hours Start (24h),,,rw,uint8,1,,,
+"Management,Service Switch,Wednesday",,T02.P0C2B,Wednesday Working Hours End (24h),,,rw,uint8,1,,,
+"Management,Service Switch,Wednesday",,T02.P0C2C,Wednesday Service Group(Working Hours),,,rw,binary,1,,,00=Group1;01=Group2;02=Group3
+"Management,Service Switch,Wednesday",,T02.P0C2D,Wednesday Service Group(Non-Working Hours),,,rw,binary,1,,,00=Group1;01=Group2;02=Group3
+"Management,Service Switch,Thursday",,T02.P0C2E,Thursday Working Hours Start (24h),,,rw,uint8,1,,,
+"Management,Service Switch,Thursday",,T02.P0C2F,Thursday Working Hours End (24h),,,rw,uint8,1,,,
+"Management,Service Switch,Thursday",,T02.P0C30,Thursday Service Group(Working Hours),,,rw,binary,1,,,00=Group1;01=Group2;02=Group3
+"Management,Service Switch,Thursday",,T02.P0C31,Thursday Service Group(Non-Working Hours),,,rw,binary,1,,,00=Group1;01=Group2;02=Group3
+"Management,Service Switch,Friday",,T02.P0C32,Friday Working Hours Start (24h),,,rw,uint8,1,,,
+"Management,Service Switch,Friday",,T02.P0C33,Friday Working Hours End (24h),,,rw,uint8,1,,,
+"Management,Service Switch,Friday",,T02.P0C34,Friday Service Group(Working Hours),,,rw,binary,1,,,00=Group1;01=Group2;02=Group3
+"Management,Service Switch,Friday",,T02.P0C35,Friday Service Group(Non-Working Hours),,,rw,binary,1,,,00=Group1;01=Group2;02=Group3
+"Management,Service Switch,Saturday",,T02.P0C36,Saturday Working Hours Start (24h),,,rw,uint8,1,,,
+"Management,Service Switch,Saturday",,T02.P0C37,Saturday Working Hours End (24h),,,rw,uint8,1,,,
+"Management,Service Switch,Saturday",,T02.P0C38,Saturday Service Group(Working Hours),,,rw,binary,1,,,00=Group1;01=Group2;02=Group3
+"Management,Service Switch,Saturday",,T02.P0C39,Saturday Service Group(Non-Working Hours),,,rw,binary,1,,,00=Group1;01=Group2;02=Group3
+"Digital Module,Address Interface,",,TB2.P0CCC,,,,rw,object,8,,,
+"Digital Module,Registers,LMK04610",,TB2.P0801,Register 0-3,,,rw,binary,16,,,
+"Digital Module,Registers,LMK04610",,TB2.P0802,Register 4-7,,,rw,binary,16,,,
+"Digital Module,Registers,LMK04610",,TB2.P0803,Register 8-12,,,rw,binary,20,,,
+"Digital Module,Registers,LMK04610",,TB2.P0804,Register 13-16,,,rw,binary,16,,,
+"Digital Module,Registers,LMK04610",,TB2.P0805,Register 24-27,,,rw,binary,16,,,
+"Digital Module,Registers,LMK04610",,TB2.P0806,Register 28-31,,,rw,binary,16,,,
+"Digital Module,Debug Parameters,Basic Parameters",,TB2-DEBUG.P0220,Master MAC Address,,,ro,binary,6,,,
+"Digital Module,Debug Parameters,Basic Parameters",,TB2-DEBUG.P0221,IP Address,,,ro,binary,4,,,
+"Digital Module,Debug Parameters,Basic Parameters",,TB2-DEBUG.P0A1C,Digital Board SN,,,rw,string,40,,,
+"Digital Module,Debug Parameters,Basic Parameters",,TB2-DEBUG.P0610,Up-Downlink Switch,,,rw,binary,1,,,00=Auto;01=Downlink Open;02=Uplink Open;03=Close
+"Digital Module,Debug Parameters,Basic Parameters",,TB2-DEBUG.P0B8B,Hardware Version,,,rw,binary,1,,,00=EightChannels-N2RU;01=FourChannels-N2RU
+"Digital Module,Debug Parameters,Radio Module 1",,TB2-DEBUG.P0BD0,UL Instant Input Power,dBm,,ro,int16,2,10,,
+"Digital Module,Debug Parameters,Radio Module 1",,TB2-DEBUG.P0BD8,DL Instant Output Power,dBm,,ro,int16,2,10,,
+"Digital Module,Debug Parameters,Radio Module 2",,TB2-DEBUG.P0BD1,UL Instant Input Power,dBm,,ro,int16,2,10,,
+"Digital Module,Debug Parameters,Radio Module 2",,TB2-DEBUG.P0BD9,DL Instant Output Power,dBm,,ro,int16,2,10,,
+"Digital Module,Debug Parameters,Radio Module 3",,TB2-DEBUG.P0BD2,UL Instant Input Power,dBm,,ro,int16,2,10,,
+"Digital Module,Debug Parameters,Radio Module 3",,TB2-DEBUG.P0BDA,DL Instant Output Power,dBm,,ro,int16,2,10,,
+"Digital Module,Debug Parameters,Radio Module 4",,TB2-DEBUG.P0BD3,UL Instant Input Power,dBm,,ro,int16,2,10,,
+"Digital Module,Debug Parameters,Radio Module 4",,TB2-DEBUG.P0BDB,DL Instant Output Power,dBm,,ro,int16,2,10,,
+"Digital Module,Debug Parameters,Radio Module 5",,TB2-DEBUG.P0BD4,UL Instant Input Power,dBm,,ro,int16,2,10,,
+"Digital Module,Debug Parameters,Radio Module 5",,TB2-DEBUG.P0BDC,DL Instant Output Power,dBm,,ro,int16,2,10,,
+"Digital Module,Debug Parameters,Radio Module 6",,TB2-DEBUG.P0BD5,UL Instant Input Power,dBm,,ro,int16,2,10,,
+"Digital Module,Debug Parameters,Radio Module 6",,TB2-DEBUG.P0BDD,DL Instant Output Power,dBm,,ro,int16,2,10,,
+"Digital Module,Debug Parameters,Radio Module 7",,TB2-DEBUG.P0BD6,UL Instant Input Power,dBm,,ro,int16,2,10,,
+"Digital Module,Debug Parameters,Radio Module 7",,TB2-DEBUG.P0BDE,DL Instant Output Power,dBm,,ro,int16,2,10,,
+"Digital Module,Debug Parameters,Radio Module 8",,TB2-DEBUG.P0BD7,UL Instant Input Power,dBm,,ro,int16,2,10,,
+"Digital Module,Debug Parameters,Radio Module 8",,TB2-DEBUG.P0BDF,DL Instant Output Power,dBm,,ro,int16,2,10,,
+"Digital Module,Debug Parameters,ALC Amplitude Limiting",,TB2-DEBUG.P0400,Radio Module 1 ALC High Threshold,,,rw,int32,4,10,,
+"Digital Module,Debug Parameters,ALC Amplitude Limiting",,TB2-DEBUG.P0401,Radio Module 1 ALC Low Threshold,,,rw,int32,4,10,,
+"Digital Module,Debug Parameters,ALC Amplitude Limiting",,TB2-DEBUG.P0402,Radio Module 1 ALC Enable,,,rw,binary,1,,,00=Off;01=On
+"Digital Module,Debug Parameters,ALC Amplitude Limiting",,TB2-DEBUG.P0403,Radio Module 1 ALC Limiting Value,,,ro,uint8,1,2,,
+"Digital Module,Debug Parameters,ALC Amplitude Limiting",,TB2-DEBUG.P0404,Radio Module 2 ALC High Threshold,,,rw,int32,4,10,,
+"Digital Module,Debug Parameters,ALC Amplitude Limiting",,TB2-DEBUG.P0405,Radio Module 2 ALC Low Threshold,,,rw,int32,4,10,,
+"Digital Module,Debug Parameters,ALC Amplitude Limiting",,TB2-DEBUG.P0406,Radio Module 2 ALC Enable,,,rw,binary,1,,,00=Off;01=On
+"Digital Module,Debug Parameters,ALC Amplitude Limiting",,TB2-DEBUG.P0407,Radio Module 2 ALC Limiting Value,,,ro,uint8,1,2,,
+"Digital Module,Debug Parameters,ALC Amplitude Limiting",,TB2-DEBUG.P0408,Radio Module 3 ALC High Threshold,,,rw,int32,4,10,,
+"Digital Module,Debug Parameters,ALC Amplitude Limiting",,TB2-DEBUG.P0409,Radio Module 3 ALC Low Threshold,,,rw,int32,4,10,,
+"Digital Module,Debug Parameters,ALC Amplitude Limiting",,TB2-DEBUG.P040A,Radio Module 3 ALC Enable,,,rw,binary,1,,,00=Off;01=On
+"Digital Module,Debug Parameters,ALC Amplitude Limiting",,TB2-DEBUG.P040B,Radio Module 3 ALC Limiting Value,,,ro,uint8,1,2,,
+"Digital Module,Debug Parameters,ALC Amplitude Limiting",,TB2-DEBUG.P040C,Radio Module 4 ALC High Threshold,,,rw,int32,4,10,,
+"Digital Module,Debug Parameters,ALC Amplitude Limiting",,TB2-DEBUG.P040D,Radio Module 4 ALC Low Threshold,,,rw,int32,4,10,,
+"Digital Module,Debug Parameters,ALC Amplitude Limiting",,TB2-DEBUG.P040E,Radio Module 4 ALC enable,,,rw,binary,1,,,00=Off;01=On
+"Digital Module,Debug Parameters,ALC Amplitude Limiting",,TB2-DEBUG.P040F,Radio Module 4 ALC limiting value,,,ro,uint8,1,2,,
+"Digital Module,Debug Parameters,ALC Amplitude Limiting",,TB2-DEBUG.P0556,Radio Module 5 ALC High Threshold,,,rw,int32,4,10,,
+"Digital Module,Debug Parameters,ALC Amplitude Limiting",,TB2-DEBUG.P0557,Radio Module 5 ALC Low Threshold,,,rw,int32,4,10,,
+"Digital Module,Debug Parameters,ALC Amplitude Limiting",,TB2-DEBUG.P0572,Radio Module 5 ALC enable,,,rw,binary,1,,,00=Off;01=On
+"Digital Module,Debug Parameters,ALC Amplitude Limiting",,TB2-DEBUG.P055E,Radio Module 5 ALC limiting value,,,ro,uint8,1,2,,
+"Digital Module,Debug Parameters,ALC Amplitude Limiting",,TB2-DEBUG.P0558,Radio Module 6 ALC High Threshold,,,rw,int32,4,10,,
+"Digital Module,Debug Parameters,ALC Amplitude Limiting",,TB2-DEBUG.P0559,Radio Module 6 ALC Low Threshold,,,rw,int32,4,10,,
+"Digital Module,Debug Parameters,ALC Amplitude Limiting",,TB2-DEBUG.P0573,Radio Module 6 ALC enable,,,rw,binary,1,,,00=Off;01=On
+"Digital Module,Debug Parameters,ALC Amplitude Limiting",,TB2-DEBUG.P055F,Radio Module 6 ALC limiting value,,,ro,uint8,1,2,,
+"Digital Module,Debug Parameters,ALC Amplitude Limiting",,TB2-DEBUG.P055A,Radio Module 7 ALC High Threshold,,,rw,int32,4,10,,
+"Digital Module,Debug Parameters,ALC Amplitude Limiting",,TB2-DEBUG.P055B,Radio Module 7 ALC Low Threshold,,,rw,int32,4,10,,
+"Digital Module,Debug Parameters,ALC Amplitude Limiting",,TB2-DEBUG.P0574,Radio Module 7 ALC enable,,,rw,binary,1,,,00=Off;01=On
+"Digital Module,Debug Parameters,ALC Amplitude Limiting",,TB2-DEBUG.P0570,Radio Module 7 ALC limiting value,,,ro,uint8,1,2,,
+"Digital Module,Debug Parameters,ALC Amplitude Limiting",,TB2-DEBUG.P055C,Radio Module 8 ALC High Threshold,,,rw,int32,4,10,,
+"Digital Module,Debug Parameters,ALC Amplitude Limiting",,TB2-DEBUG.P055D,Radio Module 8 ALC Low Threshold,,,rw,int32,4,10,,
+"Digital Module,Debug Parameters,ALC Amplitude Limiting",,TB2-DEBUG.P0575,Radio Module 8 ALC enable,,,rw,binary,1,,,00=Off;01=On
+"Digital Module,Debug Parameters,ALC Amplitude Limiting",,TB2-DEBUG.P0571,Radio Module 8 ALC limiting value,,,ro,uint8,1,2,,
+"Digital Module,Debug Parameters,Over Temp Protection Threshold",,TB2-DEBUG.P0813,Protection Threshold,,,rw,int8,1,,,
+"Digital Module,Debug Parameters,Fan Speed",,TB2-DEBUG.P08F6,Fan Control Mode,,,rw,binary,1,,,00=Manual;01=Automatic
+"Digital Module,Debug Parameters,Fan Speed",,TB2-DEBUG.P08F0,Fan Speed,%,,rw,int8,1,,0 ~ 100,
+"Digital Module,Debug Parameters,AFE7685 Status",,TB2-DEBUG.P08F7,The First Piece AFE7685 Initialization Status,,,ro,binary,1,,,00=Normal;01=Alarm
+"Digital Module,Debug Parameters,AFE7685 Status",,TB2-DEBUG.P08F8,The Second Piece AFE7685 Initialization Status,,,ro,binary,1,,,00=Normal;01=Alarm
+"Digital Module,Debug Parameters,AFE7685 Status",,TB2-DEBUG.P08F4,The First Piece AFE7685 JESD Status,,,ro,binary,1,,,00=Normal;01=Alarm
+"Digital Module,Debug Parameters,AFE7685 Status",,TB2-DEBUG.P08F5,The Second Piece AFE7685 JESD Status,,,ro,binary,1,,,00=Normal;01=Alarm
+"Digital Module,Debug Parameters,Chips Temperature",,TB2-DEBUG.P08F1,The First Piece AFE7685 Temperature,℃,,ro,int8,1,,,
+"Digital Module,Debug Parameters,Chips Temperature",,TB2-DEBUG.P08F2,The Second Piece AFE7685 Temperature,℃,,ro,int8,1,,,
+"Digital Module,Debug Parameters,Chips Temperature",,TB2-DEBUG.P08F3,FPGA Temperature,℃,,ro,int8,1,,,
+"Digital Module,Debug Parameters,Signal Send test",,TB2-DEBUG.P0014,Radio Module 1 Signal Test Switch,,,rw,binary,1,,,00=Disable;01=Enable
+"Digital Module,Debug Parameters,Signal Send test",,TB2-DEBUG.P0015,Radio Module 2 Signal Test Switch,,,rw,binary,1,,,00=Disable;01=Enable
+"Digital Module,Debug Parameters,Signal Send test",,TB2-DEBUG.P001A,Radio Module 3 Signal Test Switch,,,rw,binary,1,,,00=Disable;01=Enable
+"Digital Module,Debug Parameters,Signal Send test",,TB2-DEBUG.P001B,Radio Module 4 Signal Test Switch,,,rw,binary,1,,,00=Disable;01=Enable
+"Digital Module,Debug Parameters,Signal Send test",,TB2-DEBUG.P001C,Radio Module 5 Signal Test Switch,,,rw,binary,1,,,00=Disable;01=Enable
+"Digital Module,Debug Parameters,Signal Send test",,TB2-DEBUG.P001D,Radio Module 6 Signal Test Switch,,,rw,binary,1,,,00=Disable;01=Enable
+"Digital Module,Debug Parameters,Signal Send test",,TB2-DEBUG.P001E,Radio Module 7 Signal Test Switch,,,rw,binary,1,,,00=Disable;01=Enable
+"Digital Module,Debug Parameters,Signal Send test",,TB2-DEBUG.P001F,Radio Module 8 Signal Test Switch,,,rw,binary,1,,,00=Disable;01=Enable
+"Digital Module,Digital IF,Radio Module 1",,TB2.P0410,Bandwidth Select,,,rw,binary,1,,,00=100MHz;01=80MHz;02=60MHz;03=50MHz;04=40MHz;05=30MHz;06=20MHz
+"Digital Module,Digital IF,Radio Module 1",,TB2.P0411,DDC Enable,,,rw,binary,1,,,00=Off;01=On
+"Digital Module,Digital IF,Radio Module 1",,TB2.P0412,DDC Gain,,,rw,binary,2,,,
+"Digital Module,Digital IF,Radio Module 1",,TB2.P0413,DDC Power Statistics,,,ro,binary,6,,,
+"Digital Module,Digital IF,Radio Module 1",,TB2.P0414,DUC Enable,,,rw,binary,1,,,00=Off;01=On
+"Digital Module,Digital IF,Radio Module 1",,TB2.P0415,DUC Gain,,,rw,binary,2,,,
+"Digital Module,Digital IF,Radio Module 1",,TB2.P0416,DUC Power Statistics,,,ro,binary,6,,,
+"Digital Module,Digital IF,Radio Module 2",,TB2.P0417,Bandwidth Select,,,rw,binary,1,,,00=100MHz;01=80MHz;02=60MHz;03=50MHz;04=40MHz;05=30MHz;06=20MHz
+"Digital Module,Digital IF,Radio Module 2",,TB2.P0418,DDC Enable,,,rw,binary,1,,,00=Off;01=On
+"Digital Module,Digital IF,Radio Module 2",,TB2.P0419,DDC Gain,,,rw,binary,2,,,
+"Digital Module,Digital IF,Radio Module 2",,TB2.P041A,DDC Power Statistics,,,ro,binary,6,,,
+"Digital Module,Digital IF,Radio Module 2",,TB2.P041B,DUC Enable,,,rw,binary,1,,,00=Off;01=On
+"Digital Module,Digital IF,Radio Module 2",,TB2.P041C,DUC Gain,,,rw,binary,2,,,
+"Digital Module,Digital IF,Radio Module 2",,TB2.P041D,DUC Power Statistics,,,ro,binary,6,,,
+"Digital Module,Digital IF,Radio Module 3",,TB2.P041E,Bandwidth Select,,,rw,binary,1,,,00=100MHz;01=80MHz;02=60MHz;03=50MHz;04=40MHz;05=30MHz;06=20MHz
+"Digital Module,Digital IF,Radio Module 3",,TB2.P041F,DDC Enable,,,rw,binary,1,,,00=Off;01=On
+"Digital Module,Digital IF,Radio Module 3",,TB2.P0420,DDC Gain,,,rw,binary,2,,,
+"Digital Module,Digital IF,Radio Module 3",,TB2.P0421,DDC Power Statistics,,,ro,binary,6,,,
+"Digital Module,Digital IF,Radio Module 3",,TB2.P0422,DUC Enable,,,rw,binary,1,,,00=Off;01=On
+"Digital Module,Digital IF,Radio Module 3",,TB2.P0423,DUC Gain,,,rw,binary,2,,,
+"Digital Module,Digital IF,Radio Module 3",,TB2.P0424,DUC Power Statistics,,,ro,binary,6,,,
+"Digital Module,Digital IF,Radio Module 4",,TB2.P0425,Bandwidth Select,,,rw,binary,1,,,00=100MHz;01=80MHz;02=60MHz;03=50MHz;04=40MHz;05=30MHz;06=20MHz
+"Digital Module,Digital IF,Radio Module 4",,TB2.P0426,DDC Enable,,,rw,binary,1,,,00=Off;01=On
+"Digital Module,Digital IF,Radio Module 4",,TB2.P0427,DDC Gain,,,rw,binary,2,,,
+"Digital Module,Digital IF,Radio Module 4",,TB2.P0428,DDC Power Statistics,,,ro,binary,6,,,
+"Digital Module,Digital IF,Radio Module 4",,TB2.P0429,DUC Enable,,,rw,binary,1,,,00=Off;01=On
+"Digital Module,Digital IF,Radio Module 4",,TB2.P042A,DUC Gain,,,rw,binary,2,,,
+"Digital Module,Digital IF,Radio Module 4",,TB2.P042B,DUC Power Statistics,,,ro,binary,6,,,
+"Digital Module,Digital IF,Radio Module 5",,TB2.P0576,Bandwidth Select,,,rw,binary,1,,,00=100MHz;01=80MHz;02=60MHz;03=50MHz;04=40MHz;05=30MHz;06=20MHz
+"Digital Module,Digital IF,Radio Module 5",,TB2.P057A,DDC Enable,,,rw,binary,1,,,00=Off;01=On
+"Digital Module,Digital IF,Radio Module 5",,TB2.P0582,DDC Gain,,,rw,binary,2,,,
+"Digital Module,Digital IF,Radio Module 5",,TB2.P042C,DDC Power Statistics,,,ro,binary,6,,,
+"Digital Module,Digital IF,Radio Module 5",,TB2.P057B,DUC Enable,,,rw,binary,1,,,00=Off;01=On
+"Digital Module,Digital IF,Radio Module 5",,TB2.P0583,DUC Gain,,,rw,binary,2,,,
+"Digital Module,Digital IF,Radio Module 5",,TB2.P058A,DUC Power Statistics,,,ro,binary,6,,,
+"Digital Module,Digital IF,Radio Module 6",,TB2.P0577,Bandwidth Select,,,rw,binary,1,,,00=100MHz;01=80MHz;02=60MHz;03=50MHz;04=40MHz;05=30MHz;06=20MHz
+"Digital Module,Digital IF,Radio Module 6",,TB2.P057C,DDC Enable,,,rw,binary,1,,,00=Off;01=On
+"Digital Module,Digital IF,Radio Module 6",,TB2.P0584,DDC Gain,,,rw,binary,2,,,
+"Digital Module,Digital IF,Radio Module 6",,TB2.P058B,DDC Power Statistics,,,ro,binary,6,,,
+"Digital Module,Digital IF,Radio Module 6",,TB2.P057D,DUC Enable,,,rw,binary,1,,,00=Off;01=On
+"Digital Module,Digital IF,Radio Module 6",,TB2.P0585,DUC Gain,,,rw,binary,2,,,
+"Digital Module,Digital IF,Radio Module 6",,TB2.P058C,DUC Power Statistics,,,ro,binary,6,,,
+"Digital Module,Digital IF,Radio Module 7",,TB2.P0578,Bandwidth Select,,,rw,binary,1,,,00=100MHz;01=80MHz;02=60MHz;03=50MHz;04=40MHz;05=30MHz;06=20MHz
+"Digital Module,Digital IF,Radio Module 7",,TB2.P057E,DDC Enable,,,rw,binary,1,,,00=Off;01=On
+"Digital Module,Digital IF,Radio Module 7",,TB2.P0586,DDC Gain,,,rw,binary,2,,,
+"Digital Module,Digital IF,Radio Module 7",,TB2.P058D,DDC Power Statistics,,,ro,binary,6,,,
+"Digital Module,Digital IF,Radio Module 7",,TB2.P057F,DUC Enable,,,rw,binary,1,,,00=Off;01=On
+"Digital Module,Digital IF,Radio Module 7",,TB2.P0587,DUC Gain,,,rw,binary,2,,,
+"Digital Module,Digital IF,Radio Module 7",,TB2.P058E,DUC Power Statistics,,,ro,binary,6,,,
+"Digital Module,Digital IF,Radio Module 8",,TB2.P0579,Bandwidth Select,,,rw,binary,1,,,00=100MHz;01=80MHz;02=60MHz;03=50MHz;04=40MHz;05=30MHz;06=20MHz
+"Digital Module,Digital IF,Radio Module 8",,TB2.P0580,DDC Enable,,,rw,binary,1,,,00=Off;01=On
+"Digital Module,Digital IF,Radio Module 8",,TB2.P0588,DDC Gain,,,rw,binary,2,,,
+"Digital Module,Digital IF,Radio Module 8",,TB2.P058F,DDC Power Statistics,,,ro,binary,6,,,
+"Digital Module,Digital IF,Radio Module 8",,TB2.P0581,DUC Enable,,,rw,binary,1,,,00=Off;01=On
+"Digital Module,Digital IF,Radio Module 8",,TB2.P0589,DUC Gain,,,rw,binary,2,,,
+"Digital Module,Digital IF,Radio Module 8",,TB2.P0590,DUC Power Statistics,,,ro,binary,6,,,
+"Digital Module,Flatness Test,Common",,TB2.P0500,Radio Module Select,,,rw,binary,1,,,00=Module1;01=Module2;02=Module3;03=Module4;04=Module5;05=Module6;06=Module7;07=Module8
+"Digital Module,Flatness Test,Common",,TB2.P0600,Mode Select,,,rw,binary,1,,,00=Automatic;01=Manual
+"Digital Module,Flatness Test,RX Link",,TB2.P0501,Frequency,MHz,,rw,uint32,4,1000,,
+"Digital Module,Flatness Test,RX Link",,TB2.P052B,Frequency Low,MHz,,rw,uint32,4,1000,,
+"Digital Module,Flatness Test,RX Link",,TB2.P052C,Frequency High,MHz,,rw,uint32,4,1000,,
+"Digital Module,Flatness Test,RX Link",,TB2.P05A0,Extend Power1,dBm,,rw,int16,2,10,,
+"Digital Module,Flatness Test,RX Link",,TB2.P05A1,Extend Power2,dBm,,rw,int16,2,10,,
+"Digital Module,Flatness Test,RX Link",,TB2.P05A2,Extend Power3,dBm,,rw,int16,2,10,,
+"Digital Module,Flatness Test,RX Link",,TB2.P05A3,Extend Power4,dBm,,rw,int16,2,10,,
+"Digital Module,Flatness Test,RX Link",,TB2.P05A4,Extend Power5,dBm,,rw,int16,2,10,,
+"Digital Module,Flatness Test,RX Link",,TB2.P05A5,Extend Power6,dBm,,rw,int16,2,10,,
+"Digital Module,Flatness Test,RX Link",,TB2.P05A6,Extend Power7,dBm,,rw,int16,2,10,,
+"Digital Module,Flatness Test,RX Link",,TB2.P051A,Power1,dBm,,rw,int16,2,10,,
+"Digital Module,Flatness Test,RX Link",,TB2.P051B,Power2,dBm,,rw,int16,2,10,,
+"Digital Module,Flatness Test,RX Link",,TB2.P051C,Power3,dBm,,rw,int16,2,10,,
+"Digital Module,Flatness Test,RX Link",,TB2.P051D,Power4,dBm,,rw,int16,2,10,,
+"Digital Module,Flatness Test,RX Link",,TB2.P051E,Power5,dBm,,rw,int16,2,10,,
+"Digital Module,Flatness Test,RX Link",,TB2.P051F,Power6,dBm,,rw,int16,2,10,,
+"Digital Module,Flatness Test,RX Link",,TB2.P0520,Power7,dBm,,rw,int16,2,10,,
+"Digital Module,Flatness Test,RX Link",,TB2.P0521,Power8,dBm,,rw,int16,2,10,,
+"Digital Module,Flatness Test,RX Link",,TB2.P0522,Power9,dBm,,rw,int16,2,10,,
+"Digital Module,Flatness Test,RX Link",,TB2.P0523,Power10,dBm,,rw,int16,2,10,,
+"Digital Module,Flatness Test,RX Link",,TB2.P0524,Power11,dBm,,rw,int16,2,10,,
+"Digital Module,Flatness Test,RX Link",,TB2.P0525,Power12,dBm,,rw,int16,2,10,,
+"Digital Module,Flatness Test,RX Link",,TB2.P0526,Power13,dBm,,rw,int16,2,10,,
+"Digital Module,Flatness Test,RX Link",,TB2.P0527,Power14,dBm,,rw,int16,2,10,,
+"Digital Module,Flatness Test,RX Link",,TB2.P0528,Power15,dBm,,rw,int16,2,10,,
+"Digital Module,Flatness Test,RX Link",,TB2.P05A7,Extend Power9,dBm,,rw,int16,2,10,,
+"Digital Module,Flatness Test,RX Link",,TB2.P05A8,Extend Power10,dBm,,rw,int16,2,10,,
+"Digital Module,Flatness Test,RX Link",,TB2.P05A9,Extend Power11,dBm,,rw,int16,2,10,,
+"Digital Module,Flatness Test,RX Link",,TB2.P05AA,Extend Power12,dBm,,rw,int16,2,10,,
+"Digital Module,Flatness Test,RX Link",,TB2.P05AB,Extend Power13,dBm,,rw,int16,2,10,,
+"Digital Module,Flatness Test,RX Link",,TB2.P05AC,Extend Power14,dBm,,rw,int16,2,10,,
+"Digital Module,Flatness Test,RX Link",,TB2.P05AD,Extend Power15,dBm,,rw,int16,2,10,,
+"Digital Module,Flatness Test,RX Link",,TB2.P0529,Power LF,dBm,,rw,int16,2,10,,
+"Digital Module,Flatness Test,RX Link",,TB2.P052A,Power HF,dBm,,rw,int16,2,10,,
+"Digital Module,Flatness Test,RX Link",,TB2.P0502,RX Single Test Done,,,rw,uint8,1,,,01=Confirm
+"Digital Module,Flatness Test,TX Link",,TB2.P0503,TX Test Enable,,,rw,binary,1,,,00=Off;01=On
+"Digital Module,Flatness Test,TX Link",,TB2.P0530,Frequency,MHz,,rw,uint32,4,1000,,
+"Digital Module,Flatness Test,TX Link",,TB2.P052D,Frequency Low,MHz,,rw,uint32,4,1000,,
+"Digital Module,Flatness Test,TX Link",,TB2.P052E,Frequency High,MHz,,rw,uint32,4,1000,,
+"Digital Module,Flatness Test,TX Link",,TB2.P05F0,Extend Power1,dBm,,rw,int16,2,10,,
+"Digital Module,Flatness Test,TX Link",,TB2.P05F1,Extend Power2,dBm,,rw,int16,2,10,,
+"Digital Module,Flatness Test,TX Link",,TB2.P05F2,Extend Power3,dBm,,rw,int16,2,10,,
+"Digital Module,Flatness Test,TX Link",,TB2.P05F3,Extend Power4,dBm,,rw,int16,2,10,,
+"Digital Module,Flatness Test,TX Link",,TB2.P05F4,Extend Power5,dBm,,rw,int16,2,10,,
+"Digital Module,Flatness Test,TX Link",,TB2.P05F5,Extend Power6,dBm,,rw,int16,2,10,,
+"Digital Module,Flatness Test,TX Link",,TB2.P05F6,Extend Power7,dBm,,rw,int16,2,10,,
+"Digital Module,Flatness Test,TX Link",,TB2.P0504,Power1,dBm,,rw,int16,2,10,,
+"Digital Module,Flatness Test,TX Link",,TB2.P0505,Power2,dBm,,rw,int16,2,10,,
+"Digital Module,Flatness Test,TX Link",,TB2.P0506,Power3,dBm,,rw,int16,2,10,,
+"Digital Module,Flatness Test,TX Link",,TB2.P0507,Power4,dBm,,rw,int16,2,10,,
+"Digital Module,Flatness Test,TX Link",,TB2.P0508,Power5,dBm,,rw,int16,2,10,,
+"Digital Module,Flatness Test,TX Link",,TB2.P0509,Power6,dBm,,rw,int16,2,10,,
+"Digital Module,Flatness Test,TX Link",,TB2.P050A,Power7,dBm,,rw,int16,2,10,,
+"Digital Module,Flatness Test,TX Link",,TB2.P050B,Power8,dBm,,rw,int16,2,10,,
+"Digital Module,Flatness Test,TX Link",,TB2.P050C,Power9,dBm,,rw,int16,2,10,,
+"Digital Module,Flatness Test,TX Link",,TB2.P050D,Power10,dBm,,rw,int16,2,10,,
+"Digital Module,Flatness Test,TX Link",,TB2.P050E,Power11,dBm,,rw,int16,2,10,,
+"Digital Module,Flatness Test,TX Link",,TB2.P050F,Power12,dBm,,rw,int16,2,10,,
+"Digital Module,Flatness Test,TX Link",,TB2.P0510,Power13,dBm,,rw,int16,2,10,,
+"Digital Module,Flatness Test,TX Link",,TB2.P0511,Power14,dBm,,rw,int16,2,10,,
+"Digital Module,Flatness Test,TX Link",,TB2.P0512,Power15,dBm,,rw,int16,2,10,,
+"Digital Module,Flatness Test,TX Link",,TB2.P05F7,Extend Power9,dBm,,rw,int16,2,10,,
+"Digital Module,Flatness Test,TX Link",,TB2.P05F8,Extend Power10,dBm,,rw,int16,2,10,,
+"Digital Module,Flatness Test,TX Link",,TB2.P05F9,Extend Power11,dBm,,rw,int16,2,10,,
+"Digital Module,Flatness Test,TX Link",,TB2.P05FA,Extend Power12,dBm,,rw,int16,2,10,,
+"Digital Module,Flatness Test,TX Link",,TB2.P05FB,Extend Power13,dBm,,rw,int16,2,10,,
+"Digital Module,Flatness Test,TX Link",,TB2.P05FC,Extend Power14,dBm,,rw,int16,2,10,,
+"Digital Module,Flatness Test,TX Link",,TB2.P05FD,Extend Power15,dBm,,rw,int16,2,10,,
+"Digital Module,Flatness Test,TX Link",,TB2.P0518,Power LF,dBm,,rw,int16,2,10,,
+"Digital Module,Flatness Test,TX Link",,TB2.P0519,Power HF,dBm,,rw,int16,2,10,,
+"Digital Module,Flatness Test,TX Link",,TB2.P0513,TX Single Test Done,,,rw,uint8,1,,,01=Confirm
+"Digital Module,Flatness Test,Flatness Switch",,TB2.P0514,Radio Module 1,,,rw,binary,1,,,00=Off;01=RX On;02=TX On;03=Both On
+"Digital Module,Flatness Test,Flatness Switch",,TB2.P0515,Radio Module 2,,,rw,binary,1,,,00=Off;01=RX On;02=TX On;03=Both On
+"Digital Module,Flatness Test,Flatness Switch",,TB2.P0516,Radio Module 3,,,rw,binary,1,,,00=Off;01=RX On;02=TX On;03=Both On
+"Digital Module,Flatness Test,Flatness Switch",,TB2.P0517,Radio Module 4,,,rw,binary,1,,,00=Off;01=RX On;02=TX On;03=Both On
+"Digital Module,Flatness Test,Flatness Switch",,TB2.P09D9,Radio Module 5,,,rw,binary,1,,,00=Off;01=RX On;02=TX On;03=Both On
+"Digital Module,Flatness Test,Flatness Switch",,TB2.P09DA,Radio Module 6,,,rw,binary,1,,,00=Off;01=RX On;02=TX On;03=Both On
+"Digital Module,Flatness Test,Flatness Switch",,TB2.P09DB,Radio Module 7,,,rw,binary,1,,,00=Off;01=RX On;02=TX On;03=Both On
+"Digital Module,Flatness Test,Flatness Switch",,TB2.P09DC,Radio Module 8,,,rw,binary,1,,,00=Off;01=RX On;02=TX On;03=Both On
+"Digital Module,Flatness Test,Radio Module 1",,TB2.P0531,UL Module Data Check,,,ro,binary,1,,,00=Invalid;01=Valid
+"Digital Module,Flatness Test,Radio Module 1",,TB2.P0535,DL Module Data Check,,,ro,binary,1,,,00=Invalid;01=Valid
+"Digital Module,Flatness Test,Radio Module 1",,TB2.P0539,UL Real-Imag Data Check,,,ro,binary,1,,,00=Invalid;01=Valid
+"Digital Module,Flatness Test,Radio Module 1",,TB2.P053D,DL Real-Imag Data Check,,,ro,binary,1,,,00=Invalid;01=Valid
+"Digital Module,Flatness Test,Radio Module 2",,TB2.P0532,UL Module Data Check,,,ro,binary,1,,,00=Invalid;01=Valid
+"Digital Module,Flatness Test,Radio Module 2",,TB2.P0536,DL Module Data Check,,,ro,binary,1,,,00=Invalid;01=Valid
+"Digital Module,Flatness Test,Radio Module 2",,TB2.P053A,UL Real-Imag Data Check,,,ro,binary,1,,,00=Invalid;01=Valid
+"Digital Module,Flatness Test,Radio Module 2",,TB2.P053E,DL Real-Imag Data Check,,,ro,binary,1,,,00=Invalid;01=Valid
+"Digital Module,Flatness Test,Radio Module 3",,TB2.P0533,UL Module Data Check,,,ro,binary,1,,,00=Invalid;01=Valid
+"Digital Module,Flatness Test,Radio Module 3",,TB2.P0537,DL Module Data Check,,,ro,binary,1,,,00=Invalid;01=Valid
+"Digital Module,Flatness Test,Radio Module 3",,TB2.P053B,UL Real-Imag Data Check,,,ro,binary,1,,,00=Invalid;01=Valid
+"Digital Module,Flatness Test,Radio Module 3",,TB2.P053F,DL Real-Imag Data Check,,,ro,binary,1,,,00=Invalid;01=Valid
+"Digital Module,Flatness Test,Radio Module 4",,TB2.P0534,UL Module Data Check,,,ro,binary,1,,,00=Invalid;01=Valid
+"Digital Module,Flatness Test,Radio Module 4",,TB2.P0538,DL Module Data Check,,,ro,binary,1,,,00=Invalid;01=Valid
+"Digital Module,Flatness Test,Radio Module 4",,TB2.P053C,UL Real-Imag Data Check,,,ro,binary,1,,,00=Invalid;01=Valid
+"Digital Module,Flatness Test,Radio Module 4",,TB2.P0540,DL Real-Imag Data Check,,,ro,binary,1,,,00=Invalid;01=Valid
+"Digital Module,Flatness Test,Radio Module 5",,TB2.P09C8,UL Module Data Check,,,ro,binary,1,,,00=Invalid;01=Valid
+"Digital Module,Flatness Test,Radio Module 5",,TB2.P09CD,DL Module Data Check,,,ro,binary,1,,,00=Invalid;01=Valid
+"Digital Module,Flatness Test,Radio Module 5",,TB2.P09D1,UL Real-Imag Data Check,,,ro,binary,1,,,00=Invalid;01=Valid
+"Digital Module,Flatness Test,Radio Module 5",,TB2.P09D5,DL Real-Imag Data Check,,,ro,binary,1,,,00=Invalid;01=Valid
+"Digital Module,Flatness Test,Radio Module 6",,TB2.P09C9,UL Module Data Check,,,ro,binary,1,,,00=Invalid;01=Valid
+"Digital Module,Flatness Test,Radio Module 6",,TB2.P09CE,DL Module Data Check,,,ro,binary,1,,,00=Invalid;01=Valid
+"Digital Module,Flatness Test,Radio Module 6",,TB2.P09D2,UL Real-Imag Data Check,,,ro,binary,1,,,00=Invalid;01=Valid
+"Digital Module,Flatness Test,Radio Module 6",,TB2.P09D6,DL Real-Imag Data Check,,,ro,binary,1,,,00=Invalid;01=Valid
+"Digital Module,Flatness Test,Radio Module 7",,TB2.P09CA,UL Module Data Check,,,ro,binary,1,,,00=Invalid;01=Valid
+"Digital Module,Flatness Test,Radio Module 7",,TB2.P09CF,DL Module Data Check,,,ro,binary,1,,,00=Invalid;01=Valid
+"Digital Module,Flatness Test,Radio Module 7",,TB2.P09D3,UL Real-Imag Data Check,,,ro,binary,1,,,00=Invalid;01=Valid
+"Digital Module,Flatness Test,Radio Module 7",,TB2.P09D7,DL Real-Imag Data Check,,,ro,binary,1,,,00=Invalid;01=Valid
+"Digital Module,Flatness Test,Radio Module 8",,TB2.P09CB,UL Module Data Check,,,ro,binary,1,,,00=Invalid;01=Valid
+"Digital Module,Flatness Test,Radio Module 8",,TB2.P09D0,DL Module Data Check,,,ro,binary,1,,,00=Invalid;01=Valid
+"Digital Module,Flatness Test,Radio Module 8",,TB2.P09D4,UL Real-Imag Data Check,,,ro,binary,1,,,00=Invalid;01=Valid
+"Digital Module,Flatness Test,Radio Module 8",,TB2.P09D8,DL Real-Imag Data Check,,,ro,binary,1,,,00=Invalid;01=Valid
+"Digital Module,MCU Parameter,Device Information",,TB2-MCU.P0AF0,Vendor,,,rw,string,20,,,
+"Digital Module,MCU Parameter,Device Information",,TB2-MCU.P0AF2,Element Model Number,,,rw,string,20,,,
+"Digital Module,MCU Parameter,Device Information",,TB2-MCU.P0AF3,Element Serial Number,,,rw,string,20,,,
+"Digital Module,MCU Parameter,Device Information",,TB2-MCU.P0AF4,BLE State,,,ro,binary,1,,,00=Normal;01=Alarm
+"Digital Module,MCU Parameter,Device Information",,TB2-MCU.P0BBD,The FPGA Debugging Mode Switch,,,rw,binary,1,,,00=Off;01=On
+"Digital Module,MCU Parameter,Device Information",,TB2-MCU.P0AD0,Filesystem Edition,,,ro,string,10,,,
+"Digital Module,Power Correction,Down-Link Output Power Current Voltage Value",,TB2.P09B2,Radio Module 1 Current Voltage Value,,,ro,uint32,4,,,
+"Digital Module,Power Correction,Down-Link Output Power Current Voltage Value",,TB2.P09B3,Radio Module 2 Current Voltage Value,,,ro,uint32,4,,,
+"Digital Module,Power Correction,Down-Link Output Power Current Voltage Value",,TB2.P09B4,Radio Module 3 Current Voltage Value,,,ro,uint32,4,,,
+"Digital Module,Power Correction,Down-Link Output Power Current Voltage Value",,TB2.P09B5,Radio Module 4 Current Voltage Value,,,ro,uint32,4,,,
+"Digital Module,Power Correction,Down-Link Output Power Current Voltage Value",,TB2.P09B6,Radio Module 5 Current Voltage Value,,,ro,uint32,4,,,
+"Digital Module,Power Correction,Down-Link Output Power Current Voltage Value",,TB2.P09B7,Radio Module 6 Current Voltage Value,,,ro,uint32,4,,,
+"Digital Module,Power Correction,Down-Link Output Power Current Voltage Value",,TB2.P09B8,Radio Module 7 Current Voltage Value,,,ro,uint32,4,,,
+"Digital Module,Power Correction,Down-Link Output Power Current Voltage Value",,TB2.P09B9,Radio Module 8 Current Voltage Value,,,ro,uint32,4,,,
+"Digital Module,Power Correction,Down-Link Output Power Reference Voltage Value",,TB2.P09A1,Radio Module 1 Maximum Voltage Value,,,rw,uint32,4,,,
+"Digital Module,Power Correction,Down-Link Output Power Reference Voltage Value",,TB2.P09A2,Radio Module 1 Minimum Voltage Value,,,rw,uint32,4,,,
+"Digital Module,Power Correction,Down-Link Output Power Reference Voltage Value",,TB2.P09A3,Radio Module 2 Maximum Voltage Value,,,rw,uint32,4,,,
+"Digital Module,Power Correction,Down-Link Output Power Reference Voltage Value",,TB2.P09A4,Radio Module 2 Minimum Voltage Value,,,rw,uint32,4,,,
+"Digital Module,Power Correction,Down-Link Output Power Reference Voltage Value",,TB2.P09A5,Radio Module 3 Maximum Voltage Value,,,rw,uint32,4,,,
+"Digital Module,Power Correction,Down-Link Output Power Reference Voltage Value",,TB2.P09A6,Radio Module 3 Minimum Voltage Value,,,rw,uint32,4,,,
+"Digital Module,Power Correction,Down-Link Output Power Reference Voltage Value",,TB2.P09A7,Radio Module 4 Maximum Voltage Value,,,rw,uint32,4,,,
+"Digital Module,Power Correction,Down-Link Output Power Reference Voltage Value",,TB2.P09A8,Radio Module 4 Minimum Voltage Value,,,rw,uint32,4,,,
+"Digital Module,Power Correction,Down-Link Output Power Reference Voltage Value",,TB2.P09A9,Radio Module 5 Maximum Voltage Value,,,rw,uint32,4,,,
+"Digital Module,Power Correction,Down-Link Output Power Reference Voltage Value",,TB2.P09AA,Radio Module 5 Minimum Voltage Value,,,rw,uint32,4,,,
+"Digital Module,Power Correction,Down-Link Output Power Reference Voltage Value",,TB2.P09AB,Radio Module 6 Maximum Voltage Value,,,rw,uint32,4,,,
+"Digital Module,Power Correction,Down-Link Output Power Reference Voltage Value",,TB2.P09AC,Radio Module 6 Minimum Voltage Value,,,rw,uint32,4,,,
+"Digital Module,Power Correction,Down-Link Output Power Reference Voltage Value",,TB2.P09AD,Radio Module 7 Maximum Voltage Value,,,rw,uint32,4,,,
+"Digital Module,Power Correction,Down-Link Output Power Reference Voltage Value",,TB2.P09AE,Radio Module 7 Minimum Voltage Value,,,rw,uint32,4,,,
+"Digital Module,Power Correction,Down-Link Output Power Reference Voltage Value",,TB2.P09AF,Radio Module 8 Maximum Voltage Value,,,rw,uint32,4,,,
+"Digital Module,Power Correction,Down-Link Output Power Reference Voltage Value",,TB2.P09B0,Radio Module 8 Minimum Voltage Value,,,rw,uint32,4,,,
+"Digital Module,RF Info,Radio Module 1",,TB2.P0701,UL Frequency Start,MHz,,rw,uint32,4,1000,,
+"Digital Module,RF Info,Radio Module 1",,TB2.P0702,UL Frequency High,MHz,,rw,uint32,4,1000,,
+"Digital Module,RF Info,Radio Module 1",,TB2.P0703,DL Frequency Start,MHz,,rw,uint32,4,1000,,
+"Digital Module,RF Info,Radio Module 1",,TB2.P0704,DL Frequency High,MHz,,rw,uint32,4,1000,,
+"Digital Module,RF Info,Radio Module 1",,TB2.P0956,UL Gain,dB,,rw,int16,2,10,,
+"Digital Module,RF Info,Radio Module 1",,TB2.P0957,DL Gain,dB,,rw,int16,2,10,,
+"Digital Module,RF Info,Radio Module 1",,TB2.P02B6,UL Temperature Compensation Coefficient,,,rw,int16,2,1000,,
+"Digital Module,RF Info,Radio Module 1",,TB2.P02B4,DL Temperature Compensation Coefficient,,,rw,int16,2,1000,,
+"Digital Module,RF Info,Radio Module 1",,TB2.P0A28,Frequency Correct Coefficient Min,,,rw,int16,2,,,
+"Digital Module,RF Info,Radio Module 1",,TB2.P0A20,Frequency Correct Coefficient Max,,,rw,int16,2,,,
+"Digital Module,RF Info,Radio Module 1",,TB2.P0989,Output Power Slope,,,rw,int32,4,1000,,
+"Digital Module,RF Info,Radio Module 1",,TB2.P0991,Output Power Bias Value,,,rw,int32,4,1000,,
+"Digital Module,RF Info,Radio Module 1",,TB2.P0999,Output Power Voltage Offset Value,,,rw,int32,4,1000,,
+"Digital Module,RF Info,Radio Module 1",,TB2.P09C0,Serial Number,,,rw,string,20,,,
+"Digital Module,RF Info,Radio Module 2",,TB2.P0706,UL Frequency Start,MHz,,rw,uint32,4,1000,,
+"Digital Module,RF Info,Radio Module 2",,TB2.P0707,UL Frequency High,MHz,,rw,uint32,4,1000,,
+"Digital Module,RF Info,Radio Module 2",,TB2.P0708,DL Frequency Start,MHz,,rw,uint32,4,1000,,
+"Digital Module,RF Info,Radio Module 2",,TB2.P0709,DL Frequency High,MHz,,rw,uint32,4,1000,,
+"Digital Module,RF Info,Radio Module 2",,TB2.P0958,UL Gain,dB,,rw,int16,2,10,,
+"Digital Module,RF Info,Radio Module 2",,TB2.P0959,DL Gain,dB,,rw,int16,2,10,,
+"Digital Module,RF Info,Radio Module 2",,TB2.P03B6,UL Temperature Compensation Coefficient,,,rw,int16,2,1000,,
+"Digital Module,RF Info,Radio Module 2",,TB2.P03B4,DL Temperature Compensation Coefficient,,,rw,int16,2,1000,,
+"Digital Module,RF Info,Radio Module 2",,TB2.P0A29,Frequency Correct Coefficient Min,,,rw,int16,2,,,
+"Digital Module,RF Info,Radio Module 2",,TB2.P0A21,Frequency Correct Coefficient Max,,,rw,int16,2,,,
+"Digital Module,RF Info,Radio Module 2",,TB2.P098A,Output Power Slope,,,rw,int32,4,1000,,
+"Digital Module,RF Info,Radio Module 2",,TB2.P0992,Output Power Bias Value,,,rw,int32,4,1000,,
+"Digital Module,RF Info,Radio Module 2",,TB2.P099A,Output Power Voltage Offset Value,,,rw,int32,4,1000,,
+"Digital Module,RF Info,Radio Module 2",,TB2.P09C1,Serial Number,,,rw,string,20,,,
+"Digital Module,RF Info,Radio Module 3",,TB2.P070B,UL Frequency Start,MHz,,rw,uint32,4,1000,,
+"Digital Module,RF Info,Radio Module 3",,TB2.P070C,UL Frequency High,MHz,,rw,uint32,4,1000,,
+"Digital Module,RF Info,Radio Module 3",,TB2.P070D,DL Frequency Start,MHz,,rw,uint32,4,1000,,
+"Digital Module,RF Info,Radio Module 3",,TB2.P070E,DL Frequency High,MHz,,rw,uint32,4,1000,,
+"Digital Module,RF Info,Radio Module 3",,TB2.P095A,UL Gain,dB,,rw,int16,2,10,,
+"Digital Module,RF Info,Radio Module 3",,TB2.P095B,DL Gain,dB,,rw,int16,2,10,,
+"Digital Module,RF Info,Radio Module 3",,TB2.P04B6,UL Temperature Compensation Coefficient,,,rw,int16,2,1000,,
+"Digital Module,RF Info,Radio Module 3",,TB2.P04B4,DL Temperature Compensation Coefficient,,,rw,int16,2,1000,,
+"Digital Module,RF Info,Radio Module 3",,TB2.P0A2A,Frequency Correct Coefficient Min,,,rw,int16,2,,,
+"Digital Module,RF Info,Radio Module 3",,TB2.P0A22,Frequency Correct Coefficient Max,,,rw,int16,2,,,
+"Digital Module,RF Info,Radio Module 3",,TB2.P098B,Output Power Slope,,,rw,int32,4,1000,,
+"Digital Module,RF Info,Radio Module 3",,TB2.P0993,Output Power Bias Value,,,rw,int32,4,1000,,
+"Digital Module,RF Info,Radio Module 3",,TB2.P099B,Output Power Voltage Offset Value,,,rw,int32,4,1000,,
+"Digital Module,RF Info,Radio Module 3",,TB2.P09C2,Serial Number,,,rw,string,20,,,
+"Digital Module,RF Info,Radio Module 4",,TB2.P0710,UL Frequency Start,MHz,,rw,uint32,4,1000,,
+"Digital Module,RF Info,Radio Module 4",,TB2.P0711,UL Frequency High,MHz,,rw,uint32,4,1000,,
+"Digital Module,RF Info,Radio Module 4",,TB2.P0712,DL Frequency Start,MHz,,rw,uint32,4,1000,,
+"Digital Module,RF Info,Radio Module 4",,TB2.P0713,DL Frequency High,MHz,,rw,uint32,4,1000,,
+"Digital Module,RF Info,Radio Module 4",,TB2.P095C,UL Gain,dB,,rw,int16,2,10,,
+"Digital Module,RF Info,Radio Module 4",,TB2.P095D,DL Gain,dB,,rw,int16,2,10,,
+"Digital Module,RF Info,Radio Module 4",,TB2.P05B6,UL Temperature Compensation Coefficient,,,rw,int16,2,1000,,
+"Digital Module,RF Info,Radio Module 4",,TB2.P05B4,DL Temperature Compensation Coefficient,,,rw,int16,2,1000,,
+"Digital Module,RF Info,Radio Module 4",,TB2.P0A2B,Frequency Correct Coefficient Min,,,rw,int16,2,,,
+"Digital Module,RF Info,Radio Module 4",,TB2.P0A23,Frequency Correct Coefficient Max,,,rw,int16,2,,,
+"Digital Module,RF Info,Radio Module 4",,TB2.P098C,Output Power Slope,,,rw,int32,4,1000,,
+"Digital Module,RF Info,Radio Module 4",,TB2.P0994,Output Power Bias Value,,,rw,int32,4,1000,,
+"Digital Module,RF Info,Radio Module 4",,TB2.P099C,Output Power Voltage Offset Value,,,rw,int32,4,1000,,
+"Digital Module,RF Info,Radio Module 4",,TB2.P09C3,Serial Number,,,rw,string,20,,,
+"Digital Module,RF Info,Radio Module 5",,TB2.P0715,UL Frequency Start,MHz,,rw,uint32,4,1000,,
+"Digital Module,RF Info,Radio Module 5",,TB2.P0716,UL Frequency High,MHz,,rw,uint32,4,1000,,
+"Digital Module,RF Info,Radio Module 5",,TB2.P0717,DL Frequency Start,MHz,,rw,uint32,4,1000,,
+"Digital Module,RF Info,Radio Module 5",,TB2.P0718,DL Frequency High,MHz,,rw,uint32,4,1000,,
+"Digital Module,RF Info,Radio Module 5",,TB2.P06B6,UL Temperature Compensation Coefficient,,,rw,int16,2,1000,,
+"Digital Module,RF Info,Radio Module 5",,TB2.P06B4,DL Temperature Compensation Coefficient,,,rw,int16,2,1000,,
+"Digital Module,RF Info,Radio Module 5",,TB2.P0A2C,Frequency Correct Coefficient Min,,,rw,int16,2,,,
+"Digital Module,RF Info,Radio Module 5",,TB2.P0A24,Frequency Correct Coefficient Max,,,rw,int16,2,,,
+"Digital Module,RF Info,Radio Module 5",,TB2.P095E,UL Gain,dB,,rw,int16,2,10,,
+"Digital Module,RF Info,Radio Module 5",,TB2.P095F,DL Gain,dB,,rw,int16,2,10,,
+"Digital Module,RF Info,Radio Module 5",,TB2.P098D,Output Power Slope,,,rw,int32,4,1000,,
+"Digital Module,RF Info,Radio Module 5",,TB2.P0995,Output Power Bias Value,,,rw,int32,4,1000,,
+"Digital Module,RF Info,Radio Module 5",,TB2.P099D,Output Power Voltage Offset Value,,,rw,int32,4,1000,,
+"Digital Module,RF Info,Radio Module 5",,TB2.P09C4,Serial Number,,,rw,string,20,,,
+"Digital Module,RF Info,Radio Module 6",,TB2.P071A,UL Frequency Start,MHz,,rw,uint32,4,1000,,
+"Digital Module,RF Info,Radio Module 6",,TB2.P071B,UL Frequency High,MHz,,rw,uint32,4,1000,,
+"Digital Module,RF Info,Radio Module 6",,TB2.P071C,DL Frequency Start,MHz,,rw,uint32,4,1000,,
+"Digital Module,RF Info,Radio Module 6",,TB2.P071D,DL Frequency High,MHz,,rw,uint32,4,1000,,
+"Digital Module,RF Info,Radio Module 6",,TB2.P0960,UL Gain,dB,,rw,int16,2,10,,
+"Digital Module,RF Info,Radio Module 6",,TB2.P0961,DL Gain,dB,,rw,int16,2,10,,
+"Digital Module,RF Info,Radio Module 6",,TB2.P07B6,UL Temperature Compensation Coefficient,,,rw,int16,2,1000,,
+"Digital Module,RF Info,Radio Module 6",,TB2.P07B4,DL Temperature Compensation Coefficient,,,rw,int16,2,1000,,
+"Digital Module,RF Info,Radio Module 6",,TB2.P0A2D,Frequency Correct Coefficient Min,,,rw,int16,2,,,
+"Digital Module,RF Info,Radio Module 6",,TB2.P0A25,Frequency Correct Coefficient Max,,,rw,int16,2,,,
+"Digital Module,RF Info,Radio Module 6",,TB2.P098E,Output Power Slope,,,rw,int32,4,1000,,
+"Digital Module,RF Info,Radio Module 6",,TB2.P0996,Output Power Bias Value,,,rw,int32,4,1000,,
+"Digital Module,RF Info,Radio Module 6",,TB2.P099E,Output Power Voltage Offset Value,,,rw,int32,4,1000,,
+"Digital Module,RF Info,Radio Module 6",,TB2.P09C5,Serial Number,,,rw,string,20,,,
+"Digital Module,RF Info,Radio Module 7",,TB2.P071F,UL Frequency Start,MHz,,rw,uint32,4,1000,,
+"Digital Module,RF Info,Radio Module 7",,TB2.P0720,UL Frequency High,MHz,,rw,uint32,4,1000,,
+"Digital Module,RF Info,Radio Module 7",,TB2.P0721,DL Frequency Start,MHz,,rw,uint32,4,1000,,
+"Digital Module,RF Info,Radio Module 7",,TB2.P0722,DL Frequency High,MHz,,rw,uint32,4,1000,,
+"Digital Module,RF Info,Radio Module 7",,TB2.P0962,UL Gain,dB,,rw,int16,2,10,,
+"Digital Module,RF Info,Radio Module 7",,TB2.P0963,DL Gain,dB,,rw,int16,2,10,,
+"Digital Module,RF Info,Radio Module 7",,TB2.P08B6,UL Temperature Compensation Coefficient,,,rw,int16,2,1000,,
+"Digital Module,RF Info,Radio Module 7",,TB2.P08B4,DL Temperature Compensation Coefficient,,,rw,int16,2,1000,,
+"Digital Module,RF Info,Radio Module 7",,TB2.P0A2E,Frequency Correct Coefficient Min,,,rw,int16,2,,,
+"Digital Module,RF Info,Radio Module 7",,TB2.P0A26,Frequency Correct Coefficient Max,,,rw,int16,2,,,
+"Digital Module,RF Info,Radio Module 7",,TB2.P098F,Output Power Slope,,,rw,int32,4,1000,,
+"Digital Module,RF Info,Radio Module 7",,TB2.P0997,Output Power Bias Value,,,rw,int32,4,1000,,
+"Digital Module,RF Info,Radio Module 7",,TB2.P099F,Output Power Voltage Offset Value,,,rw,int32,4,1000,,
+"Digital Module,RF Info,Radio Module 7",,TB2.P09C6,Serial Number,,,rw,string,20,,,
+"Digital Module,RF Info,Radio Module 8",,TB2.P0724,UL Frequency Start,MHz,,rw,uint32,4,1000,,
+"Digital Module,RF Info,Radio Module 8",,TB2.P0725,UL Frequency High,MHz,,rw,uint32,4,1000,,
+"Digital Module,RF Info,Radio Module 8",,TB2.P0726,DL Frequency Start,MHz,,rw,uint32,4,1000,,
+"Digital Module,RF Info,Radio Module 8",,TB2.P0727,DL Frequency High,MHz,,rw,uint32,4,1000,,
+"Digital Module,RF Info,Radio Module 8",,TB2.P0964,UL Gain,dB,,rw,int16,2,10,,
+"Digital Module,RF Info,Radio Module 8",,TB2.P0965,DL Gain,dB,,rw,int16,2,10,,
+"Digital Module,RF Info,Radio Module 8",,TB2.P09E6,UL Temperature Compensation Coefficient,,,rw,int16,2,1000,,
+"Digital Module,RF Info,Radio Module 8",,TB2.P09E4,DL Temperature Compensation Coefficient,,,rw,int16,2,1000,,
+"Digital Module,RF Info,Radio Module 8",,TB2.P0A2F,Frequency Correct Coefficient Min,,,rw,int16,2,,,
+"Digital Module,RF Info,Radio Module 8",,TB2.P0A27,Frequency Correct Coefficient Max,,,rw,int16,2,,,
+"Digital Module,RF Info,Radio Module 8",,TB2.P0990,Output Power Slope,,,rw,int32,4,1000,,
+"Digital Module,RF Info,Radio Module 8",,TB2.P0998,Output Power Bias Value,,,rw,int32,4,1000,,
+"Digital Module,RF Info,Radio Module 8",,TB2.P09A0,Output Power Voltage Offset Value,,,rw,int32,4,1000,,
+"Digital Module,RF Info,Radio Module 8",,TB2.P09C7,Serial Number,,,rw,string,20,,,
+"Small-Signal,Gain,Radio Module  1",,TB2.P0010,Radio Module 1 Uplink Maximum Gain,,,rw,uint8,1,,,
+"Small-Signal,Gain,Radio Module  1",,TB2.P0011,Radio Module 1 Uplink Gain Attenuation Value,,,rw,uint8,1,2,,
+"Small-Signal,Gain,Radio Module  1",,TB2.P0012,Radio Module 1 Uplink Gain Value,,,rw,uint8,1,2,,
+"Small-Signal,Gain,Radio Module  1",,TB2.P0013,Radio Module 1 Uplink Attenuator Value,,,ro,uint8,1,2,,
+"Small-Signal,Gain,Radio Module  1",,TB2.P0016,Radio Module 1 Downlink Maximum Gain,,,rw,uint8,1,,,
+"Small-Signal,Gain,Radio Module  1",,TB2.P0017,Radio Module 1 Downlink Gain Attenuation Value,,,rw,uint8,1,2,,
+"Small-Signal,Gain,Radio Module  1",,TB2.P0018,Radio Module 1 Downlink Gain Value,,,rw,uint8,1,2,,
+"Small-Signal,Gain,Radio Module  1",,TB2.P0019,Radio Module 1 Downlink Attenuator Value,,,ro,uint8,1,2,,
+"Small-Signal,Gain,Radio Module 2",,TB2.P0030,Radio Module 2 Uplink Maximum Gain,,,rw,uint8,1,,,
+"Small-Signal,Gain,Radio Module 2",,TB2.P0031,Radio Module 2 Uplink Gain Attenuation Value,,,rw,uint8,1,2,,
+"Small-Signal,Gain,Radio Module 2",,TB2.P0032,Radio Module 2 Uplink Gain Value,,,rw,uint8,1,2,,
+"Small-Signal,Gain,Radio Module 2",,TB2.P0033,Radio Module 2 Uplink Attenuator Value,,,ro,uint8,1,2,,
+"Small-Signal,Gain,Radio Module 2",,TB2.P0036,Radio Module 2 Downlink Maximum Gain,,,rw,uint8,1,,,
+"Small-Signal,Gain,Radio Module 2",,TB2.P0037,Radio Module 2 Downlink Gain Attenuation Value,,,rw,uint8,1,2,,
+"Small-Signal,Gain,Radio Module 2",,TB2.P0038,Radio Module 2 Downlink Gain Value,,,rw,uint8,1,2,,
+"Small-Signal,Gain,Radio Module 2",,TB2.P0039,Radio Module 2 Downlink Attenuator Value,,,ro,uint8,1,2,,
+"Small-Signal,Gain,Radio Module 3",,TB2.P0050,Radio Module 3 Uplink Maximum Gain,,,rw,uint8,1,,,
+"Small-Signal,Gain,Radio Module 3",,TB2.P0051,Radio Module 3 Uplink Gain Attenuation Value,,,rw,uint8,1,2,,
+"Small-Signal,Gain,Radio Module 3",,TB2.P0052,Radio Module 3 Uplink Gain Value,,,rw,uint8,1,2,,
+"Small-Signal,Gain,Radio Module 3",,TB2.P0053,Radio Module 3 Uplink Attenuator Value,,,ro,uint8,1,2,,
+"Small-Signal,Gain,Radio Module 3",,TB2.P0056,Radio Module 3 Downlink Maximum Gain,,,rw,uint8,1,,,
+"Small-Signal,Gain,Radio Module 3",,TB2.P0057,Radio Module 3 Downlink Gain Attenuation Value,,,rw,uint8,1,2,,
+"Small-Signal,Gain,Radio Module 3",,TB2.P0058,Radio Module 3 Downlink Gain Value,,,rw,uint8,1,2,,
+"Small-Signal,Gain,Radio Module 3",,TB2.P0059,Radio Module 3 Downlink Attenuator Value,,,ro,uint8,1,2,,
+"Small-Signal,Gain,Radio Module 4",,TB2.P0070,Radio Module 4 Uplink Maximum Gain,,,rw,uint8,1,,,
+"Small-Signal,Gain,Radio Module 4",,TB2.P0071,Radio Module 4 Uplink Gain Attenuation Value,,,rw,uint8,1,2,,
+"Small-Signal,Gain,Radio Module 4",,TB2.P0072,Radio Module 4 Uplink Gain Value,,,rw,uint8,1,2,,
+"Small-Signal,Gain,Radio Module 4",,TB2.P0073,Radio Module 4 Uplink Attenuator Value,,,ro,uint8,1,2,,
+"Small-Signal,Gain,Radio Module 4",,TB2.P0076,Radio Module 4 Downlink Maximum Gain,,,rw,uint8,1,,,
+"Small-Signal,Gain,Radio Module 4",,TB2.P0077,Radio Module 4 Downlink Gain Attenuation Value,,,rw,uint8,1,2,,
+"Small-Signal,Gain,Radio Module 4",,TB2.P0078,Radio Module 4 Downlink Gain Value,,,rw,uint8,1,2,,
+"Small-Signal,Gain,Radio Module 4",,TB2.P0079,Radio Module 4 Downlink Attenuator Value,,,ro,uint8,1,2,,
+"Small-Signal,Gain,Radio Module 5",,TB2.P059A,Radio Module 5 Uplink Maximum Gain,,,rw,uint8,1,,,
+"Small-Signal,Gain,Radio Module 5",,TB2.P059B,Radio Module 5 Uplink Gain Attenuation Value,,,rw,uint8,1,2,,
+"Small-Signal,Gain,Radio Module 5",,TB2.P059C,Radio Module 5 Uplink Gain Value,,,rw,uint8,1,2,,
+"Small-Signal,Gain,Radio Module 5",,TB2.P059D,Radio Module 5 Uplink Attenuator Value,,,ro,uint8,1,2,,
+"Small-Signal,Gain,Radio Module 5",,TB2.P059E,Radio Module 5 Downlink Maximum Gain,,,rw,uint8,1,,,
+"Small-Signal,Gain,Radio Module 5",,TB2.P059F,Radio Module 5 Downlink Gain Attenuation Value,,,rw,uint8,1,2,,
+"Small-Signal,Gain,Radio Module 5",,TB2.P0619,Radio Module 5 Downlink Gain Value,,,rw,uint8,1,2,,
+"Small-Signal,Gain,Radio Module 5",,TB2.P0620,Radio Module 5 Downlink Attenuator Value,,,ro,uint8,1,2,,
+"Small-Signal,Gain,Radio Module 6",,TB2.P0621,Radio Module 6 Uplink Maximum Gain,,,rw,uint8,1,,,
+"Small-Signal,Gain,Radio Module 6",,TB2.P0622,Radio Module 6 Uplink Gain Attenuation Value,,,rw,uint8,1,2,,
+"Small-Signal,Gain,Radio Module 6",,TB2.P0623,Radio Module 6 Uplink Gain Value,,,rw,uint8,1,2,,
+"Small-Signal,Gain,Radio Module 6",,TB2.P0624,Radio Module 6 Uplink Attenuator Value,,,ro,uint8,1,2,,
+"Small-Signal,Gain,Radio Module 6",,TB2.P0625,Radio Module 6 Downlink Maximum Gain,,,rw,uint8,1,,,
+"Small-Signal,Gain,Radio Module 6",,TB2.P0626,Radio Module 6 Downlink Gain Attenuation Value,,,rw,uint8,1,2,,
+"Small-Signal,Gain,Radio Module 6",,TB2.P0627,Radio Module 6 Downlink Gain Value,,,rw,uint8,1,2,,
+"Small-Signal,Gain,Radio Module 6",,TB2.P0628,Radio Module 6 Downlink Attenuator Value,,,ro,uint8,1,2,,
+"Small-Signal,Gain,Radio Module 7",,TB2.P0629,Radio Module 7 Uplink Maximum Gain,,,rw,uint8,1,,,
+"Small-Signal,Gain,Radio Module 7",,TB2.P062A,Radio Module 7 Uplink Gain Attenuation Value,,,rw,uint8,1,2,,
+"Small-Signal,Gain,Radio Module 7",,TB2.P062B,Radio Module 7 Uplink Gain Value,,,rw,uint8,1,2,,
+"Small-Signal,Gain,Radio Module 7",,TB2.P062C,Radio Module 7 Uplink Attenuator Value,,,ro,uint8,1,2,,
+"Small-Signal,Gain,Radio Module 7",,TB2.P062D,Radio Module 7 Downlink Maximum Gain,,,rw,uint8,1,,,
+"Small-Signal,Gain,Radio Module 7",,TB2.P062E,Radio Module 7 Downlink Gain Attenuation Value,,,rw,uint8,1,2,,
+"Small-Signal,Gain,Radio Module 7",,TB2.P062F,Radio Module 7 Downlink Gain Value,,,rw,uint8,1,2,,
+"Small-Signal,Gain,Radio Module 7",,TB2.P0630,Radio Module 7 Downlink Attenuator Value,,,ro,uint8,1,2,,
+"Small-Signal,Gain,Radio Module 8",,TB2.P0631,Radio Module 8 Uplink Maximum Gain,,,rw,uint8,1,,,
+"Small-Signal,Gain,Radio Module 8",,TB2.P0632,Radio Module 8 Uplink Gain Attenuation Value,,,rw,uint8,1,2,,
+"Small-Signal,Gain,Radio Module 8",,TB2.P0633,Radio Module 8 Uplink Gain Value,,,rw,uint8,1,2,,
+"Small-Signal,Gain,Radio Module 8",,TB2.P0634,Radio Module 8 Uplink Attenuator Value,,,ro,uint8,1,2,,
+"Small-Signal,Gain,Radio Module 8",,TB2.P0635,Radio Module 8 Downlink Maximum Gain,,,rw,uint8,1,,,
+"Small-Signal,Gain,Radio Module 8",,TB2.P0636,Radio Module 8 Downlink Gain Attenuation Value,,,rw,uint8,1,2,,
+"Small-Signal,Gain,Radio Module 8",,TB2.P0637,Radio Module 8 Downlink Gain Value,,,rw,uint8,1,2,,
+"Small-Signal,Gain,Radio Module 8",,TB2.P0638,Radio Module 8 Downlink Attenuator Value,,,ro,uint8,1,2,,
+"Small-Signal,Frequency,Radio Module 1",,TB2.P001C,Radio Module 1 Uplink Centre Frequency,,,rw,uint32,4,1000,,
+"Small-Signal,Frequency,Radio Module 1",,TB2.P0021,Radio Module 1 Downlink Centre Frequency,,,rw,uint32,4,1000,,
+"Small-Signal,Frequency,Radio Module 2",,TB2.P003C,Radio Module 2 Uplink Centre Frequency,,,rw,uint32,4,1000,,
+"Small-Signal,Frequency,Radio Module 2",,TB2.P0041,Radio Module 2 Downlink Centre Frequency,,,rw,uint32,4,1000,,
+"Small-Signal,Frequency,Radio Module 3",,TB2.P005C,Radio Module 3 Uplink Centre Frequency,,,rw,uint32,4,1000,,
+"Small-Signal,Frequency,Radio Module 3",,TB2.P0061,Radio Module 3 Downlink Centre Frequency,,,rw,uint32,4,1000,,
+"Small-Signal,Frequency,Radio Module 4",,TB2.P007C,Radio Module 4 Uplink Centre Frequency,,,rw,uint32,4,1000,,
+"Small-Signal,Frequency,Radio Module 4",,TB2.P0081,Radio Module 4 Downlink Centre Frequency,,,rw,uint32,4,1000,,
+"Small-Signal,Frequency,Radio Module 5",,TB2.P0639,Radio Module 5 Uplink Centre Frequency,,,rw,uint32,4,1000,,
+"Small-Signal,Frequency,Radio Module 5",,TB2.P063E,Radio Module 5 Downlink Centre Frequency,,,rw,uint32,4,1000,,
+"Small-Signal,Frequency,Radio Module 6",,TB2.P0643,Radio Module 6 Uplink Centre Frequency,,,rw,uint32,4,1000,,
+"Small-Signal,Frequency,Radio Module 6",,TB2.P0648,Radio Module 6 Downlink Centre Frequency,,,rw,uint32,4,1000,,
+"Small-Signal,Frequency,Radio Module 7",,TB2.P064D,Radio Module 7 Uplink Centre Frequency,,,rw,uint32,4,1000,,
+"Small-Signal,Frequency,Radio Module 7",,TB2.P0652,Radio Module 7 Downlink Centre Frequency,,,rw,uint32,4,1000,,
+"Small-Signal,Frequency,Radio Module 8",,TB2.P0657,Radio Module 8 Uplink Centre Frequency,,,rw,uint32,4,1000,,
+"Small-Signal,Frequency,Radio Module 8",,TB2.P065C,Radio Module 8 Downlink Centre Frequency,,,rw,uint32,4,1000,,
+"Small-Signal,Other Parameters,Temperature Compensation",,TB2.P00CA,Temperature Compensation Enable,,,rw,binary,1,,,00=Off;01=On

@@ -1,0 +1,10 @@
+:root {
+    --header-height: 50px;
+    --main-page-header-height: 8px;
+    --view-page-header-height: 48px;
+    --main-page-tabs-height: 55px;
+}
+
+.el-dialog__body {
+    padding: var(--el-dialog-padding-primary) !important;
+}

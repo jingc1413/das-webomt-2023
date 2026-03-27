@@ -1,0 +1,42 @@
+schema: "default"
+revision: 20240311
+devices:
+  - deviceTypeName: "Primary A2"
+    softwareVersion: 2.1.3
+    softwareRevision: 20240311
+  - deviceTypeName: "Master A2"
+    softwareVersion: 2.1.3
+    softwareRevision: 20240311
+  - deviceTypeName: "SA2"
+    softwareVersion: 2.1.3
+    softwareRevision: 20240311
+  - deviceTypeName: "Slave A2"
+    softwareVersion: 2.1.3
+    softwareRevision: 20240311
+  - deviceTypeName: "Secondary A2"
+    softwareVersion: 2.1.3
+    softwareRevision: 20240311
+  - deviceTypeName: E2-O
+    softwareVersion: 2.1.3
+    softwareRevision: 20240311
+  - deviceTypeName: N2-RU
+    softwareVersion: 2.1.3
+    softwareRevision: 20240311
+  - deviceTypeName: M2-RU
+    softwareVersion: 2.1.3
+    softwareRevision: 20240313
+  - deviceTypeName: H2-RU
+    softwareVersion: 2.1.2
+    softwareRevision: 20240311
+  - deviceTypeName: X2-RU
+    softwareVersion: 2.1.2
+    softwareRevision: 20240313
+  - deviceTypeName: EU-O
+    softwareVersion: 2.1
+    softwareRevision: 20221229
+  - deviceTypeName: HP-RU
+    softwareVersion: 2.2.1
+    softwareRevision: 20240315
+  - deviceTypeName: HP-F-RU
+    softwareVersion: 2.2.1
+    softwareRevision: 20240315

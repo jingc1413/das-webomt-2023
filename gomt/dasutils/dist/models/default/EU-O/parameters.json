@@ -1,0 +1,3184 @@
+[
+  {
+    "PrivOid": "T02.P0002",
+    "Name": "Vendor",
+    "Groups": [
+      "Settings,Overview,Element Identification"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 20
+  },
+  {
+    "PrivOid": "T02.P0004",
+    "Name": "Element Model Number",
+    "Groups": [
+      "Settings,Overview,Element Identification"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "rw",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 20
+  },
+  {
+    "PrivOid": "T02.P0005",
+    "Name": "Element Serial Number",
+    "Groups": [
+      "Settings,Overview,Element Identification"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 20
+  },
+  {
+    "PrivOid": "T02.P000A",
+    "Name": "Software Version",
+    "Groups": [
+      "Settings,Overview,Element Identification"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 20
+  },
+  {
+    "PrivOid": "T02.P0101",
+    "Name": "Device ID",
+    "Groups": [
+      "Settings,Overview,Element Identification"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Tips": "Hexadecimal",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "default",
+    "ByteSize": 4
+  },
+  {
+    "PrivOid": "T02.P0102",
+    "Name": "Device Sub ID",
+    "Groups": [
+      "Settings,Overview,Element Identification"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Tips": "Decimalism",
+    "Access": "rw",
+    "DataType": "uint8",
+    "InputType": "number",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "T02.P0023",
+    "Name": "Installed Location Label",
+    "Groups": [
+      "Settings,Overview,Element Identification"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "rw",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 40
+  },
+  {
+    "PrivOid": "T02.P0024",
+    "Name": "Site Name",
+    "Groups": [
+      "Settings,Overview,Element Identification"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 100
+  },
+  {
+    "PrivOid": "T02.P0030",
+    "Name": "Device Name",
+    "Groups": [
+      "Settings,Overview,Element Identification"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "rw",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 40
+  },
+  {
+    "PrivOid": "T02.P0501",
+    "Name": "Element Operating Temperature",
+    "Groups": [
+      "Settings,Overview,Element Identification"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "UnitName": "℃",
+    "Access": "ro",
+    "DataType": "int8",
+    "InputType": "default",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "T02.P0150",
+    "Name": "System Date And Time",
+    "Groups": [
+      "Settings,Overview,Date And Time"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "rw",
+    "DataType": "datetime",
+    "InputType": "datetime",
+    "ByteSize": 7
+  },
+  {
+    "PrivOid": "T02.P0A96",
+    "Name": "OP1 Transceiver",
+    "Groups": [
+      "Settings,Optical Module Information,Optical Module "
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "T02.P0AA6",
+    "Name": "OP1 Transceiver",
+    "Groups": [
+      "Settings,Optical Module Information,Optical Module "
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "T02.P0AB6",
+    "Name": "OP1 Transceiver",
+    "Groups": [
+      "Settings,Optical Module Information,Optical Module "
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "T02.P0A97",
+    "Name": "OP2 Transceiver",
+    "Groups": [
+      "Settings,Optical Module Information,Optical Module "
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "T02.P0AA7",
+    "Name": "OP2 Transceiver",
+    "Groups": [
+      "Settings,Optical Module Information,Optical Module "
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "T02.P0AB7",
+    "Name": "OP2 Transceiver",
+    "Groups": [
+      "Settings,Optical Module Information,Optical Module "
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "T02.P0A98",
+    "Name": "OP3 Transceiver",
+    "Groups": [
+      "Settings,Optical Module Information,Optical Module "
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "T02.P0AA8",
+    "Name": "OP3 Transceiver",
+    "Groups": [
+      "Settings,Optical Module Information,Optical Module "
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "T02.P0AB8",
+    "Name": "OP3 Transceiver",
+    "Groups": [
+      "Settings,Optical Module Information,Optical Module "
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "T02.P0A99",
+    "Name": "OP4 Transceiver",
+    "Groups": [
+      "Settings,Optical Module Information,Optical Module "
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "T02.P0AA9",
+    "Name": "OP4 Transceiver",
+    "Groups": [
+      "Settings,Optical Module Information,Optical Module "
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "T02.P0AB9",
+    "Name": "OP4 Transceiver",
+    "Groups": [
+      "Settings,Optical Module Information,Optical Module "
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "T02.P0A9A",
+    "Name": "OP5 Transceiver",
+    "Groups": [
+      "Settings,Optical Module Information,Optical Module "
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "T02.P0AAA",
+    "Name": "OP5 Transceiver",
+    "Groups": [
+      "Settings,Optical Module Information,Optical Module "
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "T02.P0ABA",
+    "Name": "OP5 Transceiver",
+    "Groups": [
+      "Settings,Optical Module Information,Optical Module "
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "T02.P0A9B",
+    "Name": "OP6 Transceiver",
+    "Groups": [
+      "Settings,Optical Module Information,Optical Module "
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "T02.P0AAB",
+    "Name": "OP6 Transceiver",
+    "Groups": [
+      "Settings,Optical Module Information,Optical Module "
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "T02.P0ABB",
+    "Name": "OP6 Transceiver",
+    "Groups": [
+      "Settings,Optical Module Information,Optical Module "
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "T02.P0A9E",
+    "Name": "OP Slave Transceiver",
+    "Groups": [
+      "Settings,Optical Module Information,Optical Module "
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "T02.P0A01",
+    "Name": "OP Slave Transceiver",
+    "Groups": [
+      "Settings,Optical Module Information,Optical Module "
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "T02.P0ABE",
+    "Name": "OP Slave Transceiver",
+    "Groups": [
+      "Settings,Optical Module Information,Optical Module "
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "T02.P0A9F",
+    "Name": "OP Master Transceiver",
+    "Groups": [
+      "Settings,Optical Module Information,Optical Module "
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "T02.P0A04",
+    "Name": "OP Master Transceiver",
+    "Groups": [
+      "Settings,Optical Module Information,Optical Module "
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "T02.P0ABF",
+    "Name": "OP Master Transceiver",
+    "Groups": [
+      "Settings,Optical Module Information,Optical Module "
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "T02.P0A40",
+    "Name": "OP1 Transceiver",
+    "Groups": [
+      "Settings,Optical Module Information,Optical Module"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 100
+  },
+  {
+    "PrivOid": "T02.P0A50",
+    "Name": "OP1 Transceiver Tx/Rx Power",
+    "Groups": [
+      "Settings,Optical Module Information,Optical Module"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 100
+  },
+  {
+    "PrivOid": "T02.P0A41",
+    "Name": "OP2 Transceiver",
+    "Groups": [
+      "Settings,Optical Module Information,Optical Module"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 100
+  },
+  {
+    "PrivOid": "T02.P0A51",
+    "Name": "OP2 Transceiver Tx/Rx Power",
+    "Groups": [
+      "Settings,Optical Module Information,Optical Module"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 100
+  },
+  {
+    "PrivOid": "T02.P0A42",
+    "Name": "OP3 Transceiver",
+    "Groups": [
+      "Settings,Optical Module Information,Optical Module"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 100
+  },
+  {
+    "PrivOid": "T02.P0A52",
+    "Name": "OP3 Transceiver Tx/Rx Power",
+    "Groups": [
+      "Settings,Optical Module Information,Optical Module"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 100
+  },
+  {
+    "PrivOid": "T02.P0A43",
+    "Name": "OP4 Transceiver",
+    "Groups": [
+      "Settings,Optical Module Information,Optical Module"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 100
+  },
+  {
+    "PrivOid": "T02.P0A53",
+    "Name": "OP4 Transceiver Tx/Rx Power",
+    "Groups": [
+      "Settings,Optical Module Information,Optical Module"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 100
+  },
+  {
+    "PrivOid": "T02.P0A44",
+    "Name": "OP5 Transceiver",
+    "Groups": [
+      "Settings,Optical Module Information,Optical Module"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 100
+  },
+  {
+    "PrivOid": "T02.P0A54",
+    "Name": "OP5 Transceiver Tx/Rx Power",
+    "Groups": [
+      "Settings,Optical Module Information,Optical Module"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 100
+  },
+  {
+    "PrivOid": "T02.P0A45",
+    "Name": "OP6 Transceiver",
+    "Groups": [
+      "Settings,Optical Module Information,Optical Module"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 100
+  },
+  {
+    "PrivOid": "T02.P0A55",
+    "Name": "OP6 Transceiver Tx/Rx Power",
+    "Groups": [
+      "Settings,Optical Module Information,Optical Module"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 100
+  },
+  {
+    "PrivOid": "T02.P0A02",
+    "Name": "OP Slave Transceiver",
+    "Groups": [
+      "Settings,Optical Module Information,Optical Module"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 100
+  },
+  {
+    "PrivOid": "T02.P0A03",
+    "Name": "OP Slave Transceiver",
+    "Groups": [
+      "Settings,Optical Module Information,Optical Module"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 100
+  },
+  {
+    "PrivOid": "T02.P0A05",
+    "Name": "OP Master Transceiver",
+    "Groups": [
+      "Settings,Optical Module Information,Optical Module"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 100
+  },
+  {
+    "PrivOid": "T02.P0A06",
+    "Name": "OP Master Transceiver",
+    "Groups": [
+      "Settings,Optical Module Information,Optical Module"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "UnitName": "dBm",
+    "Access": "ro",
+    "DataType": "int16",
+    "InputType": "default",
+    "ByteSize": 2,
+    "Ratio": 100
+  },
+  {
+    "PrivOid": "TB4.P0B75",
+    "Name": "",
+    "Groups": [
+      "Settings,Engineering CMD,"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "rw",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 20
+  },
+  {
+    "PrivOid": "TB4.P0B90",
+    "Name": "",
+    "Groups": [
+      "Settings,Engineering CMD,"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "button",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "TB4.P0B19",
+    "Name": "",
+    "Groups": [
+      "Settings,Engineering CMD,"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "default",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "TB4.P0B20",
+    "Name": "",
+    "Groups": [
+      "Settings,Engineering CMD,"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "rw",
+    "DataType": "uint16",
+    "InputType": "number",
+    "ByteSize": 2
+  },
+  {
+    "PrivOid": "TB4.P0B17",
+    "Name": "",
+    "Groups": [
+      "Settings,Engineering CMD,"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "default",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "TB4.P0B31",
+    "Name": "",
+    "Groups": [
+      "Settings,Engineering CMD,"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "rw",
+    "DataType": "uint8",
+    "InputType": "number",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "TB4.P0B32",
+    "Name": "",
+    "Groups": [
+      "Settings,Engineering CMD,"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "uint8",
+    "InputType": "default",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "TB4.P0B33",
+    "Name": "",
+    "Groups": [
+      "Settings,Engineering CMD,"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "rw",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 12
+  },
+  {
+    "PrivOid": "TB4.P0B34",
+    "Name": "",
+    "Groups": [
+      "Settings,Engineering CMD,"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "rw",
+    "DataType": "uint8",
+    "InputType": "number",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "TB4.P0B35",
+    "Name": "",
+    "Groups": [
+      "Settings,Engineering CMD,"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "uint8",
+    "InputType": "default",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "TB4.P0B36",
+    "Name": "Device Category",
+    "Groups": [
+      "Settings,Engineering CMD,"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "uint8",
+    "InputType": "default",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "TB4.P0B11",
+    "Name": "Device Name",
+    "Groups": [
+      "Settings,Engineering CMD,"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 40
+  },
+  {
+    "PrivOid": "T02.P0AEC",
+    "Name": "",
+    "Groups": [
+      "Settings,Engineering CMD2,"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "password",
+    "ByteSize": 14
+  },
+  {
+    "PrivOid": "T02.P0BE0",
+    "Name": "OP IP address",
+    "Groups": [
+      "Settings,Engineering CMD2,"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "rw",
+    "DataType": "ipv4",
+    "InputType": "ipv4",
+    "ByteSize": 4
+  },
+  {
+    "PrivOid": "T02.P0301",
+    "Name": "Power Interruption Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P0201",
+    "Name": "Power Interruption Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "02": "Warning",
+      "03": "Minor",
+      "04": "Major",
+      "05": "Critical"
+    }
+  },
+  {
+    "PrivOid": "T02.P0305",
+    "Name": "Movement Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P0205",
+    "Name": "Movement Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "02": "Warning",
+      "03": "Minor",
+      "04": "Major",
+      "05": "Critical"
+    }
+  },
+  {
+    "PrivOid": "T02.P0328",
+    "Name": "Open Case Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P0228",
+    "Name": "Open Case Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "02": "Warning",
+      "03": "Minor",
+      "04": "Major",
+      "05": "Critical"
+    }
+  },
+  {
+    "PrivOid": "T02.P0306",
+    "Name": "Over Temperature Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P0206",
+    "Name": "Over Temperature Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "02": "Warning",
+      "03": "Minor",
+      "04": "Major",
+      "05": "Critical"
+    }
+  },
+  {
+    "PrivOid": "T02.P037E",
+    "Name": "Optical Port Switch Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P027E",
+    "Name": "Optical Port Switch Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "02": "Warning",
+      "03": "Minor",
+      "04": "Major",
+      "05": "Critical"
+    }
+  },
+  {
+    "PrivOid": "T02.P03A0",
+    "Name": "OP1 Transceiver Failure Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P02A0",
+    "Name": "OP1 Transceiver Failure Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "02": "Warning",
+      "03": "Minor",
+      "04": "Major",
+      "05": "Critical"
+    }
+  },
+  {
+    "PrivOid": "T02.P03A1",
+    "Name": "OP2 Transceiver Failure Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P02A1",
+    "Name": "OP2 Transceiver Failure Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "02": "Warning",
+      "03": "Minor",
+      "04": "Major",
+      "05": "Critical"
+    }
+  },
+  {
+    "PrivOid": "T02.P03A2",
+    "Name": "OP3 Transceiver Failure Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P02A2",
+    "Name": "OP3 Transceiver Failure Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "02": "Warning",
+      "03": "Minor",
+      "04": "Major",
+      "05": "Critical"
+    }
+  },
+  {
+    "PrivOid": "T02.P03A3",
+    "Name": "OP4 Transceiver Failure Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P02A3",
+    "Name": "OP4 Transceiver Failure Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "02": "Warning",
+      "03": "Minor",
+      "04": "Major",
+      "05": "Critical"
+    }
+  },
+  {
+    "PrivOid": "T02.P03A6",
+    "Name": "OP5 Transceiver Failure Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P02A6",
+    "Name": "OP5 Transceiver Failure Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "02": "Warning",
+      "03": "Minor",
+      "04": "Major",
+      "05": "Critical"
+    }
+  },
+  {
+    "PrivOid": "T02.P03A7",
+    "Name": "OP6 Transceiver Failure Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P02A7",
+    "Name": "OP6 Transceiver Failure Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "02": "Warning",
+      "03": "Minor",
+      "04": "Major",
+      "05": "Critical"
+    }
+  },
+  {
+    "PrivOid": "T02.P03A8",
+    "Name": "OP Slave Transceiver Failure Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P02A8",
+    "Name": "OP Slave Transceiver Failure Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "02": "Warning",
+      "03": "Minor",
+      "04": "Major",
+      "05": "Critical"
+    }
+  },
+  {
+    "PrivOid": "T02.P03A9",
+    "Name": "OP Master Transceiver Failure Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P02A9",
+    "Name": "OP Master Transceiver Failure Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "02": "Warning",
+      "03": "Minor",
+      "04": "Major",
+      "05": "Critical"
+    }
+  },
+  {
+    "PrivOid": "T02.P030F",
+    "Name": "Optical Link Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "T02.P020F",
+    "Name": "Optical Link Alarm",
+    "Groups": [
+      "Alarms,Element Alarms,Alarm"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Disable",
+      "02": "Warning",
+      "03": "Minor",
+      "04": "Major",
+      "05": "Critical"
+    }
+  },
+  {
+    "PrivOid": "T02.P0451",
+    "Name": "Over Temperature Threshold",
+    "Groups": [
+      "Alarms,Alarm Thresholds,Alarm Thresholds"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "UnitName": "℃",
+    "Access": "rw",
+    "DataType": "int8",
+    "InputType": "number",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "TB4.P0A8A",
+    "Name": "OP1 Transceiver",
+    "Groups": [
+      "Maintenance,Optical Info,Optical Module Info"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "object",
+    "InputType": "default",
+    "ByteSize": 13,
+    "Split": "^",
+    "Child": [
+      {
+        "PrivOid": "TB4.P0A8A[0]",
+        "Name": "DDM Function Availability",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "Access": "ro",
+        "DataType": "binary",
+        "InputType": "default",
+        "ByteSize": 1,
+        "Options": {
+          "00": "no",
+          "01": "yes"
+        }
+      },
+      {
+        "PrivOid": "TB4.P0A8A[1]",
+        "Name": "Tx Power",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "dBm",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A8A[2]",
+        "Name": "Rx Power",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "dBm",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A8A[3]",
+        "Name": "Voltage",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "V",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 10
+      },
+      {
+        "PrivOid": "TB4.P0A8A[4]",
+        "Name": "Bias Current",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "mA",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A8A[5]",
+        "Name": "Temperature",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "℃",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 10
+      },
+      {
+        "PrivOid": "TB4.P0A8A[6]",
+        "Name": "Tx Optical Wavelength",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "nm",
+        "Access": "ro",
+        "DataType": "uint16",
+        "InputType": "default",
+        "ByteSize": 2
+      }
+    ]
+  },
+  {
+    "PrivOid": "TB4.P0B40",
+    "Name": "OP1 Transceiver CPRI Loss Sync Counter",
+    "Groups": [
+      "Maintenance,Optical Info,Optical Module Info"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "uint8",
+    "InputType": "default",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "TB4.P0B69",
+    "Name": "OP1 Transceiver CPRI Sync Alarm",
+    "Groups": [
+      "Maintenance,Optical Info,Optical Module Info"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Sync",
+      "01": "Unsync"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0B71",
+    "Name": "OP1 Transceiver LOS Alarm",
+    "Groups": [
+      "Maintenance,Optical Info,Optical Module Info"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0A8B",
+    "Name": "OP2 Transceiver",
+    "Groups": [
+      "Maintenance,Optical Info,Optical Module Info"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "object",
+    "InputType": "default",
+    "ByteSize": 13,
+    "Split": "^",
+    "Child": [
+      {
+        "PrivOid": "TB4.P0A8B[0]",
+        "Name": "DDM Function Availability",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "Access": "ro",
+        "DataType": "binary",
+        "InputType": "default",
+        "ByteSize": 1,
+        "Options": {
+          "00": "no",
+          "01": "yes"
+        }
+      },
+      {
+        "PrivOid": "TB4.P0A8B[1]",
+        "Name": "Tx Power",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "dBm",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A8B[2]",
+        "Name": "Rx Power",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "dBm",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A8B[3]",
+        "Name": "Voltage",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "V",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 10
+      },
+      {
+        "PrivOid": "TB4.P0A8B[4]",
+        "Name": "Bias Current",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "mA",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A8B[5]",
+        "Name": "Temperature",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "℃",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 10
+      },
+      {
+        "PrivOid": "TB4.P0A8B[6]",
+        "Name": "Tx Optical Wavelength",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "nm",
+        "Access": "ro",
+        "DataType": "uint16",
+        "InputType": "default",
+        "ByteSize": 2
+      }
+    ]
+  },
+  {
+    "PrivOid": "TB4.P0B41",
+    "Name": "OP2 Transceiver CPRI Loss Sync Counter",
+    "Groups": [
+      "Maintenance,Optical Info,Optical Module Info"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "uint8",
+    "InputType": "default",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "TB4.P0B6A",
+    "Name": "OP2 Transceiver CPRI Sync Alarm",
+    "Groups": [
+      "Maintenance,Optical Info,Optical Module Info"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Sync",
+      "01": "Unsync"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0B72",
+    "Name": "OP2 Transceiver LOS Alarm",
+    "Groups": [
+      "Maintenance,Optical Info,Optical Module Info"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0A8C",
+    "Name": "OP3 Transceiver",
+    "Groups": [
+      "Maintenance,Optical Info,Optical Module Info"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "object",
+    "InputType": "default",
+    "ByteSize": 13,
+    "Split": "^",
+    "Child": [
+      {
+        "PrivOid": "TB4.P0A8C[0]",
+        "Name": "DDM Function Availability",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "Access": "ro",
+        "DataType": "binary",
+        "InputType": "default",
+        "ByteSize": 1,
+        "Options": {
+          "00": "no",
+          "01": "yes"
+        }
+      },
+      {
+        "PrivOid": "TB4.P0A8C[1]",
+        "Name": "Tx Power",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "dBm",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A8C[2]",
+        "Name": "Rx Power",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "dBm",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A8C[3]",
+        "Name": "Voltage",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "V",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 10
+      },
+      {
+        "PrivOid": "TB4.P0A8C[4]",
+        "Name": "Bias Current",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "mA",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A8C[5]",
+        "Name": "Temperature",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "℃",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 10
+      },
+      {
+        "PrivOid": "TB4.P0A8C[6]",
+        "Name": "Tx Optical Wavelength",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "nm",
+        "Access": "ro",
+        "DataType": "uint16",
+        "InputType": "default",
+        "ByteSize": 2
+      }
+    ]
+  },
+  {
+    "PrivOid": "TB4.P0B42",
+    "Name": "OP3 Transceiver CPRI Loss Sync Counter",
+    "Groups": [
+      "Maintenance,Optical Info,Optical Module Info"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "uint8",
+    "InputType": "default",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "TB4.P0B6B",
+    "Name": "OP3 Transceiver CPRI Sync Alarm",
+    "Groups": [
+      "Maintenance,Optical Info,Optical Module Info"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Sync",
+      "01": "Unsync"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0B73",
+    "Name": "OP3 Transceiver LOS Alarm",
+    "Groups": [
+      "Maintenance,Optical Info,Optical Module Info"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0A8D",
+    "Name": "OP4 Transceiver",
+    "Groups": [
+      "Maintenance,Optical Info,Optical Module Info"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "object",
+    "InputType": "default",
+    "ByteSize": 13,
+    "Split": "^",
+    "Child": [
+      {
+        "PrivOid": "TB4.P0A8D[0]",
+        "Name": "DDM Function Availability",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "Access": "ro",
+        "DataType": "binary",
+        "InputType": "default",
+        "ByteSize": 1,
+        "Options": {
+          "00": "no",
+          "01": "yes"
+        }
+      },
+      {
+        "PrivOid": "TB4.P0A8D[1]",
+        "Name": "Tx Power",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "dBm",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A8D[2]",
+        "Name": "Rx Power",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "dBm",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A8D[3]",
+        "Name": "Voltage",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "V",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 10
+      },
+      {
+        "PrivOid": "TB4.P0A8D[4]",
+        "Name": "Bias Current",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "mA",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A8D[5]",
+        "Name": "Temperature",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "℃",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 10
+      },
+      {
+        "PrivOid": "TB4.P0A8D[6]",
+        "Name": "Tx Optical Wavelength",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "nm",
+        "Access": "ro",
+        "DataType": "uint16",
+        "InputType": "default",
+        "ByteSize": 2
+      }
+    ]
+  },
+  {
+    "PrivOid": "TB4.P0B43",
+    "Name": "OP4 Transceiver CPRI Loss Sync Counter",
+    "Groups": [
+      "Maintenance,Optical Info,Optical Module Info"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "uint8",
+    "InputType": "default",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "TB4.P0B6C",
+    "Name": "OP4 Transceiver CPRI Sync Alarm",
+    "Groups": [
+      "Maintenance,Optical Info,Optical Module Info"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Sync",
+      "01": "Unsync"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0B74",
+    "Name": "OP4 Transceiver LOS Alarm",
+    "Groups": [
+      "Maintenance,Optical Info,Optical Module Info"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0A8E",
+    "Name": "OP5 Transceiver",
+    "Groups": [
+      "Maintenance,Optical Info,Optical Module Info"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "object",
+    "InputType": "default",
+    "ByteSize": 13,
+    "Split": "^",
+    "Child": [
+      {
+        "PrivOid": "TB4.P0A8E[0]",
+        "Name": "DDM Function Availability",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "Access": "ro",
+        "DataType": "binary",
+        "InputType": "default",
+        "ByteSize": 1,
+        "Options": {
+          "00": "no",
+          "01": "yes"
+        }
+      },
+      {
+        "PrivOid": "TB4.P0A8E[1]",
+        "Name": "Tx Power",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "dBm",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A8E[2]",
+        "Name": "Rx Power",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "dBm",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A8E[3]",
+        "Name": "Voltage",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "V",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 10
+      },
+      {
+        "PrivOid": "TB4.P0A8E[4]",
+        "Name": "Bias Current",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "mA",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A8E[5]",
+        "Name": "Temperature",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "℃",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 10
+      },
+      {
+        "PrivOid": "TB4.P0A8E[6]",
+        "Name": "Tx Optical Wavelength",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "nm",
+        "Access": "ro",
+        "DataType": "uint16",
+        "InputType": "default",
+        "ByteSize": 2
+      }
+    ]
+  },
+  {
+    "PrivOid": "TB4.P0B44",
+    "Name": "OP5 Transceiver CPRI Loss Sync Counter",
+    "Groups": [
+      "Maintenance,Optical Info,Optical Module Info"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "uint8",
+    "InputType": "default",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "TB4.P0B6D",
+    "Name": "OP5 Transceiver CPRI Sync Alarm",
+    "Groups": [
+      "Maintenance,Optical Info,Optical Module Info"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Sync",
+      "01": "Unsync"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0B80",
+    "Name": "OP5 Transceiver LOS Alarm",
+    "Groups": [
+      "Maintenance,Optical Info,Optical Module Info"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0A8F",
+    "Name": "OP6 Transceiver",
+    "Groups": [
+      "Maintenance,Optical Info,Optical Module Info"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "object",
+    "InputType": "default",
+    "ByteSize": 13,
+    "Split": "^",
+    "Child": [
+      {
+        "PrivOid": "TB4.P0A8F[0]",
+        "Name": "DDM Function Availability",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "Access": "ro",
+        "DataType": "binary",
+        "InputType": "default",
+        "ByteSize": 1,
+        "Options": {
+          "00": "no",
+          "01": "yes"
+        }
+      },
+      {
+        "PrivOid": "TB4.P0A8F[1]",
+        "Name": "Tx Power",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "dBm",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A8F[2]",
+        "Name": "Rx Power",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "dBm",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A8F[3]",
+        "Name": "Voltage",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "V",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 10
+      },
+      {
+        "PrivOid": "TB4.P0A8F[4]",
+        "Name": "Bias Current",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "mA",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A8F[5]",
+        "Name": "Temperature",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "℃",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 10
+      },
+      {
+        "PrivOid": "TB4.P0A8F[6]",
+        "Name": "Tx Optical Wavelength",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "nm",
+        "Access": "ro",
+        "DataType": "uint16",
+        "InputType": "default",
+        "ByteSize": 2
+      }
+    ]
+  },
+  {
+    "PrivOid": "TB4.P0B45",
+    "Name": "OP6 Transceiver CPRI Loss Sync Counter",
+    "Groups": [
+      "Maintenance,Optical Info,Optical Module Info"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "uint8",
+    "InputType": "default",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "TB4.P0B6E",
+    "Name": "OP6 Transceiver CPRI Sync Alarm",
+    "Groups": [
+      "Maintenance,Optical Info,Optical Module Info"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Sync",
+      "01": "Unsync"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0B76",
+    "Name": "OP6 Transceiver LOS Alarm",
+    "Groups": [
+      "Maintenance,Optical Info,Optical Module Info"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0A92",
+    "Name": "OP Slave Transceiver",
+    "Groups": [
+      "Maintenance,Optical Info,Optical Module Info"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "object",
+    "InputType": "default",
+    "ByteSize": 13,
+    "Split": "^",
+    "Child": [
+      {
+        "PrivOid": "TB4.P0A92[0]",
+        "Name": "DDM Function Availability",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "Access": "ro",
+        "DataType": "binary",
+        "InputType": "default",
+        "ByteSize": 1,
+        "Options": {
+          "00": "no",
+          "01": "yes"
+        }
+      },
+      {
+        "PrivOid": "TB4.P0A92[1]",
+        "Name": "Tx Power",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "dBm",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A92[2]",
+        "Name": "Rx Power",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "dBm",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A92[3]",
+        "Name": "Voltage",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "V",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 10
+      },
+      {
+        "PrivOid": "TB4.P0A92[4]",
+        "Name": "Bias Current",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "mA",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A92[5]",
+        "Name": "Temperature",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "℃",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 10
+      },
+      {
+        "PrivOid": "TB4.P0A92[6]",
+        "Name": "Tx Optical Wavelength",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "nm",
+        "Access": "ro",
+        "DataType": "uint16",
+        "InputType": "default",
+        "ByteSize": 2
+      }
+    ]
+  },
+  {
+    "PrivOid": "TB4.P0B46",
+    "Name": "OP Slave Transceiver CPRI Loss Sync Counter",
+    "Groups": [
+      "Maintenance,Optical Info,Optical Module Info"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "uint8",
+    "InputType": "default",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "TB4.P0B81",
+    "Name": "OP Slave Transceiver CPRI Sync Alarm",
+    "Groups": [
+      "Maintenance,Optical Info,Optical Module Info"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Sync",
+      "01": "Unsync"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0B83",
+    "Name": "OP Slave Transceiver LOS Alarm",
+    "Groups": [
+      "Maintenance,Optical Info,Optical Module Info"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0A93",
+    "Name": "OP Master Transceiver",
+    "Groups": [
+      "Maintenance,Optical Info,Optical Module Info"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "object",
+    "InputType": "default",
+    "ByteSize": 13,
+    "Split": "^",
+    "Child": [
+      {
+        "PrivOid": "TB4.P0A93[0]",
+        "Name": "DDM Function Availability",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "Access": "ro",
+        "DataType": "binary",
+        "InputType": "default",
+        "ByteSize": 1,
+        "Options": {
+          "00": "no",
+          "01": "yes"
+        }
+      },
+      {
+        "PrivOid": "TB4.P0A93[1]",
+        "Name": "Tx Power",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "dBm",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A93[2]",
+        "Name": "Rx Power",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "dBm",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A93[3]",
+        "Name": "Voltage",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "V",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 10
+      },
+      {
+        "PrivOid": "TB4.P0A93[4]",
+        "Name": "Bias Current",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "mA",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 100
+      },
+      {
+        "PrivOid": "TB4.P0A93[5]",
+        "Name": "Temperature",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "℃",
+        "Access": "ro",
+        "DataType": "int16",
+        "InputType": "default",
+        "ByteSize": 2,
+        "Ratio": 10
+      },
+      {
+        "PrivOid": "TB4.P0A93[6]",
+        "Name": "Tx Optical Wavelength",
+        "Groups": [
+          "Maintenance,Optical Info,Optical Module Info"
+        ],
+        "Paths": null,
+        "UnitName": "nm",
+        "Access": "ro",
+        "DataType": "uint16",
+        "InputType": "default",
+        "ByteSize": 2
+      }
+    ]
+  },
+  {
+    "PrivOid": "TB4.P0B47",
+    "Name": "OP Master Transceiver CPRI Loss Sync Counter",
+    "Groups": [
+      "Maintenance,Optical Info,Optical Module Info"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "uint8",
+    "InputType": "default",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "TB4.P0B82",
+    "Name": "OP Master Transceiver CPRI Sync Alarm",
+    "Groups": [
+      "Maintenance,Optical Info,Optical Module Info"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Sync",
+      "01": "Unsync"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0B84",
+    "Name": "OP Master Transceiver LOS Alarm",
+    "Groups": [
+      "Maintenance,Optical Info,Optical Module Info"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "status:alarm",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal",
+      "01": "Alarm"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0B02",
+    "Name": "Data Update Time",
+    "Groups": [
+      "Maintenance,Engineering,Engineering Info"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "datetime",
+    "InputType": "default",
+    "ByteSize": 7
+  },
+  {
+    "PrivOid": "TB4.P0B05",
+    "Name": "ARM CRC",
+    "Groups": [
+      "Maintenance,Engineering,Engineering Info"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "default",
+    "ByteSize": 2
+  },
+  {
+    "PrivOid": "TB4.P0B8C",
+    "Name": "FPGA CRC",
+    "Groups": [
+      "Maintenance,Engineering,Engineering Info"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "default",
+    "ByteSize": 2
+  },
+  {
+    "PrivOid": "TB4.P0B27",
+    "Name": "EU CRC",
+    "Groups": [
+      "Maintenance,Engineering,Engineering Info"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "default",
+    "ByteSize": 2
+  },
+  {
+    "PrivOid": "TB4.P0B7F",
+    "Name": "Configuration CRC",
+    "Groups": [
+      "Maintenance,Engineering,Engineering Info"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "default",
+    "ByteSize": 2
+  },
+  {
+    "PrivOid": "TB4.P0B50",
+    "Name": "Sync Loss Counter Reset",
+    "Groups": [
+      "Maintenance,Engineering,OP Info"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "wo",
+    "DataType": "binary",
+    "InputType": "button",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Reset"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0BA1",
+    "Name": "System Reset",
+    "Groups": [
+      "Maintenance,Engineering,Advanced Command"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "wo",
+    "DataType": "binary",
+    "InputType": "button",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Reset"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0B09",
+    "Name": "Alarm Initialization",
+    "Groups": [
+      "Maintenance,Engineering,Advanced Command"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "wo",
+    "DataType": "binary",
+    "InputType": "buttonGroup",
+    "ByteSize": 1,
+    "Options": {
+      "04": "Report Fault Correcting",
+      "FF": "Initialization"
+    }
+  },
+  {
+    "PrivOid": "TB4.P0B92",
+    "Name": "Alarm Mode Select",
+    "Groups": [
+      "Maintenance,Engineering,Advanced Command"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "select",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Normal Mode 3min",
+      "01": "Test Mode 1min"
+    }
+  },
+  {
+    "PrivOid": "TB0.P0AFF",
+    "Name": "Factory Mode",
+    "Groups": [
+      "Maintenance,Factory Command,Factory Parameters"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "button",
+    "ByteSize": 9,
+    "Options": {
+      "5A": "Factory Pattern",
+      "A5": "Quit"
+    }
+  },
+  {
+    "PrivOid": "TB0.P0AEF",
+    "Name": "Factory Command",
+    "Groups": [
+      "Maintenance,Factory Command,Factory Parameters"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "wo",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 20
+  },
+  {
+    "PrivOid": "TB2.P0CCC",
+    "Name": "",
+    "Groups": [
+      "Digital Module,Address Interface,"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "rw",
+    "DataType": "object",
+    "InputType": "default",
+    "ByteSize": 8,
+    "Child": [
+      {
+        "PrivOid": "TB2.P0CCC[0]",
+        "Name": "Module ID",
+        "Groups": [
+          "Digital Module,Address Interface,"
+        ],
+        "Paths": null,
+        "Access": "rw",
+        "DataType": "binary",
+        "InputType": "select",
+        "ByteSize": 1
+      },
+      {
+        "PrivOid": "TB2.P0CCC[1]",
+        "Name": "Register Address",
+        "Groups": [
+          "Digital Module,Address Interface,"
+        ],
+        "Paths": null,
+        "Access": "rw",
+        "DataType": "binary",
+        "InputType": "binary",
+        "ByteSize": 2,
+        "Max": 2,
+        "Min": 2
+      },
+      {
+        "PrivOid": "TB2.P0CCC[2]",
+        "Name": "Byte Size",
+        "Groups": [
+          "Digital Module,Address Interface,"
+        ],
+        "Paths": null,
+        "Access": "rw",
+        "DataType": "binary",
+        "InputType": "radio",
+        "ByteSize": 1
+      },
+      {
+        "PrivOid": "TB2.P0CCC[3]",
+        "Name": "Byte Buffer",
+        "Groups": [
+          "Digital Module,Address Interface,"
+        ],
+        "Paths": null,
+        "Access": "rw",
+        "DataType": "binary",
+        "InputType": "binary",
+        "ByteSize": 4
+      }
+    ]
+  },
+  {
+    "PrivOid": "TB2.P0801",
+    "Name": "Register 0-3",
+    "Groups": [
+      "Digital Module,Registers,LMK04808"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "binary",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "TB2.P0802",
+    "Name": "Register 4-7",
+    "Groups": [
+      "Digital Module,Registers,LMK04808"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "binary",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "TB2.P0803",
+    "Name": "Register 8-12",
+    "Groups": [
+      "Digital Module,Registers,LMK04808"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "binary",
+    "ByteSize": 20
+  },
+  {
+    "PrivOid": "TB2.P0804",
+    "Name": "Register 13-16",
+    "Groups": [
+      "Digital Module,Registers,LMK04808"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "binary",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "TB2.P0805",
+    "Name": "Register 24-27",
+    "Groups": [
+      "Digital Module,Registers,LMK04808"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "binary",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "TB2.P0806",
+    "Name": "Register 28-31",
+    "Groups": [
+      "Digital Module,Registers,LMK04808"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "binary",
+    "ByteSize": 16
+  },
+  {
+    "PrivOid": "TB2-DEBUG.P0800",
+    "Name": "Clock Reference Source",
+    "Groups": [
+      "Digital Module,Debug Parameters,Basic Parameters"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "binary",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Reference source 30.72M",
+      "01": "Reference source 10M",
+      "02": "Reference source 307.2M",
+      "03": "Reference source 61.44M"
+    }
+  },
+  {
+    "PrivOid": "TB2-DEBUG.P0200",
+    "Name": "RST",
+    "Groups": [
+      "Digital Module,Debug Parameters,Basic Parameters"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "binary",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "TB2-DEBUG.P0303",
+    "Name": "Clock Lock",
+    "Groups": [
+      "Digital Module,Debug Parameters,Basic Parameters"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "default",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Unlock",
+      "01": "Lock"
+    }
+  },
+  {
+    "PrivOid": "TB2-DEBUG.P0220",
+    "Name": "Master MAC Address",
+    "Groups": [
+      "Digital Module,Debug Parameters,Basic Parameters"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "default",
+    "ByteSize": 6
+  },
+  {
+    "PrivOid": "TB2-DEBUG.P0221",
+    "Name": "IP Address",
+    "Groups": [
+      "Digital Module,Debug Parameters,Basic Parameters"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "binary",
+    "InputType": "default",
+    "ByteSize": 4
+  },
+  {
+    "PrivOid": "TB2-DEBUG.P0812",
+    "Name": "Digital Plate Temperature",
+    "Groups": [
+      "Digital Module,Debug Parameters,Basic Parameters"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "int8",
+    "InputType": "default",
+    "ByteSize": 1
+  },
+  {
+    "PrivOid": "TB2-DEBUG.P0A1C",
+    "Name": "Digital Board SN",
+    "Groups": [
+      "Digital Module,Debug Parameters,Basic Parameters"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "rw",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 40
+  },
+  {
+    "PrivOid": "TB2-MCU.P0AF0",
+    "Name": "Vendor",
+    "Groups": [
+      "Digital Module,MCU Parameter,Device Information"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "rw",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 20
+  },
+  {
+    "PrivOid": "TB2-MCU.P0AF2",
+    "Name": "Element Model Number",
+    "Groups": [
+      "Digital Module,MCU Parameter,Device Information"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "rw",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 20
+  },
+  {
+    "PrivOid": "TB2-MCU.P0AF3",
+    "Name": "Element Serial Number",
+    "Groups": [
+      "Digital Module,MCU Parameter,Device Information"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "rw",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 20
+  },
+  {
+    "PrivOid": "TB2-MCU.P0BBD",
+    "Name": "The FPGA Debugging Mode Switch",
+    "Groups": [
+      "Digital Module,MCU Parameter,Device Information"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "rw",
+    "DataType": "binary",
+    "InputType": "switch",
+    "ByteSize": 1,
+    "Options": {
+      "00": "Off",
+      "01": "On"
+    }
+  },
+  {
+    "PrivOid": "TB2-MCU.P0AD0",
+    "Name": "Filesystem Edition",
+    "Groups": [
+      "Digital Module,MCU Parameter,Device Information"
+    ],
+    "Paths": null,
+    "Versions": "default,2.1;default,latest",
+    "Access": "ro",
+    "DataType": "string",
+    "InputType": "default",
+    "ByteSize": 10
+  }
+]
