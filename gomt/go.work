@@ -1,0 +1,10 @@
+go 1.23
+
+use (
+	./core
+	./das
+	./dasutils
+	./dmkit
+	./gomt
+	./pack
+)
